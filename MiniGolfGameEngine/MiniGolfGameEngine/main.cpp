@@ -1,10 +1,10 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-
-
+/*
+ * Starts everything
+ */
 int main(int argc, char * arg[])
-
 {
     // init SDL
     if(SDL_Init(SDL_INIT_EVERYTHING) != 0)
@@ -29,6 +29,7 @@ int main(int argc, char * arg[])
     bool running = true;
     SDL_Event mainEvent;
     
+    //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
         while(SDL_PollEvent(&mainEvent) != 0)
@@ -57,11 +58,7 @@ int main(int argc, char * arg[])
         }
     }
     
-    // wait 5 secs
-    SDL_Delay(5000);
-    
-    
-    // clean up
+    //Clean up
     SDL_DestroyWindow(window);
     SDL_Quit();
     
