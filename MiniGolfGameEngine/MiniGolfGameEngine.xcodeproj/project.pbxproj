@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BDA5BC318FE04C600E4A5AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA5BC118FE04C600E4A5AA /* InfoPlist.strings */; };
+		4BDA5BC518FE04C600E4A5AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDA5BC418FE04C600E4A5AA /* main.cpp */; };
+		4BDA5BE118FE04C600E4A5AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA5BDF18FE04C600E4A5AA /* InfoPlist.strings */; };
+		4BDA5BE318FE04C600E4A5AA /* MiniGolfGameEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDA5BE218FE04C600E4A5AA /* MiniGolfGameEngineTests.m */; };
+		4BDA5BEE18FE059700E4A5AA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA5BED18FE059700E4A5AA /* SDL2.framework */; };
+		4BDA5BF018FE05A000E4A5AA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA5BEF18FE05A000E4A5AA /* OpenGL.framework */; };
+		4BDA5BF218FE063A00E4A5AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA5BF118FE063A00E4A5AA /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BDA5BDA18FE04C600E4A5AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BDA5BAD18FE04C600E4A5AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BDA5BB418FE04C600E4A5AA;
+			remoteInfo = MiniGolfGameEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BDA5BB518FE04C600E4A5AA /* MiniGolfGameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfGameEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDA5BC018FE04C600E4A5AA /* MiniGolfGameEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniGolfGameEngine-Info.plist"; sourceTree = "<group>"; };
+		4BDA5BC218FE04C600E4A5AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BDA5BC418FE04C600E4A5AA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4BDA5BD618FE04C600E4A5AA /* MiniGolfGameEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGolfGameEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDA5BDE18FE04C600E4A5AA /* MiniGolfGameEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniGolfGameEngineTests-Info.plist"; sourceTree = "<group>"; };
+		4BDA5BE018FE04C600E4A5AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BDA5BE218FE04C600E4A5AA /* MiniGolfGameEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniGolfGameEngineTests.m; sourceTree = "<group>"; };
+		4BDA5BED18FE059700E4A5AA /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		4BDA5BEF18FE05A000E4A5AA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4BDA5BF118FE063A00E4A5AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BDA5BB218FE04C600E4A5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDA5BF018FE05A000E4A5AA /* OpenGL.framework in Frameworks */,
+				4BDA5BEE18FE059700E4A5AA /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BDA5BD318FE04C600E4A5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDA5BAC18FE04C600E4A5AA = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BBE18FE04C600E4A5AA /* MiniGolfGameEngine */,
+				4BDA5BDC18FE04C600E4A5AA /* MiniGolfGameEngineTests */,
+				4BDA5BB718FE04C600E4A5AA /* Frameworks */,
+				4BDA5BB618FE04C600E4A5AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BDA5BB618FE04C600E4A5AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BB518FE04C600E4A5AA /* MiniGolfGameEngine.app */,
+				4BDA5BD618FE04C600E4A5AA /* MiniGolfGameEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BDA5BB718FE04C600E4A5AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BEF18FE05A000E4A5AA /* OpenGL.framework */,
+				4BDA5BED18FE059700E4A5AA /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BDA5BBE18FE04C600E4A5AA /* MiniGolfGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BEC18FE053800E4A5AA /* Code */,
+				4BDA5BBF18FE04C600E4A5AA /* Supporting Files */,
+			);
+			path = MiniGolfGameEngine;
+			sourceTree = "<group>";
+		};
+		4BDA5BBF18FE04C600E4A5AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BF118FE063A00E4A5AA /* Images.xcassets */,
+				4BDA5BC018FE04C600E4A5AA /* MiniGolfGameEngine-Info.plist */,
+				4BDA5BC118FE04C600E4A5AA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BDA5BDC18FE04C600E4A5AA /* MiniGolfGameEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BE218FE04C600E4A5AA /* MiniGolfGameEngineTests.m */,
+				4BDA5BDD18FE04C600E4A5AA /* Supporting Files */,
+			);
+			path = MiniGolfGameEngineTests;
+			sourceTree = "<group>";
+		};
+		4BDA5BDD18FE04C600E4A5AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BDE18FE04C600E4A5AA /* MiniGolfGameEngineTests-Info.plist */,
+				4BDA5BDF18FE04C600E4A5AA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BDA5BEC18FE053800E4A5AA /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA5BC418FE04C600E4A5AA /* main.cpp */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BDA5BB418FE04C600E4A5AA /* MiniGolfGameEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDA5BE618FE04C600E4A5AA /* Build configuration list for PBXNativeTarget "MiniGolfGameEngine" */;
+			buildPhases = (
+				4BDA5BB118FE04C600E4A5AA /* Sources */,
+				4BDA5BB218FE04C600E4A5AA /* Frameworks */,
+				4BDA5BB318FE04C600E4A5AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniGolfGameEngine;
+			productName = MiniGolfGameEngine;
+			productReference = 4BDA5BB518FE04C600E4A5AA /* MiniGolfGameEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BDA5BD518FE04C600E4A5AA /* MiniGolfGameEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDA5BE918FE04C600E4A5AA /* Build configuration list for PBXNativeTarget "MiniGolfGameEngineTests" */;
+			buildPhases = (
+				4BDA5BD218FE04C600E4A5AA /* Sources */,
+				4BDA5BD318FE04C600E4A5AA /* Frameworks */,
+				4BDA5BD418FE04C600E4A5AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BDA5BDB18FE04C600E4A5AA /* PBXTargetDependency */,
+			);
+			name = MiniGolfGameEngineTests;
+			productName = MiniGolfGameEngineTests;
+			productReference = 4BDA5BD618FE04C600E4A5AA /* MiniGolfGameEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BDA5BAD18FE04C600E4A5AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Orlando Salvatore";
+				TargetAttributes = {
+					4BDA5BD518FE04C600E4A5AA = {
+						TestTargetID = 4BDA5BB418FE04C600E4A5AA;
+					};
+				};
+			};
+			buildConfigurationList = 4BDA5BB018FE04C600E4A5AA /* Build configuration list for PBXProject "MiniGolfGameEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BDA5BAC18FE04C600E4A5AA;
+			productRefGroup = 4BDA5BB618FE04C600E4A5AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BDA5BB418FE04C600E4A5AA /* MiniGolfGameEngine */,
+				4BDA5BD518FE04C600E4A5AA /* MiniGolfGameEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BDA5BB318FE04C600E4A5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDA5BC318FE04C600E4A5AA /* InfoPlist.strings in Resources */,
+				4BDA5BF218FE063A00E4A5AA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BDA5BD418FE04C600E4A5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDA5BE118FE04C600E4A5AA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BDA5BB118FE04C600E4A5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDA5BC518FE04C600E4A5AA /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BDA5BD218FE04C600E4A5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDA5BE318FE04C600E4A5AA /* MiniGolfGameEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BDA5BDB18FE04C600E4A5AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BDA5BB418FE04C600E4A5AA /* MiniGolfGameEngine */;
+			targetProxy = 4BDA5BDA18FE04C600E4A5AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BDA5BC118FE04C600E4A5AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BDA5BC218FE04C600E4A5AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4BDA5BDF18FE04C600E4A5AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BDA5BE018FE04C600E4A5AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BDA5BE418FE04C600E4A5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4BDA5BE518FE04C600E4A5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4BDA5BE718FE04C600E4A5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "MiniGolfGameEngine/MiniGolfGameEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4BDA5BE818FE04C600E4A5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "MiniGolfGameEngine/MiniGolfGameEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4BDA5BEA18FE04C600E4A5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MiniGolfGameEngine.app/Contents/MacOS/MiniGolfGameEngine";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniGolfGameEngine/MiniGolfGameEngine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MiniGolfGameEngineTests/MiniGolfGameEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4BDA5BEB18FE04C600E4A5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MiniGolfGameEngine.app/Contents/MacOS/MiniGolfGameEngine";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniGolfGameEngine/MiniGolfGameEngine-Prefix.pch";
+				INFOPLIST_FILE = "MiniGolfGameEngineTests/MiniGolfGameEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BDA5BB018FE04C600E4A5AA /* Build configuration list for PBXProject "MiniGolfGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDA5BE418FE04C600E4A5AA /* Debug */,
+				4BDA5BE518FE04C600E4A5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BDA5BE618FE04C600E4A5AA /* Build configuration list for PBXNativeTarget "MiniGolfGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDA5BE718FE04C600E4A5AA /* Debug */,
+				4BDA5BE818FE04C600E4A5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BDA5BE918FE04C600E4A5AA /* Build configuration list for PBXNativeTarget "MiniGolfGameEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDA5BEA18FE04C600E4A5AA /* Debug */,
+				4BDA5BEB18FE04C600E4A5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BDA5BAD18FE04C600E4A5AA /* Project object */;
+}
