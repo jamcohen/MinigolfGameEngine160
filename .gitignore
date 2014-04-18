@@ -1,6 +1,7 @@
 # Xcode
 .DS_Store
 build/
+test/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
