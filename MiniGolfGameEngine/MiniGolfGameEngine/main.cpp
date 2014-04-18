@@ -1,6 +1,7 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <OpenGL/gl3.h>
+#include <ctime>
 
 class Graphics
 {
@@ -12,38 +13,6 @@ public:
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     }
 };
-
-int EventFilter(void* userdata, SDL_Event* event)
-{
-    switch (event->type)
-    {
-        case SDL_KEYDOWN:
-            SDL_Log("Key Down %d", event->key.keysym.sym);
-            return 0;
-            
-        case SDL_KEYUP:
-            SDL_Log("Key Up %d", event->key.keysym.sym);
-            return 0;
-            
-        case SDL_MOUSEMOTION:
-            SDL_Log("Mouse Moved. X=%d, Y=%d, RelativeX=%d, RelativeY=%d", event->motion.x, event->motion.y, event->motion.xrel, event->motion.yrel);
-            return 0;
-            
-        case SDL_MOUSEBUTTONDOWN:
-            SDL_Log("Mouse Button Down %d", event->button.button);
-            return 0;
-            
-        case SDL_MOUSEBUTTONUP:
-            SDL_Log("Mouse Button Up %d", event->button.button);
-            return 0;
-            
-        case SDL_MOUSEWHEEL:
-            SDL_Log("Mouse Wheel");
-            return 0;
-    }
-    
-    return 1;
-}
 
 /*
  * Starts everything
@@ -89,6 +58,8 @@ int main(int argc, char * arg[])
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
+        time_t timer;
+        
         while(SDL_PollEvent(&mainEvent) != 0)
         {
             if(mainEvent.type == SDL_QUIT)

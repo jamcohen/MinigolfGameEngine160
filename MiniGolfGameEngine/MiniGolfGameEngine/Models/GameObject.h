@@ -21,7 +21,7 @@ public:
     void setY(float);
     void setZ(float);
     //void setPosition(detail::tvec3<<#typename T#>, <#glm::precision P#>>
-    void setPosition(detail::tvec3 test)
+    //void setPosition(glm::det);
     
 private:
     
