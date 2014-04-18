@@ -122,6 +122,8 @@
 		4BE660F61901AED8005093F8 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 4BE660741901AED7005093F8 /* wrap.inl */; };
 		4BE660F71901AED8005093F8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660881901AED8005093F8 /* main.cpp */; };
 		4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6608A1901AED8005093F8 /* GameObject.cpp */; };
+		4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FA1901B99F005093F8 /* InputManager.cpp */; };
+		4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FD1901B9D8005093F8 /* FileIO.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -406,6 +408,10 @@
 		4BE660881901AED8005093F8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4BE6608A1901AED8005093F8 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
 		4BE6608B1901AED8005093F8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		4BE660FA1901B99F005093F8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
+		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +516,7 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4BE660F91901B991005093F8 /* Modules */,
 				4BE65F841901AED7005093F8 /* Drawing */,
 				4BE65F871901AED7005093F8 /* glm */,
 				4BE660881901AED8005093F8 /* main.cpp */,
@@ -828,6 +835,17 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4BE660F91901B991005093F8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4BE660FA1901B99F005093F8 /* InputManager.cpp */,
+				4BE660FB1901B99F005093F8 /* InputManager.h */,
+				4BE660FD1901B9D8005093F8 /* FileIO.cpp */,
+				4BE660FE1901B9D8005093F8 /* FileIO.h */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1028,6 +1046,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
+				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
