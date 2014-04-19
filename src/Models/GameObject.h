@@ -13,17 +13,20 @@
 #include <cmath>
 #include "vec3.hpp"
 #include "glm.hpp"
+#include "Model.h"
+
+using namespace glm;
 
 class GameObject
 {
 public:
+    GameObject(vec3 pos);
     void setX(float);
     void setY(float);
     void setZ(float);
+    Model* model;
     //void setPosition(detail::tvec3<<#typename T#>, <#glm::precision P#>>
     //void setPosition(glm::det);
-    
-private:
     
 };
 

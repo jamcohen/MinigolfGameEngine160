@@ -124,6 +124,9 @@
 		4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6608A1901AED8005093F8 /* GameObject.cpp */; };
 		4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FA1901B99F005093F8 /* InputManager.cpp */; };
 		4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FD1901B9D8005093F8 /* FileIO.cpp */; };
+		F3EFA82619032EAF001FE6B6 /* vshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3EFA82519032EAF001FE6B6 /* vshader21.glsl */; };
+		F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EFA827190330D3001FE6B6 /* Model.cpp */; };
+		F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -412,6 +415,12 @@
 		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		F3EFA82519032EAF001FE6B6 /* vshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vshader21.glsl; sourceTree = "<group>"; };
+		F3EFA827190330D3001FE6B6 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		F3EFA828190330D3001FE6B6 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		F3EFA82A19033529001FE6B6 /* MGOpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
+		F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericMaterial.cpp; sourceTree = "<group>"; };
+		F3EFA82C190339F0001FE6B6 /* GenericMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericMaterial.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,11 +525,13 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F3EFA82419032EAF001FE6B6 /* Shaders */,
 				4BE660F91901B991005093F8 /* Modules */,
 				4BE65F841901AED7005093F8 /* Drawing */,
 				4BE65F871901AED7005093F8 /* glm */,
 				4BE660881901AED8005093F8 /* main.cpp */,
 				4BE660891901AED8005093F8 /* Models */,
+				F3EFA82A19033529001FE6B6 /* MGOpenGL.h */,
 			);
 			name = src;
 			path = ../src;
@@ -831,6 +842,10 @@
 			children = (
 				4BE6608A1901AED8005093F8 /* GameObject.cpp */,
 				4BE6608B1901AED8005093F8 /* GameObject.h */,
+				F3EFA827190330D3001FE6B6 /* Model.cpp */,
+				F3EFA828190330D3001FE6B6 /* Model.h */,
+				F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */,
+				F3EFA82C190339F0001FE6B6 /* GenericMaterial.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -844,6 +859,14 @@
 				4BE660FE1901B9D8005093F8 /* FileIO.h */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		F3EFA82419032EAF001FE6B6 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				F3EFA82519032EAF001FE6B6 /* vshader21.glsl */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -927,6 +950,7 @@
 				4BE660E51901AED8005093F8 /* quaternion.inl in Resources */,
 				4BE660981901AED8005093F8 /* intrinsic_common.inl in Resources */,
 				4BE660931901AED8005093F8 /* func_noise.inl in Resources */,
+				F3EFA82619032EAF001FE6B6 /* vshader21.glsl in Resources */,
 				4BE660E41901AED8005093F8 /* projection.inl in Resources */,
 				4BE660D81901AED8005093F8 /* matrix_query.inl in Resources */,
 				4BE660E01901AED8005093F8 /* optimum_pow.inl in Resources */,
@@ -1047,8 +1071,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
+				F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */,
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
+				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 			);
