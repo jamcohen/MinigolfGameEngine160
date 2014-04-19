@@ -7,3 +7,9 @@
 //
 
 #include "Drawing.h"
+
+
+void Drawing::update(){
+    ;
+}
+
