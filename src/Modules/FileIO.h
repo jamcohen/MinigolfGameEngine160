@@ -10,10 +10,18 @@
 #define __MiniGolfXCode__FileIO__
 
 #include <iostream>
+#include <fstream>
+#include <string>
 
 class FileIO
 {
+public:
+    FileIO();
+    ~FileIO();
+    bool parseTileMap(std::string);
     
+private:
+    std::ifstream _fin;
 };
 
 #endif /* defined(__MiniGolfXCode__FileIO__) */
