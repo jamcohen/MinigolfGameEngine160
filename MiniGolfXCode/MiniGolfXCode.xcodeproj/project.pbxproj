@@ -124,7 +124,11 @@
 		4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6608A1901AED8005093F8 /* GameObject.cpp */; };
 		4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FA1901B99F005093F8 /* InputManager.cpp */; };
 		4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FD1901B9D8005093F8 /* FileIO.cpp */; };
-		F3EFA82619032EAF001FE6B6 /* vshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3EFA82519032EAF001FE6B6 /* vshader21.glsl */; };
+		F37E466719039617005AFD96 /* fshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F37E466619039617005AFD96 /* fshader21.glsl */; };
+		F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */; };
+		F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F39E7AA319034A28006932C0 /* ShaderHelper.cpp */; };
+		F39E7AA719035E73006932C0 /* test.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F39E7AA619035E73006932C0 /* test.glsl */; };
+		F3EFA82619032EAF001FE6B6 /* vshader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3EFA82519032EAF001FE6B6 /* vshader.glsl */; };
 		F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EFA827190330D3001FE6B6 /* Model.cpp */; };
 		F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */; };
 /* End PBXBuildFile section */
@@ -416,7 +420,13 @@
 		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
-		F3EFA82519032EAF001FE6B6 /* vshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vshader21.glsl; sourceTree = "<group>"; };
+		F37E466619039617005AFD96 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fshader21.glsl; sourceTree = "<group>"; };
+		F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiffuseSpecularMaterial.cpp; sourceTree = "<group>"; };
+		F37E466A19039B8E005AFD96 /* DiffuseSpecularMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffuseSpecularMaterial.h; sourceTree = "<group>"; };
+		F39E7AA319034A28006932C0 /* ShaderHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderHelper.cpp; path = ../Shaders/ShaderHelper.cpp; sourceTree = "<group>"; };
+		F39E7AA419034A28006932C0 /* ShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderHelper.h; path = ../Shaders/ShaderHelper.h; sourceTree = "<group>"; };
+		F39E7AA619035E73006932C0 /* test.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.glsl; sourceTree = "<group>"; };
+		F3EFA82519032EAF001FE6B6 /* vshader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vshader.glsl; sourceTree = "<group>"; };
 		F3EFA827190330D3001FE6B6 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		F3EFA828190330D3001FE6B6 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericMaterial.cpp; sourceTree = "<group>"; };
@@ -533,6 +543,7 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F37E466819039B6D005AFD96 /* Materials */,
 				4B8AECB71903451500E5EF3C /* Headers */,
 				F3EFA82419032EAF001FE6B6 /* Shaders */,
 				4BE660F91901B991005093F8 /* Modules */,
@@ -861,6 +872,8 @@
 		4BE660F91901B991005093F8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F39E7AA319034A28006932C0 /* ShaderHelper.cpp */,
+				F39E7AA419034A28006932C0 /* ShaderHelper.h */,
 				4BE660FA1901B99F005093F8 /* InputManager.cpp */,
 				4BE660FB1901B99F005093F8 /* InputManager.h */,
 				4BE660FD1901B9D8005093F8 /* FileIO.cpp */,
@@ -869,10 +882,21 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		F37E466819039B6D005AFD96 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */,
+				F37E466A19039B8E005AFD96 /* DiffuseSpecularMaterial.h */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
 		F3EFA82419032EAF001FE6B6 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				F3EFA82519032EAF001FE6B6 /* vshader21.glsl */,
+				F37E466619039617005AFD96 /* fshader21.glsl */,
+				F39E7AA619035E73006932C0 /* test.glsl */,
+				F3EFA82519032EAF001FE6B6 /* vshader.glsl */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -958,7 +982,7 @@
 				4BE660E51901AED8005093F8 /* quaternion.inl in Resources */,
 				4BE660981901AED8005093F8 /* intrinsic_common.inl in Resources */,
 				4BE660931901AED8005093F8 /* func_noise.inl in Resources */,
-				F3EFA82619032EAF001FE6B6 /* vshader21.glsl in Resources */,
+				F3EFA82619032EAF001FE6B6 /* vshader.glsl in Resources */,
 				4BE660E41901AED8005093F8 /* projection.inl in Resources */,
 				4BE660D81901AED8005093F8 /* matrix_query.inl in Resources */,
 				4BE660E01901AED8005093F8 /* optimum_pow.inl in Resources */,
@@ -994,6 +1018,7 @@
 				4BE660A11901AED8005093F8 /* type_half.inl in Resources */,
 				4BE660D01901AED8005093F8 /* integer.inl in Resources */,
 				4BE660C11901AED8005093F8 /* color_space.inl in Resources */,
+				F37E466719039617005AFD96 /* fshader21.glsl in Resources */,
 				4BE660D21901AED8005093F8 /* io.inl in Resources */,
 				4BE660E31901AED8005093F8 /* polar_coordinates.inl in Resources */,
 				4BE660C51901AED8005093F8 /* dual_quaternion.inl in Resources */,
@@ -1042,6 +1067,7 @@
 				4BE660DE1901AED8005093F8 /* normalize_dot.inl in Resources */,
 				4BE6608E1901AED8005093F8 /* func_common.inl in Resources */,
 				4BE660D51901AED8005093F8 /* matrix_interpolation.inl in Resources */,
+				F39E7AA719035E73006932C0 /* test.glsl in Resources */,
 				4BE660961901AED8005093F8 /* func_vector_relational.inl in Resources */,
 				4BE660B01901AED8005093F8 /* type_vec4.inl in Resources */,
 				4BE6608F1901AED8005093F8 /* func_exponential.inl in Resources */,
@@ -1078,11 +1104,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
 				F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */,
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
+				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 			);
@@ -1143,6 +1171,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1158,9 +1187,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1183,6 +1212,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1191,8 +1221,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

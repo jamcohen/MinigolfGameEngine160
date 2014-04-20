@@ -32,7 +32,7 @@ void Drawing::update(){
 
 bool Drawing::initOpenGL(){
     //Initialize Projection Matrix
-    glMatrixMode( GL_PROJECTION );
+    /*glMatrixMode( GL_PROJECTION );
     glLoadIdentity();
     
     //Initialize Modelview Matrix
@@ -43,7 +43,10 @@ bool Drawing::initOpenGL(){
     glClearColor( 0.f, 0.f, 0.f, 1.f );
     
     //Check for error
-    GLenum error = glGetError();
+    GLenum error = glGetError();*/
+    
+    ShaderHelper::compileShaders();
+    std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     
     initModels();
     /*if( error != GL_NO_ERROR )

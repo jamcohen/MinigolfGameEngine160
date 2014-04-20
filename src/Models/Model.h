@@ -18,10 +18,10 @@ using namespace std;
 
 class Model{
     public:
-        vector<glm::vec3> positions;
+        vector<glm::vec3> vertices;
         vector<glm::vec3> normals;
         vector<glm::vec3> colors;
-        GenericMaterial material;
+        GenericMaterial *material;
         GLuint shaderProgram;
         Model();
         void initializeBuffers();

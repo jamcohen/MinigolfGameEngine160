@@ -12,6 +12,8 @@
 #include <iostream>
 #include "GameObject.h"
 #include "MGOpenGL.h"
+#include "ShaderHelper.h"
+#include <vector>
 
 class Drawing
 {
@@ -21,7 +23,7 @@ public:
     bool initOpenGL();
     void addToDrawingList(GameObject *);
 private:
-    vector<GameObject *> objects;
+    vector<GameObject *> objects; //temporary
     void initModels();
 };
 
