@@ -15,7 +15,11 @@
 
 class Tee : GameObject
 {
-    Tee(glm::vec3);
+public:
+    Tee(int,glm::vec3);
+    
+private:
+    int _index;
 };
 
 #endif /* defined(__MiniGolfXCode__Tee__) */

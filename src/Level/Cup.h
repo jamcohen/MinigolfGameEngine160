@@ -15,7 +15,11 @@
 
 class Cup : GameObject
 {
-    Cup(glm::vec3);
+public:
+    Cup(int,glm::vec3);
+    
+private:
+    int _index;
 };
 
 #endif /* defined(__MiniGolfXCode__Cup__) */

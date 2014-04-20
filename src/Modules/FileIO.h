@@ -16,6 +16,8 @@
 #include "SceneManager.h"
 #include "glm.hpp"
 #include "Tile.h"
+#include "Tee.h"
+#include "Cup.h"
 
 class FileIO
 {
@@ -26,8 +28,9 @@ public:
     bool is_number(const std::string&);
     bool checkForCarriageReturn(std::string*);
     bool parseTile(std::string*, bool&);
-    bool parseTee(std::string*, bool&);
-    bool parseCup(std::string*);
+    bool parseTeeOrCup(std::string*, bool&, bool);
+    glm::vec3 getTilePosition(std::vector<glm::vec3>);
+    std::vector<int> getTriangles(std::vector<glm::vec3>);
     
 private:
     std::ifstream _fin;

@@ -8,5 +8,5 @@
 
 #include "Cup.h"
 
-Cup::Cup(glm::vec3 pos) : GameObject(pos)
+Cup::Cup(int index, glm::vec3 pos) : _index(index), GameObject(pos)
 {}
