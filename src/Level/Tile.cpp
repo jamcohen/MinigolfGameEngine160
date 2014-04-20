@@ -10,5 +10,5 @@
 
 Tile::Tile(const int index, const glm::vec3 origin, const std::vector<glm::vec3> verticies,const std::vector<int> neighbors) : GameObject(origin), _index(index), _neighbors(neighbors)
 {
-    model->verticies = verticies;
+    model->vertices = verticies;
 }

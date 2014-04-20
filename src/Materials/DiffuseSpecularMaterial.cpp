@@ -10,7 +10,7 @@
 
 DiffuseSpecularMaterial::DiffuseSpecularMaterial(float shininess) : GenericMaterial() ,shininess(shininess)
 {
-    shaderProgram(ShaderHelper::shaders[0]);
+    shaderProgram = ShaderHelper::shaders[0];
 }
 
 bool DiffuseSpecularMaterial::initializeUniforms(GLuint vertexArrayObject)
@@ -22,11 +22,11 @@ bool DiffuseSpecularMaterial::initializeUniforms(GLuint vertexArrayObject)
     glm::vec4 specular_product( 1.0, 1.0, 1.0, 1.0 );
     
     glUniform4fv( glGetUniformLocation(shaderProgram, "AmbientProduct"),
-                 1, ambient_product );
+                 1, glm::value_ptr(ambient_product) );
     glUniform4fv( glGetUniformLocation(shaderProgram, "DiffuseProduct"),
-                 1, diffuse_product );
+                 1, glm::value_ptr(diffuse_product) );
     glUniform4fv( glGetUniformLocation(shaderProgram, "SpecularProduct"),
-                 1, specular_product );
+                 1, glm::value_ptr(specular_product) );
     glUniform1f( glGetUniformLocation(shaderProgram, "Shininess"),
                 shininess );
     

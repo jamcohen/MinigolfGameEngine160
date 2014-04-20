@@ -17,15 +17,6 @@ void Drawing::update(){
     //Clear color buffer
     glClear( GL_COLOR_BUFFER_BIT );
     
-    //Render quad
-        glBegin( GL_QUADS );
-        glVertex3f( -0.5f, -0.5f, 0);
-        glVertex3f(  0.5f, -0.5f, 0);
-        glVertex3f(  0.5f,  0.5f, 0);
-        glVertex3f( -0.5f,  0.5f, 0);
-        glEnd();
-    
-    
     //Update screen
     //SDL_GL_SwapBuffers();
 }
@@ -56,7 +47,7 @@ bool Drawing::initOpenGL(){
 
 void Drawing::initModels(){
     for(size_t i=0; i<objects.size();++i){
-        objects[i]->model->initializeBuffers();
+        objects[i]->getModel()->initializeBuffers();
     }
 }
 

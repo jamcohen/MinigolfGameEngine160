@@ -10,7 +10,9 @@
 #define MiniGolfXCode_MGOpenGL_h
 
 #include <SDL2/SDL.h>
-#include "SDL2/SDL_opengl.h"
+#include <OpenGL/gl3.h>
+//#include "SDL2/SDL_opengl.h"
 #include "glm.hpp"
+#include "type_ptr.hpp"
 
 #endif

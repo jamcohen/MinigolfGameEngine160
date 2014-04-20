@@ -22,9 +22,14 @@ public:
     GenericMaterial *material;
     GLuint shaderProgram;
     void initializeBuffers();
-    std::vector<glm::vec3> verticies;
+    std::vector<glm::vec3> vertices;
     std::vector<glm::vec3> normals;
     std::vector<glm::vec3> colors;
+    std::vector<unsigned int> indices;
+private:
+    GLuint buffer;
+	GLuint indexBuffer;
+	GLuint vao;
 };
 
 #endif /* defined(__MiniGolfXCode__Model__) */
