@@ -8,5 +8,5 @@
 
 #include "Tee.h"
 
-Tee::Tee(int index, glm::vec3 pos) : _index(index),  GameObject(pos)
+Tee::Tee(int index, glm::vec3 pos, Model *model) : _index(index),  GameObject(pos,model)
 {}

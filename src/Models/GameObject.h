@@ -19,7 +19,7 @@
 class GameObject
 {
 public:
-    GameObject(glm::vec3);
+    GameObject(glm::vec3, Model*);
     ~GameObject();
     void setX(float);
     void setY(float);
@@ -28,7 +28,7 @@ public:
     Model* getModel();
     
 protected:
-    Model* model;
+    Model* _model;
     glm::vec3 _position;
     
 };

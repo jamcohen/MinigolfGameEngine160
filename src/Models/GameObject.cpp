@@ -8,15 +8,14 @@
 
 #include "GameObject.h"
 
-GameObject::GameObject(glm::vec3 pos) : _position(pos)
+GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model)
 {
-    model = new Model();
     SceneManager::instance().addGameObject(this);
 }
 
 GameObject::~GameObject()
 {
-    delete model;
+    delete _model;
 }
 
 void GameObject::setX(float x)
@@ -40,5 +39,5 @@ void GameObject::setPosition(glm::vec3 p)
 }
 
 Model* GameObject::getModel(){
-    return model;
+    return _model;
 }

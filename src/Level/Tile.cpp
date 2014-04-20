@@ -8,7 +8,7 @@
 
 #include "Tile.h"
 
-Tile::Tile(const int index, const glm::vec3 origin, const std::vector<glm::vec3> verticies,const std::vector<int> neighbors) : GameObject(origin), _index(index), _neighbors(neighbors)
+Tile::Tile(const int index, const glm::vec3 origin, Model *model,const std::vector<int> neighbors) : GameObject(origin, model), _index(index), _neighbors(neighbors)
 {
-    model->vertices = verticies;
+    
 }
