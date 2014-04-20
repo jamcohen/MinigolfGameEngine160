@@ -12,6 +12,8 @@
 #include <iostream>
 #include "GameObject.h"
 #include "MGOpenGL.h"
+#include "ShaderHelper.h"
+#include <vector>
 
 class Drawing
 {

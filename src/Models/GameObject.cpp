@@ -38,3 +38,7 @@ void GameObject::setPosition(glm::vec3 p)
 {
     _position = p;
 }
+
+Model* GameObject::getModel(){
+    return model;
+}
