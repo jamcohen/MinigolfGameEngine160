@@ -95,6 +95,7 @@ int main(int argc, char * arg[])
     
     SDL_GL_DeleteContext(gl);
     
+    SceneManager::instance().closeScene();
     //Clean up
     SDL_DestroyWindow(window);
     SDL_Quit();

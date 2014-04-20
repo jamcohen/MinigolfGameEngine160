@@ -13,8 +13,11 @@ SceneManager::SceneManager()
 
 void SceneManager::closeScene()
 {
+    int count = 0;
     for ( GameObject *g : _objects )
     {
+        std::cout << count << std::endl;
+        count++;
         delete g;
     }
 }

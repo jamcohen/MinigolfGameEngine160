@@ -24,6 +24,10 @@ public:
     ~FileIO();
     bool parseTileMap(const std::string);
     bool is_number(const std::string&);
+    bool checkForCarriageReturn(std::string*);
+    bool parseTile(std::string*, bool&);
+    bool parseTee(std::string*, bool&);
+    bool parseCup(std::string*);
     
 private:
     std::ifstream _fin;

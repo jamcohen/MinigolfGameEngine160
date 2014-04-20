@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2FC7D81903A59E00440155 /* Tee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7D61903A59E00440155 /* Tee.cpp */; };
+		4B2FC7DB1903A5A600440155 /* Cup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7D91903A5A600440155 /* Cup.cpp */; };
 		4B8AECBC190349D300E5EF3C /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AECBA190349D300E5EF3C /* Tile.cpp */; };
 		4B8AECBF19035BCD00E5EF3C /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AECBD19035BCD00E5EF3C /* SceneManager.cpp */; };
 		4BE65DE01901AE01005093F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE65DDE1901AE01005093F8 /* InfoPlist.strings */; };
@@ -142,6 +144,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B2FC7D61903A59E00440155 /* Tee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tee.cpp; sourceTree = "<group>"; };
+		4B2FC7D71903A59E00440155 /* Tee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tee.h; sourceTree = "<group>"; };
+		4B2FC7D91903A5A600440155 /* Cup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cup.cpp; sourceTree = "<group>"; };
+		4B2FC7DA1903A5A600440155 /* Cup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cup.h; sourceTree = "<group>"; };
 		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		4B8AECBA190349D300E5EF3C /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
 		4B8AECBB190349D300E5EF3C /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
@@ -464,6 +470,10 @@
 			children = (
 				4B8AECBA190349D300E5EF3C /* Tile.cpp */,
 				4B8AECBB190349D300E5EF3C /* Tile.h */,
+				4B2FC7D61903A59E00440155 /* Tee.cpp */,
+				4B2FC7D71903A59E00440155 /* Tee.h */,
+				4B2FC7D91903A5A600440155 /* Cup.cpp */,
+				4B2FC7DA1903A5A600440155 /* Cup.h */,
 			);
 			path = Level;
 			sourceTree = "<group>";
@@ -1102,9 +1112,11 @@
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
 				4B8AECBF19035BCD00E5EF3C /* SceneManager.cpp in Sources */,
+				4B2FC7D81903A59E00440155 /* Tee.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 				4B8AECBC190349D300E5EF3C /* Tile.cpp in Sources */,
+				4B2FC7DB1903A5A600440155 /* Cup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
