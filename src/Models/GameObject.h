@@ -25,8 +25,8 @@ public:
     void setY(float);
     void setZ(float);
     void setPosition(glm::vec3);
+    void draw();
     Model* getModel();
-    
 protected:
     Model* model;
     glm::vec3 _position;

@@ -15,6 +15,15 @@ Model::Model()
 Model::~Model()
 { }
 
+void Model::draw(glm::vec3 pos)
+{
+    glBindVertexArray( vao );
+    glUniformMatrix4fv( glGetUniformLocation(material->shaderProgram, "model"),
+                       1, GL_TRUE, NULL);
+    glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, NULL);
+    glBindVertexArray(0);
+}
+
 void Model::initializeBuffers()
 {
 	// Create a vertex array object
@@ -48,5 +57,7 @@ void Model::initializeBuffers()
     glEnableVertexAttribArray( vNormal );
     glVertexAttribPointer( vNormal, 3, GL_FLOAT, GL_FALSE, 0,
                           BUFFER_OFFSET(vertices.size()*sizeof(glm::vec3)) );
+    
+    material->initializeUniforms(vao);
 }
 

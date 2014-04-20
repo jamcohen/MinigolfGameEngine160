@@ -15,6 +15,7 @@ Drawing::Drawing(){
 
 void Drawing::update(){
     //Clear color buffer
+    glClearColor( 0.0, 1.0, 1.0, 1.0 );
     glClear( GL_COLOR_BUFFER_BIT );
     
     //Update screen
@@ -22,19 +23,6 @@ void Drawing::update(){
 }
 
 bool Drawing::initOpenGL(){
-    //Initialize Projection Matrix
-    /*glMatrixMode( GL_PROJECTION );
-    glLoadIdentity();
-    
-    //Initialize Modelview Matrix
-    glMatrixMode( GL_MODELVIEW );
-    glLoadIdentity();
-    
-    //Initialize clear color
-    glClearColor( 0.f, 0.f, 0.f, 1.f );
-    
-    //Check for error
-    GLenum error = glGetError();*/
     
     ShaderHelper::compileShaders();
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
