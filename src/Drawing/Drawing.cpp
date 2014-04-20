@@ -45,9 +45,7 @@ bool Drawing::initOpenGL(){
     //Check for error
     GLenum error = glGetError();
     
-    for(size_t i=0;i<=objects.size();++i){
-        objects[i]->model->initializeBuffers();
-    }
+    initModels();
     /*if( error != GL_NO_ERROR )
     {
         printf( "Error initializing OpenGL! %s\n", gluErrorString( error ) );
@@ -55,6 +53,12 @@ bool Drawing::initOpenGL(){
     }*/
     
     return true;
+}
+
+void Drawing::initModels(){
+    for(size_t i=0; i<objects.size();++i){
+        objects[i]->model->initializeBuffers();
+    }
 }
 
 
