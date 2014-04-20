@@ -148,7 +148,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     glm::vec3 position = getTilePosition(verticies);
     std::cout << position.x << " " << position.y << " " << position.z << std::endl;
     
-    new Tile(index,position,verticies,neighbors);
+    //new Tile(index,position,verticies,neighbors);
     return true;
 }
 
@@ -198,11 +198,11 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     
     if(isTee)
     {
-        new Tee(index,position);
+        //new Tee(index,position);
     }
     else
     {
-       new Cup(index,position);
+       //new Cup(index,position);
     }
     return true;
 }
@@ -221,12 +221,23 @@ glm::vec3 FileIO::getTilePosition(std::vector<glm::vec3> vertices)
     return position;
 }
 
+/*
+ * Gets implicit triangles for the given vertices
+ */
 std::vector<int> FileIO::getTriangles(std::vector<glm::vec3> vertices)
 {
     std::vector<int> triangles;
+    if(vertices.size() < 3)
+    {
+        return triangles;
+    }
+    
+    int lastVertex = (int)(vertices.size())-1;
     for(int i = 0; i < vertices.size() - 2; i++)
     {
-        
+        triangles.push_back(i);
+        triangles.push_back(i+1);
+        triangles.push_back(lastVertex);
     }
     
     return triangles;

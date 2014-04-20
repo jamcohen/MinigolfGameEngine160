@@ -17,7 +17,7 @@
 class Tile : GameObject
 {
 public:
-    Tile(int,glm::vec3,std::vector<glm::vec3>,std::vector<int>);
+    Tile(int,glm::vec3,Model *,std::vector<int>);
     ~Tile();
     int getIndex() { return _index; }
     void setIndex(int index) { _index = index; }

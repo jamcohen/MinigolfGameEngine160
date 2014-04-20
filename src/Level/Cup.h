@@ -12,11 +12,12 @@
 #include <iostream>
 #include "glm.hpp"
 #include "GameObject.h"
+#include "Model.h"
 
 class Cup : GameObject
 {
 public:
-    Cup(int,glm::vec3);
+    Cup(int,glm::vec3,Model*);
     
 private:
     int _index;

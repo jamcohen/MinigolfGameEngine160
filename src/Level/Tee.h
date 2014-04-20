@@ -12,11 +12,12 @@
 #include <iostream>
 #include "glm.hpp"
 #include "GameObject.h"
+#include "Model.h"
 
 class Tee : GameObject
 {
 public:
-    Tee(int,glm::vec3);
+    Tee(int,glm::vec3,Model*);
     
 private:
     int _index;
