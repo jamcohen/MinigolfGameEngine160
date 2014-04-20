@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include <OpenGL/gl3.h>
 #include "Drawing.h"
+#include "FileIO.h"
 #include <ctime>
 
 /*
@@ -9,6 +10,18 @@
  */
 int main(int argc, char * arg[])
 {
+    //Print out arguements
+    std::cout << "TEST: " << argc << std::endl;
+    for(auto i = 0; i < argc; i++)
+    {
+        std::cout << i << " : " << arg[i] << std::endl;
+    }
+    
+    FileIO fileIO;
+    std::string s(arg[1]);
+    fileIO.parseTileMap(s);
+    
+    
     // init SDL
     if(SDL_Init(SDL_INIT_EVERYTHING) != 0)
     {

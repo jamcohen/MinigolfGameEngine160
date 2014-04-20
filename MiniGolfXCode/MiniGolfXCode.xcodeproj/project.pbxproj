@@ -140,6 +140,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		4BE65DD21901AE01005093F8 /* MiniGolfXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE65DD51901AE01005093F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4BE65DD81901AE01005093F8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -418,7 +419,6 @@
 		F3EFA82519032EAF001FE6B6 /* vshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vshader21.glsl; sourceTree = "<group>"; };
 		F3EFA827190330D3001FE6B6 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		F3EFA828190330D3001FE6B6 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
-		F3EFA82A19033529001FE6B6 /* MGOpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericMaterial.cpp; sourceTree = "<group>"; };
 		F3EFA82C190339F0001FE6B6 /* GenericMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericMaterial.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -445,6 +445,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B8AECB71903451500E5EF3C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4B8AECB81903451500E5EF3C /* MGOpenGL.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		4BE65DC91901AE01005093F8 = {
 			isa = PBXGroup;
 			children = (
@@ -525,13 +533,13 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4B8AECB71903451500E5EF3C /* Headers */,
 				F3EFA82419032EAF001FE6B6 /* Shaders */,
 				4BE660F91901B991005093F8 /* Modules */,
 				4BE65F841901AED7005093F8 /* Drawing */,
 				4BE65F871901AED7005093F8 /* glm */,
 				4BE660881901AED8005093F8 /* main.cpp */,
 				4BE660891901AED8005093F8 /* Models */,
-				F3EFA82A19033529001FE6B6 /* MGOpenGL.h */,
 			);
 			name = src;
 			path = ../src;
