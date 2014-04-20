@@ -7,6 +7,8 @@
 //
 
 #include "FileIO.h"
+#include <cstdlib>
+#include <time.h>
 
 FileIO::FileIO()
 {
@@ -83,7 +85,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
 {
     int index;
     int numOfVerticies;
-    std::vector<glm::vec3> verticies;
+    std::vector<glm::vec3> vertices;
     std::vector<int> neighbors;
     
     //Get the index
@@ -126,7 +128,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
         v.z = std::stof(s->c_str());
         std::cout << v.z << std::endl;
         
-        verticies.push_back(v);
+        vertices.push_back(v);
     }
     
     //Get neighbors
@@ -144,11 +146,15 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     //Check if carriage return is bundled with last grab
     encounteredCarriageReturn = checkForCarriageReturn(s);
     
-    //TO-DO: Need to get origin
-    glm::vec3 position = getTilePosition(verticies);
+    glm::vec3 position = getTilePosition(vertices);
     std::cout << position.x << " " << position.y << " " << position.z << std::endl;
     
-    //new Tile(index,position,verticies,neighbors);
+    std::vector<unsigned int> indices = getTriangles(vertices);
+    std::vector<glm::vec3> normals = getNormals(indices,vertices);
+    std::vector<glm::vec3> localVertices = getLocalVertices(position,vertices);
+    std::vector<glm::vec3> colors = getColors(vertices);
+    Model *model = new Model(localVertices,normals,colors,indices);
+    new Tile(index,position,model,neighbors);
     return true;
 }
 
@@ -224,16 +230,16 @@ glm::vec3 FileIO::getTilePosition(std::vector<glm::vec3> vertices)
 /*
  * Gets implicit triangles for the given vertices
  */
-std::vector<int> FileIO::getTriangles(std::vector<glm::vec3> vertices)
+std::vector<unsigned int> FileIO::getTriangles(std::vector<glm::vec3> vertices)
 {
-    std::vector<int> triangles;
+    std::vector<unsigned int> triangles;
     if(vertices.size() < 3)
     {
         return triangles;
     }
     
     int lastVertex = (int)(vertices.size())-1;
-    for(int i = 0; i < vertices.size() - 2; i++)
+    for(unsigned int i = 0; i < vertices.size() - 2; i++)
     {
         triangles.push_back(i);
         triangles.push_back(i+1);
@@ -241,6 +247,64 @@ std::vector<int> FileIO::getTriangles(std::vector<glm::vec3> vertices)
     }
     
     return triangles;
+}
+
+/*
+ * Gets the normals for the tile
+ */
+std::vector<glm::vec3> FileIO::getNormals(std::vector<unsigned int> triangles, std::vector<glm::vec3> vertices)
+{
+    std::vector<glm::vec3> normals;
+    for(auto i = 0; i < vertices.size(); i++)
+    {
+        glm::vec3 v;
+        normals.push_back(v);
+    }
+    
+    int i = 0;
+    while(i < triangles.size())
+    {
+        normals[triangles[i]] += glm::cross(vertices[triangles[i+1]] - vertices[triangles[i]],
+                                       vertices[triangles[i+2]] - vertices[triangles[i]]);
+        normals[triangles[i+1]] += glm::cross(vertices[triangles[i+2]] - vertices[triangles[i+1]],
+                                     vertices[triangles[i]] - vertices[triangles[i+1]]);
+        normals[triangles[i+2]] += glm::cross(vertices[triangles[i]] - vertices[triangles[i+2]],
+                                             vertices[triangles[i+1]] - vertices[triangles[i+2]]);
+        i += 3;
+    }
+    
+    return normals;
+}
+
+/*
+ * Gets the local vertices according to the specified position
+ */
+std::vector<glm::vec3> FileIO::getLocalVertices(glm::vec3 position, std::vector<glm::vec3> vertices)
+{
+    std::vector<glm::vec3> localVertices;
+    for(glm::vec3 v : vertices)
+    {
+        localVertices.push_back(v - position);
+    }
+    return localVertices;
+}
+
+/*
+ * Gets the colors for the vertex
+ */
+std::vector<glm::vec3> FileIO::getColors(std::vector<glm::vec3> vertices)
+{
+    srand ((unsigned int)(time(NULL)));
+    std::vector<glm::vec3> colors;
+    for(glm::vec3 v : vertices)
+    {
+        glm::vec3 randomColor;
+        randomColor.x = rand();
+        randomColor.y = rand();
+        randomColor.z = rand();
+    }
+    
+    return colors;
 }
 
 /*

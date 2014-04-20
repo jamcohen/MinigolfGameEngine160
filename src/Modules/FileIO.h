@@ -17,6 +17,7 @@
 #include "glm.hpp"
 #include "Tile.h"
 #include "Tee.h"
+#include "Model.h"
 #include "Cup.h"
 
 class FileIO
@@ -30,7 +31,10 @@ public:
     bool parseTile(std::string*, bool&);
     bool parseTeeOrCup(std::string*, bool&, bool);
     glm::vec3 getTilePosition(std::vector<glm::vec3>);
-    std::vector<int> getTriangles(std::vector<glm::vec3>);
+    std::vector<unsigned int> getTriangles(std::vector<glm::vec3>);
+    std::vector<glm::vec3> getNormals(std::vector<unsigned int>,std::vector<glm::vec3>);
+    std::vector<glm::vec3> getLocalVertices(glm::vec3,std::vector<glm::vec3>);
+    std::vector<glm::vec3> getColors(std::vector<glm::vec3>);
     
 private:
     std::ifstream _fin;
