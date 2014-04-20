@@ -9,7 +9,9 @@
 #include "Model.h"
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
-Model::Model()
+Model::Model(std::vector<glm::vec3> vertices, std::vector<glm::vec3> normals,
+             std::vector<glm::vec3> colors, std::vector<unsigned int> indices) :
+_vertices(vertices), _normals(normals),_colors(colors),_indices(indices)
 { }
 
 Model::~Model()
@@ -20,7 +22,7 @@ void Model::draw(glm::vec3 pos)
     glBindVertexArray( _vao );
     glUniformMatrix4fv( glGetUniformLocation(material->shaderProgram, "model"),
                        1, GL_TRUE, NULL);
-    glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, NULL);
+    glDrawElements(GL_TRIANGLES, (int)(_indices.size()), GL_UNSIGNED_INT, NULL);
     glBindVertexArray(0);
 }
 
@@ -30,20 +32,19 @@ void Model::initializeBuffers()
     glGenVertexArrays( 1, &_vao );
     glBindVertexArray( _vao );
     
-    // Create and initialize a buffer object
     glGenBuffers( 1, &_buffer );
     glBindBuffer( GL_ARRAY_BUFFER, _buffer );
-    glBufferData( GL_ARRAY_BUFFER, vertices.size()*sizeof(glm::vec3) + normals.size()*sizeof(glm::vec3),
+    glBufferData( GL_ARRAY_BUFFER, _vertices.size()*sizeof(glm::vec3) + _normals.size()*sizeof(glm::vec3),
                  NULL, GL_STATIC_DRAW );
-    glBufferSubData( GL_ARRAY_BUFFER, 0, vertices.size()*sizeof(glm::vec3), &vertices.front() );
-    glBufferSubData( GL_ARRAY_BUFFER, vertices.size()*sizeof(glm::vec3),
-                    normals.size()*sizeof(glm::vec3), &normals.front() );
+    glBufferSubData( GL_ARRAY_BUFFER, 0, _vertices.size()*sizeof(glm::vec3), &_vertices.front() );
+    glBufferSubData( GL_ARRAY_BUFFER, _vertices.size()*sizeof(glm::vec3),
+                    _normals.size()*sizeof(glm::vec3), &_normals.front() );
     
 	glGenBuffers(1, &_indexBuffer);
     
 	// bind buffer for positions and copy data into buffer
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _indexBuffer);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size()*sizeof(unsigned int), &indices.front(), GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, _indices.size()*sizeof(unsigned int), &_indices.front(), GL_STATIC_DRAW);
     
     glUseProgram( material->shaderProgram );
     
@@ -56,7 +57,7 @@ void Model::initializeBuffers()
     GLuint vNormal = glGetAttribLocation( material->shaderProgram, "normal" );
     glEnableVertexAttribArray( vNormal );
     glVertexAttribPointer( vNormal, 3, GL_FLOAT, GL_FALSE, 0,
-                          BUFFER_OFFSET(vertices.size()*sizeof(glm::vec3)) );
+                          BUFFER_OFFSET(_vertices.size()*sizeof(glm::vec3)) );
     
     material->initializeUniforms(_vao);
 }
