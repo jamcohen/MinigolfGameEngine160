@@ -17,20 +17,25 @@
 class Model
 {
 public:
-    Model();
+    Model(std::vector<glm::vec3>,std::vector<glm::vec3>,std::vector<glm::vec3>,std::vector<unsigned int>);
     ~Model();
     GenericMaterial *material;
     GLuint shaderProgram;
     void initializeBuffers();
     void draw(glm::vec3);
-    std::vector<glm::vec3> vertices;
-    std::vector<glm::vec3> normals;
-    std::vector<glm::vec3> colors;
-    std::vector<unsigned int> indices;
+    std::vector<glm::vec3> getVerticies() { return _vertices; }
+    std::vector<glm::vec3> getColors() { return _colors; }
+    std::vector<glm::vec3> getNormals() { return _normals; }
+    std::vector<unsigned int> getIndices() { return _indices; }
+    
 private:
     GLuint buffer;
 	GLuint indexBuffer;
 	GLuint vao;
+    std::vector<glm::vec3> _vertices;
+    std::vector<glm::vec3> _normals;
+    std::vector<glm::vec3> _colors;
+    std::vector<unsigned int> _indices;
 };
 
 #endif /* defined(__MiniGolfXCode__Model__) */
