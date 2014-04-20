@@ -7,4 +7,34 @@
 //
 
 #include "GameObject.h"
-#include "glm.hpp"
+
+GameObject::GameObject(glm::vec3 pos) : _position(pos)
+{
+    model = new Model();
+    SceneManager::instance().addGameObject(this);
+}
+
+GameObject::~GameObject()
+{
+    delete model;
+}
+
+void GameObject::setX(float x)
+{
+    _position.x = x;
+}
+
+void GameObject::setY(float y)
+{
+    _position.y = y;
+}
+
+void GameObject::setZ(float z)
+{
+    _position.z = z;
+}
+
+void GameObject::setPosition(glm::vec3 p)
+{
+    _position = p;
+}

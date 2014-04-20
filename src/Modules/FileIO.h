@@ -12,13 +12,22 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
+#include "SceneManager.h"
+#include "glm.hpp"
+#include "Tile.h"
 
 class FileIO
 {
 public:
     FileIO();
     ~FileIO();
-    bool parseTileMap(std::string);
+    bool parseTileMap(const std::string);
+    bool is_number(const std::string&);
+    bool checkForCarriageReturn(std::string*);
+    bool parseTile(std::string*, bool&);
+    bool parseTee(std::string*, bool&);
+    bool parseCup(std::string*);
     
 private:
     std::ifstream _fin;

@@ -14,19 +14,21 @@
 #include "vec3.hpp"
 #include "glm.hpp"
 #include "Model.h"
-
-using namespace glm;
+#include "SceneManager.h"
 
 class GameObject
 {
 public:
-    GameObject(vec3 pos);
+    GameObject(glm::vec3);
+    ~GameObject();
     void setX(float);
     void setY(float);
     void setZ(float);
+    void setPosition(glm::vec3);
+    
+protected:
     Model* model;
-    //void setPosition(detail::tvec3<<#typename T#>, <#glm::precision P#>>
-    //void setPosition(glm::det);
+    glm::vec3 _position;
     
 };
 

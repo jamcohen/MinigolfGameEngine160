@@ -23,7 +23,7 @@ public:
     bool initOpenGL();
     void addToDrawingList(GameObject *);
 private:
-    vector<GameObject *> objects; //temporary
+    std::vector<GameObject *> objects;
     void initModels();
 };
 

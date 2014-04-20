@@ -49,11 +49,7 @@ bool Drawing::initOpenGL(){
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     
     initModels();
-    /*if( error != GL_NO_ERROR )
-    {
-        printf( "Error initializing OpenGL! %s\n", gluErrorString( error ) );
-        return false;
-    }*/
+
     
     return true;
 }
