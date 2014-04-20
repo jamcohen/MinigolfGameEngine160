@@ -15,7 +15,7 @@
 class GenericMaterial{
     public:
         GLuint shaderProgram;
-        virtual bool initializeUniforms(); //initializes shader variables
+        //virtual bool initializeUniforms(); //initializes shader variables
 };
 
 #endif /* defined(__MiniGolfXCode__Material__) */

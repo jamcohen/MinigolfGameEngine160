@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B8AECBC190349D300E5EF3C /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AECBA190349D300E5EF3C /* Tile.cpp */; };
+		4B8AECBF19035BCD00E5EF3C /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8AECBD19035BCD00E5EF3C /* SceneManager.cpp */; };
 		4BE65DE01901AE01005093F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE65DDE1901AE01005093F8 /* InfoPlist.strings */; };
 		4BE65DF51901AE01005093F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DF41901AE01005093F8 /* XCTest.framework */; };
 		4BE65DF61901AE01005093F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DD51901AE01005093F8 /* Cocoa.framework */; };
@@ -141,6 +143,10 @@
 
 /* Begin PBXFileReference section */
 		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
+		4B8AECBA190349D300E5EF3C /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		4B8AECBB190349D300E5EF3C /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		4B8AECBD19035BCD00E5EF3C /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
+		4B8AECBE19035BCD00E5EF3C /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
 		4BE65DD21901AE01005093F8 /* MiniGolfXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE65DD51901AE01005093F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4BE65DD81901AE01005093F8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -453,6 +459,15 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		4B8AECB9190349C500E5EF3C /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				4B8AECBA190349D300E5EF3C /* Tile.cpp */,
+				4B8AECBB190349D300E5EF3C /* Tile.h */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
 		4BE65DC91901AE01005093F8 = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +548,7 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4B8AECB9190349C500E5EF3C /* Level */,
 				4B8AECB71903451500E5EF3C /* Headers */,
 				F3EFA82419032EAF001FE6B6 /* Shaders */,
 				4BE660F91901B991005093F8 /* Modules */,
@@ -865,6 +881,8 @@
 				4BE660FB1901B99F005093F8 /* InputManager.h */,
 				4BE660FD1901B9D8005093F8 /* FileIO.cpp */,
 				4BE660FE1901B9D8005093F8 /* FileIO.h */,
+				4B8AECBD19035BCD00E5EF3C /* SceneManager.cpp */,
+				4B8AECBE19035BCD00E5EF3C /* SceneManager.h */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1083,8 +1101,10 @@
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
+				4B8AECBF19035BCD00E5EF3C /* SceneManager.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
+				4B8AECBC190349D300E5EF3C /* Tile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

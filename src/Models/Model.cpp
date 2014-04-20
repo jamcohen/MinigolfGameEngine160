@@ -8,6 +8,12 @@
 
 #include "Model.h"
 
-void Model::initializeBuffers(){
-    ;
-}
+Model::Model()
+{ }
+
+Model::~Model()
+{ }
+
+void Model::initializeBuffers()
+{ }
+

@@ -21,7 +21,7 @@ public:
     bool initOpenGL();
     void addToDrawingList(GameObject *);
 private:
-    vector<GameObject *> objects;
+    std::vector<GameObject *> objects;
     void initModels();
 };
 

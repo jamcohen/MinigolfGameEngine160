@@ -43,11 +43,11 @@ bool Drawing::initOpenGL(){
     glClearColor( 0.f, 0.f, 0.f, 1.f );
     
     //Check for error
-    GLenum error = glGetError();
+    /*GLenum error = glGetError();
     
     for(size_t i=0;i<=objects.size();++i){
         objects[i]->model->initializeBuffers();
-    }
+    }*/
     /*if( error != GL_NO_ERROR )
     {
         printf( "Error initializing OpenGL! %s\n", gluErrorString( error ) );
