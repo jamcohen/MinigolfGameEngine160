@@ -28,9 +28,9 @@ public:
     std::vector<glm::vec3> colors;
     std::vector<unsigned int> indices;
 private:
-    GLuint buffer;
-	GLuint indexBuffer;
-	GLuint vao;
+    GLuint _buffer;
+	GLuint _indexBuffer;
+	GLuint _vao;
 };
 
 #endif /* defined(__MiniGolfXCode__Model__) */

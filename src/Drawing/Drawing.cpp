@@ -18,6 +18,11 @@ void Drawing::update(){
     glClearColor( 0.0, 1.0, 1.0, 1.0 );
     glClear( GL_COLOR_BUFFER_BIT );
     
+    std::vector<GameObject*> objs = SceneManager::instance().getObjects();
+    /*if(objs->getModel()){
+        
+    }*/
+    
     //Update screen
     //SDL_GL_SwapBuffers();
 }

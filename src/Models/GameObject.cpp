@@ -34,7 +34,7 @@ void GameObject::setZ(float z)
 }
 
 void GameObject::draw(){
-    model->draw(position);
+    _model->draw(_position);
 }
 
 void GameObject::setPosition(glm::vec3 p)

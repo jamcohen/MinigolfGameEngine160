@@ -22,6 +22,11 @@ void SceneManager::closeScene()
     }
 }
 
+ std::vector<GameObject *> SceneManager::getObjects()
+{
+    return _objects;
+}
+
 void SceneManager::addGameObject(GameObject *g)
 {
     _objects.push_back(g);

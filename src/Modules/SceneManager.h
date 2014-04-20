@@ -28,6 +28,7 @@ public:
     void operator=(SceneManager const&);
     void addGameObject(GameObject *);
     void closeScene();
+    std::vector<GameObject *> getObjects();
     
 private:
     std::vector<GameObject *> _objects;
