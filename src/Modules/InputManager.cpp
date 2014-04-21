@@ -37,19 +37,20 @@ bool InputManager::handleKey(SDL_Keycode key)
 
 void InputManager::moveForward()
 {
-    /*Camera *c = SceneManager::instance().getCurrentCamera();
+    Camera *c = SceneManager::instance().getCurrentCamera();
     glm::vec3 direction = c->getTarget() - c->getPosition();
     glm::normalize(direction);
-    c->setPosition(direction*SPEED);
-    c->setTarget(direction*SPEED);*/
+    direction *= SPEED;
+    c->setPosition(c->getPosition() + direction);
+    c->setTarget(c->getTarget() + direction);
 }
 
 void InputManager::moveBackward()
 {
-    /*Camera *c = SceneManager::instance().getCurrentCamera();
+    Camera *c = SceneManager::instance().getCurrentCamera();
     glm::vec3 direction = c->getTarget() - c->getPosition();
     glm::normalize(direction);
     direction *= SPEED * -1;
-    c->setPosition(direction);
-    c->setTarget(direction);*/
+    c->setPosition(c->getPosition() + direction);
+    c->setTarget(c->getTarget() + direction);
 }
