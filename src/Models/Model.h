@@ -13,6 +13,7 @@
 #include <vector>
 #include "MGOpenGL.h"
 #include "GenericMaterial.h"
+#include "matrix_transform.hpp"
 
 class Model
 {

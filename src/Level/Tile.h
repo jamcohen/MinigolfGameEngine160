@@ -13,6 +13,7 @@
 #include <vector>
 #include "GameObject.h"
 #include "glm.hpp"
+#include "DiffuseSpecularMaterial.h"
 
 class Tile : GameObject
 {

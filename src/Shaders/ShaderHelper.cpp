@@ -12,7 +12,7 @@ std::vector<GLuint> ShaderHelper::shaders;
 void ShaderHelper::compileShaders(){
     char buffer[1000];
     std::cout << "Current directory is: " << getcwd(buffer, 1000) << "\n";
-    const GLchar *vertexShaderCode = readShader("vshader.glsl");
+    const GLchar *vertexShaderCode = readShader("vShader.glsl");
     GLuint program = 0;
     if(vertexShaderCode != nullptr){
         program = glCreateProgram();

@@ -13,12 +13,12 @@
 #include "GenericMaterial.h"
 #include "ShaderHelper.h"
 
-class DiffuseSpecularMaterial : GenericMaterial
+class DiffuseSpecularMaterial : public GenericMaterial
 {
 public:
-    float shininess;
     DiffuseSpecularMaterial(float shininess);
     bool initializeUniforms(GLuint);
+    float shininess;
 };
 
 #endif /* defined(__MiniGolfXCode__DiffuseSpecularMaterial__) */

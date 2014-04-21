@@ -11,11 +11,13 @@
 DiffuseSpecularMaterial::DiffuseSpecularMaterial(float shininess) : GenericMaterial() ,shininess(shininess)
 {
     shaderProgram = ShaderHelper::shaders[0];
+    std::cout << "SHADER: " << shaderProgram << std::endl;
 }
 
 bool DiffuseSpecularMaterial::initializeUniforms(GLuint vertexArrayObject)
 {
     glBindVertexArray(vertexArrayObject);
+    glUseProgram(shaderProgram);
     
     glm::vec4 ambient_product( 0.3, 0.3, 0.3, 1.0 );
     glm::vec4 diffuse_product( 1.0, 1.0, 1.0, 1.0 );
