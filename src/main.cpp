@@ -5,6 +5,7 @@
 #include "FileIO.h"
 #include <ctime>
 #include "InputManager.h"
+#include "Camera.h"
 
 /*
  * Starts everything
@@ -29,6 +30,7 @@ int main(int argc, char * arg[])
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
+    new Camera();
     
     // create a window
     SDL_Window *window = SDL_CreateWindow(
@@ -60,6 +62,7 @@ int main(int argc, char * arg[])
     fileIO.parseTileMap(s);
     
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
+    
     
     
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS

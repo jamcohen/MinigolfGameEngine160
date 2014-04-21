@@ -21,6 +21,12 @@ void SceneManager::closeScene()
         count++;
         delete g;
     }
+    
+    std::cout << "Cleaning up all cameras...\n";
+    for ( Camera *c : _cameraList )
+    {
+        delete c;
+    }
 }
 
 void SceneManager::addCamera(Camera *c)

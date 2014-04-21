@@ -8,7 +8,7 @@
 
 #include "Camera.h"
 
-Camera::Camera() : _position(0,0,0), _target(1,0,0), _up(0,1,0)
+Camera::Camera() : _position(0, 0.5, -1), _target(0,0,0), _up(0,1,0)
 {
     SceneManager::instance().addCamera(this);
 }
