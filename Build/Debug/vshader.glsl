@@ -25,7 +25,7 @@ void main()
     vec3 H = normalize( L + E );
 
     // Transform vertex normal into eye coordinates
-    vec3 N = normalize( inverse(transpose(model))*normalize(vec4(normal, 0.0)) ).xyz;
+    vec3 N = normalize( inverse(transpose(model))*vec4(normal, 0.0) ).xyz;
 
     //Compute terms in the illumination equation
     vec4 ambient = AmbientProduct*vec4(0.1,0.1,0.1, 1.0);
@@ -33,7 +33,7 @@ void main()
     float Kd = max( dot(L, N), 0.0 );
     vec4  diffuse = Kd*DiffuseProduct*vec4(0.1,0.1,0.1, 1.0);
 
-    float Ks = pow( max(dot(N, H), 0.0), Shininess );
+    float Ks = pow( max(dot(N, H), 0.0), 50 );
     vec4  specular = Ks * SpecularProduct;
     
 	color = ambient + diffuse + specular*vec4(0.1,0.1,0.1, 1.0);
