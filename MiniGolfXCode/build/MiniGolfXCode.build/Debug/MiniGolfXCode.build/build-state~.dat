@@ -1,0 +1,2848 @@
+TMiniGolfXCode
+v7
+r0
+t419540861.747764
+cCheck dependencies
+cProcessInfoPlistFile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Info.plist MiniGolfXCode/MiniGolfXCode-Info.plist
+cCompileC build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/GameObject.o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/Drawing.o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/main.o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/perpendicular.inl ../src/glm/gtx/perpendicular.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/compatibility.inl ../src/glm/gtx/compatibility.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl ../src/glm/gtx/quaternion.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl ../src/glm/gtc/quaternion.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_common.inl ../src/glm/detail/intrinsic_common.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_noise.inl ../src/glm/detail/func_noise.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/projection.inl ../src/glm/gtx/projection.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_query.inl ../src/glm/gtx/matrix_query.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/optimum_pow.inl ../src/glm/gtx/optimum_pow.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_exponential.inl ../src/glm/detail/intrinsic_exponential.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/norm.inl ../src/glm/gtx/norm.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/vec1.inl ../src/glm/gtx/vec1.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_packing.inl ../src/glm/detail/func_packing.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/random.inl ../src/glm/gtc/random.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x4.inl ../src/glm/detail/type_mat4x4.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/string_cast.inl ../src/glm/gtx/string_cast.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/std_based_type.inl ../src/glm/gtx/std_based_type.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/log_base.inl ../src/glm/gtx/log_base.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intersect.inl ../src/glm/gtx/intersect.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_matrix.inl ../src/glm/detail/func_matrix.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/reciprocal.inl ../src/glm/gtc/reciprocal.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x2.inl ../src/glm/detail/type_mat2x2.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_major_storage.inl ../src/glm/gtx/matrix_major_storage.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_geometric.inl ../src/glm/detail/intrinsic_geometric.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/orthonormalize.inl ../src/glm/gtx/orthonormalize.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_integer.inl ../src/glm/detail/func_integer.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/gradient_paint.inl ../src/glm/gtx/gradient_paint.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_cross_product.inl ../src/glm/gtx/matrix_cross_product.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_access.inl ../src/glm/gtc/matrix_access.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x3.inl ../src/glm/detail/type_mat2x3.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/CMakeLists.txt ../src/glm/CMakeLists.txt
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/rotate_vector.inl ../src/glm/gtx/rotate_vector.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/inertia.inl ../src/glm/gtx/inertia.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/raw_data.inl ../src/glm/gtx/raw_data.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform.inl ../src/glm/gtc/matrix_transform.inl
+cCopyStringsFile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/en.lproj/InfoPlist.strings MiniGolfXCode/en.lproj/InfoPlist.strings
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/epsilon.inl ../src/glm/gtc/epsilon.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/extented_min_max.inl ../src/glm/gtx/extented_min_max.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_half.inl ../src/glm/detail/type_half.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/integer.inl ../src/glm/gtx/integer.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/color_space.inl ../src/glm/gtx/color_space.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/io.inl ../src/glm/gtx/io.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/polar_coordinates.inl ../src/glm/gtx/polar_coordinates.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/dual_quaternion.inl ../src/glm/gtx/dual_quaternion.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x2.inl ../src/glm/detail/type_mat3x2.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_integer.inl ../src/glm/detail/intrinsic_integer.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/closest_point.inl ../src/glm/gtx/closest_point.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/number_precision.inl ../src/glm/gtx/number_precision.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_ptr.inl ../src/glm/gtc/type_ptr.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/bit.inl ../src/glm/gtx/bit.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_trigonometric.inl ../src/glm/detail/intrinsic_trigonometric.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/fast_exponential.inl ../src/glm/gtx/fast_exponential.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/transform.inl ../src/glm/gtx/transform.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/simd_mat4.inl ../src/glm/gtx/simd_mat4.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/multiple.inl ../src/glm/gtx/multiple.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_vector_relational.inl ../src/glm/detail/intrinsic_vector_relational.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/handed_coordinate_space.inl ../src/glm/gtx/handed_coordinate_space.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_inverse.inl ../src/glm/gtc/matrix_inverse.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/int_10_10_10_2.inl ../src/glm/gtx/int_10_10_10_2.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/spline.inl ../src/glm/gtx/spline.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/euler_angles.inl ../src/glm/gtx/euler_angles.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec3.inl ../src/glm/detail/type_vec3.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec2.inl ../src/glm/detail/type_vec2.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x4.inl ../src/glm/detail/type_mat2x4.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_trigonometric.inl ../src/glm/detail/func_trigonometric.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/precision.inl ../src/glm/detail/precision.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_gentype.inl ../src/glm/detail/type_gentype.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/vector_angle.inl ../src/glm/gtx/vector_angle.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/packing.inl ../src/glm/gtc/packing.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/unsigned_int.inl ../src/glm/gtx/unsigned_int.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/vector_query.inl ../src/glm/gtx/vector_query.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/constants.inl ../src/glm/gtc/constants.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/normal.inl ../src/glm/gtx/normal.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_operation.inl ../src/glm/gtx/matrix_operation.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/associated_min_max.inl ../src/glm/gtx/associated_min_max.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform_2d.inl ../src/glm/gtx/matrix_transform_2d.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_geometric.inl ../src/glm/detail/func_geometric.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_matrix.inl ../src/glm/detail/intrinsic_matrix.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x3.inl ../src/glm/detail/type_mat4x3.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/fast_trigonometry.inl ../src/glm/gtx/fast_trigonometry.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_precision.inl ../src/glm/gtc/type_precision.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/wrap.inl ../src/glm/gtx/wrap.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/ulp.inl ../src/glm/gtc/ulp.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/scalar_relational.inl ../src/glm/gtx/scalar_relational.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat.inl ../src/glm/detail/type_mat.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/normalize_dot.inl ../src/glm/gtx/normalize_dot.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_common.inl ../src/glm/detail/func_common.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_interpolation.inl ../src/glm/gtx/matrix_interpolation.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_vector_relational.inl ../src/glm/detail/func_vector_relational.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec4.inl ../src/glm/detail/type_vec4.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_exponential.inl ../src/glm/detail/func_exponential.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/fast_square_root.inl ../src/glm/gtx/fast_square_root.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/transform2.inl ../src/glm/gtx/transform2.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/noise.inl ../src/glm/gtc/noise.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec.inl ../src/glm/detail/type_vec.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec1.inl ../src/glm/detail/type_vec1.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/rotate_normalized_axis.inl ../src/glm/gtx/rotate_normalized_axis.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/simd_quat.inl ../src/glm/gtx/simd_quat.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/mixed_product.inl ../src/glm/gtx/mixed_product.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x4.inl ../src/glm/detail/type_mat3x4.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/extend.inl ../src/glm/gtx/extend.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x2.inl ../src/glm/detail/type_mat4x2.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/simd_vec4.inl ../src/glm/gtx/simd_vec4.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/component_wise.inl ../src/glm/gtx/component_wise.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/color_space_YCoCg.inl ../src/glm/gtx/color_space_YCoCg.inl
+cCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x3.inl ../src/glm/detail/type_mat3x3.inl
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004D5A274300000000000000EE
+t1297753923
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004D5A2791000000000000DB14
+t1297754001
+s56084
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/emmintrin.h
+c000000004A11EB24000000000000EA8F
+t1242688292
+s60047
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/pmmintrin.h
+c000000004A11EB24000000000000155D
+t1242688292
+s5469
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/smmintrin.h
+c000000004A11EB24000000000000624C
+t1242688292
+s25164
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../../../../../Library/Frameworks/SDL2.framework/SDL2
+c0000000053250DDE00000000001AE3A0
+t1394937310
+s1762208
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp
+c00000000535177CC00000000000000B2
+t1397848012
+s178
+i"Drawing.h"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp
+c00000000535177CC00000000000000CB
+t1397848012
+s203
+i"GameObject.h"
+i"glm.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/CMakeLists.txt
+c00000000535177CC0000000000000581
+t1397848012
+s1409
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_common.inl
+c00000000535177CC00000000000068C2
+t1397848012
+s26818
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_exponential.inl
+c00000000535177CC0000000000001D5F
+t1397848012
+s7519
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_geometric.inl
+c00000000535177CC00000000000024CA
+t1397848012
+s9418
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_integer.inl
+c00000000535177CC0000000000003FD4
+t1397848012
+s16340
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_matrix.inl
+c00000000535177CC0000000000003B86
+t1397848012
+s15238
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_noise.inl
+c00000000535177CC00000000000039D0
+t1397848012
+s14800
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl
+c00000000535177CC0000000000000ED0
+t1397848012
+s3792
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_trigonometric.inl
+c00000000535177CC0000000000001835
+t1397848012
+s6197
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_vector_relational.inl
+c00000000535177CC00000000000016AD
+t1397848012
+s5805
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_common.inl
+c00000000535177CC0000000000003609
+t1397848012
+s13833
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_exponential.inl
+c00000000535177CC00000000000005F0
+t1397848012
+s1520
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_geometric.inl
+c00000000535177CC00000000000012A0
+t1397848012
+s4768
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_integer.inl
+c00000000535177CC00000000000014AF
+t1397848012
+s5295
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_matrix.inl
+c00000000535177CC000000000000A69F
+t1397848012
+s42655
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_trigonometric.inl
+c00000000535177CC00000000000005F2
+t1397848012
+s1522
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_vector_relational.inl
+c00000000535177CC0000000000002A54
+t1397848012
+s10836
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/precision.inl
+c00000000535177CC0000000000000000
+t1397848012
+s0
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_gentype.inl
+c00000000535177CC000000000000298E
+t1397848012
+s10638
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl
+c00000000535177CC00000000000018EE
+t1397848012
+s6382
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat.inl
+c00000000535177CC00000000000005E3
+t1397848012
+s1507
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x2.inl
+c00000000535177CC0000000000003B81
+t1397848012
+s15233
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x3.inl
+c00000000535177CC0000000000003748
+t1397848012
+s14152
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x4.inl
+c00000000535177CC0000000000003B19
+t1397848012
+s15129
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x2.inl
+c00000000535177CC0000000000003B1A
+t1397848012
+s15130
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x3.inl
+c00000000535177CC0000000000005014
+t1397848012
+s20500
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x4.inl
+c00000000535177CC000000000000450C
+t1397848012
+s17676
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x2.inl
+c00000000535177CC00000000000042FC
+t1397848012
+s17148
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x3.inl
+c00000000535177CC0000000000004B58
+t1397848012
+s19288
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x4.inl
+c00000000535177CC0000000000007064
+t1397848012
+s28772
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec.inl
+c00000000535177CC00000000000005E3
+t1397848012
+s1507
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec1.inl
+c00000000535177CC0000000000003DD2
+t1397848012
+s15826
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec2.inl
+c00000000535177CC00000000000041FF
+t1397848012
+s16895
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec3.inl
+c00000000535177CC000000000000475A
+t1397848012
+s18266
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec4.inl
+c00000000535177CC000000000000527C
+t1397848012
+s21116
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp
+c00000000535177CC00000000000011EA
+t1397848012
+s4586
+i"detail/_fixes.hpp"
+i<cmath>
+i<climits>
+i<cfloat>
+i<limits>
+i<cassert>
+i"fwd.hpp"
+i"vec2.hpp"
+i"vec3.hpp"
+i"vec4.hpp"
+i"mat2x2.hpp"
+i"mat2x3.hpp"
+i"mat2x4.hpp"
+i"mat3x2.hpp"
+i"mat3x3.hpp"
+i"mat3x4.hpp"
+i"mat4x2.hpp"
+i"mat4x3.hpp"
+i"mat4x4.hpp"
+i"trigonometric.hpp"
+i"exponential.hpp"
+i"common.hpp"
+i"packing.hpp"
+i"geometric.hpp"
+i"matrix.hpp"
+i"vector_relational.hpp"
+i"integer.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/constants.inl
+c00000000535177CC00000000000012F6
+t1397848012
+s4854
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/epsilon.inl
+c00000000535177CC00000000000010AD
+t1397848012
+s4269
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_access.inl
+c00000000535177CC0000000000000AA2
+t1397848012
+s2722
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_inverse.inl
+c00000000535177CC0000000000001A9F
+t1397848012
+s6815
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_transform.inl
+c00000000535177CC0000000000003485
+t1397848012
+s13445
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/noise.inl
+c00000000535177CC0000000000009A8B
+t1397848012
+s39563
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/packing.inl
+c00000000535177CC00000000000039BA
+t1397848012
+s14778
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/quaternion.inl
+c00000000535177CC0000000000005AB4
+t1397848012
+s23220
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/random.inl
+c00000000535177CC000000000000128A
+t1397848012
+s4746
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/reciprocal.inl
+c00000000535177CC00000000000013F3
+t1397848012
+s5107
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/type_precision.inl
+c00000000535177CC0000000000000601
+t1397848012
+s1537
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/type_ptr.inl
+c00000000535177CC0000000000003041
+t1397848012
+s12353
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/ulp.inl
+c00000000535177CC00000000000026C2
+t1397848012
+s9922
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/associated_min_max.inl
+c00000000535177CC0000000000006908
+t1397848012
+s26888
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/bit.inl
+c00000000535177CC0000000000005424
+t1397848012
+s21540
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/closest_point.inl
+c00000000535177CC00000000000004E1
+t1397848012
+s1249
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/color_space.inl
+c00000000535177CC0000000000000FB2
+t1397848012
+s4018
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/color_space_YCoCg.inl
+c00000000535177CC000000000000084A
+t1397848012
+s2122
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/compatibility.inl
+c00000000535177CC0000000000000671
+t1397848012
+s1649
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/component_wise.inl
+c00000000535177CC0000000000000625
+t1397848012
+s1573
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/dual_quaternion.inl
+c00000000535177CC0000000000002D78
+t1397848012
+s11640
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/euler_angles.inl
+c00000000535177CC0000000000001A2D
+t1397848012
+s6701
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/extend.inl
+c00000000535177CC00000000000005F4
+t1397848012
+s1524
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/extented_min_max.inl
+c00000000535177CC0000000000000BFF
+t1397848012
+s3071
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_exponential.inl
+c00000000535177CC000000000000121F
+t1397848012
+s4639
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_square_root.inl
+c00000000535177CC0000000000000F5B
+t1397848012
+s3931
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_trigonometry.inl
+c00000000535177CC0000000000000958
+t1397848012
+s2392
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/gradient_paint.inl
+c00000000535177CC00000000000005E2
+t1397848012
+s1506
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/handed_coordinate_space.inl
+c00000000535177CC000000000000044F
+t1397848012
+s1103
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/inertia.inl
+c00000000535177CC0000000000000BEE
+t1397848012
+s3054
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/int_10_10_10_2.inl
+c00000000535177CC0000000000000660
+t1397848012
+s1632
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/integer.inl
+c00000000535177CC00000000000012FA
+t1397848012
+s4858
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/intersect.inl
+c00000000535177CC0000000000001C37
+t1397848012
+s7223
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/io.inl
+c00000000535177CC0000000000002740
+t1397848012
+s10048
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/log_base.inl
+c00000000535177CC000000000000031E
+t1397848012
+s798
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_cross_product.inl
+c00000000535177CC00000000000004E3
+t1397848012
+s1251
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_interpolation.inl
+c00000000535177CC0000000000001159
+t1397848012
+s4441
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_major_storage.inl
+c00000000535177CC0000000000001233
+t1397848012
+s4659
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_operation.inl
+c00000000535177CC0000000000000BDC
+t1397848012
+s3036
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_query.inl
+c00000000535177CC0000000000000FCD
+t1397848012
+s4045
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_transform_2d.inl
+c00000000535177CC0000000000000C36
+t1397848012
+s3126
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/mixed_product.inl
+c00000000535177CC0000000000000313
+t1397848012
+s787
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/multiple.inl
+c00000000535177CC0000000000000D46
+t1397848012
+s3398
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/norm.inl
+c00000000535177CC0000000000000BA1
+t1397848012
+s2977
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/normal.inl
+c00000000535177CC000000000000032F
+t1397848012
+s815
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/normalize_dot.inl
+c00000000535177CC00000000000009B7
+t1397848012
+s2487
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/number_precision.inl
+c00000000535177CC0000000000000226
+t1397848012
+s550
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/optimum_pow.inl
+c00000000535177CC0000000000000653
+t1397848012
+s1619
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/orthonormalize.inl
+c00000000535177CC00000000000004B1
+t1397848012
+s1201
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/perpendicular.inl
+c00000000535177CC00000000000002D1
+t1397848012
+s721
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/polar_coordinates.inl
+c00000000535177CC00000000000007B0
+t1397848012
+s1968
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/projection.inl
+c00000000535177CC00000000000002F2
+t1397848012
+s754
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/quaternion.inl
+c00000000535177CC00000000000019B4
+t1397848012
+s6580
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/raw_data.inl
+c00000000535177CC0000000000000289
+t1397848012
+s649
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/rotate_normalized_axis.inl
+c00000000535177CC0000000000000F00
+t1397848012
+s3840
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/rotate_vector.inl
+c00000000535177CC000000000000191B
+t1397848012
+s6427
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/scalar_relational.inl
+c00000000535177CC0000000000000626
+t1397848012
+s1574
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_mat4.inl
+c00000000535177CC00000000000030D3
+t1397848012
+s12499
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_quat.inl
+c00000000535177CC00000000000043F4
+t1397848012
+s17396
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_vec4.inl
+c00000000535177CC0000000000003FE8
+t1397848012
+s16360
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/spline.inl
+c00000000535177CC0000000000000971
+t1397848012
+s2417
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/std_based_type.inl
+c00000000535177CC0000000000000224
+t1397848012
+s548
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/string_cast.inl
+c00000000535177CC0000000000002919
+t1397848012
+s10521
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/transform.inl
+c00000000535177CC0000000000000472
+t1397848012
+s1138
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/transform2.inl
+c00000000535177CC0000000000000FEF
+t1397848012
+s4079
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/unsigned_int.inl
+c00000000535177CC0000000000000231
+t1397848012
+s561
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vec1.inl
+c00000000535177CC00000000000005E2
+t1397848012
+s1506
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vector_angle.inl
+c00000000535177CC0000000000000C87
+t1397848012
+s3207
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vector_query.inl
+c00000000535177CC0000000000001740
+t1397848012
+s5952
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/wrap.inl
+c00000000535177CC0000000000001198
+t1397848012
+s4504
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/vec3.hpp
+c00000000535177CC0000000000000652
+t1397848012
+s1618
+i"detail/type_vec3.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp
+c00000000535177CC0000000000000B55
+t1397848012
+s2901
+i<iostream>
+i<SDL2/SDL.h>
+i<OpenGL/gl3.h>
+i<ctime>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/MiniGolfXCode/en.lproj/InfoPlist.strings
+c00000000535177CC000000000000002D
+t1397848012
+s45
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app
+t2
+s0
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Info.plist
+t1397848060
+s1414
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/MacOS/MiniGolfXCode
+t2
+s0
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/PkgInfo
+t1397848060
+s8
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/CMakeLists.txt
+t1397848061
+s1409
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/associated_min_max.inl
+t1397848061
+s26888
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/bit.inl
+t1397848061
+s21540
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/closest_point.inl
+t1397848061
+s1249
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/color_space.inl
+t1397848061
+s4018
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/color_space_YCoCg.inl
+t1397848061
+s2122
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/compatibility.inl
+t1397848061
+s1649
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/component_wise.inl
+t1397848061
+s1573
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/constants.inl
+t1397848061
+s4854
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/dual_quaternion.inl
+t1397848061
+s11640
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1397848061
+s92
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/epsilon.inl
+t1397848061
+s4269
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/euler_angles.inl
+t1397848061
+s6701
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/extend.inl
+t1397848061
+s1524
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/extented_min_max.inl
+t1397848061
+s3071
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/fast_exponential.inl
+t1397848061
+s4639
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/fast_square_root.inl
+t1397848061
+s3931
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/fast_trigonometry.inl
+t1397848061
+s2392
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_common.inl
+t1397848061
+s26818
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_exponential.inl
+t1397848061
+s7519
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_geometric.inl
+t1397848061
+s9418
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_integer.inl
+t1397848061
+s16340
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_matrix.inl
+t1397848061
+s15238
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_noise.inl
+t1397848061
+s14800
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_packing.inl
+t1397848061
+s3792
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_trigonometric.inl
+t1397848061
+s6197
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/func_vector_relational.inl
+t1397848061
+s5805
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/gradient_paint.inl
+t1397848061
+s1506
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/handed_coordinate_space.inl
+t1397848061
+s1103
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/inertia.inl
+t1397848061
+s3054
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/int_10_10_10_2.inl
+t1397848061
+s1632
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/integer.inl
+t1397848061
+s4858
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intersect.inl
+t1397848061
+s7223
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_common.inl
+t1397848061
+s13833
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_exponential.inl
+t1397848061
+s1520
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_geometric.inl
+t1397848061
+s4768
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_integer.inl
+t1397848061
+s5295
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_matrix.inl
+t1397848061
+s42655
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_trigonometric.inl
+t1397848061
+s1522
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_vector_relational.inl
+t1397848061
+s10836
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/io.inl
+t1397848061
+s10048
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/log_base.inl
+t1397848061
+s798
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_access.inl
+t1397848061
+s2722
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_cross_product.inl
+t1397848061
+s1251
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_interpolation.inl
+t1397848061
+s4441
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_inverse.inl
+t1397848061
+s6815
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_major_storage.inl
+t1397848061
+s4659
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_operation.inl
+t1397848061
+s3036
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_query.inl
+t1397848061
+s4045
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform.inl
+t1397848061
+s13445
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform_2d.inl
+t1397848061
+s3126
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/mixed_product.inl
+t1397848061
+s787
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/multiple.inl
+t1397848061
+s3398
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/noise.inl
+t1397848061
+s39563
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/norm.inl
+t1397848061
+s2977
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/normal.inl
+t1397848061
+s815
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/normalize_dot.inl
+t1397848061
+s2487
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/number_precision.inl
+t1397848061
+s550
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/optimum_pow.inl
+t1397848061
+s1619
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/orthonormalize.inl
+t1397848061
+s1201
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/packing.inl
+t1397848061
+s14778
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/perpendicular.inl
+t1397848061
+s721
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/polar_coordinates.inl
+t1397848061
+s1968
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/precision.inl
+t1397848061
+s0
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/projection.inl
+t1397848061
+s754
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl
+t1397848061
+s23220
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/random.inl
+t1397848061
+s4746
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/raw_data.inl
+t1397848061
+s649
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/reciprocal.inl
+t1397848061
+s5107
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/rotate_normalized_axis.inl
+t1397848061
+s3840
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/rotate_vector.inl
+t1397848061
+s6427
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/scalar_relational.inl
+t1397848061
+s1574
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/simd_mat4.inl
+t1397848061
+s12499
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/simd_quat.inl
+t1397848061
+s17396
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/simd_vec4.inl
+t1397848061
+s16360
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/spline.inl
+t1397848061
+s2417
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/std_based_type.inl
+t1397848061
+s548
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/string_cast.inl
+t1397848061
+s10521
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/transform.inl
+t1397848061
+s1138
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/transform2.inl
+t1397848061
+s4079
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_gentype.inl
+t1397848061
+s10638
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_half.inl
+t1397848061
+s6382
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat.inl
+t1397848061
+s1507
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x2.inl
+t1397848061
+s15233
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x3.inl
+t1397848061
+s14152
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x4.inl
+t1397848061
+s15129
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x2.inl
+t1397848061
+s15130
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x3.inl
+t1397848061
+s20500
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x4.inl
+t1397848061
+s17676
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x2.inl
+t1397848061
+s17148
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x3.inl
+t1397848061
+s19288
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x4.inl
+t1397848061
+s28772
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_precision.inl
+t1397848061
+s1537
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_ptr.inl
+t1397848061
+s12353
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec.inl
+t1397848061
+s1507
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec1.inl
+t1397848061
+s15826
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec2.inl
+t1397848061
+s16895
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec3.inl
+t1397848061
+s18266
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec4.inl
+t1397848061
+s21116
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/ulp.inl
+t1397848061
+s9922
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/unsigned_int.inl
+t1397848061
+s561
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/vec1.inl
+t1397848061
+s1506
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/vector_angle.inl
+t1397848061
+s3207
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/vector_query.inl
+t1397848061
+s5952
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/wrap.inl
+t1397848061
+s4504
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/Drawing.o
+t1397848060
+s45824
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/GameObject.o
+t1397848060
+s45844
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/MiniGolfXCode.LinkFileList
+c00000000535177FC0000000000000198
+t1397848060
+s408
+
+N/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/Drawing/Drawing.h
+c00000000535177CC00000000000001A7
+t1397848012
+s423
+i<iostream>
+i"GameObject.h"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/Models/GameObject.h
+c00000000535177CC000000000000025C
+t1397848012
+s604
+i<iostream>
+i<cmath>
+i"vec3.hpp"
+i"glm.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/common.hpp
+c00000000535177CC000000000000065C
+t1397848012
+s1628
+i"detail/func_common.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/_fixes.hpp
+c00000000535177CC000000000000077A
+t1397848012
+s1914
+i<cmath>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/_swizzle.hpp
+c00000000535177CC000000000000CB7B
+t1397848012
+s52091
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/_swizzle_func.hpp
+c00000000535177CC000000000000FF33
+t1397848012
+s65331
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/_vectorize.hpp
+c00000000535177CC00000000000018B5
+t1397848012
+s6325
+i"type_vec1.hpp"
+i"type_vec2.hpp"
+i"type_vec3.hpp"
+i"type_vec4.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_common.hpp
+c00000000535177CC0000000000005988
+t1397848012
+s22920
+i"setup.hpp"
+i"precision.hpp"
+i"type_int.hpp"
+i"_fixes.hpp"
+i"func_common.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_common.inl
+c00000000535177CC00000000000068C2
+t1397848012
+s26818
+i"func_vector_relational.hpp"
+i"type_vec2.hpp"
+i"type_vec3.hpp"
+i"type_vec4.hpp"
+i"_vectorize.hpp"
+i<limits>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_exponential.hpp
+c00000000535177CC0000000000001A28
+t1397848012
+s6696
+i"type_vec1.hpp"
+i"type_vec2.hpp"
+i"type_vec3.hpp"
+i"type_vec4.hpp"
+i<cmath>
+i"func_exponential.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_exponential.inl
+c00000000535177CC0000000000001D5F
+t1397848012
+s7519
+i"func_vector_relational.hpp"
+i"_vectorize.hpp"
+i<limits>
+i<cassert>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_geometric.hpp
+c00000000535177CC0000000000001A2C
+t1397848012
+s6700
+i"type_vec3.hpp"
+i"func_geometric.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_geometric.inl
+c00000000535177CC00000000000024CA
+t1397848012
+s9418
+i"func_exponential.hpp"
+i"func_common.hpp"
+i"type_vec2.hpp"
+i"type_vec4.hpp"
+i"type_float.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_integer.hpp
+c00000000535177CC000000000000268F
+t1397848012
+s9871
+i"setup.hpp"
+i"func_integer.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_integer.inl
+c00000000535177CC0000000000003FD4
+t1397848012
+s16340
+i"type_vec2.hpp"
+i"type_vec3.hpp"
+i"type_vec4.hpp"
+i"type_int.hpp"
+i"_vectorize.hpp"
+i<intrin.h>
+i<limits>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_matrix.hpp
+c00000000535177CC0000000000001B84
+t1397848012
+s7044
+i"../detail/precision.hpp"
+i"../detail/setup.hpp"
+i"../detail/type_mat.hpp"
+i"../vec2.hpp"
+i"../vec3.hpp"
+i"../vec4.hpp"
+i"../mat2x2.hpp"
+i"../mat2x3.hpp"
+i"../mat2x4.hpp"
+i"../mat3x2.hpp"
+i"../mat3x3.hpp"
+i"../mat3x4.hpp"
+i"../mat4x2.hpp"
+i"../mat4x3.hpp"
+i"../mat4x4.hpp"
+i"func_matrix.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_matrix.inl
+c00000000535177CC0000000000003B86
+t1397848012
+s15238
+i"../geometric.hpp"
+i<limits>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_packing.hpp
+c00000000535177CC00000000000030A0
+t1397848012
+s12448
+i"type_vec2.hpp"
+i"type_vec4.hpp"
+i"func_packing.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_packing.inl
+c00000000535177CC0000000000000ED0
+t1397848012
+s3792
+i"func_common.hpp"
+i"type_half.hpp"
+i"../fwd.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_trigonometric.hpp
+c00000000535177CC00000000000027B1
+t1397848012
+s10161
+i"func_trigonometric.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_trigonometric.inl
+c00000000535177CC0000000000001835
+t1397848012
+s6197
+i"_vectorize.hpp"
+i<cmath>
+i<limits>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_vector_relational.hpp
+c00000000535177CC0000000000001E55
+t1397848012
+s7765
+i"precision.hpp"
+i"setup.hpp"
+i"func_vector_relational.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/func_vector_relational.inl
+c00000000535177CC00000000000016AD
+t1397848012
+s5805
+i<limits>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/precision.hpp
+c00000000535177CC00000000000006C8
+t1397848012
+s1736
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/setup.hpp
+c00000000535177CC0000000000006E99
+t1397848012
+s28313
+i<cassert>
+i<cuda.h>
+i<intrin.h>
+i<immintrin.h>
+i<immintrin.h>
+i<smmintrin.h>
+i<pmmintrin.h>
+i<emmintrin.h>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_float.hpp
+c00000000535177CC00000000000010AA
+t1397848012
+s4266
+i"setup.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_half.hpp
+c00000000535177CC0000000000000791
+t1397848012
+s1937
+i"setup.hpp"
+i"type_half.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_half.inl
+c00000000535177CC00000000000018EE
+t1397848012
+s6382
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_int.hpp
+c00000000535177CC00000000000021D7
+t1397848012
+s8663
+i"setup.hpp"
+i<cstdint>
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat.hpp
+c00000000535177CC000000000000A98A
+t1397848012
+s43402
+i"precision.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat2x2.hpp
+c00000000535177CC0000000000001FEC
+t1397848012
+s8172
+i"../fwd.hpp"
+i"type_vec2.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat2x2.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat2x2.inl
+c00000000535177CC0000000000003B81
+t1397848012
+s15233
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat2x3.hpp
+c00000000535177CC0000000000001AEC
+t1397848012
+s6892
+i"../fwd.hpp"
+i"type_vec2.hpp"
+i"type_vec3.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat2x3.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat2x3.inl
+c00000000535177CC0000000000003748
+t1397848012
+s14152
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat2x4.hpp
+c00000000535177CC0000000000001B43
+t1397848012
+s6979
+i"../fwd.hpp"
+i"type_vec2.hpp"
+i"type_vec4.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat2x4.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat2x4.inl
+c00000000535177CC0000000000003B19
+t1397848012
+s15129
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat3x2.hpp
+c00000000535177CC0000000000001B1B
+t1397848012
+s6939
+i"../fwd.hpp"
+i"type_vec2.hpp"
+i"type_vec3.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat3x2.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat3x2.inl
+c00000000535177CC0000000000003B1A
+t1397848012
+s15130
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat3x3.hpp
+c00000000535177CC000000000000209A
+t1397848012
+s8346
+i"../fwd.hpp"
+i"type_vec3.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat3x3.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat3x3.inl
+c00000000535177CC0000000000005014
+t1397848012
+s20500
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat3x4.hpp
+c00000000535177CC0000000000001C1E
+t1397848012
+s7198
+i"../fwd.hpp"
+i"type_vec3.hpp"
+i"type_vec4.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat3x4.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat3x4.inl
+c00000000535177CC000000000000450C
+t1397848012
+s17676
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat4x2.hpp
+c00000000535177CC0000000000001BBE
+t1397848012
+s7102
+i"../fwd.hpp"
+i"type_vec2.hpp"
+i"type_vec4.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat4x2.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat4x2.inl
+c00000000535177CC00000000000042FC
+t1397848012
+s17148
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat4x3.hpp
+c00000000535177CC0000000000001C83
+t1397848012
+s7299
+i"../fwd.hpp"
+i"type_vec3.hpp"
+i"type_vec4.hpp"
+i"type_mat.hpp"
+i<limits>
+i"type_mat4x3.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat4x3.inl
+c00000000535177CC0000000000004B58
+t1397848012
+s19288
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat4x4.hpp
+c00000000535177CC0000000000002234
+t1397848012
+s8756
+i"../fwd.hpp"
+i"type_vec4.hpp"
+i"type_mat.hpp"
+i<limits>
+i<cstddef>
+i"type_mat4x4.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_mat4x4.inl
+c00000000535177CC0000000000007064
+t1397848012
+s28772
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec.hpp
+c00000000535177CC0000000000006CCD
+t1397848012
+s27853
+i"precision.hpp"
+i"type_int.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec1.hpp
+c00000000535177CC00000000000027F1
+t1397848012
+s10225
+i"../fwd.hpp"
+i"type_vec.hpp"
+i"_swizzle.hpp"
+i"_swizzle_func.hpp"
+i<cstddef>
+i"type_vec1.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec1.inl
+c00000000535177CC0000000000003DD2
+t1397848012
+s15826
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec2.hpp
+c00000000535177CC0000000000002BA3
+t1397848012
+s11171
+i"type_vec.hpp"
+i"_swizzle.hpp"
+i"_swizzle_func.hpp"
+i<cstddef>
+i"type_vec2.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec2.inl
+c00000000535177CC00000000000041FF
+t1397848012
+s16895
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec3.hpp
+c00000000535177CC0000000000002E83
+t1397848012
+s11907
+i"type_vec.hpp"
+i"_swizzle.hpp"
+i"_swizzle_func.hpp"
+i<cstddef>
+i"type_vec3.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec3.inl
+c00000000535177CC000000000000475A
+t1397848012
+s18266
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec4.hpp
+c00000000535177CC0000000000003649
+t1397848012
+s13897
+i"setup.hpp"
+i"type_vec.hpp"
+i"_swizzle.hpp"
+i"_swizzle_func.hpp"
+i<cstddef>
+i"type_vec4.inl"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/detail/type_vec4.inl
+c00000000535177CC000000000000527C
+t1397848012
+s21116
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/exponential.hpp
+c00000000535177CC0000000000000675
+t1397848012
+s1653
+i"detail/func_exponential.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/fwd.hpp
+c00000000535177CC0000000000015225
+t1397848012
+s86565
+i"detail/type_int.hpp"
+i"detail/type_float.hpp"
+i"detail/type_vec.hpp"
+i"detail/type_mat.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/geometric.hpp
+c00000000535177CC000000000000066B
+t1397848012
+s1643
+i"detail/func_geometric.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/integer.hpp
+c00000000535177CC0000000000000661
+t1397848012
+s1633
+i"detail/func_integer.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat2x2.hpp
+c00000000535177CC00000000000011A3
+t1397848012
+s4515
+i"detail/type_mat2x2.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat2x3.hpp
+c00000000535177CC0000000000000C13
+t1397848012
+s3091
+i"detail/type_mat2x3.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat2x4.hpp
+c00000000535177CC0000000000000C15
+t1397848012
+s3093
+i"detail/type_mat2x4.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat3x2.hpp
+c00000000535177CC0000000000000C11
+t1397848012
+s3089
+i"detail/type_mat3x2.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat3x3.hpp
+c00000000535177CC00000000000011A3
+t1397848012
+s4515
+i"detail/type_mat3x3.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat3x4.hpp
+c00000000535177CC0000000000000C15
+t1397848012
+s3093
+i"detail/type_mat3x4.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat4x2.hpp
+c00000000535177CC0000000000000C15
+t1397848012
+s3093
+i"detail/type_mat4x2.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat4x3.hpp
+c00000000535177CC0000000000000C15
+t1397848012
+s3093
+i"detail/type_mat4x3.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/mat4x4.hpp
+c00000000535177CC00000000000011A3
+t1397848012
+s4515
+i"detail/type_mat4x4.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/matrix.hpp
+c00000000535177CC000000000000065C
+t1397848012
+s1628
+i"detail/func_matrix.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/packing.hpp
+c00000000535177CC0000000000000661
+t1397848012
+s1633
+i"detail/func_packing.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/trigonometric.hpp
+c00000000535177CC000000000000067F
+t1397848012
+s1663
+i"detail/func_trigonometric.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/vec2.hpp
+c00000000535177CC0000000000000652
+t1397848012
+s1618
+i"detail/type_vec2.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/vec3.hpp
+c00000000535177CC0000000000000652
+t1397848012
+s1618
+i"detail/type_vec3.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/vec4.hpp
+c00000000535177CC0000000000000652
+t1397848012
+s1618
+i"detail/type_vec4.hpp"
+
+N/Users/jakecohen/git/MiniGolfGameEngine/src/glm/vector_relational.hpp
+c00000000535177CC0000000000000693
+t1397848012
+s1683
+i"detail/func_vector_relational.hpp"
+
+NMiniGolfXCode/MiniGolfXCode-Info.plist
+c00000000535177CC000000000000045B
+t1397848012
+s1115
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies419540859#419540860#0(326"[WARN]Mac OS X deployment target '10.9' for architecture 'i386' and variant 'normal' is greater than the maximum value '10.6' for the Mac OS X 10.6 SDK.[WARN]Warning: Multiple build commands for output file /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl2(22@146"Mac OS X deployment target '10.9' for architecture 'i386' and variant 'normal' is greater than the maximum value '10.6' for the Mac OS X 10.6 SDK.419540859#18446744073709551615#0#0(1@0"0(22@166"Warning: Multiple build commands for output file /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl419540859#18446744073709551615#0#0(1@0"0(0#1#0"17221872896#0"0#
+
+CCompileC build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/Drawing.o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s419540860.067003
+e419540860.977837
+r1
+xCompileC
+xbuild/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/Drawing.o
+x/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp:49,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl:30,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp:193,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp:32,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp:111,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h:15,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.h:13,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp:9:
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl: In function 'float glm::detail::overflow()':
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl:38: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF07#2@88"Compile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp419540860#419540860#0(1157"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp:49,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl:30,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp:193,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp:32,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp:111,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h:15,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.h:13,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp:9:/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl: In function 'float glm::detail::overflow()':/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl:38: warning: implicit conversion shortens 64-bit value into a 32-bit value1(22@61"Implicit conversion shortens 64-bit value into a 32-bit value419540860#996#161#9(7@102"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp419540860#18446744073709551615#0#0(6@80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp419540812#9#0#9#0#0"0(7@100"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.h419540860#18446744073709551615#0#0(6@78"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.h419540812#13#0#13#0#0"0(7@102"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h419540860#18446744073709551615#0#0(6@80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h419540812#15#0#15#0#0"0(7@94"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp419540860#18446744073709551615#0#0(6@72"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp419540812#111#0#111#0#0"0(7@98"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp419540860#18446744073709551615#0#0(6@76"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp419540812#32#0#32#0#0"0(7@110"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp419540860#18446744073709551615#0#0(6@88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp419540812#193#0#193#0#0"0(7@110"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl419540860#18446744073709551615#0#0(6@88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl419540812#30#0#30#0#0"0(7@107"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp419540860#18446744073709551615#0#0(6@85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp419540812#49#0#49#0#0"0(13@150"Implicit conversion shortens 64-bit value into a 32-bit value in /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl419540860#18446744073709551615#0#0(6@85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl419540812#38#0#38#0#0"0(6@85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl419540812#38#0#38#0#61"implicit conversion shortens 64-bit value into a 32-bit value0(0#0#80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp4317978624#1645"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wunused-function -Wunused-variable -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.9 -gdwarf-2 -iquote /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-generated-files.hmap -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-own-target-headers.hmap -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-all-target-headers.hmap -iquote /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-project-headers.hmap -F/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/include -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/DerivedSources/i386 -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/DerivedSources -c /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Drawing/Drawing.cpp -o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/Drawing.o0#
+
+CCompileC build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/GameObject.o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s419540860.065089
+e419540860.978081
+r1
+xCompileC
+xbuild/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/GameObject.o
+x/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp:49,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl:30,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp:193,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp:32,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp:111,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h:15,
+o                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp:9:
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl: In function 'float glm::detail::overflow()':
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl:38: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF07#2@90"Compile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp419540860#419540860#0(1054"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp:49,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl:30,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp:193,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp:32,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp:111,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h:15,                 from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp:9:/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl: In function 'float glm::detail::overflow()':/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl:38: warning: implicit conversion shortens 64-bit value into a 32-bit value1(22@61"Implicit conversion shortens 64-bit value into a 32-bit value419540860#893#161#8(7@104"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp419540860#18446744073709551615#0#0(6@82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp419540812#9#0#9#0#0"0(7@102"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h419540860#18446744073709551615#0#0(6@80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.h419540812#15#0#15#0#0"0(7@94"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp419540860#18446744073709551615#0#0(6@72"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/glm.hpp419540812#111#0#111#0#0"0(7@98"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp419540860#18446744073709551615#0#0(6@76"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/packing.hpp419540812#32#0#32#0#0"0(7@110"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp419540860#18446744073709551615#0#0(6@88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.hpp419540812#193#0#193#0#0"0(7@110"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl419540860#18446744073709551615#0#0(6@88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl419540812#30#0#30#0#0"0(7@107"In file included from /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp419540860#18446744073709551615#0#0(6@85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.hpp419540812#49#0#49#0#0"0(13@150"Implicit conversion shortens 64-bit value into a 32-bit value in /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl419540860#18446744073709551615#0#0(6@85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl419540812#38#0#38#0#0"0(6@85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl419540812#38#0#38#0#61"implicit conversion shortens 64-bit value into a 32-bit value0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp4317978624#1650"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wunused-function -Wunused-variable -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.9 -gdwarf-2 -iquote /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-generated-files.hmap -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-own-target-headers.hmap -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-all-target-headers.hmap -iquote /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-project-headers.hmap -F/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/include -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/DerivedSources/i386 -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/DerivedSources -c /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/Models/GameObject.cpp -o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/GameObject.o0#
+
+CCompileC build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/main.o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s419540860.067930
+e419540860.773347
+r0
+xCompileC
+xbuild/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/main.o
+x/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:2:22: error: SDL2/SDL.h: No such file or directory
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:3:24: error: OpenGL/gl3.h: No such file or directory
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp: In member function 'void Graphics::update()':
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:12: error: 'glClearColor' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'GL_COLOR_BUFFER_BIT' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'GL_DEPTH_BUFFER_BIT' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'GL_STENCIL_BUFFER_BIT' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'glClear' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp: In function 'int main(int, char**)':
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:23: error: 'SDL_INIT_EVERYTHING' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:23: error: 'SDL_Init' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:30: error: 'SDL_LOG_PRIORITY_VERBOSE' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:30: error: 'SDL_LogSetAllPriority' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:33: error: 'SDL_GL_CONTEXT_MAJOR_VERSION' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:33: error: 'SDL_GL_SetAttribute' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:34: error: 'SDL_GL_CONTEXT_MINOR_VERSION' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:35: error: 'SDL_GL_CONTEXT_PROFILE_MASK' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:35: error: 'SDL_GL_CONTEXT_PROFILE_CORE' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:36: error: 'SDL_GL_ACCELERATED_VISUAL' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:37: error: 'SDL_GL_DOUBLEBUFFER' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:38: error: 'SDL_GL_DEPTH_SIZE' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:42: error: 'SDL_Window' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:42: error: 'window' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:44: error: 'SDL_WINDOWPOS_CENTERED' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:48: error: 'SDL_WINDOW_OPENGL' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:49: error: 'SDL_CreateWindow' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'SDL_Renderer' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'renderer' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'SDL_RENDERER_ACCELERATED' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'SDL_CreateRenderer' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:54: error: 'SDL_Event' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:54: error: expected `;' before 'mainEvent'
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:55: error: ISO C++ forbids declaration of 'gl' with no type
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:55: error: 'SDL_GL_CreateContext' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:63: error: 'mainEvent' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:63: error: 'SDL_PollEvent' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:65: error: 'SDL_QUIT' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:72: error: 'SDL_KEYDOWN' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:76: error: 'SDLK_q' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:88: error: 'SDL_GL_SwapWindow' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:61: warning: unused variable 'timer'
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:91: error: 'SDL_GL_DeleteContext' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:94: error: 'SDL_DestroyWindow' was not declared in this scope
+o/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:95: error: 'SDL_Quit' was not declared in this scope
+lSLF07#2@77"Compile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540860#419540860#0(5685"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:2:22: error: SDL2/SDL.h: No such file or directory/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:3:24: error: OpenGL/gl3.h: No such file or directory/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp: In member function 'void Graphics::update()':/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:12: error: 'glClearColor' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'GL_COLOR_BUFFER_BIT' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'GL_DEPTH_BUFFER_BIT' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'GL_STENCIL_BUFFER_BIT' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:13: error: 'glClear' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp: In function 'int main(int, char**)':/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:23: error: 'SDL_INIT_EVERYTHING' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:23: error: 'SDL_Init' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:30: error: 'SDL_LOG_PRIORITY_VERBOSE' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:30: error: 'SDL_LogSetAllPriority' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:33: error: 'SDL_GL_CONTEXT_MAJOR_VERSION' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:33: error: 'SDL_GL_SetAttribute' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:34: error: 'SDL_GL_CONTEXT_MINOR_VERSION' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:35: error: 'SDL_GL_CONTEXT_PROFILE_MASK' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:35: error: 'SDL_GL_CONTEXT_PROFILE_CORE' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:36: error: 'SDL_GL_ACCELERATED_VISUAL' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:37: error: 'SDL_GL_DOUBLEBUFFER' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:38: error: 'SDL_GL_DEPTH_SIZE' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:42: error: 'SDL_Window' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:42: error: 'window' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:44: error: 'SDL_WINDOWPOS_CENTERED' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:48: error: 'SDL_WINDOW_OPENGL' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:49: error: 'SDL_CreateWindow' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'SDL_Renderer' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'renderer' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'SDL_RENDERER_ACCELERATED' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:51: error: 'SDL_CreateRenderer' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:54: error: 'SDL_Event' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:54: error: expected `;' before 'mainEvent'/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:55: error: ISO C++ forbids declaration of 'gl' with no type/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:55: error: 'SDL_GL_CreateContext' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:63: error: 'mainEvent' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:63: error: 'SDL_PollEvent' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:65: error: 'SDL_QUIT' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:72: error: 'SDL_KEYDOWN' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:76: error: 'SDLK_q' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:88: error: 'SDL_GL_SwapWindow' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:61: warning: unused variable 'timer'/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:91: error: 'SDL_GL_DeleteContext' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:94: error: 'SDL_DestroyWindow' was not declared in this scope/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp:95: error: 'SDL_Quit' was not declared in this scope42(4@37"SDL2/SDL.h: No such file or directory419540860#0#121#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#2#0#2#0#28"*: No such file or directory0(4@39"OpenGL/gl3.h: No such file or directory419540860#121#123#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#3#0#3#0#28"*: No such file or directory0(4@45"'glClearColor' was not declared in this scope419540860#361#127#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#12#0#12#0#34"'*' was not declared in this scope0(4@52"'GL_COLOR_BUFFER_BIT' was not declared in this scope419540860#488#134#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#13#0#13#0#34"'*' was not declared in this scope0(4@52"'GL_DEPTH_BUFFER_BIT' was not declared in this scope419540860#622#134#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#13#0#13#0#34"'*' was not declared in this scope0(4@54"'GL_STENCIL_BUFFER_BIT' was not declared in this scope419540860#756#136#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#13#0#13#0#34"'*' was not declared in this scope0(4@40"'glClear' was not declared in this scope419540860#892#122#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#13#0#13#0#34"'*' was not declared in this scope0(4@52"'SDL_INIT_EVERYTHING' was not declared in this scope419540860#1122#134#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#23#0#23#0#34"'*' was not declared in this scope0(4@41"'SDL_Init' was not declared in this scope419540860#1256#123#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#23#0#23#0#34"'*' was not declared in this scope0(4@57"'SDL_LOG_PRIORITY_VERBOSE' was not declared in this scope419540860#1379#139#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#30#0#30#0#34"'*' was not declared in this scope0(4@54"'SDL_LogSetAllPriority' was not declared in this scope419540860#1518#136#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#30#0#30#0#34"'*' was not declared in this scope0(4@61"'SDL_GL_CONTEXT_MAJOR_VERSION' was not declared in this scope419540860#1654#143#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#33#0#33#0#34"'*' was not declared in this scope0(4@52"'SDL_GL_SetAttribute' was not declared in this scope419540860#1797#134#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#33#0#33#0#34"'*' was not declared in this scope0(4@61"'SDL_GL_CONTEXT_MINOR_VERSION' was not declared in this scope419540860#1931#143#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#34#0#34#0#34"'*' was not declared in this scope0(4@60"'SDL_GL_CONTEXT_PROFILE_MASK' was not declared in this scope419540860#2074#142#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#35#0#35#0#34"'*' was not declared in this scope0(4@60"'SDL_GL_CONTEXT_PROFILE_CORE' was not declared in this scope419540860#2216#142#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#35#0#35#0#34"'*' was not declared in this scope0(4@58"'SDL_GL_ACCELERATED_VISUAL' was not declared in this scope419540860#2358#140#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#36#0#36#0#34"'*' was not declared in this scope0(4@52"'SDL_GL_DOUBLEBUFFER' was not declared in this scope419540860#2498#134#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#37#0#37#0#34"'*' was not declared in this scope0(4@50"'SDL_GL_DEPTH_SIZE' was not declared in this scope419540860#2632#132#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#38#0#38#0#34"'*' was not declared in this scope0(4@43"'SDL_Window' was not declared in this scope419540860#2764#125#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#42#0#42#0#34"'*' was not declared in this scope0(4@39"'window' was not declared in this scope419540860#2889#121#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#42#0#42#0#34"'*' was not declared in this scope0(4@55"'SDL_WINDOWPOS_CENTERED' was not declared in this scope419540860#3010#137#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#44#0#44#0#34"'*' was not declared in this scope0(4@50"'SDL_WINDOW_OPENGL' was not declared in this scope419540860#3147#132#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#48#0#48#0#34"'*' was not declared in this scope0(4@49"'SDL_CreateWindow' was not declared in this scope419540860#3279#131#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#49#0#49#0#34"'*' was not declared in this scope0(4@45"'SDL_Renderer' was not declared in this scope419540860#3410#127#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#51#0#51#0#34"'*' was not declared in this scope0(4@41"'renderer' was not declared in this scope419540860#3537#123#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#51#0#51#0#34"'*' was not declared in this scope0(4@57"'SDL_RENDERER_ACCELERATED' was not declared in this scope419540860#3660#139#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#51#0#51#0#34"'*' was not declared in this scope0(4@51"'SDL_CreateRenderer' was not declared in this scope419540860#3799#133#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#51#0#51#0#34"'*' was not declared in this scope0(4@42"'SDL_Event' was not declared in this scope419540860#3932#124#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#54#0#54#0#34"'*' was not declared in this scope0(4@31"Expected `;' before 'mainEvent'419540860#4056#113#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#54#0#54#0#19"expected * before *0(4@48"ISO C++ forbids declaration of 'gl' with no type419540860#4169#130#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#55#0#55#0#47"ISO C++ forbids declaration of '*' with no type0(4@53"'SDL_GL_CreateContext' was not declared in this scope419540860#4299#135#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#55#0#55#0#34"'*' was not declared in this scope0(4@42"'mainEvent' was not declared in this scope419540860#4434#124#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#63#0#63#0#34"'*' was not declared in this scope0(4@46"'SDL_PollEvent' was not declared in this scope419540860#4558#128#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#63#0#63#0#34"'*' was not declared in this scope0(4@41"'SDL_QUIT' was not declared in this scope419540860#4686#123#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#65#0#65#0#34"'*' was not declared in this scope0(4@44"'SDL_KEYDOWN' was not declared in this scope419540860#4809#126#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#72#0#72#0#34"'*' was not declared in this scope0(4@39"'SDLK_q' was not declared in this scope419540860#4935#121#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#76#0#76#0#34"'*' was not declared in this scope0(4@50"'SDL_GL_SwapWindow' was not declared in this scope419540860#5056#132#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#88#0#88#0#34"'*' was not declared in this scope0(22@23"Unused variable 'timer'419540860#5188#107#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#61#0#61#0#19"unused variable '*'0(4@53"'SDL_GL_DeleteContext' was not declared in this scope419540860#5295#135#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#91#0#91#0#34"'*' was not declared in this scope0(4@50"'SDL_DestroyWindow' was not declared in this scope419540860#5430#132#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#94#0#94#0#34"'*' was not declared in this scope0(4@41"'SDL_Quit' was not declared in this scope419540860#5562#123#0(6@69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp419540812#95#0#95#0#34"'*' was not declared in this scope0(0#0#69"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp4317978624#1631"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wunused-function -Wunused-variable -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.9 -gdwarf-2 -iquote /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-generated-files.hmap -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-own-target-headers.hmap -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-all-target-headers.hmap -iquote /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/MiniGolfXCode-project-headers.hmap -F/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/Library/Frameworks -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/include -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/DerivedSources/i386 -I/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/DerivedSources -c /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/main.cpp -o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/MiniGolfXCode.build/Debug/MiniGolfXCode.build/Objects-normal/i386/main.o1#
+
+CCopyStringsFile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/en.lproj/InfoPlist.strings MiniGolfXCode/en.lproj/InfoPlist.strings
+s419540861.059244
+e419540861.747626
+r1
+xCopyStringsFile
+x/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/en.lproj/InfoPlist.strings
+xMiniGolfXCode/en.lproj/InfoPlist.strings
+lSLF07#2@45"Copy MiniGolfXCode/en.lproj/InfoPlist.strings419540861#419540861#0(0"0(0#0#94"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/MiniGolfXCode/en.lproj/InfoPlist.strings4317978624#405"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 MiniGolfXCode/en.lproj/InfoPlist.strings --outdir /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources/en.lproj0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/CMakeLists.txt ../src/glm/CMakeLists.txt
+s419540861.052788
+e419540861.063665
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/CMakeLists.txt
+x../src/glm/CMakeLists.txt
+lSLF07#2@30"Copy ../src/glm/CMakeLists.txt419540861#419540861#0(0"0(0#0#79"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/CMakeLists.txt4317978624#406"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/CMakeLists.txt /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/associated_min_max.inl ../src/glm/gtx/associated_min_max.inl
+s419540861.133098
+e419540861.142071
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/associated_min_max.inl
+x../src/glm/gtx/associated_min_max.inl
+lSLF07#2@42"Copy ../src/glm/gtx/associated_min_max.inl419540861#419540861#0(0"0(0#0#91"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/associated_min_max.inl4317978624#418"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/associated_min_max.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/bit.inl ../src/glm/gtx/bit.inl
+s419540861.079671
+e419540861.090946
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/bit.inl
+x../src/glm/gtx/bit.inl
+lSLF07#2@27"Copy ../src/glm/gtx/bit.inl419540861#419540861#0(0"0(0#0#76"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/bit.inl4317978624#403"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/bit.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/closest_point.inl ../src/glm/gtx/closest_point.inl
+s419540861.077441
+e419540861.088073
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/closest_point.inl
+x../src/glm/gtx/closest_point.inl
+lSLF07#2@37"Copy ../src/glm/gtx/closest_point.inl419540861#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/closest_point.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/closest_point.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/color_space.inl ../src/glm/gtx/color_space.inl
+s419540861.066635
+e419540861.079592
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/color_space.inl
+x../src/glm/gtx/color_space.inl
+lSLF07#2@35"Copy ../src/glm/gtx/color_space.inl419540861#419540861#0(0"0(0#0#84"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/color_space.inl4317978624#411"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/color_space.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/color_space_YCoCg.inl ../src/glm/gtx/color_space_YCoCg.inl
+s419540861.272362
+e419540861.281533
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/color_space_YCoCg.inl
+x../src/glm/gtx/color_space_YCoCg.inl
+lSLF07#2@41"Copy ../src/glm/gtx/color_space_YCoCg.inl419540861#419540861#0(0"0(0#0#90"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/color_space_YCoCg.inl4317978624#417"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/color_space_YCoCg.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/compatibility.inl ../src/glm/gtx/compatibility.inl
+s419540860.978728
+e419540861.031418
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/compatibility.inl
+x../src/glm/gtx/compatibility.inl
+lSLF07#2@37"Copy ../src/glm/gtx/compatibility.inl419540860#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/compatibility.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/compatibility.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/component_wise.inl ../src/glm/gtx/component_wise.inl
+s419540861.270670
+e419540861.280923
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/component_wise.inl
+x../src/glm/gtx/component_wise.inl
+lSLF07#2@38"Copy ../src/glm/gtx/component_wise.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/component_wise.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/component_wise.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/constants.inl ../src/glm/gtc/constants.inl
+s419540861.111232
+e419540861.134181
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/constants.inl
+x../src/glm/gtc/constants.inl
+lSLF07#2@33"Copy ../src/glm/gtc/constants.inl419540861#419540861#0(0"0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/constants.inl4317978624#409"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/constants.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/dual_quaternion.inl ../src/glm/gtx/dual_quaternion.inl
+s419540861.070056
+e419540861.081302
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/dual_quaternion.inl
+x../src/glm/gtx/dual_quaternion.inl
+lSLF07#2@39"Copy ../src/glm/gtx/dual_quaternion.inl419540861#419540861#0(0"0(0#0#88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/dual_quaternion.inl4317978624#415"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/dual_quaternion.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/epsilon.inl ../src/glm/gtc/epsilon.inl
+s419540861.063751
+e419540861.077129
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/epsilon.inl
+x../src/glm/gtc/epsilon.inl
+lSLF07#2@31"Copy ../src/glm/gtc/epsilon.inl419540861#419540861#0(0"0(0#0#80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/epsilon.inl4317978624#407"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/epsilon.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/euler_angles.inl ../src/glm/gtx/euler_angles.inl
+s419540861.093509
+e419540861.105195
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/euler_angles.inl
+x../src/glm/gtx/euler_angles.inl
+lSLF07#2@36"Copy ../src/glm/gtx/euler_angles.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/euler_angles.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/euler_angles.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/extend.inl ../src/glm/gtx/extend.inl
+s419540861.267097
+e419540861.278791
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/extend.inl
+x../src/glm/gtx/extend.inl
+lSLF07#2@30"Copy ../src/glm/gtx/extend.inl419540861#419540861#0(0"0(0#0#79"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/extend.inl4317978624#406"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/extend.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/extented_min_max.inl ../src/glm/gtx/extented_min_max.inl
+s419540861.064363
+e419540861.077370
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/extented_min_max.inl
+x../src/glm/gtx/extented_min_max.inl
+lSLF07#2@40"Copy ../src/glm/gtx/extented_min_max.inl419540861#419540861#0(0"0(0#0#89"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/extented_min_max.inl4317978624#416"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/extented_min_max.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/fast_exponential.inl ../src/glm/gtx/fast_exponential.inl
+s419540861.081535
+e419540861.093282
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/fast_exponential.inl
+x../src/glm/gtx/fast_exponential.inl
+lSLF07#2@40"Copy ../src/glm/gtx/fast_exponential.inl419540861#419540861#0(0"0(0#0#89"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_exponential.inl4317978624#416"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_exponential.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/fast_square_root.inl ../src/glm/gtx/fast_square_root.inl
+s419540861.238104
+e419540861.267010
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/fast_square_root.inl
+x../src/glm/gtx/fast_square_root.inl
+lSLF07#2@40"Copy ../src/glm/gtx/fast_square_root.inl419540861#419540861#0(0"0(0#0#89"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_square_root.inl4317978624#416"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_square_root.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/fast_trigonometry.inl ../src/glm/gtx/fast_trigonometry.inl
+s419540861.135808
+e419540861.150287
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/fast_trigonometry.inl
+x../src/glm/gtx/fast_trigonometry.inl
+lSLF07#2@41"Copy ../src/glm/gtx/fast_trigonometry.inl419540861#419540861#0(0"0(0#0#90"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_trigonometry.inl4317978624#417"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/fast_trigonometry.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_common.inl ../src/glm/detail/func_common.inl
+s419540861.147023
+e419540861.262961
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_common.inl
+x../src/glm/detail/func_common.inl
+lSLF07#2@38"Copy ../src/glm/detail/func_common.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_common.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_common.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_exponential.inl ../src/glm/detail/func_exponential.inl
+s419540861.150364
+e419540861.259377
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_exponential.inl
+x../src/glm/detail/func_exponential.inl
+lSLF07#2@43"Copy ../src/glm/detail/func_exponential.inl419540861#419540861#0(0"0(0#0#92"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_exponential.inl4317978624#419"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_exponential.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_geometric.inl ../src/glm/detail/func_geometric.inl
+s419540861.134682
+e419540861.146000
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_geometric.inl
+x../src/glm/detail/func_geometric.inl
+lSLF07#2@41"Copy ../src/glm/detail/func_geometric.inl419540861#419540861#0(0"0(0#0#90"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_geometric.inl4317978624#417"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_geometric.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_integer.inl ../src/glm/detail/func_integer.inl
+s419540861.047258
+e419540861.059166
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_integer.inl
+x../src/glm/detail/func_integer.inl
+lSLF07#2@39"Copy ../src/glm/detail/func_integer.inl419540861#419540861#0(0"0(0#0#88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_integer.inl4317978624#415"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_integer.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_matrix.inl ../src/glm/detail/func_matrix.inl
+s419540861.037404
+e419540861.051757
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_matrix.inl
+x../src/glm/detail/func_matrix.inl
+lSLF07#2@38"Copy ../src/glm/detail/func_matrix.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_matrix.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_matrix.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_noise.inl ../src/glm/detail/func_noise.inl
+s419540860.980219
+e419540861.036545
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_noise.inl
+x../src/glm/detail/func_noise.inl
+lSLF07#2@37"Copy ../src/glm/detail/func_noise.inl419540860#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_noise.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_noise.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_packing.inl ../src/glm/detail/func_packing.inl
+s419540861.032757
+e419540861.044530
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_packing.inl
+x../src/glm/detail/func_packing.inl
+lSLF07#2@39"Copy ../src/glm/detail/func_packing.inl419540861#419540861#0(0"0(0#0#88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl4317978624#415"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_packing.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_trigonometric.inl ../src/glm/detail/func_trigonometric.inl
+s419540861.100801
+e419540861.116039
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_trigonometric.inl
+x../src/glm/detail/func_trigonometric.inl
+lSLF07#2@45"Copy ../src/glm/detail/func_trigonometric.inl419540861#419540861#0(0"0(0#0#94"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_trigonometric.inl4317978624#421"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_trigonometric.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/func_vector_relational.inl ../src/glm/detail/func_vector_relational.inl
+s419540861.148810
+e419540861.259556
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/func_vector_relational.inl
+x../src/glm/detail/func_vector_relational.inl
+lSLF07#2@49"Copy ../src/glm/detail/func_vector_relational.inl419540861#419540861#0(0"0(0#0#98"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_vector_relational.inl4317978624#425"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/func_vector_relational.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/gradient_paint.inl ../src/glm/gtx/gradient_paint.inl
+s419540861.047833
+e419540861.058297
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/gradient_paint.inl
+x../src/glm/gtx/gradient_paint.inl
+lSLF07#2@38"Copy ../src/glm/gtx/gradient_paint.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/gradient_paint.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/gradient_paint.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/handed_coordinate_space.inl ../src/glm/gtx/handed_coordinate_space.inl
+s419540861.089119
+e419540861.103737
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/handed_coordinate_space.inl
+x../src/glm/gtx/handed_coordinate_space.inl
+lSLF07#2@47"Copy ../src/glm/gtx/handed_coordinate_space.inl419540861#419540861#0(0"0(0#0#96"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/handed_coordinate_space.inl4317978624#423"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/handed_coordinate_space.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/inertia.inl ../src/glm/gtx/inertia.inl
+s419540861.056288
+e419540861.069102
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/inertia.inl
+x../src/glm/gtx/inertia.inl
+lSLF07#2@31"Copy ../src/glm/gtx/inertia.inl419540861#419540861#0(0"0(0#0#80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/inertia.inl4317978624#407"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/inertia.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/int_10_10_10_2.inl ../src/glm/gtx/int_10_10_10_2.inl
+s419540861.091042
+e419540861.103591
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/int_10_10_10_2.inl
+x../src/glm/gtx/int_10_10_10_2.inl
+lSLF07#2@38"Copy ../src/glm/gtx/int_10_10_10_2.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/int_10_10_10_2.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/int_10_10_10_2.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/integer.inl ../src/glm/gtx/integer.inl
+s419540861.065993
+e419540861.077253
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/integer.inl
+x../src/glm/gtx/integer.inl
+lSLF07#2@31"Copy ../src/glm/gtx/integer.inl419540861#419540861#0(0"0(0#0#80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/integer.inl4317978624#407"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/integer.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intersect.inl ../src/glm/gtx/intersect.inl
+s419540861.036778
+e419540861.049980
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intersect.inl
+x../src/glm/gtx/intersect.inl
+lSLF07#2@33"Copy ../src/glm/gtx/intersect.inl419540861#419540861#0(0"0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/intersect.inl4317978624#409"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/intersect.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_common.inl ../src/glm/detail/intrinsic_common.inl
+s419540860.979839
+e419540861.031832
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_common.inl
+x../src/glm/detail/intrinsic_common.inl
+lSLF07#2@43"Copy ../src/glm/detail/intrinsic_common.inl419540860#419540861#0(0"0(0#0#92"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_common.inl4317978624#419"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_common.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_exponential.inl ../src/glm/detail/intrinsic_exponential.inl
+s419540860.981786
+e419540861.036696
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_exponential.inl
+x../src/glm/detail/intrinsic_exponential.inl
+lSLF07#2@48"Copy ../src/glm/detail/intrinsic_exponential.inl419540860#419540861#0(0"0(0#0#97"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_exponential.inl4317978624#424"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_exponential.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_geometric.inl ../src/glm/detail/intrinsic_geometric.inl
+s419540861.045460
+e419540861.057101
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_geometric.inl
+x../src/glm/detail/intrinsic_geometric.inl
+lSLF07#2@46"Copy ../src/glm/detail/intrinsic_geometric.inl419540861#419540861#0(0"0(0#0#95"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_geometric.inl4317978624#422"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_geometric.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_integer.inl ../src/glm/detail/intrinsic_integer.inl
+s419540861.075405
+e419540861.086304
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_integer.inl
+x../src/glm/detail/intrinsic_integer.inl
+lSLF07#2@44"Copy ../src/glm/detail/intrinsic_integer.inl419540861#419540861#0(0"0(0#0#93"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_integer.inl4317978624#420"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_integer.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_matrix.inl ../src/glm/detail/intrinsic_matrix.inl
+s419540861.135045
+e419540861.143974
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_matrix.inl
+x../src/glm/detail/intrinsic_matrix.inl
+lSLF07#2@43"Copy ../src/glm/detail/intrinsic_matrix.inl419540861#419540861#0(0"0(0#0#92"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_matrix.inl4317978624#419"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_matrix.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_trigonometric.inl ../src/glm/detail/intrinsic_trigonometric.inl
+s419540861.080292
+e419540861.091798
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_trigonometric.inl
+x../src/glm/detail/intrinsic_trigonometric.inl
+lSLF07#2@50"Copy ../src/glm/detail/intrinsic_trigonometric.inl419540861#419540861#0(0"0(0#0#99"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_trigonometric.inl4317978624#426"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_trigonometric.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_vector_relational.inl ../src/glm/detail/intrinsic_vector_relational.inl
+s419540861.088157
+e419540861.100732
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/intrinsic_vector_relational.inl
+x../src/glm/detail/intrinsic_vector_relational.inl
+lSLF07#2@54"Copy ../src/glm/detail/intrinsic_vector_relational.inl419540861#419540861#0(0"0(0#0#103"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_vector_relational.inl4317978624#430"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/intrinsic_vector_relational.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/io.inl ../src/glm/gtx/io.inl
+s419540861.068248
+e419540861.079445
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/io.inl
+x../src/glm/gtx/io.inl
+lSLF07#2@26"Copy ../src/glm/gtx/io.inl419540861#419540861#0(0"0(0#0#75"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/io.inl4317978624#402"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/io.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/log_base.inl ../src/glm/gtx/log_base.inl
+s419540861.035593
+e419540861.046583
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/log_base.inl
+x../src/glm/gtx/log_base.inl
+lSLF07#2@32"Copy ../src/glm/gtx/log_base.inl419540861#419540861#0(0"0(0#0#81"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/log_base.inl4317978624#408"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/log_base.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_access.inl ../src/glm/gtc/matrix_access.inl
+s419540861.050071
+e419540861.065766
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_access.inl
+x../src/glm/gtc/matrix_access.inl
+lSLF07#2@37"Copy ../src/glm/gtc/matrix_access.inl419540861#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_access.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_access.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_cross_product.inl ../src/glm/gtx/matrix_cross_product.inl
+s419540861.048718
+e419540861.061400
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_cross_product.inl
+x../src/glm/gtx/matrix_cross_product.inl
+lSLF07#2@44"Copy ../src/glm/gtx/matrix_cross_product.inl419540861#419540861#0(0"0(0#0#93"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_cross_product.inl4317978624#420"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_cross_product.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_interpolation.inl ../src/glm/gtx/matrix_interpolation.inl
+s419540861.148192
+e419540861.259244
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_interpolation.inl
+x../src/glm/gtx/matrix_interpolation.inl
+lSLF07#2@44"Copy ../src/glm/gtx/matrix_interpolation.inl419540861#419540861#0(0"0(0#0#93"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_interpolation.inl4317978624#420"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_interpolation.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_inverse.inl ../src/glm/gtc/matrix_inverse.inl
+s419540861.089692
+e419540861.102537
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_inverse.inl
+x../src/glm/gtc/matrix_inverse.inl
+lSLF07#2@38"Copy ../src/glm/gtc/matrix_inverse.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_inverse.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_inverse.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_major_storage.inl ../src/glm/gtx/matrix_major_storage.inl
+s419540861.044760
+e419540861.055305
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_major_storage.inl
+x../src/glm/gtx/matrix_major_storage.inl
+lSLF07#2@44"Copy ../src/glm/gtx/matrix_major_storage.inl419540861#419540861#0(0"0(0#0#93"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_major_storage.inl4317978624#420"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_major_storage.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_operation.inl ../src/glm/gtx/matrix_operation.inl
+s419540861.118219
+e419540861.142871
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_operation.inl
+x../src/glm/gtx/matrix_operation.inl
+lSLF07#2@40"Copy ../src/glm/gtx/matrix_operation.inl419540861#419540861#0(0"0(0#0#89"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_operation.inl4317978624#416"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_operation.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_query.inl ../src/glm/gtx/matrix_query.inl
+s419540860.981003
+e419540861.030327
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_query.inl
+x../src/glm/gtx/matrix_query.inl
+lSLF07#2@36"Copy ../src/glm/gtx/matrix_query.inl419540860#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_query.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_query.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform.inl ../src/glm/gtc/matrix_transform.inl
+s419540861.058386
+e419540861.071080
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform.inl
+x../src/glm/gtc/matrix_transform.inl
+lSLF07#2@40"Copy ../src/glm/gtc/matrix_transform.inl419540861#419540861#0(0"0(0#0#89"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_transform.inl4317978624#416"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/matrix_transform.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform_2d.inl ../src/glm/gtx/matrix_transform_2d.inl
+s419540861.134302
+e419540861.145847
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/matrix_transform_2d.inl
+x../src/glm/gtx/matrix_transform_2d.inl
+lSLF07#2@43"Copy ../src/glm/gtx/matrix_transform_2d.inl419540861#419540861#0(0"0(0#0#92"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_transform_2d.inl4317978624#419"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/matrix_transform_2d.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/mixed_product.inl ../src/glm/gtx/mixed_product.inl
+s419540861.263188
+e419540861.275041
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/mixed_product.inl
+x../src/glm/gtx/mixed_product.inl
+lSLF07#2@37"Copy ../src/glm/gtx/mixed_product.inl419540861#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/mixed_product.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/mixed_product.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/multiple.inl ../src/glm/gtx/multiple.inl
+s419540861.086405
+e419540861.099945
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/multiple.inl
+x../src/glm/gtx/multiple.inl
+lSLF07#2@32"Copy ../src/glm/gtx/multiple.inl419540861#419540861#0(0"0(0#0#81"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/multiple.inl4317978624#408"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/multiple.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/noise.inl ../src/glm/gtc/noise.inl
+s419540861.260191
+e419540861.269878
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/noise.inl
+x../src/glm/gtc/noise.inl
+lSLF07#2@29"Copy ../src/glm/gtc/noise.inl419540861#419540861#0(0"0(0#0#78"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/noise.inl4317978624#405"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/noise.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/norm.inl ../src/glm/gtx/norm.inl
+s419540861.030427
+e419540861.041636
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/norm.inl
+x../src/glm/gtx/norm.inl
+lSLF07#2@28"Copy ../src/glm/gtx/norm.inl419540861#419540861#0(0"0(0#0#77"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/norm.inl17202385664#404"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/norm.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/normal.inl ../src/glm/gtx/normal.inl
+s419540861.116395
+e419540861.134022
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/normal.inl
+x../src/glm/gtx/normal.inl
+lSLF07#2@30"Copy ../src/glm/gtx/normal.inl419540861#419540861#0(0"0(0#0#79"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/normal.inl4317978624#406"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/normal.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/normalize_dot.inl ../src/glm/gtx/normalize_dot.inl
+s419540861.146087
+e419540861.259133
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/normalize_dot.inl
+x../src/glm/gtx/normalize_dot.inl
+lSLF07#2@37"Copy ../src/glm/gtx/normalize_dot.inl419540861#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/normalize_dot.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/normalize_dot.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/number_precision.inl ../src/glm/gtx/number_precision.inl
+s419540861.078038
+e419540861.088926
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/number_precision.inl
+x../src/glm/gtx/number_precision.inl
+lSLF07#2@40"Copy ../src/glm/gtx/number_precision.inl419540861#419540861#0(0"0(0#0#89"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/number_precision.inl4317978624#416"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/number_precision.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/optimum_pow.inl ../src/glm/gtx/optimum_pow.inl
+s419540860.981373
+e419540861.032097
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/optimum_pow.inl
+x../src/glm/gtx/optimum_pow.inl
+lSLF07#2@35"Copy ../src/glm/gtx/optimum_pow.inl419540860#419540861#0(0"0(0#0#84"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/optimum_pow.inl4317978624#411"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/optimum_pow.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/orthonormalize.inl ../src/glm/gtx/orthonormalize.inl
+s419540861.046664
+e419540861.060224
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/orthonormalize.inl
+x../src/glm/gtx/orthonormalize.inl
+lSLF07#2@38"Copy ../src/glm/gtx/orthonormalize.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/orthonormalize.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/orthonormalize.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/packing.inl ../src/glm/gtc/packing.inl
+s419540861.105548
+e419540861.133775
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/packing.inl
+x../src/glm/gtc/packing.inl
+lSLF07#2@31"Copy ../src/glm/gtc/packing.inl419540861#419540861#0(0"0(0#0#80"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/packing.inl4317978624#407"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/packing.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/perpendicular.inl ../src/glm/gtx/perpendicular.inl
+s419540860.978133
+e419540861.031263
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/perpendicular.inl
+x../src/glm/gtx/perpendicular.inl
+lSLF07#2@37"Copy ../src/glm/gtx/perpendicular.inl419540860#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/perpendicular.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/perpendicular.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/polar_coordinates.inl ../src/glm/gtx/polar_coordinates.inl
+s419540861.069186
+e419540861.081141
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/polar_coordinates.inl
+x../src/glm/gtx/polar_coordinates.inl
+lSLF07#2@41"Copy ../src/glm/gtx/polar_coordinates.inl419540861#419540861#0(0"0(0#0#90"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/polar_coordinates.inl4317978624#417"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/polar_coordinates.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/precision.inl ../src/glm/detail/precision.inl
+s419540861.102630
+e419540861.116203
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/precision.inl
+x../src/glm/detail/precision.inl
+lSLF07#2@36"Copy ../src/glm/detail/precision.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/precision.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/precision.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/projection.inl ../src/glm/gtx/projection.inl
+s419540860.980588
+e419540861.031972
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/projection.inl
+x../src/glm/gtx/projection.inl
+lSLF07#2@34"Copy ../src/glm/gtx/projection.inl419540860#419540861#0(0"0(0#0#83"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/projection.inl4317978624#410"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/projection.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl ../src/glm/gtc/quaternion.inl
+s419540860.979471
+e419540861.031692
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl
+x../src/glm/gtc/quaternion.inl
+lSLF07#2@34"Copy ../src/glm/gtc/quaternion.inl419540860#419540861#0(0"0(0#0#83"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/quaternion.inl4317978624#410"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/quaternion.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl ../src/glm/gtx/quaternion.inl
+s419540860.979103
+e419540861.031554
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/quaternion.inl
+x../src/glm/gtx/quaternion.inl
+lSLF07#2@34"Copy ../src/glm/gtx/quaternion.inl419540860#419540861#0(0"0(0#0#83"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/quaternion.inl4317978624#410"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/quaternion.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/random.inl ../src/glm/gtc/random.inl
+s419540861.033397
+e419540861.044675
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/random.inl
+x../src/glm/gtc/random.inl
+lSLF07#2@30"Copy ../src/glm/gtc/random.inl419540861#419540861#0(0"0(0#0#79"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/random.inl4317978624#406"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/random.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/raw_data.inl ../src/glm/gtx/raw_data.inl
+s419540861.057183
+e419540861.068152
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/raw_data.inl
+x../src/glm/gtx/raw_data.inl
+lSLF07#2@32"Copy ../src/glm/gtx/raw_data.inl419540861#419540861#0(0"0(0#0#81"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/raw_data.inl4317978624#408"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/raw_data.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/reciprocal.inl ../src/glm/gtc/reciprocal.inl
+s419540861.041733
+e419540861.052708
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/reciprocal.inl
+x../src/glm/gtc/reciprocal.inl
+lSLF07#2@34"Copy ../src/glm/gtc/reciprocal.inl419540861#419540861#0(0"0(0#0#83"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/reciprocal.inl4317978624#410"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/reciprocal.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/rotate_normalized_axis.inl ../src/glm/gtx/rotate_normalized_axis.inl
+s419540861.261544
+e419540861.272277
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/rotate_normalized_axis.inl
+x../src/glm/gtx/rotate_normalized_axis.inl
+lSLF07#2@46"Copy ../src/glm/gtx/rotate_normalized_axis.inl419540861#419540861#0(0"0(0#0#95"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/rotate_normalized_axis.inl4317978624#422"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/rotate_normalized_axis.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/rotate_vector.inl ../src/glm/gtx/rotate_vector.inl
+s419540861.055437
+e419540861.069955
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/rotate_vector.inl
+x../src/glm/gtx/rotate_vector.inl
+lSLF07#2@37"Copy ../src/glm/gtx/rotate_vector.inl419540861#419540861#0(0"0(0#0#86"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/rotate_vector.inl4317978624#413"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/rotate_vector.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/scalar_relational.inl ../src/glm/gtx/scalar_relational.inl
+s419540861.142939
+e419540861.259469
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/scalar_relational.inl
+x../src/glm/gtx/scalar_relational.inl
+lSLF07#2@41"Copy ../src/glm/gtx/scalar_relational.inl419540861#419540861#0(0"0(0#0#90"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/scalar_relational.inl4317978624#417"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/scalar_relational.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/simd_mat4.inl ../src/glm/gtx/simd_mat4.inl
+s419540861.082795
+e419540861.094929
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/simd_mat4.inl
+x../src/glm/gtx/simd_mat4.inl
+lSLF07#2@33"Copy ../src/glm/gtx/simd_mat4.inl419540861#419540861#0(0"0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_mat4.inl4317978624#409"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_mat4.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/simd_quat.inl ../src/glm/gtx/simd_quat.inl
+s419540861.262119
+e419540861.274242
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/simd_quat.inl
+x../src/glm/gtx/simd_quat.inl
+lSLF07#2@33"Copy ../src/glm/gtx/simd_quat.inl419540861#419540861#0(0"0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_quat.inl4317978624#409"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_quat.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/simd_vec4.inl ../src/glm/gtx/simd_vec4.inl
+s419540861.269952
+e419540861.281133
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/simd_vec4.inl
+x../src/glm/gtx/simd_vec4.inl
+lSLF07#2@33"Copy ../src/glm/gtx/simd_vec4.inl419540861#419540861#0(0"0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_vec4.inl4317978624#409"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/simd_vec4.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/spline.inl ../src/glm/gtx/spline.inl
+s419540861.091883
+e419540861.105476
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/spline.inl
+x../src/glm/gtx/spline.inl
+lSLF07#2@30"Copy ../src/glm/gtx/spline.inl419540861#419540861#0(0"0(0#0#79"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/spline.inl4317978624#406"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/spline.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/std_based_type.inl ../src/glm/gtx/std_based_type.inl
+s419540861.035004
+e419540861.048639
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/std_based_type.inl
+x../src/glm/gtx/std_based_type.inl
+lSLF07#2@38"Copy ../src/glm/gtx/std_based_type.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/std_based_type.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/std_based_type.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/string_cast.inl ../src/glm/gtx/string_cast.inl
+s419540861.034441
+e419540861.046441
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/string_cast.inl
+x../src/glm/gtx/string_cast.inl
+lSLF07#2@35"Copy ../src/glm/gtx/string_cast.inl419540861#419540861#0(0"0(0#0#84"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/string_cast.inl4317978624#411"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/string_cast.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/transform.inl ../src/glm/gtx/transform.inl
+s419540861.082180
+e419540861.093427
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/transform.inl
+x../src/glm/gtx/transform.inl
+lSLF07#2@33"Copy ../src/glm/gtx/transform.inl419540861#419540861#0(0"0(0#0#82"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/transform.inl4317978624#409"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/transform.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/transform2.inl ../src/glm/gtx/transform2.inl
+s419540861.259761
+e419540861.268914
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/transform2.inl
+x../src/glm/gtx/transform2.inl
+lSLF07#2@34"Copy ../src/glm/gtx/transform2.inl419540861#419540861#0(0"0(0#0#83"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/transform2.inl4317978624#410"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/transform2.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_gentype.inl ../src/glm/detail/type_gentype.inl
+s419540861.103817
+e419540861.133943
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_gentype.inl
+x../src/glm/detail/type_gentype.inl
+lSLF07#2@39"Copy ../src/glm/detail/type_gentype.inl419540861#419540861#0(0"0(0#0#88"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_gentype.inl4317978624#415"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_gentype.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_half.inl ../src/glm/detail/type_half.inl
+s419540861.064947
+e419540861.075122
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_half.inl
+x../src/glm/detail/type_half.inl
+lSLF07#2@36"Copy ../src/glm/detail/type_half.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_half.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat.inl ../src/glm/detail/type_mat.inl
+s419540861.144068
+e419540861.263110
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat.inl
+x../src/glm/detail/type_mat.inl
+lSLF07#2@35"Copy ../src/glm/detail/type_mat.inl419540861#419540861#0(0"0(0#0#84"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat.inl4317978624#411"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x2.inl ../src/glm/detail/type_mat2x2.inl
+s419540861.042714
+e419540861.056216
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x2.inl
+x../src/glm/detail/type_mat2x2.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat2x2.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x2.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x2.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x3.inl ../src/glm/detail/type_mat2x3.inl
+s419540861.051845
+e419540861.065914
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x3.inl
+x../src/glm/detail/type_mat2x3.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat2x3.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x3.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x3.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x4.inl ../src/glm/detail/type_mat2x4.inl
+s419540861.100032
+e419540861.116327
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat2x4.inl
+x../src/glm/detail/type_mat2x4.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat2x4.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x4.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat2x4.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x2.inl ../src/glm/detail/type_mat3x2.inl
+s419540861.071151
+e419540861.081449
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x2.inl
+x../src/glm/detail/type_mat3x2.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat3x2.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x2.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x2.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x3.inl ../src/glm/detail/type_mat3x3.inl
+s419540861.273019
+e419540861.282610
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x3.inl
+x../src/glm/detail/type_mat3x3.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat3x3.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x3.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x3.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x4.inl ../src/glm/detail/type_mat3x4.inl
+s419540861.263804
+e419540861.274468
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat3x4.inl
+x../src/glm/detail/type_mat3x4.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat3x4.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x4.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat3x4.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x2.inl ../src/glm/detail/type_mat4x2.inl
+s419540861.269043
+e419540861.279109
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x2.inl
+x../src/glm/detail/type_mat4x2.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat4x2.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x2.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x2.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x3.inl ../src/glm/detail/type_mat4x3.inl
+s419540861.135406
+e419540861.147811
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x3.inl
+x../src/glm/detail/type_mat4x3.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat4x3.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x3.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x3.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x4.inl ../src/glm/detail/type_mat4x4.inl
+s419540861.034008
+e419540861.046290
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_mat4x4.inl
+x../src/glm/detail/type_mat4x4.inl
+lSLF07#2@38"Copy ../src/glm/detail/type_mat4x4.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x4.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_mat4x4.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_precision.inl ../src/glm/gtc/type_precision.inl
+s419540861.136376
+e419540861.147957
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_precision.inl
+x../src/glm/gtc/type_precision.inl
+lSLF07#2@38"Copy ../src/glm/gtc/type_precision.inl419540861#419540861#0(0"0(0#0#87"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/type_precision.inl4317978624#414"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/type_precision.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_ptr.inl ../src/glm/gtc/type_ptr.inl
+s419540861.078640
+e419540861.089050
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_ptr.inl
+x../src/glm/gtc/type_ptr.inl
+lSLF07#2@32"Copy ../src/glm/gtc/type_ptr.inl419540861#419540861#0(0"0(0#0#81"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/type_ptr.inl4317978624#408"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/type_ptr.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec.inl ../src/glm/detail/type_vec.inl
+s419540861.260586
+e419540861.270600
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_vec.inl
+x../src/glm/detail/type_vec.inl
+lSLF07#2@35"Copy ../src/glm/detail/type_vec.inl419540861#419540861#0(0"0(0#0#84"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec.inl4317978624#411"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec1.inl ../src/glm/detail/type_vec1.inl
+s419540861.260988
+e419540861.272123
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_vec1.inl
+x../src/glm/detail/type_vec1.inl
+lSLF07#2@36"Copy ../src/glm/detail/type_vec1.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec1.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec1.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec2.inl ../src/glm/detail/type_vec2.inl
+s419540861.095011
+e419540861.109151
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_vec2.inl
+x../src/glm/detail/type_vec2.inl
+lSLF07#2@36"Copy ../src/glm/detail/type_vec2.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec2.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec2.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec3.inl ../src/glm/detail/type_vec3.inl
+s419540861.094141
+e419540861.105340
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_vec3.inl
+x../src/glm/detail/type_vec3.inl
+lSLF07#2@36"Copy ../src/glm/detail/type_vec3.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec3.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec3.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/type_vec4.inl ../src/glm/detail/type_vec4.inl
+s419540861.149452
+e419540861.259648
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/type_vec4.inl
+x../src/glm/detail/type_vec4.inl
+lSLF07#2@36"Copy ../src/glm/detail/type_vec4.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec4.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/detail/type_vec4.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/ulp.inl ../src/glm/gtc/ulp.inl
+s419540861.142161
+e419540861.238032
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/ulp.inl
+x../src/glm/gtc/ulp.inl
+lSLF07#2@27"Copy ../src/glm/gtc/ulp.inl419540861#419540861#0(0"0(0#0#76"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/ulp.inl4317978624#403"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtc/ulp.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/unsigned_int.inl ../src/glm/gtx/unsigned_int.inl
+s419540861.106137
+e419540861.133864
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/unsigned_int.inl
+x../src/glm/gtx/unsigned_int.inl
+lSLF07#2@36"Copy ../src/glm/gtx/unsigned_int.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/unsigned_int.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/unsigned_int.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/vec1.inl ../src/glm/gtx/vec1.inl
+s419540861.032166
+e419540861.042630
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/vec1.inl
+x../src/glm/gtx/vec1.inl
+lSLF07#2@28"Copy ../src/glm/gtx/vec1.inl419540861#419540861#0(0"0(0#0#77"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vec1.inl4317978624#404"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vec1.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/vector_angle.inl ../src/glm/gtx/vector_angle.inl
+s419540861.104450
+e419540861.134102
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/vector_angle.inl
+x../src/glm/gtx/vector_angle.inl
+lSLF07#2@36"Copy ../src/glm/gtx/vector_angle.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vector_angle.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vector_angle.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/vector_query.inl ../src/glm/gtx/vector_query.inl
+s419540861.106734
+e419540861.134258
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/vector_query.inl
+x../src/glm/gtx/vector_query.inl
+lSLF07#2@36"Copy ../src/glm/gtx/vector_query.inl419540861#419540861#0(0"0(0#0#85"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vector_query.inl4317978624#412"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/vector_query.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CCpResource build/Debug/MiniGolfXCode.app/Contents/Resources/wrap.inl ../src/glm/gtx/wrap.inl
+s419540861.136962
+e419540861.148102
+r1
+xCpResource
+xbuild/Debug/MiniGolfXCode.app/Contents/Resources/wrap.inl
+x../src/glm/gtx/wrap.inl
+lSLF07#2@28"Copy ../src/glm/gtx/wrap.inl419540861#419540861#0(0"0(0#0#77"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/wrap.inl4317978624#404"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/../src/glm/gtx/wrap.inl /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Resources0#
+
+CLd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/MacOS/MiniGolfXCode normal i386
+r0
+
+CProcessInfoPlistFile /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Info.plist MiniGolfXCode/MiniGolfXCode-Info.plist
+s419540860.027973
+e419540860.065019
+r1
+xProcessInfoPlistFile
+x/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Info.plist
+xMiniGolfXCode/MiniGolfXCode-Info.plist
+lSLF07#2@46"Process MiniGolfXCode/MiniGolfXCode-Info.plist419540860#419540860#0(0"0(0#0#92"/Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/MiniGolfXCode/MiniGolfXCode-Info.plist17233771520#387"    cd /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode    builtin-infoPlistUtility MiniGolfXCode/MiniGolfXCode-Info.plist -genpkginfo /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app/Contents/Info.plist0#
+
+CTouch /Users/jakecohen/git/MiniGolfGameEngine/MiniGolfXCode/build/Debug/MiniGolfXCode.app
+r0
+
