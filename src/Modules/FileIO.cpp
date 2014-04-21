@@ -153,8 +153,27 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     std::vector<glm::vec3> normals = getNormals(indices,vertices);
     std::vector<glm::vec3> localVertices = getLocalVertices(position,vertices);
     std::vector<glm::vec3> colors = getColors(vertices);
+    std::cout << "length_first: " << colors.size();
     Model *model = new Model(localVertices,normals,colors,indices);
+    /*std::vector<unsigned int> newIndicies;
+    newIndicies.push_back(0);
+    newIndicies.push_back(1);
+    newIndicies.push_back(2);
+    std::vector<glm::vec3> newVerts;
+    newVerts.push_back(glm::vec3(-0.5, -0.5, 0));
+    newVerts.push_back(glm::vec3(0.5, -0.5, 0));
+    newVerts.push_back(glm::vec3(0, 0.5, 0));
+    std::vector<glm::vec3> newNorms;
+    newNorms.push_back(glm::vec3(-0.5, -0.5, 0));
+    newNorms.push_back(glm::vec3(0.5, -0.5, 0));
+    newNorms.push_back(glm::vec3(0, 0.5, 0));
+    std::vector<glm::vec3> newCol;
+    newCol.push_back(glm::vec3(0, 0, 1));
+    newCol.push_back(glm::vec3(1, 0, 0));
+    newCol.push_back(glm::vec3(0, 0, 0));
+    Model *model = new Model(newVerts,newNorms,newCol,newIndicies);*/
     new Tile(index,position,model,neighbors);
+    //new Tile(index,position,model,neighbors);
     return true;
 }
 
@@ -299,10 +318,12 @@ std::vector<glm::vec3> FileIO::getColors(std::vector<glm::vec3> vertices)
     for(glm::vec3 v : vertices)
     {
         glm::vec3 randomColor;
-        randomColor.x = rand();
-        randomColor.y = rand();
-        randomColor.z = rand();
+        randomColor.x = (float) rand()/(float)RAND_MAX;
+        randomColor.y = (float) rand()/(float)RAND_MAX;
+        randomColor.z = (float) rand()/(float)RAND_MAX;
+        colors.push_back(randomColor);
     }
+    
     
     return colors;
 }

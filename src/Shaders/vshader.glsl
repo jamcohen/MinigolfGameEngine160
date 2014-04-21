@@ -3,17 +3,16 @@
 
 in  vec4 vPosition;
 in  vec3 normal;
+in  vec3 vColor;
 out vec4 color;
 
 uniform vec4 AmbientProduct, DiffuseProduct, SpecularProduct;
-uniform vec4 material;
 uniform mat4 camera;
 uniform mat4 model;
 uniform mat4 projection;
 uniform vec3 light;
 uniform vec4 eye;
 uniform float Shininess;
-uniform vec3 coloringOn;
 void main()
 {
 
@@ -28,21 +27,21 @@ void main()
     // Transform vertex normal into eye coordinates
     vec3 N = normalize( inverse(transpose(model))*vec4(normal, 0.0) ).xyz;
 
-    // Compute terms in the illumination equation
-    vec4 ambient = AmbientProduct*material;
+    //Compute terms in the illumination equation
+    vec4 ambient = AmbientProduct*vec4(vColor, 1.0);
 
     float Kd = max( dot(L, N), 0.0 );
-    vec4  diffuse = Kd*DiffuseProduct*material;
+    vec4  diffuse = Kd*DiffuseProduct*vec4(vColor, 1.0);
 
     float Ks = pow( max(dot(N, H), 0.0), 50 );
     vec4  specular = Ks * SpecularProduct;
     
-	color = ambient + diffuse + specular*material;
+	color = ambient + diffuse + specular*vec4(vColor, 1.0);
     if( dot(L, N) < 0.0 ) {
 		specular = vec4(0.0, 0.0, 0.0, 1.0);
 		diffuse = vec4(0.0, 0.0, 0.0, 1.0);
 		color = vec4(0.0, 0.0, 0.0, 1.0);
-    } 
+    }
 
     gl_Position = projection * model_view * vPosition;
 

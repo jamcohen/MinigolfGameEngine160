@@ -11,16 +11,6 @@
  */
 int main(int argc, char * arg[])
 {
-    //Print out arguements
-    std::cout << "TEST: " << argc << std::endl;
-    for(auto i = 0; i < argc; i++)
-    {
-        std::cout << i << " : " << arg[i] << std::endl;
-    }
-    
-    FileIO fileIO;
-    std::string s(arg[1]);
-    fileIO.parseTileMap(s);
     // init SDL
     if(SDL_Init(SDL_INIT_EVERYTHING) != 0)
     {
@@ -58,6 +48,16 @@ int main(int argc, char * arg[])
     auto gl = SDL_GL_CreateContext(window);
     Drawing *graphics = new Drawing();
 
+    //Print out arguements
+    std::cout << "TEST: " << argc << std::endl;
+    for(auto i = 0; i < argc; i++)
+    {
+        std::cout << i << " : " << arg[i] << std::endl;
+    }
+    
+    FileIO fileIO;
+    std::string s(arg[1]);
+    fileIO.parseTileMap(s);
     
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     
