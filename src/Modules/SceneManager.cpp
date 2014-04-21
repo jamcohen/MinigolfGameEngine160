@@ -22,6 +22,15 @@ void SceneManager::closeScene()
     }
 }
 
+void SceneManager::addCamera(Camera *c)
+{
+    if(!_currentCamera)
+    {
+        _currentCamera = c;
+    }
+    _cameraList.push_back(c);
+}
+
  std::vector<GameObject *> SceneManager::getObjects()
 {
     return _objects;

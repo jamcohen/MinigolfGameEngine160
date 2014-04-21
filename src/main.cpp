@@ -4,6 +4,7 @@
 #include "Drawing.h"
 #include "FileIO.h"
 #include <ctime>
+#include "InputManager.h"
 
 /*
  * Starts everything
@@ -27,7 +28,7 @@ int main(int argc, char * arg[])
         
         return -1;
     }
-    
+        
     SDL_LogSetAllPriority(SDL_LOG_PRIORITY_VERBOSE);
     
     
@@ -77,17 +78,7 @@ int main(int argc, char * arg[])
             
             if(mainEvent.type == SDL_KEYDOWN)
             {
-                switch(mainEvent.key.keysym.sym)
-                {
-                    case SDLK_q:
-                        std::cout << "Quitting program.../n";
-                        running = false;
-                        break;
-                        
-                    default:
-                        std::cout << "Wrong key!\n";
-                        break;
-                }
+                running = InputManager::instance().handleKey(mainEvent.key.keysym.sym);
             }
         }
         graphics->update();

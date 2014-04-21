@@ -14,6 +14,7 @@
 #include <iterator>
 
 class GameObject;
+class Camera;
 
 class SceneManager
 {
@@ -29,9 +30,14 @@ public:
     void addGameObject(GameObject *);
     void closeScene();
     std::vector<GameObject *> getObjects();
+    void addCamera(Camera *);
+    inline void setCurrentCamera(Camera *c) { _currentCamera = c; }
+    inline Camera* getCurrentCamera() { return _currentCamera; }
     
 private:
     std::vector<GameObject *> _objects;
+    Camera *_currentCamera;
+    std::vector<Camera *> _cameraList;
 };
 
 #endif /* defined(__MiniGolfXCode__SceneManager__) */
