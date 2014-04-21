@@ -7,7 +7,7 @@
 //
 
 #include "InputManager.h"
-const float InputManager::SPEED = 5.0f;
+const float InputManager::SPEED = 0.1f;
 
 InputManager::InputManager()
 { }
@@ -27,6 +27,14 @@ bool InputManager::handleKey(SDL_Keycode key)
             
         case SDLK_s:
             moveBackward();
+            break;
+            
+        case SDLK_d:
+            moveRight();
+            break;
+            
+        case SDLK_a:
+            moveLeft();
             break;
             
         default:
@@ -74,7 +82,7 @@ void InputManager::moveRight()
     glm::vec3 rightVec = glm::cross(direction, tempVec);
     glm::normalize(rightVec);
     
-    rightVec *= SPEED;
+    rightVec *= SPEED * -1;
     c->setPosition(c->getPosition() + rightVec);
     c->setTarget(c->getTarget() + rightVec);
 }
@@ -92,7 +100,7 @@ void InputManager::moveLeft()
     glm::vec3 rightVec = glm::cross(direction, tempVec);
     glm::normalize(rightVec);
     
-    rightVec *= SPEED * -1;
+    rightVec *= SPEED;
     c->setPosition(c->getPosition() + rightVec);
     c->setTarget(c->getTarget() + rightVec);
 }

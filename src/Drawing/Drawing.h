@@ -13,6 +13,8 @@
 #include "GameObject.h"
 #include "MGOpenGL.h"
 #include "ShaderHelper.h"
+#include "SceneManager.h"
+#include "Camera.h"
 #include "matrix_transform.hpp"
 #include <vector>
 

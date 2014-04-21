@@ -26,8 +26,9 @@ void Drawing::update(){
 	GLuint lightLoc = glGetUniformLocation( program, "light" );
 	GLuint eyeLoc = glGetUniformLocation( program, "eye" );
     
-    glm::vec3 eyePos(3, 3, 0.1);
-    glm::mat4 cam = glm::lookAt(eyePos, glm::vec3(0,0,0), glm::vec3(0,1,0));
+    Camera *camera = SceneManager::instance().getCurrentCamera();
+    glm::vec3 eyePos = camera->getPosition();
+    glm::mat4 cam = glm::lookAt(eyePos, camera->getTarget(), camera->getUp());
     glm::mat4 projectionMat = glm::perspective(90.0f, 1.0f, 0.1f, 100.0f);
     glm::vec3 lightPos(0, 0.2, 0.1);
     
