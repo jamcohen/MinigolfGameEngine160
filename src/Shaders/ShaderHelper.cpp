@@ -56,7 +56,6 @@ char* ShaderHelper::readShader(char* filename){
 GLuint ShaderHelper::initShader(GLuint program, const GLchar* source, GLenum type){
     
     GLuint shader = glCreateShader( type );
-    //std::cout << source;
     glShaderSource( shader, 1, &source, NULL );
     glCompileShader( shader );
     
