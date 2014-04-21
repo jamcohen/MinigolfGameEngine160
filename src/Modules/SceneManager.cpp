@@ -14,6 +14,7 @@ SceneManager::SceneManager()
 void SceneManager::closeScene()
 {
     int count = 0;
+    std::cout << "Cleaning up all game objects...\n";
     for ( GameObject *g : _objects )
     {
         std::cout << count << std::endl;
