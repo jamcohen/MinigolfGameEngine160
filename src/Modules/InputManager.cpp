@@ -37,6 +37,22 @@ bool InputManager::handleKey(SDL_Keycode key)
             moveLeft();
             break;
             
+        case SDLK_UP:
+            rotateUp();
+            break;
+            
+        case SDLK_DOWN:
+            rotateDown();
+            break;
+            
+        case SDLK_RIGHT:
+            rotateRight();
+            break;
+            
+        case SDLK_LEFT:
+            rotateLeft();
+            break;
+            
         default:
             break;
     }
@@ -103,4 +119,28 @@ void InputManager::moveLeft()
     rightVec *= SPEED;
     c->setPosition(c->getPosition() + rightVec);
     c->setTarget(c->getTarget() + rightVec);
+}
+
+void InputManager::rotateUp()
+{
+    Camera *c = SceneManager::instance().getCurrentCamera();
+    c->setTargetY(c->getTargetY() + SPEED);
+}
+
+void InputManager::rotateDown()
+{
+    Camera *c = SceneManager::instance().getCurrentCamera();
+    c->setTargetY(c->getTargetY() - SPEED);
+}
+
+void InputManager::rotateRight()
+{
+    Camera *c = SceneManager::instance().getCurrentCamera();
+    c->setTargetX(c->getTargetX() + SPEED);
+}
+
+void InputManager::rotateLeft()
+{
+    Camera *c = SceneManager::instance().getCurrentCamera();
+    c->setTargetX(c->getTargetX() - SPEED);
 }

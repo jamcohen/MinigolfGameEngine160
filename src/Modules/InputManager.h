@@ -32,6 +32,10 @@ public:
     void moveBackward();
     void moveRight();
     void moveLeft();
+    void rotateUp();
+    void rotateDown();
+    void rotateRight();
+    void rotateLeft();
 };
 
 #endif /* defined(__MiniGolfXCode__InputManager__) */
