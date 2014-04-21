@@ -4,7 +4,7 @@
 in  vec4 vPosition;
 in  vec3 normal;
 in  vec3 vColor;
-out vec4 vNormal;
+out vec4 color;
 
 uniform vec4 AmbientProduct, DiffuseProduct, SpecularProduct;
 uniform mat4 camera;
@@ -28,15 +28,15 @@ void main()
     vec3 N = normalize( inverse(transpose(model))*normalize(vec4(normal, 0.0)) ).xyz;
 
     //Compute terms in the illumination equation
-    vec4 ambient = AmbientProduct*vec4(0.1,0.3,0.1, 1.0);
+    vec4 ambient = AmbientProduct*vec4(0.1,0.1,0.1, 1.0);
 
     float Kd = max( dot(L, N), 0.0 );
-    vec4  diffuse = Kd*DiffuseProduct*vec4(0.1,0.3,0.1, 1.0);
+    vec4  diffuse = Kd*DiffuseProduct*vec4(0.1,0.1,0.1, 1.0);
 
     float Ks = pow( max(dot(N, H), 0.0), Shininess );
     vec4  specular = Ks * SpecularProduct;
     
-	color = ambient + diffuse + specular*vec4(0.1,0.3,0.1, 1.0);
+	color = ambient + diffuse + specular*vec4(0.1,0.1,0.1, 1.0);
     if( dot(L, N) < 0.0 ) {
 		specular = vec4(0.0, 0.0, 0.0, 1.0);
 		diffuse = vec4(0.0, 0.0, 0.0, 1.0);
