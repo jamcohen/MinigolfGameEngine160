@@ -24,7 +24,8 @@ void Model::draw(glm::vec3 pos)
     glUseProgram( material->shaderProgram );
     glBindVertexArray( _vao );
     glm::mat4 T = glm::translate(glm::mat4(), pos);
-    glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_TRUE, glm::value_ptr(T));
+    std::cout << pos.x << ", " << pos.y << ", " << pos.z << std::endl;
+    glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(T));
     glDrawElements(GL_TRIANGLES, (int)(_indices.size()), GL_UNSIGNED_INT, NULL);
     glBindVertexArray(0);
 }

@@ -31,7 +31,7 @@ void main()
     vec4 ambient = AmbientProduct*vec4(vColor, 1.0);
 
     float Kd = max( dot(L, N), 0.0 );
-    vec4  diffuse = Kd*DiffuseProduct*vec4(vColor, 1.0);
+    vec4  diffuse = Kd*DiffuseProduct*vec4(vColor, 1.0)
 
     float Ks = pow( max(dot(N, H), 0.0), 50 );
     vec4  specular = Ks * SpecularProduct;
