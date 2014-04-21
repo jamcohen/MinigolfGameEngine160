@@ -35,6 +35,9 @@ bool InputManager::handleKey(SDL_Keycode key)
     return true;
 }
 
+/*
+ * Moves the camera forward towards it target
+ */
 void InputManager::moveForward()
 {
     Camera *c = SceneManager::instance().getCurrentCamera();
@@ -45,6 +48,9 @@ void InputManager::moveForward()
     c->setTarget(c->getTarget() + direction);
 }
 
+/*
+ * Moves the camera backward towards it target
+ */
 void InputManager::moveBackward()
 {
     Camera *c = SceneManager::instance().getCurrentCamera();
@@ -53,4 +59,40 @@ void InputManager::moveBackward()
     direction *= SPEED * -1;
     c->setPosition(c->getPosition() + direction);
     c->setTarget(c->getTarget() + direction);
+}
+
+/*
+ * Moves the camera right towards it target
+ */
+void InputManager::moveRight()
+{
+    Camera *c = SceneManager::instance().getCurrentCamera();
+    glm::vec3 tempVec = c->getTarget();
+    tempVec = tempVec - c->getPosition();
+    tempVec.z *= .5f;
+    glm::vec3 direction = c->getTarget() - c->getPosition();
+    glm::vec3 rightVec = glm::cross(direction, tempVec);
+    glm::normalize(rightVec);
+    
+    rightVec *= SPEED;
+    c->setPosition(c->getPosition() + rightVec);
+    c->setTarget(c->getTarget() + rightVec);
+}
+
+/*
+ * Moves the camera left towards it target
+ */
+void InputManager::moveLeft()
+{
+    Camera *c = SceneManager::instance().getCurrentCamera();
+    glm::vec3 tempVec = c->getTarget();
+    tempVec = tempVec - c->getPosition();
+    tempVec.z *= .5f;
+    glm::vec3 direction = c->getTarget() - c->getPosition();
+    glm::vec3 rightVec = glm::cross(direction, tempVec);
+    glm::normalize(rightVec);
+    
+    rightVec *= SPEED * -1;
+    c->setPosition(c->getPosition() + rightVec);
+    c->setTarget(c->getTarget() + rightVec);
 }

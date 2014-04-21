@@ -41,7 +41,7 @@ int main(int argc, char * arg[])
                                           );
 
     
-    SDL_Renderer *renderer = SDL_CreateRenderer(window, 0, SDL_RENDERER_ACCELERATED);
+    //SDL_Renderer *renderer = SDL_CreateRenderer(window, 0, SDL_RENDERER_ACCELERATED);
     
     bool running = true;
     SDL_Event mainEvent;
@@ -65,8 +65,7 @@ int main(int argc, char * arg[])
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
-        time_t timer;
-        
+        //time_t timer;
         while(SDL_PollEvent(&mainEvent) != 0)
         {
             if(mainEvent.type == SDL_QUIT)

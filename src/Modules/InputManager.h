@@ -30,6 +30,8 @@ public:
     bool handleKey(SDL_Keycode);
     void moveForward();
     void moveBackward();
+    void moveRight();
+    void moveLeft();
 };
 
 #endif /* defined(__MiniGolfXCode__InputManager__) */
