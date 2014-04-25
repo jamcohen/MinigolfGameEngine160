@@ -50,6 +50,8 @@ void Drawing::update(){
 }
 
 bool Drawing::initOpenGL(){
+    // Enable depth buffer and backface culling
+    //glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
     ShaderHelper::compileShaders();
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;

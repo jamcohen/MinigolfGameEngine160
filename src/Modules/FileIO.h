@@ -13,6 +13,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <cMath>
 #include "SceneManager.h"
 #include "glm.hpp"
 #include "Tile.h"
@@ -36,7 +37,7 @@ public:
     std::vector<glm::vec3> getNormals(std::vector<unsigned int>,std::vector<glm::vec3>);
     std::vector<glm::vec3> getLocalVertices(glm::vec3,std::vector<glm::vec3>);
     std::vector<glm::vec3> getColors(std::vector<glm::vec3>);
-    std::vector<glm::vec3> getBordersVertices(std::vector<glm::vec3> *, std::vector<int> *, float, float);
+    void spawnWalls(std::vector<glm::vec3> *, std::vector<int> *, glm::vec3);
     std::vector<unsigned int>  getBordersTriangles(std::vector<int> *);
     
 private:

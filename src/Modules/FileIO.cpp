@@ -118,27 +118,27 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
         //Get a vertex
         std::getline(_fin, *s,' ');
         v.x = std::stof(s->c_str());
-        std::cout << v.x << " ";
+        //std::cout << v.x << " ";
         
         std::getline(_fin, *s,' ');
         v.y = std::stof(s->c_str());
-        std::cout << v.y << " ";
+        //std::cout << v.y << " ";
         
         std::getline(_fin, *s,' ');
         v.z = std::stof(s->c_str());
-        std::cout << v.z << std::endl;
+        //std::cout << v.z << std::endl;
         
         vertices.push_back(v);
     }
     
     //Get neighbors
-    std::cout << "Neighbors: ";
+    //std::cout << "Neighbors: ";
     for(auto i = 0; i < numOfVerticies; i++)
     {
         int n;
         std::getline(_fin, *s,' ');
         n = std::atoi(s->c_str());
-        std::cout << "neighbor: " << n << " ";
+        //std::cout << "neighbor: " << n << " ";
         neighbors.push_back(n);
     }
     std::cout << std::endl;
@@ -153,8 +153,8 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     std::vector<glm::vec3> colors = getColors(vertices);
     Model *model = new Model(localVertices,normals,colors,indices);
     new Tile(index,position,model,neighbors);
-    //spawnWalls(neighbors);
-    new Wall(position, glm::vec3(1,1,0), 0.3, 0.3, 0.3);
+    spawnWalls(&localVertices, &neighbors, position);
+    //new Wall(position, glm::vec3(1,1,0), 0.3, 0.3, 0.3);
     return true;
 }
 
@@ -228,37 +228,27 @@ glm::vec3 FileIO::getTilePosition(std::vector<glm::vec3> vertices)
 }
 
 //Adds the vertices of the borders to the vertices vextor
-//std::vector<glm::vec3> FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neighbors, float width, float height){
-//    
-//    std::vector<glm::vec3> borderVerts;
-//    bool partOfEdge = false; //if this neighbor is part of a continuous edge, as opposed to a single edge;
-//    for(size_t i = 0; i<neighbors->size(); ++i){
-//        if(partOfEdge || (*neighbors)[i] == 0){
-//            glm::vec3 newVert = (*vertices)[i];
-//            newVert.y += height;
-//            borderVerts.push_back(newVert);
-//            
-//            std::cout << "vertex " << i+neighbors->size() << ": " << newVert.x << " " <<  newVert.y << " " << newVert.z <<std::endl;
-//            
-//            /*newVert = (*vertices)[i];
-//            newVert.x += width;
-//            newVert.z += width;
-//            borderVerts.push_back(newVert);
-//            
-//            newVert = (*vertices)[i];
-//            newVert.y -= width;
-//            borderVerts.push_back(newVert);*/
-//        }else{
-//            glm::vec3 newVert = (*vertices)[i];
-//            newVert.y += height;
-//            borderVerts.push_back(newVert);
-//        }
-//        
-//        partOfEdge = ((*neighbors)[i] == 0);
-//    }
-//    
-//    return borderVerts;
-//}
+void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neighbors, glm::vec3 position){
+    bool partOfEdge = false; //if this neighbor is part of a continuous edge, as opposed to a single edge;
+    for(unsigned int i = 0; i<neighbors->size(); ++i){
+        if((*neighbors)[i] == 0){
+            unsigned int nextI = (i+1)%neighbors->size();
+            //spawn wall at the midpoint between the two points;
+            glm::vec3 pos = ((*vertices)[i]+(*vertices)[nextI])*0.5f;
+            pos += position;
+            glm::vec3 dir = (*vertices)[nextI]-(*vertices)[i];
+            float distance = sqrt(glm::dot(dir, dir));
+            float dotP = glm::dot(glm::normalize(glm::vec2(dir.x, dir.z)), glm::vec2(1,0));
+            float angleY = acos(dotP);/// (glm::length(glm::vec2(dir.x, dir.z)));
+            angleY = (angleY != angleY) ? 0 : angleY*180/M_PI;
+            dotP = glm::dot(glm::normalize(glm::vec2(dir.y, dir.z)), glm::vec2(0,1));
+            float angleX = acos(dotP);/// (glm::length(glm::vec2(dir.x, dir.z)));
+            angleX = (angleX != angleX) ? 0 : angleX*180/M_PI;
+            std::cout << "DIR: " << dir.y << ", " << dir.z << ": " << angleX << std::endl;
+            Wall *w = new Wall(pos, glm::vec3(angleX,angleY,0), distance, 0.05, 0.05);
+        }
+    }
+}
 //
 //std::vector<unsigned int> FileIO::getBordersTriangles(std::vector<int> *neighbors){
 //    std::vector<unsigned int> triangles;
@@ -357,7 +347,7 @@ std::vector<glm::vec3> FileIO::getLocalVertices(glm::vec3 position, std::vector<
     for(glm::vec3 v : vertices)
     {
         glm::vec3 newVert = v - position;
-        std::cout << "vertex: " << newVert.x << " " <<  newVert.y << " " << newVert.z <<std::endl;
+        //std::cout << "vertex: " << newVert.x << " " <<  newVert.y << " " << newVert.z <<std::endl;
         localVertices.push_back(v - position);
     }
     return localVertices;
