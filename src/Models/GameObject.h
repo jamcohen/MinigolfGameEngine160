@@ -28,7 +28,7 @@ public:
     void setPosition(glm::vec3);
     inline glm::vec3 getPosition() { return _position; }
     inline glm::vec3 getScale() { return _scale; }
-    inline glm::mat4 getRotation() { return _rotation; }
+    inline glm::vec3 getRotation() { return _rotation; }
     void draw();
     Model* getModel();
 protected:

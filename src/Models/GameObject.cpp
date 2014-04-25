@@ -8,12 +8,12 @@
 
 #include "GameObject.h"
 
-GameObject::GameObject(glm::vec3 pos) : _position(pos)
+GameObject::GameObject(glm::vec3 pos) : _position(pos), _rotation(0, 0, 0), _scale(1,1,1)
 {
     SceneManager::instance().addGameObject(this);
 }
 
-GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model)
+GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model), _rotation(0, 0, 0), _scale(1,1,1)
 {
     SceneManager::instance().addGameObject(this);
 }

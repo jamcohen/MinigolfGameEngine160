@@ -14,5 +14,6 @@
 //#include "SDL2/SDL_opengl.h"
 #include "glm.hpp"
 #include "type_ptr.hpp"
+#include "euler_angles.hpp"
 
 #endif

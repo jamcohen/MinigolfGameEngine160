@@ -24,7 +24,11 @@ void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotate)
     glUseProgram( material->shaderProgram );
     glBindVertexArray( _vao );
     glm::mat4 T = glm::translate(glm::mat4(), pos);
-    glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(T));
+    glm::mat4 R = glm::orientate4(rotate);
+    glm::mat4 S = glm::scale(glm::mat4(), scale);
+    std::cout << "SCALE: " << S[0][0] << std::endl;
+    glm::mat4 model = T*R*S;
+    glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glDrawElements(GL_TRIANGLES, (int)(_indices.size()), GL_UNSIGNED_INT, NULL);
     glBindVertexArray(0);
 }

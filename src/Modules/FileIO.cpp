@@ -153,7 +153,8 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     std::vector<glm::vec3> colors = getColors(vertices);
     Model *model = new Model(localVertices,normals,colors,indices);
     new Tile(index,position,model,neighbors);
-    new Wall(position, glm::vec3(1,1,0), 1, 1);
+    //spawnWalls(neighbors);
+    new Wall(position, glm::vec3(1,1,0), 0.3, 0.3, 0.3);
     return true;
 }
 
@@ -227,7 +228,7 @@ glm::vec3 FileIO::getTilePosition(std::vector<glm::vec3> vertices)
 }
 
 //Adds the vertices of the borders to the vertices vextor
-//std::vector<glm::vec3> FileIO::getBordersVertices(std::vector<glm::vec3> *vertices, std::vector<int> *neighbors, float width, float height){
+//std::vector<glm::vec3> FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neighbors, float width, float height){
 //    
 //    std::vector<glm::vec3> borderVerts;
 //    bool partOfEdge = false; //if this neighbor is part of a continuous edge, as opposed to a single edge;

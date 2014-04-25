@@ -19,7 +19,7 @@
 class Wall : GameObject
 {
 public:
-    Wall(const glm::vec3, const glm::vec3, float, float);
+    Wall(const glm::vec3, const glm::vec3, float, float, float);
     ~Wall();
     
 private:
