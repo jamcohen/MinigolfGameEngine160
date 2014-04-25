@@ -36,7 +36,7 @@ void main()
     float Ks = pow( max(dot(N, H), 0.0), 50 );
     vec4  specular = Ks * SpecularProduct;
     
-	color = ambient + diffuse + specular*vec4(0.1,0.1,0.1, 1.0);
+	color = ambient + diffuse+specular*vec4(0.1,0.1,0.1, 1.0);
     if( dot(L, N) < 0.0 ) {
 		specular = vec4(0.0, 0.0, 0.0, 1.0);
 		diffuse = vec4(0.0, 0.0, 0.0, 1.0);

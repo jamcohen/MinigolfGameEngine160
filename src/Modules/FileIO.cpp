@@ -138,7 +138,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
         int n;
         std::getline(_fin, *s,' ');
         n = std::atoi(s->c_str());
-        std::cout << n << " ";
+        std::cout << "neighbor: " << n << " ";
         neighbors.push_back(n);
     }
     std::cout << std::endl;
@@ -147,33 +147,13 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     encounteredCarriageReturn = checkForCarriageReturn(s);
     
     glm::vec3 position = getTilePosition(vertices);
-    std::cout << position.x << " " << position.y << " " << position.z << std::endl;
-    
     std::vector<unsigned int> indices = getTriangles(vertices);
-    std::vector<glm::vec3> normals = getNormals(indices,vertices);
     std::vector<glm::vec3> localVertices = getLocalVertices(position,vertices);
+    std::vector<glm::vec3> normals = getNormals(indices,localVertices);
     std::vector<glm::vec3> colors = getColors(vertices);
-    std::cout << "length_first: " << colors.size();
     Model *model = new Model(localVertices,normals,colors,indices);
-    /*std::vector<unsigned int> newIndicies;
-    newIndicies.push_back(0);
-    newIndicies.push_back(1);
-    newIndicies.push_back(2);
-    std::vector<glm::vec3> newVerts;
-    newVerts.push_back(glm::vec3(-0.5, -0.5, 0));
-    newVerts.push_back(glm::vec3(0.5, -0.5, 0));
-    newVerts.push_back(glm::vec3(0, 0.5, 0));
-    std::vector<glm::vec3> newNorms;
-    newNorms.push_back(glm::vec3(-0.5, -0.5, 0));
-    newNorms.push_back(glm::vec3(0.5, -0.5, 0));
-    newNorms.push_back(glm::vec3(0, 0.5, 0));
-    std::vector<glm::vec3> newCol;
-    newCol.push_back(glm::vec3(0, 0, 1));
-    newCol.push_back(glm::vec3(1, 0, 0));
-    newCol.push_back(glm::vec3(0, 0, 0));
-    Model *model = new Model(newVerts,newNorms,newCol,newIndicies);*/
     new Tile(index,position,model,neighbors);
-    //new Tile(index,position,model,neighbors);
+    new Wall(position, glm::vec3(1,1,0), 1, 1);
     return true;
 }
 
@@ -246,6 +226,78 @@ glm::vec3 FileIO::getTilePosition(std::vector<glm::vec3> vertices)
     return position;
 }
 
+//Adds the vertices of the borders to the vertices vextor
+//std::vector<glm::vec3> FileIO::getBordersVertices(std::vector<glm::vec3> *vertices, std::vector<int> *neighbors, float width, float height){
+//    
+//    std::vector<glm::vec3> borderVerts;
+//    bool partOfEdge = false; //if this neighbor is part of a continuous edge, as opposed to a single edge;
+//    for(size_t i = 0; i<neighbors->size(); ++i){
+//        if(partOfEdge || (*neighbors)[i] == 0){
+//            glm::vec3 newVert = (*vertices)[i];
+//            newVert.y += height;
+//            borderVerts.push_back(newVert);
+//            
+//            std::cout << "vertex " << i+neighbors->size() << ": " << newVert.x << " " <<  newVert.y << " " << newVert.z <<std::endl;
+//            
+//            /*newVert = (*vertices)[i];
+//            newVert.x += width;
+//            newVert.z += width;
+//            borderVerts.push_back(newVert);
+//            
+//            newVert = (*vertices)[i];
+//            newVert.y -= width;
+//            borderVerts.push_back(newVert);*/
+//        }else{
+//            glm::vec3 newVert = (*vertices)[i];
+//            newVert.y += height;
+//            borderVerts.push_back(newVert);
+//        }
+//        
+//        partOfEdge = ((*neighbors)[i] == 0);
+//    }
+//    
+//    return borderVerts;
+//}
+//
+//std::vector<unsigned int> FileIO::getBordersTriangles(std::vector<int> *neighbors){
+//    std::vector<unsigned int> triangles;
+//    bool partOfEdge = false;
+//    unsigned int numBorderVerts = 0;
+//    for(size_t i = 0; i<neighbors->size(); ++i){
+//        if((*neighbors)[i] == 0) numBorderVerts++;
+//    }
+//    for(unsigned int i = 0; i<neighbors->size(); ++i){
+//        if((*neighbors)[i] == 0){
+//            unsigned int nextI = (i+1)%neighbors->size();
+//            unsigned int bottomLeftCorner = i;
+//            unsigned int bottomRightCorner = nextI;
+//            unsigned int topLeftCorner = i+neighbors->size();
+//            unsigned int topRightCorner = nextI+neighbors->size();//%(neighbors->size()+numBorderVerts);
+//            
+//            std::cout << "bottomR: " << bottomRightCorner << ", bottomL" << bottomLeftCorner << ", TopR" << topRightCorner << ", TopL" << topLeftCorner << std::endl;
+//            
+//            triangles.push_back(bottomLeftCorner);
+//            triangles.push_back(bottomRightCorner);
+//            triangles.push_back(topRightCorner);
+//            
+//            triangles.push_back(topLeftCorner);
+//            triangles.push_back(bottomLeftCorner);
+//            triangles.push_back(topRightCorner);
+//            
+//            triangles.push_back(topRightCorner);
+//            triangles.push_back(bottomRightCorner);
+//            triangles.push_back(bottomLeftCorner);
+//            
+//            triangles.push_back(topRightCorner);
+//            triangles.push_back(bottomLeftCorner);
+//            triangles.push_back(topLeftCorner);
+//            
+//        }
+//        partOfEdge = ((*neighbors)[i] == 0);
+//    }
+//    return triangles;
+//}
+
 /*
  * Gets implicit triangles for the given vertices
  */
@@ -303,6 +355,8 @@ std::vector<glm::vec3> FileIO::getLocalVertices(glm::vec3 position, std::vector<
     std::vector<glm::vec3> localVertices;
     for(glm::vec3 v : vertices)
     {
+        glm::vec3 newVert = v - position;
+        std::cout << "vertex: " << newVert.x << " " <<  newVert.y << " " << newVert.z <<std::endl;
         localVertices.push_back(v - position);
     }
     return localVertices;

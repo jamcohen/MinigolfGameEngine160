@@ -19,7 +19,7 @@ _vertices(vertices), _normals(normals),_colors(colors),_indices(indices)
 Model::~Model()
 { }
 
-void Model::draw(glm::vec3 pos)
+void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotate)
 {
     glUseProgram( material->shaderProgram );
     glBindVertexArray( _vao );

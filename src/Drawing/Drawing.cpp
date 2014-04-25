@@ -50,13 +50,11 @@ void Drawing::update(){
 }
 
 bool Drawing::initOpenGL(){
-    
+    glEnable(GL_CULL_FACE);
     ShaderHelper::compileShaders();
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     
     //initModels();
-
-    
     return true;
 }
 
