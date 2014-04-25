@@ -10,6 +10,7 @@
 #define __MiniGolfXCode__Camera__
 
 #include <iostream>
+#include <cmath>
 #include "glm.hpp"
 #include "GameObject.h"
 #include "SceneManager.h"
@@ -51,11 +52,21 @@ public:
     inline float getUpX() { return _up.x; }
     inline float getUpY() { return _up.y; }
     inline float getUpZ() { return _up.z; }
+    //Pitch & Yaw
+    inline void lockPitch(float y) { _lockedAngles.y = y; }
+    inline void lockYaw(float x) { _lockedAngles.x = x; }
+    void rotateYaw(float);
+    void rotatePitch(float);
     
 private:
+    static glm::vec3 FORWARD_VECTOR;
+    
     glm::vec3 _position;
     glm::vec3 _target;
     glm::vec3 _up;
+    glm::vec2 _lockedAngles;
+    float _currentPitchAngle;
+    float _currentYawAngle;
 };
 
 #endif /* defined(__MiniGolfXCode__Camera__) */
