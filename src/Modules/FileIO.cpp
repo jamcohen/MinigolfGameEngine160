@@ -363,10 +363,10 @@ std::vector<glm::vec3> FileIO::getColors(std::vector<glm::vec3> vertices)
     for(glm::vec3 v : vertices)
     {
         glm::vec3 randomColor;
-        randomColor.x = (float) rand()/(float)RAND_MAX;
-        randomColor.y = (float) rand()/(float)RAND_MAX;
-        randomColor.z = (float) rand()/(float)RAND_MAX;
-        colors.push_back(randomColor);
+        //randomColor.x = (float) rand()/(float)RAND_MAX;
+        //randomColor.y = (float) rand()/(float)RAND_MAX;
+        //randomColor.z = (float) rand()/(float)RAND_MAX;
+        colors.push_back(glm::vec3(0,0.5,0));
     }
     
     

@@ -15,8 +15,8 @@ Drawing::Drawing(){
 
 void Drawing::update(){
     //Clear color buffer
-    glClearColor( 0.0, 1.0, 1.0, 1.0 );
-    glClear( GL_COLOR_BUFFER_BIT );
+    glClearColor( 0.0, 0.0, 0.0, 1.0 );
+    glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     
     GLuint program = ShaderHelper::shaders[0];
     glUseProgram( program );
@@ -51,7 +51,7 @@ void Drawing::update(){
 
 bool Drawing::initOpenGL(){
     // Enable depth buffer and backface culling
-    //glEnable(GL_DEPTH_TEST);
+    glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
     ShaderHelper::compileShaders();
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
