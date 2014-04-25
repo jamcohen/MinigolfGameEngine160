@@ -19,7 +19,7 @@
 class Wall : GameObject
 {
 public:
-    Wall(const glm::vec3, const glm::vec3, float, float, float);
+    Wall(const glm::vec3, const glm::vec3, float, float, float, glm::vec3);
     ~Wall();
     
 private:
@@ -30,6 +30,7 @@ private:
     float height;
     float pos;
     float angle;
+    glm::vec3 _color;
     glm::vec3 axisOfRotation;
 };
 

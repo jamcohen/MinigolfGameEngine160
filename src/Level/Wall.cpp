@@ -8,11 +8,12 @@
 
 #include "Wall.h"
 
-Wall::Wall(const glm::vec3 origin, const glm::vec3 rotation, float width, float height, float length) : GameObject(origin)
+Wall::Wall(const glm::vec3 origin, const glm::vec3 rotation, float width, float height, float length, glm::vec3 color) : GameObject(origin)
 {
     DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
     _scale = glm::vec3(width, height, length);
     _rotation = rotation;
+    _color = color;
     Model* m = getModel(width, height);
     _model = m;
     _model->material = d;
@@ -32,7 +33,7 @@ Model* Wall::getModel(float width, float height)
     baseVerts.push_back(glm::vec4(-0.5f, -0.5f,  0.5f, 1));
     baseVerts.push_back(glm::vec4( 0.5f, -0.5f,  0.5f, 1));
     glm::vec4 baseNormal(0,0,1,1);
-    glm::vec3 baseColor(0.75, 0.45, 0);
+    glm::vec3 baseColor = _color;
     
     glm::mat4 rotation;
     for(int i=0;i<4;++i){

@@ -204,10 +204,12 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     
     if(isTee)
     {
+        new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0.7, 0, 0));
         //new Tee(index,position);
     }
     else
     {
+        new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
        //new Cup(index,position);
     }
     return true;
@@ -238,14 +240,13 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             pos += position;
             glm::vec3 dir = (*vertices)[nextI]-(*vertices)[i];
             float distance = sqrt(glm::dot(dir, dir));
-            float dotP = glm::dot(glm::normalize(glm::vec2(dir.x, dir.z)), glm::vec2(1,0));
-            float angleY = acos(dotP);/// (glm::length(glm::vec2(dir.x, dir.z)));
+            float angleY = atan2f(dir.z, dir.x);
             angleY = (angleY != angleY) ? 0 : angleY*180/M_PI;
-            dotP = glm::dot(glm::normalize(glm::vec2(dir.y, dir.z)), glm::vec2(0,1));
-            float angleX = acos(dotP);/// (glm::length(glm::vec2(dir.x, dir.z)));
+            float angleX = atan2f(dir.z, dir.y)+M_PI/2;
             angleX = (angleX != angleX) ? 0 : angleX*180/M_PI;
+            //angleX = (dir.y == -0.2f) ? 0 : angleX;
             std::cout << "DIR: " << dir.y << ", " << dir.z << ": " << angleX << std::endl;
-            Wall *w = new Wall(pos, glm::vec3(angleX,angleY,0), distance, 0.05, 0.05);
+            Wall *w = new Wall(pos, glm::vec3(angleX,angleY,0), distance, 0.05, 0.05, glm::vec3(0.7, 0.43, 0));
         }
     }
 }
