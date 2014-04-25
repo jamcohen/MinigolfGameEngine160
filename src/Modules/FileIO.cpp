@@ -227,7 +227,7 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     }
     else
     {
-       //new Cup(index,position);
+        new Cup(index,position);
     }
     return true;
 }

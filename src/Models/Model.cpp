@@ -16,6 +16,9 @@ _vertices(vertices), _normals(normals),_colors(colors),_indices(indices)
     std::cout << "length: " << colors.size();
 }
 
+Model::Model() : _vertices(), _normals(),_colors(),_indices()
+{ }
+
 Model::~Model()
 { }
 
