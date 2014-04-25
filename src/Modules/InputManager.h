@@ -17,7 +17,8 @@
 class InputManager
 {
 public:
-    static const float SPEED;
+    static const float MOVEMENT_SPEED;
+    static const float MOUSE_DAMPENING;
     
     static InputManager& instance()
     {
@@ -27,15 +28,19 @@ public:
     InputManager(InputManager const&);
     void operator=(InputManager const&);
     InputManager();
+    void handleMouse(SDL_Event *);
     bool handleKey(SDL_Keycode);
     void moveForward();
     void moveBackward();
     void moveRight();
     void moveLeft();
-    void rotateUp();
-    void rotateDown();
-    void rotateRight();
-    void rotateLeft();
+    void rotatePitch(float);
+    void rotateYaw(float);
+    
+private:
+    float _currentUpAngle;
+    bool _firstTimeGettingMouse;
+    glm::vec2 _previousMouseCords;
 };
 
 #endif /* defined(__MiniGolfXCode__InputManager__) */
