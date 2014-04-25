@@ -13,12 +13,14 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <cMath>
 #include "SceneManager.h"
 #include "glm.hpp"
 #include "Tile.h"
 #include "Tee.h"
 #include "Model.h"
 #include "Cup.h"
+#include "Wall.h"
 
 class FileIO
 {
@@ -35,6 +37,8 @@ public:
     std::vector<glm::vec3> getNormals(std::vector<unsigned int>,std::vector<glm::vec3>);
     std::vector<glm::vec3> getLocalVertices(glm::vec3,std::vector<glm::vec3>);
     std::vector<glm::vec3> getColors(std::vector<glm::vec3>);
+    void spawnWalls(std::vector<glm::vec3> *, std::vector<int> *, glm::vec3);
+    std::vector<unsigned int>  getBordersTriangles(std::vector<int> *);
     
 private:
     std::ifstream _fin;

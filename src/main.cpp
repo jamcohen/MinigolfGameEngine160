@@ -50,6 +50,8 @@ int main(int argc, char * arg[])
     bool running = true;
     SDL_Event mainEvent;
     auto gl = SDL_GL_CreateContext(window);
+    glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+
     Drawing *graphics = new Drawing();
 
     //Print out arguements

@@ -127,6 +127,7 @@
 		4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6608A1901AED8005093F8 /* GameObject.cpp */; };
 		4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FA1901B99F005093F8 /* InputManager.cpp */; };
 		4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FD1901B9D8005093F8 /* FileIO.cpp */; };
+		F3638FAA190A04300039DC1E /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3638FA8190A04300039DC1E /* Wall.cpp */; };
 		F37E466719039617005AFD96 /* fshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F37E466619039617005AFD96 /* fshader21.glsl */; };
 		F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */; };
 		F37E46731903A8A6005AFD96 /* Cup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466D1903A8A6005AFD96 /* Cup.cpp */; };
@@ -433,6 +434,8 @@
 		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		F3638FA8190A04300039DC1E /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
+		F3638FA9190A04300039DC1E /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
 		F37E466619039617005AFD96 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fshader21.glsl; sourceTree = "<group>"; };
 		F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiffuseSpecularMaterial.cpp; sourceTree = "<group>"; };
 		F37E466A19039B8E005AFD96 /* DiffuseSpecularMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffuseSpecularMaterial.h; sourceTree = "<group>"; };
@@ -924,6 +927,8 @@
 		F37E466C1903A8A6005AFD96 /* Level */ = {
 			isa = PBXGroup;
 			children = (
+				F3638FA8190A04300039DC1E /* Wall.cpp */,
+				F3638FA9190A04300039DC1E /* Wall.h */,
 				F37E466D1903A8A6005AFD96 /* Cup.cpp */,
 				F37E466E1903A8A6005AFD96 /* Cup.h */,
 				F37E466F1903A8A6005AFD96 /* Tee.cpp */,
@@ -1157,6 +1162,7 @@
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
 				F37E46731903A8A6005AFD96 /* Cup.cpp in Sources */,
+				F3638FAA190A04300039DC1E /* Wall.cpp in Sources */,
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,

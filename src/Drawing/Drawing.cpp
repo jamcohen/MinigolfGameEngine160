@@ -15,8 +15,8 @@ Drawing::Drawing(){
 
 void Drawing::update(){
     //Clear color buffer
-    glClearColor( 0.0, 1.0, 1.0, 1.0 );
-    glClear( GL_COLOR_BUFFER_BIT );
+    glClearColor( 0.0, 0.6, 0.5, 1.0 );
+    glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     
     GLuint program = ShaderHelper::shaders[0];
     glUseProgram( program );
@@ -30,7 +30,7 @@ void Drawing::update(){
     glm::vec3 eyePos = camera->getPosition();
     glm::mat4 cam = glm::lookAt(eyePos, camera->getTarget(), camera->getUp());
     glm::mat4 projectionMat = glm::perspective(90.0f, 1.0f, 0.1f, 100.0f);
-    glm::vec3 lightPos(0, 0.2, 0.1);
+    glm::vec3 lightPos(0, 1, 0.1);
     
     glUniform3fv(eyeLoc, 1, glm::value_ptr(eyePos));
     glUniform3fv(lightLoc, 1, glm::value_ptr(lightPos));
@@ -50,13 +50,13 @@ void Drawing::update(){
 }
 
 bool Drawing::initOpenGL(){
-    
+    // Enable depth buffer and backface culling
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
     ShaderHelper::compileShaders();
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     
     //initModels();
-
-    
     return true;
 }
 

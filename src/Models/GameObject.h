@@ -19,6 +19,7 @@
 class GameObject
 {
 public:
+    GameObject(glm::vec3);
     GameObject(glm::vec3, Model*);
     GameObject(glm::vec3);
     ~GameObject();
@@ -27,6 +28,8 @@ public:
     void setZ(float);
     void setPosition(glm::vec3);
     inline glm::vec3 getPosition() { return _position; }
+    inline glm::vec3 getScale() { return _scale; }
+    inline glm::vec3 getRotation() { return _rotation; }
     void draw();
     inline Model* getModel() { return _model; }
     inline void setModel(Model *m) { _model = m; }
@@ -34,6 +37,8 @@ public:
 protected:
     Model* _model;
     glm::vec3 _position;
+    glm::vec3 _scale;
+    glm::vec3 _rotation;
     
 };
 

@@ -19,20 +19,15 @@ class Model
 {
 public:
     Model(std::vector<glm::vec3>,std::vector<glm::vec3>,std::vector<glm::vec3>,std::vector<unsigned int>);
-    Model();
     ~Model();
     GenericMaterial *material;
     GLuint shaderProgram;
     void initializeBuffers();
-    void draw(glm::vec3);
-    inline std::vector<glm::vec3> getVerticies() { return _vertices; }
-    inline std::vector<glm::vec3> getColors() { return _colors; }
-    inline std::vector<glm::vec3> getNormals() { return _normals; }
-    inline std::vector<unsigned int> getIndices() { return _indices; }
-    inline void setVertices(std::vector<glm::vec3> value) { _vertices = value; }
-    inline void setColors(std::vector<glm::vec3> value) { _vertices = value; }
-    inline void setNormals(std::vector<glm::vec3> value) { _normals = value; }
-    inline void setTriangles(std::vector<unsigned int> value) { _indices = value; }
+    void draw(glm::vec3, glm::vec3, glm::vec3);
+    std::vector<glm::vec3> getVerticies() { return _vertices; }
+    std::vector<glm::vec3> getColors() { return _colors; }
+    std::vector<glm::vec3> getNormals() { return _normals; }
+    std::vector<unsigned int> getIndices() { return _indices; }
     
 private:
     GLuint _buffer;
