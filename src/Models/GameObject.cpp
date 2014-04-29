@@ -23,6 +23,11 @@ GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(mod
     SceneManager::instance().addGameObject(this);
 }
 
+GameObject::GameObject(glm::vec3 pos) : _position(pos)
+{
+    SceneManager::instance().addGameObject(this);
+}
+
 GameObject::~GameObject()
 {
     delete _model;
@@ -50,8 +55,4 @@ void GameObject::draw(){
 void GameObject::setPosition(glm::vec3 p)
 {
     _position = p;
-}
-
-Model* GameObject::getModel(){
-    return _model;
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7DC19048A9B00440155 /* Camera.cpp */; };
+		4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7DF190A090500440155 /* Cylinder.cpp */; };
+		4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7E3190A180800440155 /* ModelUtil.cpp */; };
 		4BE65DE01901AE01005093F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE65DDE1901AE01005093F8 /* InfoPlist.strings */; };
 		4BE65DF51901AE01005093F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DF41901AE01005093F8 /* XCTest.framework */; };
 		4BE65DF61901AE01005093F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DD51901AE01005093F8 /* Cocoa.framework */; };
@@ -152,6 +154,10 @@
 /* Begin PBXFileReference section */
 		4B2FC7DC19048A9B00440155 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		4B2FC7DD19048A9B00440155 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		4B2FC7DF190A090500440155 /* Cylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cylinder.cpp; sourceTree = "<group>"; };
+		4B2FC7E0190A090500440155 /* Cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cylinder.h; sourceTree = "<group>"; };
+		4B2FC7E3190A180800440155 /* ModelUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelUtil.cpp; sourceTree = "<group>"; };
+		4B2FC7E4190A180800440155 /* ModelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelUtil.h; sourceTree = "<group>"; };
 		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		4BE65DD21901AE01005093F8 /* MiniGolfXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE65DD51901AE01005093F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -884,6 +890,10 @@
 				F3EFA828190330D3001FE6B6 /* Model.h */,
 				F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */,
 				F3EFA82C190339F0001FE6B6 /* GenericMaterial.h */,
+				4B2FC7DF190A090500440155 /* Cylinder.cpp */,
+				4B2FC7E0190A090500440155 /* Cylinder.h */,
+				4B2FC7E3190A180800440155 /* ModelUtil.cpp */,
+				4B2FC7E4190A180800440155 /* ModelUtil.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1144,6 +1154,7 @@
 			files = (
 				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
+				4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */,
 				4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */,
 				F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */,
 				F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */,
@@ -1155,6 +1166,7 @@
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
+				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 			);

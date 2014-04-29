@@ -15,7 +15,7 @@
 #include "glm.hpp"
 #include "DiffuseSpecularMaterial.h"
 
-class Tile : GameObject
+class Tile : public GameObject
 {
 public:
     Tile(int,glm::vec3,Model *,std::vector<int>);

@@ -114,9 +114,6 @@ void InputManager::moveLeft()
     glm::vec3 rightVec = glm::cross(direction, tempVec);
     glm::normalize(rightVec);
     
-    std::cout << "tempVec.x: " << tempVec.x << " y: " << tempVec.y << " z: " << tempVec.z << std::endl;
-    std::cout << "direction.x: " << direction.x << " y: " << direction.y << " z: " << direction.z << std::endl;
-    
     rightVec *= MOVEMENT_SPEED;
     c->setPosition(c->getPosition() + rightVec);
     c->setTarget(c->getTarget() + rightVec);
@@ -155,14 +152,11 @@ void InputManager::handleMouse(SDL_Event *event)
         _previousMouseCords.x = motion.x;
         _previousMouseCords.y = motion.y;
     }
-    std::cout << "x: " << motion.x << " y: " << motion.y << std::endl;
     float xVelocity = motion.x - _previousMouseCords.x;
     float yVelocity = _previousMouseCords.y - motion.y;
     _previousMouseCords.x = motion.x;
     _previousMouseCords.y = motion.y;
-    
-    std::cout << "xVel: " << xVelocity << " yVel: " << yVelocity << std::endl;
-    
+        
     Camera *c = SceneManager::instance().getCurrentCamera();
     c->rotateYaw(xVelocity/MOUSE_DAMPENING);
     c->rotatePitch(yVelocity/MOUSE_DAMPENING);

@@ -6,6 +6,7 @@
 #include <ctime>
 #include "InputManager.h"
 #include "Camera.h"
+#include "Cylinder.h"
 
 /*
  * Starts everything
@@ -32,7 +33,7 @@ int main(int argc, char * arg[])
     
     Camera *c = new Camera();
     c->lockPitch(45);
-    
+        
     // create a window
     SDL_Window *window = SDL_CreateWindow(
                                           "SDL 2 window",             // window title

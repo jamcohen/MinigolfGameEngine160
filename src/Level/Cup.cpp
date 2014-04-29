@@ -8,5 +8,11 @@
 
 #include "Cup.h"
 
-Cup::Cup(int index, glm::vec3 pos, Model *model) : _index(index), GameObject(pos,model)
-{}
+Cup::Cup(int index, glm::vec3 pos) : _index(index), GameObject(pos)
+{
+    setModel(new Cylinder(6));    
+    std::cout << "Cup Position: " << pos.x << " " << pos.y << " " << pos.z << std::endl;
+
+    DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
+    getModel()->material = d;
+}

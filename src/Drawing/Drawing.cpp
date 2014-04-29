@@ -43,7 +43,7 @@ void Drawing::update(){
             objs[i]->draw();
         }
     }
-    
+        
     glFlush();
     //Update screen
     //SDL_GL_SwapBuffers();

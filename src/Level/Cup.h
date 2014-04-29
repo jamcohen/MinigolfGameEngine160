@@ -13,11 +13,13 @@
 #include "glm.hpp"
 #include "GameObject.h"
 #include "Model.h"
+#include "Cylinder.h"
+#include "DiffuseSpecularMaterial.h"
 
-class Cup : GameObject
+class Cup : public GameObject
 {
 public:
-    Cup(int,glm::vec3,Model*);
+    Cup(int,glm::vec3);
     
 private:
     int _index;
