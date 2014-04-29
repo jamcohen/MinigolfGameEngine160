@@ -20,6 +20,7 @@ class GameObject
 {
 public:
     GameObject(glm::vec3);
+    GameObject(glm::vec3, glm::vec3, glm::vec3);
     GameObject(glm::vec3, Model*);
     ~GameObject();
     void setX(float);

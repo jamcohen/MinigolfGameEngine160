@@ -21,17 +21,12 @@ class Wall : GameObject
 public:
     Wall(const glm::vec3, const glm::vec3, float, float, float, glm::vec3);
     ~Wall();
+   Model* getModel(float, float);
     
 private:
-    Model* getModel(float, float);
     std::vector<glm::vec3> getCubeVertices();
     std::vector<unsigned int> getCubeIndices();
-    float width;
-    float height;
-    float pos;
-    float angle;
     glm::vec3 _color;
-    glm::vec3 axisOfRotation;
 };
 
 #endif /* defined(__MiniGolfXCode__Wall__) */

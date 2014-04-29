@@ -244,9 +244,12 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             angleY = (angleY != angleY) ? 0 : angleY*180/M_PI;
             float angleX = atan2f(dir.z, dir.y)+M_PI/2;
             angleX = (angleX != angleX) ? 0 : angleX*180/M_PI;
+            float angleZ = atan2f(dir.x, dir.y)+M_PI/2;
+            angleZ = (angleZ != angleZ) ? 0 : angleZ*180/M_PI;
+
             //angleX = (dir.y == -0.2f) ? 0 : angleX;
             std::cout << "DIR: " << dir.y << ", " << dir.z << ": " << angleX << std::endl;
-            Wall *w = new Wall(pos, glm::vec3(angleX,angleY,0), distance, 0.05, 0.05, glm::vec3(0.7, 0.43, 0));
+            Wall *w = new Wall(pos, glm::vec3(angleX,angleY,angleZ), distance, 0.05, 0.05, glm::vec3(0.7, 0.43, 0));
         }
     }
 }

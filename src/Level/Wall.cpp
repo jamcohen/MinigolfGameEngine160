@@ -8,11 +8,9 @@
 
 #include "Wall.h"
 
-Wall::Wall(const glm::vec3 origin, const glm::vec3 rotation, float width, float height, float length, glm::vec3 color) : GameObject(origin)
+Wall::Wall(const glm::vec3 origin, const glm::vec3 rotation, float width, float height, float length, glm::vec3 color) : GameObject(origin, glm::vec3(width, height, length), rotation)
 {
     DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
-    _scale = glm::vec3(width, height, length);
-    _rotation = rotation;
     _color = color;
     Model* m = getModel(width, height);
     _model = m;

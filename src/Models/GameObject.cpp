@@ -13,6 +13,11 @@ GameObject::GameObject(glm::vec3 pos) : _position(pos), _rotation(0, 0, 0), _sca
     SceneManager::instance().addGameObject(this);
 }
 
+GameObject::GameObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation) : _position(pos), _rotation(rotation), _scale(scale)
+{
+   SceneManager::instance().addGameObject(this);
+}
+
 GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model), _rotation(0, 0, 0), _scale(1,1,1)
 {
     SceneManager::instance().addGameObject(this);
