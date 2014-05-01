@@ -16,6 +16,7 @@ _vertices(vertices), _normals(normals),_colors(colors),_indices(indices)
     std::cout << "length: " << colors.size();
 }
 
+
 Model::Model() : _vertices(), _normals(),_colors(),_indices()
 { }
 
@@ -28,11 +29,10 @@ void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotate)
     glBindVertexArray( _vao );
     glm::mat4 T = glm::translate(glm::mat4(), pos);
     glm::mat4 negT = glm::translate(glm::mat4(), pos*-1.0f);
-    glm::mat4 R = glm::rotate(glm::mat4(), rotate.x, glm::vec3(1,0,0));//glm::orientate4(rotate);
+    glm::mat4 R = glm::rotate(glm::mat4(), rotate.z, glm::vec3(0,0,1));//glm::orientate4(rotate);
               R = glm::rotate(R, rotate.y, glm::vec3(0,1,0));
-              R = glm::rotate(R, rotate.z, glm::vec3(0,0,1));
+              R = glm::rotate(R, rotate.x, glm::vec3(1,0,0));
     glm::mat4 S = glm::scale(glm::mat4(), scale);
-    std::cout << "SCALE: " << S[0][0] << std::endl;
     
     glm::mat4 model = T*R*S;
     glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));

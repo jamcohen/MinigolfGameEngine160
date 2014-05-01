@@ -92,10 +92,10 @@ Cylinder::Cylinder(int sideCount) : _sideCount(sideCount), Model()
         colors.push_back(color);
     }
     
-    setVertices(vertices);
+    /*setVertices(vertices);
     setColors(colors);
     setNormals(normals);
-    setTriangles(triangles);
+   setTriangles(triangles);*/
 }
 
 Cylinder::~Cylinder()

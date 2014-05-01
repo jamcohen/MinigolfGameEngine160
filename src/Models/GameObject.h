@@ -22,7 +22,6 @@ public:
     GameObject(glm::vec3);
     GameObject(glm::vec3, glm::vec3, glm::vec3);
     GameObject(glm::vec3, Model*);
-    GameObject(glm::vec3);
     ~GameObject();
     void setX(float);
     void setY(float);

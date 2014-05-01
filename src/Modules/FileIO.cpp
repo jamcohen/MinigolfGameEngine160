@@ -240,16 +240,23 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             pos += position;
             glm::vec3 dir = (*vertices)[nextI]-(*vertices)[i];
             float distance = sqrt(glm::dot(dir, dir));
-            float angleY = atan2f(dir.z, dir.x);
+            dir = glm::normalize(dir);
+           
+            float angleY = atan2f(dir.x, dir.z);
             angleY = (angleY != angleY) ? 0 : angleY*180/M_PI;
-            float angleX = atan2f(dir.z, dir.y)+M_PI/2;
+            //Reduce the angle range from 180,-180 to 90,-90
+            //so that the walls are always facing the same way
+            if(angleY > 90) angleY -= 180;
+            if(angleY < -90) angleY += 180;
+           
+            float angleX = atan2f(-dir.y, dir.z);
             angleX = (angleX != angleX) ? 0 : angleX*180/M_PI;
-            float angleZ = atan2f(dir.x, dir.y)+M_PI/2;
-            angleZ = (angleZ != angleZ) ? 0 : angleZ*180/M_PI;
+            if(angleX > 90) angleX -= 180;
+            if(angleX < -90) angleX += 180;
 
-            //angleX = (dir.y == -0.2f) ? 0 : angleX;
-            std::cout << "DIR: " << dir.y << ", " << dir.z << ": " << angleX << std::endl;
-            Wall *w = new Wall(pos, glm::vec3(angleX,angleY,angleZ), distance, 0.05, 0.05, glm::vec3(0.7, 0.43, 0));
+            std::cout << "angleY: " << angleY << ", angleX: "<< angleX << std::endl;
+            std::cout << "DIR: " << dir.x << ", " << dir.y <<  ", " << dir.z << ": " << angleX << std::endl;
+            Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.05, distance, glm::vec3(0.7, 0.43, 0));
         }
     }
 }
