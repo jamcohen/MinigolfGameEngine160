@@ -127,6 +127,8 @@
 		4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6608A1901AED8005093F8 /* GameObject.cpp */; };
 		4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FA1901B99F005093F8 /* InputManager.cpp */; };
 		4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FD1901B9D8005093F8 /* FileIO.cpp */; };
+		F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B391912D2BC001A4EC2 /* Ball.cpp */; };
+		F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */; };
 		F3638FAA190A04300039DC1E /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3638FA8190A04300039DC1E /* Wall.cpp */; };
 		F37E466719039617005AFD96 /* fshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F37E466619039617005AFD96 /* fshader21.glsl */; };
 		F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */; };
@@ -434,6 +436,10 @@
 		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		F31F9B391912D2BC001A4EC2 /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		F31F9B3A1912D2BC001A4EC2 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsObject.cpp; sourceTree = "<group>"; };
+		F31F9B3D1912D2C9001A4EC2 /* PhysicsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsObject.h; sourceTree = "<group>"; };
 		F3638FA8190A04300039DC1E /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
 		F3638FA9190A04300039DC1E /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
 		F37E466619039617005AFD96 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fshader21.glsl; sourceTree = "<group>"; };
@@ -567,6 +573,7 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F31F9B381912D2BC001A4EC2 /* Gameobjects */,
 				F37E466C1903A8A6005AFD96 /* Level */,
 				F37E466819039B6D005AFD96 /* Materials */,
 				4B8AECB71903451500E5EF3C /* Headers */,
@@ -884,6 +891,8 @@
 		4BE660891901AED8005093F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */,
+				F31F9B3D1912D2C9001A4EC2 /* PhysicsObject.h */,
 				4BE6608A1901AED8005093F8 /* GameObject.cpp */,
 				4BE6608B1901AED8005093F8 /* GameObject.h */,
 				F3EFA827190330D3001FE6B6 /* Model.cpp */,
@@ -913,6 +922,15 @@
 				4B2FC7DD19048A9B00440155 /* Camera.h */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		F31F9B381912D2BC001A4EC2 /* Gameobjects */ = {
+			isa = PBXGroup;
+			children = (
+				F31F9B391912D2BC001A4EC2 /* Ball.cpp */,
+				F31F9B3A1912D2BC001A4EC2 /* Ball.h */,
+			);
+			path = Gameobjects;
 			sourceTree = "<group>";
 		};
 		F37E466819039B6D005AFD96 /* Materials */ = {
@@ -1152,6 +1170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */,
 				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
 				4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */,
@@ -1165,6 +1184,7 @@
 				F3638FAA190A04300039DC1E /* Wall.cpp in Sources */,
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
+				F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
