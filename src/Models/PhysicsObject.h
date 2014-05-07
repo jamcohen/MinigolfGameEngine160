@@ -13,6 +13,7 @@
 #include "GameObject.h"
 #include "glm.hpp"
 #include "matrix_transform.hpp"
+#include "Physics.h"
 
 class PhysicsObject : public GameObject
 {

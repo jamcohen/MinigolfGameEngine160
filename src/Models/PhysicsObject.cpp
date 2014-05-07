@@ -10,7 +10,7 @@
 
 PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation, float mass): GameObject(pos, scale, rotation), _mass(mass)
 {
-   
+   //Physics::addToUpdateList(this);
 }
 
 void PhysicsObject::updatePhysics(){
