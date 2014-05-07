@@ -14,9 +14,35 @@ void Physics::addToUpdateList(PhysicsObject *obj){
    physicsObjects.push_back(obj);
 }
 
-void Physics::updatePhysics(std::chrono::duration<float> deltaT){
+void Physics::updatePhysics(float deltaT){
    for(auto objPtr : physicsObjects){
       PhysicsObject obj = *objPtr;
-      //Check collision
+      RayCastHit *hit = checkCollision(obj, deltaT);
+      if(hit == nullptr){
+         obj.updatePhysics(deltaT);
+      }else{
+         resolveCollision(hit, deltaT, obj);
+      }
    }
+}
+
+RayCastHit *Physics::checkCollision(PhysicsObject &obj, float deltaT){
+   RayCastHit* hit = RayCast::rayCast(&obj, obj._velocity);
+   if(hit != nullptr){
+      float distanceUntilCollision = hit->getImpactDistance()-obj._radius;
+      float secondsUntilCollision = distanceUntilCollision/glm::length(obj._velocity);
+      float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
+      
+      //If the ball won't collide this step ignore collision
+      if(timeUntilCollision < deltaT){
+         return nullptr;
+      }
+   }
+   return hit;
+}
+
+void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject& obj){
+   float distanceUntilCollision = hit->getImpactDistance()-obj._radius;
+   float secondsUntilCollision = distanceUntilCollision/glm::length(obj._velocity);
+   float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
 }

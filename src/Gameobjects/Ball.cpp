@@ -9,7 +9,7 @@
 #include "Ball.h"
 
 Ball::Ball(glm::vec3 origin, glm::vec3 rotation, glm::vec3 color, float radius):
-PhysicsObject(origin, glm::vec3(radius, radius, radius), rotation)
+PhysicsObject(origin, glm::vec3(radius, radius, radius), rotation, radius)
 {
    DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
    Model* m = Primative::getSphere(color);

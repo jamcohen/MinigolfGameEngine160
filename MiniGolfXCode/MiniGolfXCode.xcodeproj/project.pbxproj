@@ -142,6 +142,7 @@
 		F3E03623191A09CF0030066E /* RayCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03621191A09CF0030066E /* RayCast.cpp */; };
 		F3E03626191A09E20030066E /* Face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03624191A09E20030066E /* Face.cpp */; };
 		F3E03629191A0B190030066E /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03627191A0B190030066E /* Physics.cpp */; };
+		F3E0362C191A17D70030066E /* RayCastHit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E0362A191A17D70030066E /* RayCastHit.cpp */; };
 		F3EFA82619032EAF001FE6B6 /* vshader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3EFA82519032EAF001FE6B6 /* vshader.glsl */; };
 		F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EFA827190330D3001FE6B6 /* Model.cpp */; };
 		F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */; };
@@ -468,6 +469,8 @@
 		F3E03625191A09E20030066E /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
 		F3E03627191A0B190030066E /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
 		F3E03628191A0B190030066E /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		F3E0362A191A17D70030066E /* RayCastHit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCastHit.cpp; sourceTree = "<group>"; };
+		F3E0362B191A17D70030066E /* RayCastHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastHit.h; sourceTree = "<group>"; };
 		F3EFA82519032EAF001FE6B6 /* vshader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vshader.glsl; sourceTree = "<group>"; };
 		F3EFA827190330D3001FE6B6 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		F3EFA828190330D3001FE6B6 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
@@ -925,6 +928,8 @@
 		4BE660F91901B991005093F8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F3E0362A191A17D70030066E /* RayCastHit.cpp */,
+				F3E0362B191A17D70030066E /* RayCastHit.h */,
 				F3E03621191A09CF0030066E /* RayCast.cpp */,
 				F3E03622191A09CF0030066E /* RayCast.h */,
 				F37E46761903A8D8005AFD96 /* SceneManager.cpp */,
@@ -1217,6 +1222,7 @@
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				F3E03629191A0B190030066E /* Physics.cpp in Sources */,
+				F3E0362C191A17D70030066E /* RayCastHit.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,

@@ -8,12 +8,14 @@
 
 #include "PhysicsObject.h"
 
-PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation, float mass): GameObject(pos, scale, rotation), _mass(mass)
+PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation, float radius, float mass): GameObject(pos, scale, rotation), _mass(mass), _radius(radius)
 {
-   //Physics::addToUpdateList(this);
+   Physics::addToUpdateList(this);
+   _acceleration = glm::vec3(0, 0.98f, 0);
 }
 
-void PhysicsObject::updatePhysics(){
-   _velocity += _acceleration;
-   _position += _velocity;
+void PhysicsObject::updatePhysics(float deltaT){
+   float deltaTInSeconds = deltaT/1000;
+   _velocity += _acceleration*deltaTInSeconds;
+   _position += _velocity*deltaTInSeconds;
 }

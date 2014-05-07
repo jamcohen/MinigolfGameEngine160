@@ -10,6 +10,7 @@
 #define __MiniGolfXCode__PhysicsObject__
 
 #include <iostream>
+#include <chrono>
 #include "GameObject.h"
 #include "glm.hpp"
 #include "matrix_transform.hpp"
@@ -17,13 +18,15 @@
 
 class PhysicsObject : public GameObject
 {
+friend class Physics;
 public:
-   PhysicsObject(glm::vec3, glm::vec3, glm::vec3, float mass=1.0f);
+   PhysicsObject(glm::vec3, glm::vec3, glm::vec3, float radius=0.05, float mass=1.0f);
    void applyForce(glm::vec3 force);
-   void updatePhysics();
+   void updatePhysics(float deltaT);
 private:
    glm::vec3 _acceleration;
    glm::vec3 _velocity;
+   float _radius;
    float _mass;
 };
 

@@ -12,6 +12,7 @@
 #include <iostream>
 #include <chrono>
 #include "PhysicsObject.h"
+#include "RayCast.h"
 
 class PhysicsObject;
 
@@ -20,9 +21,10 @@ class Physics
 public:
    static std::vector<PhysicsObject *> physicsObjects;
    static void addToUpdateList(PhysicsObject *obj);
-   static void updatePhysics(std::chrono::duration<float> deltaT);
+   static void updatePhysics(float deltaT);
 private:
-   static bool checkCollision(const PhysicsObject&);
+   static RayCastHit *checkCollision(PhysicsObject&, float);
+   static void resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject& obj);
 };
 
 

@@ -10,15 +10,14 @@
 #define __MiniGolfXCode__Ball__
 
 #include <iostream>
-#include "Physicsobject.h"
+#include "PhysicsObject.h"
 #include "glm.hpp"
 #include "matrix_transform.hpp"
 #include "DiffuseSpecularMaterial.h"
 #include "Wall.h"
 #include "Primative.h"
 
-
-class Ball:PhysicsObject
+class Ball : PhysicsObject
 {
 public:
    Ball(glm::vec3, glm::vec3, glm::vec3, float color = 0.02f);
