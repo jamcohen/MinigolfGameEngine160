@@ -15,11 +15,12 @@
 #include "SceneManager.h"
 #include "Face.h"
 #include "glm.hpp"
+#include "RayCastHit.h"
 
 class RayCast
 {
 public:
-    static Face* rayCast(GameObject*, glm::vec3);
+    static RayCastHit* rayCast(GameObject*, glm::vec3);
 };
 
 #endif /* defined(__MiniGolfXCode__RayCast__) */

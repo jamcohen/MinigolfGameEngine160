@@ -8,10 +8,10 @@
 
 #include "RayCast.h"
 
-Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
+RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
 {
     std::vector<GameObject*>* allObjects = SceneManager::instance().getObjects();
-    Face *intersectingFace;
+    RayCastHit *intersectingFace;
     
     for(GameObject* tempG : *allObjects)
     {
@@ -78,8 +78,12 @@ Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
             v *= inv_det;
             
             //std::cout << "SUCCESS!\n";
+            glm::vec3 targetPoint = g->getPosition() + d*t;
+            //std::cout << targetPoint.x << "," << targetPoint.y << "," << targetPoint.z << std::endl;
             
-            return face;
+            intersectingFace = new RayCastHit(face,targetPoint,t);
+            
+            return intersectingFace;
         }
         break;
     }
