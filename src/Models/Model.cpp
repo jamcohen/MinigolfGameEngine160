@@ -15,7 +15,7 @@ _vertices(vertices), _normals(normals),_colors(colors),_indices(indices), _faces
 {
     std::cout << "length: " << colors.size();
     
-    for(glm::vec3 v : _vertices)
+    /*for(glm::vec3 v : _vertices)
     {
         std::cout << v.x << "," << v.y << "," << v.z << std::endl;
     }
@@ -24,7 +24,7 @@ _vertices(vertices), _normals(normals),_colors(colors),_indices(indices), _faces
     {
         std::cout << i << std::endl;
         std::cout << _vertices[i].x << "," << _vertices[i].y << "," << _vertices[i].z << std::endl;
-    }
+    }*/
     
     for(int i=0; i < _indices.size();)
     {

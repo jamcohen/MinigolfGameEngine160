@@ -15,22 +15,22 @@ void Physics::addToUpdateList(PhysicsObject *obj){
 }
 
 void Physics::updatePhysics(float deltaT){
-   for(auto objPtr : physicsObjects){
-      PhysicsObject obj = *objPtr;
+   for(PhysicsObject *obj : physicsObjects){
+      //PhysicsObject obj = *objPtr;
       RayCastHit *hit = checkCollision(obj, deltaT);
       if(hit == nullptr){
-         obj.updatePhysics(deltaT);
+         obj->updatePhysics(deltaT);
       }else{
          resolveCollision(hit, deltaT, obj);
       }
    }
 }
 
-RayCastHit *Physics::checkCollision(PhysicsObject &obj, float deltaT){
-   RayCastHit* hit = RayCast::rayCast(&obj, obj._velocity);
+RayCastHit *Physics::checkCollision(PhysicsObject* obj, float deltaT){
+   RayCastHit* hit = RayCast::rayCast(obj, obj->_velocity);
    if(hit != nullptr){
-      float distanceUntilCollision = hit->getImpactDistance()-obj._radius;
-      float secondsUntilCollision = distanceUntilCollision/glm::length(obj._velocity);
+      float distanceUntilCollision = hit->getImpactDistance()-obj->_radius;
+      float secondsUntilCollision = distanceUntilCollision/glm::length(obj->_velocity);
       float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
       
       //If the ball won't collide this step ignore collision
@@ -41,8 +41,8 @@ RayCastHit *Physics::checkCollision(PhysicsObject &obj, float deltaT){
    return hit;
 }
 
-void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject& obj){
-   float distanceUntilCollision = hit->getImpactDistance()-obj._radius;
-   float secondsUntilCollision = distanceUntilCollision/glm::length(obj._velocity);
+void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj){
+   float distanceUntilCollision = hit->getImpactDistance()-obj->_radius;
+   float secondsUntilCollision = distanceUntilCollision/glm::length(obj->_velocity);
    float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
 }

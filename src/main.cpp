@@ -83,8 +83,8 @@ int main(int argc, char * arg[])
     {
         std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
         
-        g->setPosition(c->getPosition());
-        RayCast::rayCast(g, c->getForwardDirectionVector());
+        //g->setPosition(c->getPosition());
+        //RayCast::rayCast(g, c->getForwardDirectionVector());
         while(SDL_PollEvent(&mainEvent) != 0)
         {
             if(mainEvent.type == SDL_QUIT)

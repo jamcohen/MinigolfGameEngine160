@@ -121,7 +121,6 @@ Model* Primative::getSphere(glm::vec3 color, float recursionLevel){
    for (int j = 0; j < recursionLevel; j++)
    {
       std::vector<unsigned int> newIndices;
-      std::cout << "Refining: " << j << std::endl;
       for(int i=0; (i+2)<indices.size();i+=3)
       {
          // replace triangle by 4 triangles
