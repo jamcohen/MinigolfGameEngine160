@@ -3,11 +3,16 @@
 #include <OpenGL/gl3.h>
 #include "Drawing.h"
 #include "FileIO.h"
-#include <ctime>
+#include <chrono>
+#include <thread>
 #include "InputManager.h"
 #include "RayCast.h"
 #include "Camera.h"
 #include "Cylinder.h"
+
+#ifndef TIME_STEP
+#define TIME_STEP 1000 / 60
+#endif
 
 /*
  * Starts everything
@@ -70,15 +75,16 @@ int main(int argc, char * arg[])
     
     GameObject *g = new GameObject(c->getPosition());
     
+    //For time
+    typedef std::chrono::duration<int,std::milli> millisecs_t ;
+    
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
-        float t = time(0);
-        t *= 1000;
-        //std::cout << t << std::endl;
+        std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
+        
         g->setPosition(c->getPosition());
         RayCast::rayCast(g, c->getForwardDirectionVector());
-        //time_t timer;
         while(SDL_PollEvent(&mainEvent) != 0)
         {
             if(mainEvent.type == SDL_QUIT)
@@ -96,6 +102,21 @@ int main(int argc, char * arg[])
         }
         graphics->update();
         SDL_GL_SwapWindow(window);
+        
+        //Time update
+        std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+        millisecs_t duration( std::chrono::duration_cast<millisecs_t>(end-start) ) ;
+        float timeDifference = TIME_STEP - duration.count();
+        //std::cout << timeDifference << std::endl;
+        if (timeDifference >= 0)
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds((int)timeDifference));
+        }
+        else
+        {
+            
+        }
+        
     }
     SDL_GL_DeleteContext(gl);
     
