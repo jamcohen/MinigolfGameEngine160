@@ -94,3 +94,8 @@ void Camera::setUp(float x, float y, float z)
     glm::vec3 tempPos(x,y,z);
     _up = tempPos;
 }
+
+glm::vec3 Camera::getForwardDirectionVector()
+{
+    return _target - _position;
+}

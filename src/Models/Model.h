@@ -14,6 +14,11 @@
 #include "MGOpenGL.h"
 #include "GenericMaterial.h"
 #include "matrix_transform.hpp"
+#include "GameObject.h"
+#include "Face.h";
+
+class GameObject;
+class Face;
 
 class Model
 {
@@ -29,6 +34,9 @@ public:
     std::vector<glm::vec3> getColors() { return _colors; }
     std::vector<glm::vec3> getNormals() { return _normals; }
     std::vector<unsigned int> getIndices() { return _indices; }
+    std::vector<Face*> getFaces() { return _faces; }
+    inline GameObject* getGameObject() { return _g; }
+    inline void setGameObject(GameObject *g) { _g = g; }
     
 private:
     GLuint _buffer;
@@ -38,6 +46,8 @@ private:
     std::vector<glm::vec3> _normals;
     std::vector<glm::vec3> _colors;
     std::vector<unsigned int> _indices;
+    std::vector<Face*> _faces;
+    GameObject *_g;
 };
 
 #endif /* defined(__MiniGolfXCode__Model__) */

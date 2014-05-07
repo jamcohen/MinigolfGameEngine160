@@ -57,6 +57,8 @@ public:
     inline void lockYaw(float x) { _lockedAngles.x = x; }
     void rotateYaw(float);
     void rotatePitch(float);
+    //Forward direction vector
+    glm::vec3 getForwardDirectionVector();
     
 private:
     static glm::vec3 FORWARD_VECTOR;

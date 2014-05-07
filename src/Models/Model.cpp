@@ -11,13 +11,37 @@
 
 Model::Model(std::vector<glm::vec3> vertices, std::vector<glm::vec3> normals,
              std::vector<glm::vec3> colors, std::vector<unsigned int> indices) :
-_vertices(vertices), _normals(normals),_colors(colors),_indices(indices)
+_vertices(vertices), _normals(normals),_colors(colors),_indices(indices), _faces()
 {
-    //std::cout << "length: " << colors.size();
+    std::cout << "length: " << colors.size();
+    
+    for(glm::vec3 v : _vertices)
+    {
+        std::cout << v.x << "," << v.y << "," << v.z << std::endl;
+    }
+    
+    for(int i : _indices)
+    {
+        std::cout << i << std::endl;
+        std::cout << _vertices[i].x << "," << _vertices[i].y << "," << _vertices[i].z << std::endl;
+    }
+    
+    for(int i=0; i < _indices.size();)
+    {
+        glm::vec3 tempNormal = _normals[i];
+        std::vector<glm::vec3> tempFaceVerts;
+        tempFaceVerts.push_back(_vertices[_indices[i]]);
+        tempFaceVerts.push_back(_vertices[_indices[i+1]]);
+        tempFaceVerts.push_back(_vertices[_indices[i+2]]);
+       
+        glm::vec3 tempColors[] = {_colors[i++],_colors[i++],_colors[i++]};
+        _faces.push_back(new Face(tempNormal,tempFaceVerts,tempColors,this));
+    }
+
 }
 
 
-Model::Model() : _vertices(), _normals(),_colors(),_indices()
+Model::Model() : _vertices(), _normals(),_colors(),_indices(), _faces()
 { }
 
 Model::~Model()

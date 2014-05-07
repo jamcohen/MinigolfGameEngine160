@@ -29,7 +29,7 @@ public:
     void operator=(SceneManager const&);
     void addGameObject(GameObject *);
     void closeScene();
-    std::vector<GameObject *> getObjects();
+    inline std::vector<GameObject *>* getObjects() { return &_objects; }
     void addCamera(Camera *);
     inline void setCurrentCamera(Camera *c) { _currentCamera = c; }
     inline Camera* getCurrentCamera() { return _currentCamera; }

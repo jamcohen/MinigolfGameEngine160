@@ -21,6 +21,7 @@ GameObject::GameObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation) : _po
 GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model), _rotation(0, 0, 0), _scale(1,1,1)
 {
     SceneManager::instance().addGameObject(this);
+    model->setGameObject(this);
 }
 
 GameObject::~GameObject()

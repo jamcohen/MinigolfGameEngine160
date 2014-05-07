@@ -37,10 +37,10 @@ void Drawing::update(){
     glUniformMatrix4fv(modelCam, 1, GL_FALSE, glm::value_ptr(cam));
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projectionMat));
     
-    std::vector<GameObject*> objs = SceneManager::instance().getObjects();
-    for(size_t i=0;i<objs.size();++i){
-        if(objs[i]->getModel() != NULL){
-            objs[i]->draw();
+    std::vector<GameObject*>* objs = SceneManager::instance().getObjects();
+    for(size_t i=0;i<objs->size();++i){
+        if((*objs)[i]->getModel() != NULL){
+            (*objs)[i]->draw();
         }
     }
         
@@ -60,10 +60,10 @@ bool Drawing::initOpenGL(){
 }
 
 void Drawing::initModels(){
-    std::vector<GameObject*> objs = SceneManager::instance().getObjects();
-    for(size_t i=0;i<objs.size();++i){
-        if(objs[i]->getModel() != NULL){
-            objs[i]->getModel()->initializeBuffers();
+    std::vector<GameObject*>* objs = SceneManager::instance().getObjects();
+    for(size_t i=0;i<objs->size();++i){
+        if((*objs)[i]->getModel() != NULL){
+            (*objs)[i]->getModel()->initializeBuffers();
         }
     }
 }

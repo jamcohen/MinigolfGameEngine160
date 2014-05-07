@@ -153,8 +153,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     std::vector<glm::vec3> colors = getColors(vertices);
     Model *model = new Model(localVertices,normals,colors,indices);
     new Tile(index,position,model,neighbors);
-    spawnWalls(&localVertices, &neighbors, position);
-    //new Wall(position, glm::vec3(1,1,0), 0.3, 0.3, 0.3);
+    spawnWalls(&localVertices, &neighbors, position); //Spawn the wall
     return true;
 }
 
@@ -204,7 +203,7 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     
     if(isTee)
     {
-        new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0.7, 0, 0));
+        //new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0.7, 0, 0));
         //new Tee(index,position);
     }
     else
