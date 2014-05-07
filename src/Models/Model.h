@@ -15,7 +15,7 @@
 #include "GenericMaterial.h"
 #include "matrix_transform.hpp"
 #include "GameObject.h"
-#include "Face.h";
+#include "Face.h"
 
 class GameObject;
 class Face;
