@@ -73,6 +73,9 @@ int main(int argc, char * arg[])
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
+        float t = time(0);
+        t *= 1000;
+        //std::cout << t << std::endl;
         g->setPosition(c->getPosition());
         RayCast::rayCast(g, c->getForwardDirectionVector());
         //time_t timer;
