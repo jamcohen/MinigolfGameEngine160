@@ -16,6 +16,8 @@
 #include "Model.h"
 #include "SceneManager.h"
 
+class Model;
+
 class GameObject
 {
 public:

@@ -5,6 +5,7 @@
 #include "FileIO.h"
 #include <ctime>
 #include "InputManager.h"
+#include "RayCast.h"
 #include "Camera.h"
 #include "Cylinder.h"
 
@@ -32,7 +33,7 @@ int main(int argc, char * arg[])
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
     Camera *c = new Camera();
-    c->lockPitch(45);
+    c->lockPitch(70);
         
     // create a window
     SDL_Window *window = SDL_CreateWindow(
@@ -67,9 +68,13 @@ int main(int argc, char * arg[])
     
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     
+    GameObject *g = new GameObject(c->getPosition());
+    
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
+        g->setPosition(c->getPosition());
+        RayCast::rayCast(g, c->getForwardDirectionVector());
         //time_t timer;
         while(SDL_PollEvent(&mainEvent) != 0)
         {

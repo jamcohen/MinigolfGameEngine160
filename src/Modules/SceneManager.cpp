@@ -38,11 +38,6 @@ void SceneManager::addCamera(Camera *c)
     _cameraList.push_back(c);
 }
 
- std::vector<GameObject *> SceneManager::getObjects()
-{
-    return _objects;
-}
-
 void SceneManager::addGameObject(GameObject *g)
 {
     _objects.push_back(g);

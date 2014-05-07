@@ -98,7 +98,7 @@ void InputManager::moveRight()
     glm::vec3 rightVec = glm::cross(direction, tempVec);
     glm::normalize(rightVec);
     
-    rightVec *= MOVEMENT_SPEED * -1;
+    rightVec *= MOVEMENT_SPEED;
     c->setPosition(c->getPosition() + rightVec);
     c->setTarget(c->getTarget() + rightVec);
 }
@@ -114,7 +114,7 @@ void InputManager::moveLeft()
     glm::vec3 rightVec = glm::cross(direction, tempVec);
     glm::normalize(rightVec);
     
-    rightVec *= MOVEMENT_SPEED;
+    rightVec *= MOVEMENT_SPEED * -1;
     c->setPosition(c->getPosition() + rightVec);
     c->setTarget(c->getTarget() + rightVec);
 }
