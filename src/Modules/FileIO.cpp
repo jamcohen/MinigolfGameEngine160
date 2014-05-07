@@ -209,7 +209,7 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     else
     {
        new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
-       new Ball(position+glm::vec3(0.005,0.1,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
+       new Ball(position+glm::vec3(0.005,1,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
        //new Cup(index,position);
     }
     return true;

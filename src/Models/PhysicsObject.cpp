@@ -19,5 +19,5 @@ void PhysicsObject::updatePhysics(float deltaT){
    _velocity += _acceleration*deltaTInSeconds;
    _position += _velocity*deltaTInSeconds;
     
-    std::cout << " Physics position: " << _position.x << "," << _position.y << "," << _position.z << std::endl;
+    //std::cout << " Physics position: " << _position.x << "," << _position.y << "," << _position.z << std::endl;
 }

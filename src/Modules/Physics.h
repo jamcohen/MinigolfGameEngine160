@@ -13,18 +13,20 @@
 #include <chrono>
 #include "PhysicsObject.h"
 #include "RayCast.h"
+#include "glm.hpp"
 
 class PhysicsObject;
 
 class Physics
 {
 public:
-   static std::vector<PhysicsObject *> physicsObjects;
-   static void addToUpdateList(PhysicsObject *obj);
-   static void updatePhysics(float deltaT);
+    static std::vector<PhysicsObject *> physicsObjects;
+    static void addToUpdateList(PhysicsObject *obj);
+    static void updatePhysics(float deltaT);
 private:
-   static RayCastHit *checkCollision(PhysicsObject*, float);
-   static void resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj);
+    static RayCastHit *checkCollision(PhysicsObject*, float);
+    static void resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj);
+    static glm::vec3 getReflectionVector(glm::vec3, glm::vec3);
 };
 
 
