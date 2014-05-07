@@ -50,8 +50,6 @@ Cylinder::Cylinder(int sideCount) : _sideCount(sideCount), Model()
             triangles.push_back(i);
             triangles.push_back(i+1);
             triangles.push_back(0);
-            std::cout << vertices[i+1].x << " " << vertices[i+1].y
-                << " " << vertices[i+1].z << std::endl;
         } else {
             triangles.push_back(i);
             triangles.push_back(i+sideCount);
@@ -59,8 +57,6 @@ Cylinder::Cylinder(int sideCount) : _sideCount(sideCount), Model()
             triangles.push_back(i);
             triangles.push_back(i+1+sideCount);
             triangles.push_back(i+1);
-            std::cout << vertices[i+sideCount].x << " " << vertices[i+sideCount].y
-                << " " << vertices[i+sideCount].z << std::endl;
         }
     }
     

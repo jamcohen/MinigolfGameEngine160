@@ -11,7 +11,6 @@
 DiffuseSpecularMaterial::DiffuseSpecularMaterial(float shininess) : GenericMaterial() ,shininess(shininess)
 {
     shaderProgram = ShaderHelper::shaders[0];
-    std::cout << "SHADER: " << shaderProgram << std::endl;
 }
 
 bool DiffuseSpecularMaterial::initializeUniforms(GLuint vertexArrayObject)

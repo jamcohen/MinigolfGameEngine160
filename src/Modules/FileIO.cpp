@@ -50,7 +50,7 @@ bool FileIO::parseTileMap(const std::string filename)
             {
                 return false;
             }
-            std::cout << count << " Tile Put In\n";
+            //std::cout << count << " Tile Put In\n";
             count++;
         }
         else if (s == "tee")
@@ -93,7 +93,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     if(is_number(*s))
     {
         index = std::atoi(s->c_str());
-        std::cout << "Index: " << index << std::endl;
+        //std::cout << "Index: " << index << std::endl;
     }else{
         std::cout << "Invalid tile index number!";
         return false;
@@ -104,7 +104,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     if(is_number(*s))
     {
         numOfVerticies = std::atoi(s->c_str());
-        std::cout << "Number Of Vericies: " << numOfVerticies << std::endl;
+        //std::cout << "Number Of Vericies: " << numOfVerticies << std::endl;
     }else{
         std::cout << "Invalid number of verticies!";
         return false;
@@ -114,7 +114,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     for(auto i = 0; i < numOfVerticies; i++)
     {
         glm::vec3 v;
-        std::cout << "Vertex " << i << ": ";
+        //std::cout << "Vertex " << i << ": ";
         //Get a vertex
         std::getline(_fin, *s,' ');
         v.x = std::stof(s->c_str());
@@ -189,15 +189,15 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     //Get a vertex
     std::getline(_fin, *s,' ');
     position.x = std::stof(s->c_str());
-    std::cout << position.x << " ";
+    //std::cout << position.x << " ";
     
     std::getline(_fin, *s,' ');
     position.y = std::stof(s->c_str());
-    std::cout << position.y << " ";
+   // std::cout << position.y << " ";
     
     std::getline(_fin, *s,' ');
     position.z = std::stof(s->c_str());
-    std::cout << position.z << std::endl;
+    //std::cout << position.z << std::endl;
     
     //Check if carriage return is bundled with last grab
     encounteredCarriageReturn = checkForCarriageReturn(s);
@@ -209,7 +209,8 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     }
     else
     {
-        new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
+       new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
+       new Ball(position+glm::vec3(0.005,0.1,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
        //new Cup(index,position);
     }
     return true;
@@ -254,8 +255,6 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             if(angleX > 90) angleX -= 180;
             if(angleX < -90) angleX += 180;
 
-            std::cout << "angleY: " << angleY << ", angleX: "<< angleX << std::endl;
-            std::cout << "DIR: " << dir.x << ", " << dir.y <<  ", " << dir.z << ": " << angleX << std::endl;
             Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.05, distance, glm::vec3(0.7, 0.43, 0));
         }
     }

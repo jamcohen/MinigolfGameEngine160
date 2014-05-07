@@ -21,6 +21,7 @@
 #include "Model.h"
 #include "Cup.h"
 #include "Wall.h"
+#include "Ball.h"
 
 class FileIO
 {
