@@ -111,10 +111,11 @@ int main(int argc, char * arg[])
         if (timeDifference >= 0)
         {
             std::this_thread::sleep_for(std::chrono::milliseconds((int)timeDifference));
+            Physics::updatePhysics(timeDifference);
         }
         else
         {
-            
+            Physics::updatePhysics(duration.count());
         }
         
     }

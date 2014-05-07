@@ -128,6 +128,7 @@
 		4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FA1901B99F005093F8 /* InputManager.cpp */; };
 		4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE660FD1901B9D8005093F8 /* FileIO.cpp */; };
 		4BFD9D2F191A0CC20000E077 /* RayCastHit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */; };
+		4BFD9D32191A29650000E077 /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BFD9D30191A29650000E077 /* Physics.cpp */; };
 		F318183A19195838006014D5 /* Primative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F318183819195838006014D5 /* Primative.cpp */; };
 		F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B391912D2BC001A4EC2 /* Ball.cpp */; };
 		F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */; };
@@ -442,6 +443,8 @@
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
 		4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCastHit.cpp; sourceTree = "<group>"; };
 		4BFD9D2E191A0CC20000E077 /* RayCastHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastHit.h; sourceTree = "<group>"; };
+		4BFD9D30191A29650000E077 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
+		4BFD9D31191A29650000E077 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
 		F318183819195838006014D5 /* Primative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primative.cpp; sourceTree = "<group>"; };
 		F318183919195838006014D5 /* Primative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Primative.h; sourceTree = "<group>"; };
 		F31F9B391912D2BC001A4EC2 /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
@@ -925,6 +928,8 @@
 		4BE660F91901B991005093F8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4BFD9D30191A29650000E077 /* Physics.cpp */,
+				4BFD9D31191A29650000E077 /* Physics.h */,
 				4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */,
 				4BFD9D2E191A0CC20000E077 /* RayCastHit.h */,
 				F3E03621191A09CF0030066E /* RayCast.cpp */,
@@ -1213,6 +1218,7 @@
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
 				F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */,
+				4BFD9D32191A29650000E077 /* Physics.cpp in Sources */,
 				F318183A19195838006014D5 /* Primative.cpp in Sources */,
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,

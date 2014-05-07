@@ -11,7 +11,7 @@
 RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
 {
     std::vector<GameObject*>* allObjects = SceneManager::instance().getObjects();
-    RayCastHit *intersectingFace;
+    RayCastHit *intersectingFace = nullptr;
     
     for(GameObject* tempG : *allObjects)
     {
