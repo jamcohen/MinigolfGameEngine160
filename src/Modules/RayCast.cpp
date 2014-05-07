@@ -26,7 +26,7 @@ Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
         std::vector<Face *> faces = tempG->getModel()->getFaces();
         for(Face* face : faces)
         {
-            std::cout << "Direction: " << d.x << "," << d.y << "," << d.z << std::endl;
+            //std::cout << "Direction: " << d.x << "," << d.y << "," << d.z << std::endl;
             
             glm::vec3 edge1, edge2, tvec, qvec, pvec;
             float det, inv_det;
@@ -45,9 +45,8 @@ Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
             //culling
             if(det < 0.000001)
             {
-                std::cout << "NOPE! " << det << std::endl;
+                //std::cout << "NOPE! " << det << std::endl;
                 continue;
-                //return NULL;
             }
             
             tvec = g->getPosition() - face->getVerticies()[0];
@@ -56,7 +55,7 @@ Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
             u = glm::dot(tvec,pvec);
             if(u < 0 || u > det)
             {
-                std::cout << "NOPE!\n";
+                //std::cout << "NOPE!\n";
                 continue;
             }
             
@@ -67,7 +66,7 @@ Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
             v = glm::dot(d,qvec);
             if(v < 0 || u + v > det)
             {
-                std::cout << "NOPE!\n";
+                //std::cout << "NOPE!\n";
                 continue;
             }
             
@@ -78,7 +77,7 @@ Face* RayCast::rayCast(GameObject *g, glm::vec3 d)
             u *= inv_det;
             v *= inv_det;
             
-            std::cout << "SUCCESS!\n";
+            //std::cout << "SUCCESS!\n";
             
             return face;
         }
