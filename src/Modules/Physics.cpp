@@ -45,4 +45,15 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject& obj
    float distanceUntilCollision = hit->getImpactDistance()-obj._radius;
    float secondsUntilCollision = distanceUntilCollision/glm::length(obj._velocity);
    float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
+   
+   float timeLeftAfterCollision = deltaT - timeUntilCollision;
+   float distanceAfterCollision = timeLeftAfterCollision*glm::length(obj._velocity)/1000;
+   
+   //reflection vector
+   glm::vec3 R = glm::vec3(0,1,1);
+   
+   obj._position = R*(distanceAfterCollision + obj._radius)+hit->getImpactPoint();
+   obj._velocity = R*glm::length(obj._velocity);
+   obj._velocity += obj._acceleration*(deltaT/1000);
+   
 }
