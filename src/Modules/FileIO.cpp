@@ -209,7 +209,8 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     else
     {
        new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
-       new Ball(position+glm::vec3(0.005,1,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
+       //new Ball(position+glm::vec3(0,3,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
+       new Ball(position+glm::vec3(0.3,.05,0.8), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
        //new Cup(index,position);
     }
     return true;
@@ -254,7 +255,7 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             if(angleX > 90) angleX -= 180;
             if(angleX < -90) angleX += 180;
 
-            Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.05, distance, glm::vec3(0.7, 0.43, 0));
+            Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.8, distance, glm::vec3(0.7, 0.43, 0));
         }
     }
 }

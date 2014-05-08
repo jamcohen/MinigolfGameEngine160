@@ -17,8 +17,9 @@
 class RayCastHit
 {
 public:
-    RayCastHit(Face*, glm::vec3, float);
+    RayCastHit(Face*, GameObject *, glm::vec3, float);
     inline Face* getFace() { return _face; }
+    inline GameObject* getGameObject() { return _g; }
     inline glm::vec3 getImpactPoint() { return _impactPoint; }
     inline float getImpactDistance() { return _impactDistance; }
     
@@ -26,7 +27,8 @@ private:
     Face* _face;
     glm::vec3 _impactPoint;
     float _impactDistance;
-    
+    GameObject *_g;
+   
 };
 
 #endif /* defined(__MiniGolfXCode__RayCastHit__) */

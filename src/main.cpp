@@ -76,7 +76,7 @@ int main(int argc, char * arg[])
     GameObject *g = new GameObject(c->getPosition());
     
     //For time
-    typedef std::chrono::duration<int,std::milli> millisecs_t ;
+    typedef std::chrono::duration<int,std::nano> nanosecs_t ;
     
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
@@ -105,17 +105,18 @@ int main(int argc, char * arg[])
         
         //Time update
         std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-        millisecs_t duration( std::chrono::duration_cast<millisecs_t>(end-start) ) ;
-        float timeDifference = TIME_STEP - duration.count();
+        nanosecs_t duration( std::chrono::duration_cast<nanosecs_t>(end-start) ) ;
+        float timeDifference = TIME_STEP*1000000 - duration.count();
         //std::cout << timeDifference << std::endl;
         if (timeDifference >= 0)
         {
-            std::this_thread::sleep_for(std::chrono::milliseconds((int)timeDifference));
-            Physics::updatePhysics(timeDifference);
+            std::this_thread::sleep_for(std::chrono::nanoseconds((int)timeDifference));
+            //Physics::updatePhysics(duration.count()/1000000.0f);
+            Physics::updatePhysics(TIME_STEP);
         }
         else
         {
-            Physics::updatePhysics(duration.count());
+            Physics::updatePhysics(duration.count()/1000000.0f);
         }
         
     }

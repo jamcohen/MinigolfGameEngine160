@@ -13,8 +13,10 @@
 #include <vector>
 #include "glm.hpp"
 #include "Model.h"
+#include "GameObject.h"
 
 class Model;
+class GameObject;
 
 class Face
 {
@@ -22,13 +24,17 @@ public:
     Face(glm::vec3,std::vector<glm::vec3>,glm::vec3*,Model*);
     inline glm::vec3 getNormal() { return _normal; }
     inline std::vector<glm::vec3> getVerticies() { return _verticies; }
+    std::vector<glm::vec3> getWorldVertices(GameObject* obj);
     inline glm::vec3* getColors() { return _colors; }
     inline Model* getModel() { return _m; }
     void print();
-    
+    void print(GameObject* obj);
+
+   
 private:
     glm::vec3 _normal;
     std::vector<glm::vec3> _verticies;
+    std::vector<glm::vec3> _worldVerticies;
     glm::vec3 *_colors;
     Model *_m;
 };

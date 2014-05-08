@@ -8,7 +8,7 @@
 
 #include "RayCastHit.h"
 
-RayCastHit::RayCastHit(Face* face, glm::vec3 impactPoint, float impactDistance) : _face(face), _impactPoint(impactPoint), _impactDistance(impactDistance)
+RayCastHit::RayCastHit(Face* face, GameObject *g, glm::vec3 impactPoint, float impactDistance) : _face(face), _impactPoint(impactPoint), _impactDistance(impactDistance), _g(g)
 {
     
 }

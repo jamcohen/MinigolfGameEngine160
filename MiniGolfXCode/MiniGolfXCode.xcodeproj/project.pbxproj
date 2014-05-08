@@ -443,7 +443,7 @@
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
 		4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCastHit.cpp; sourceTree = "<group>"; };
 		4BFD9D2E191A0CC20000E077 /* RayCastHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastHit.h; sourceTree = "<group>"; };
-		4BFD9D30191A29650000E077 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; };
+		4BFD9D30191A29650000E077 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		4BFD9D31191A29650000E077 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
 		F318183819195838006014D5 /* Primative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primative.cpp; sourceTree = "<group>"; };
 		F318183919195838006014D5 /* Primative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Primative.h; sourceTree = "<group>"; };
