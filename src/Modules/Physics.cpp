@@ -111,24 +111,23 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
         if(timeUntilCollision - timeUntilCollision2 < deltaT)
         {
             std::cout << " GOING TO HIT AGAIN SOON!\n";
-            obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+            obj->_velocity = R*glm::length(obj->_velocity)*.96f;
             resolveCollision(hit2, deltaT, obj);
         }
         else
         {
             obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
             std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
-            obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+            obj->_velocity = R*glm::length(obj->_velocity)*.96f;
             std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
         }
         
     }else{
         obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
         std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
-        obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+        obj->_velocity = R*glm::length(obj->_velocity)*.96f;
         std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
     }
-
 }
 
 glm::vec3 Physics::getReflectionVector(glm::vec3 dir, glm::vec3 norm)
