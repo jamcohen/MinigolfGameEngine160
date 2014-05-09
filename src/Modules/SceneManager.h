@@ -13,9 +13,9 @@
 #include <iostream>
 #include <iterator>
 
+class Ball;
 class GameObject;
 class Camera;
-class Ball;
 
 class SceneManager
 {

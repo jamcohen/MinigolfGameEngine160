@@ -16,8 +16,8 @@ void Physics::addToUpdateList(PhysicsObject *obj){
 
 void Physics::updatePhysics(float deltaT){
     for(PhysicsObject *obj : physicsObjects){
-        //std::cout << "time: " << deltaT << std::endl;
         obj->_velocity += obj->_acceleration*(deltaT/1000);
+        obj->resetAcceleration();
         RayCastHit *hit = checkCollision(obj, deltaT);
         if(hit == nullptr){
             obj->updatePhysics(deltaT);
@@ -81,8 +81,9 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
     std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
     
+    std::cout << "preVel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
     obj->_velocity = R*glm::length(obj->_velocity)*0.96f;
-    std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
+    std::cout << "postVel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
 }
 
 glm::vec3 Physics::getReflectionVector(glm::vec3 dir, glm::vec3 norm)

@@ -13,6 +13,7 @@
 #include <SDL2/SDL.h>
 #include "SceneManager.h"
 #include "Camera.h"
+#include "Ball.h"
 
 class InputManager
 {

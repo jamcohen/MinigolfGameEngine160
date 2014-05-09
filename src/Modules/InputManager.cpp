@@ -16,6 +16,7 @@ InputManager::InputManager() : _firstTimeGettingMouse(true), _previousMouseCords
 
 bool InputManager::handleKey(SDL_Keycode key)
 {
+    Ball *b = SceneManager::instance().getBall();
     switch(key)
     {
         case SDLK_ESCAPE:
@@ -40,19 +41,23 @@ bool InputManager::handleKey(SDL_Keycode key)
             break;
             
         case SDLK_UP:
-            rotatePitch(5.0f);
+            //rotatePitch(5.0f);
+            b->applyForce(glm::vec3(0,0,4));
             break;
             
         case SDLK_DOWN:
-            rotatePitch(-5.0f);
+            //rotatePitch(-5.0f);
+            b->applyForce(glm::vec3(0,0,-4));
             break;
             
         case SDLK_RIGHT:
-            rotateYaw(5.0f);
+            //rotateYaw(5.0f);
+            b->applyForce(glm::vec3(4,0,0));
             break;
             
         case SDLK_LEFT:
-            rotateYaw(-5.0f);
+            //rotateYaw(-5.0f);
+            b->applyForce(glm::vec3(-4,0,0));
             break;
             
         default:
