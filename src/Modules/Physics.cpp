@@ -81,7 +81,7 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
     std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
     
-    obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+    obj->_velocity = R*glm::length(obj->_velocity)*0.96f;
     std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
 }
 

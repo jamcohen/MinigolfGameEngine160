@@ -11,7 +11,7 @@
 PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation, float radius, float mass): GameObject(pos, scale, rotation), _mass(mass), _radius(radius)
 {
    Physics::addToUpdateList(this);
-   _acceleration = glm::vec3(0, -0.98f, 0);
+   _acceleration = glm::vec3(0, -1.8f, 0);
 }
 
 void PhysicsObject::updatePhysics(float deltaT){

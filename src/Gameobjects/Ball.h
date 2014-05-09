@@ -16,6 +16,7 @@
 #include "DiffuseSpecularMaterial.h"
 #include "Wall.h"
 #include "Primative.h"
+#include "SceneManager.h"
 
 class Ball : PhysicsObject
 {
