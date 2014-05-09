@@ -16,7 +16,6 @@ void Physics::addToUpdateList(PhysicsObject *obj){
 
 void Physics::updatePhysics(float deltaT){
     for(PhysicsObject *obj : physicsObjects){
-        //std::cout << "time: " << deltaT << std::endl;
         obj->_velocity += obj->_acceleration*(deltaT/1000);
         RayCastHit *hit = checkCollision(obj, deltaT);
         if(hit == nullptr){
@@ -26,8 +25,6 @@ void Physics::updatePhysics(float deltaT){
            resolveCollision(hit, deltaT, obj);
         }
     }
-   
-    
 }
 
 RayCastHit *Physics::checkCollision(PhysicsObject* obj, float deltaT)
@@ -56,6 +53,32 @@ RayCastHit *Physics::checkCollision(PhysicsObject* obj, float deltaT)
    return hit;
 }
 
+RayCastHit *Physics::checkCollision(PhysicsObject* obj, glm::vec3 dir, float deltaT)
+{
+    //If the object isn't moving, there is no collision;
+    if(glm::length(obj->_velocity) == 0) return nullptr;
+    
+    RayCastHit* hit = RayCast::rayCast(obj, dir);
+    //glm::vec3 pos = obj->getPosition();
+    //hit = new RayCastHit(obj->getModel()->getFaces()[0], glm::vec3(pos.x,0,pos.z), pos.y);
+    //std::cout << obj->_velocity.y << std::endl;
+    if(hit != nullptr){
+        float distanceUntilCollision = hit->getImpactDistance();//-obj->_radius;
+        float secondsUntilCollision = distanceUntilCollision/glm::length(dir);
+        float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
+        
+        //std::cout << "Raycast hit: " << timeUntilCollision << std::endl;
+        
+        //std::cout << "HIT: " << std::endl;
+        //If the ball won't collide this step ignore collision
+        if(timeUntilCollision > deltaT){
+            return nullptr;
+        }
+    }
+    
+    return hit;
+}
+
 void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj)
 {
     float distanceUntilCollision = hit->getImpactDistance();//-obj->_radius;
@@ -78,11 +101,34 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     glm::vec3 impact(hit->getImpactPoint());
     std::cout << "impact:" << impact.x << "," << impact.y << "," << impact.z << std::endl;
     //obj->_position = R*(distanceAfterCollision + obj->_radius)+hit->getImpactPoint();
-    obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
-    std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
     
-    obj->_velocity = R*glm::length(obj->_velocity)*.98f;
-    std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
+    obj->_position = hit->getImpactPoint();
+    RayCastHit *hit2 = checkCollision(obj,glm::normalize(R*glm::length(obj->_velocity)*.98f),deltaT);
+    if(hit2 != nullptr) {
+        float distanceUntilCollision2 = hit2->getImpactDistance();//-obj->_radius;
+        float secondsUntilCollision2 = distanceUntilCollision2/glm::length(obj->_velocity);
+        float timeUntilCollision2 = secondsUntilCollision2*1000; //MILLISECONDS!!!
+        if(timeUntilCollision - timeUntilCollision2 < deltaT)
+        {
+            std::cout << " GOING TO HIT AGAIN SOON!\n";
+            obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+            resolveCollision(hit2, deltaT, obj);
+        }
+        else
+        {
+            obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
+            std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
+            obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+            std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
+        }
+        
+    }else{
+        obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
+        std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
+        obj->_velocity = R*glm::length(obj->_velocity)*.98f;
+        std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
+    }
+
 }
 
 glm::vec3 Physics::getReflectionVector(glm::vec3 dir, glm::vec3 norm)

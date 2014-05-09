@@ -12,9 +12,10 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
 {
     std::vector<GameObject*>* allObjects = SceneManager::instance().getObjects();
     RayCastHit *intersectingFace = nullptr;
+    float nearestDistance(1000000);
     
     //for(GameObject* tempG : *allObjects)
-   for(int i=0;i<allObjects->size(); ++i)
+    for(int i=0;i<allObjects->size(); ++i)
     {
        GameObject* tempG = (*allObjects)[i];
         if(!tempG->getModel())
@@ -34,7 +35,6 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
             float det, inv_det;
             float t,u,v;
            
-            glm::vec3 objPos(g->getPosition());
             //find vectors for two edges sharing vert
             edge1 = face->getWorldVertices(tempG)[1] - face->getWorldVertices(tempG)[0];
             edge2 = face->getWorldVertices(tempG)[2] - face->getWorldVertices(tempG)[0];
@@ -83,6 +83,16 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
               //std::cout << "NOPE!\n";
               continue;
             }
+            
+            if(t < nearestDistance)
+            {
+                nearestDistance = t;
+            }
+            else
+            {
+                continue;
+            }
+            
             inv_det = 1.0/det;
             t *= inv_det;
             u *= inv_det;
@@ -94,7 +104,7 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
             
             intersectingFace = new RayCastHit(face, tempG, targetPoint, t);
             
-            return intersectingFace;
+            //return intersectingFace;
         }
         //break;
     }

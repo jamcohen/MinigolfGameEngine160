@@ -15,9 +15,9 @@ PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation,
 }
 
 void PhysicsObject::updatePhysics(float deltaT){
-   float deltaTInSeconds = deltaT/1000;
-   //_velocity += _acceleration*deltaTInSeconds;
-   _position += _velocity*deltaTInSeconds;
+    float deltaTInSeconds = deltaT/1000;
+    //_velocity += _acceleration*deltaTInSeconds;
+    _position += _velocity*deltaTInSeconds;
     
     //std::cout << " Physics position: " << _position.x << "," << _position.y << "," << _position.z << std::endl;
 }

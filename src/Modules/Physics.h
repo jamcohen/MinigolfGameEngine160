@@ -25,6 +25,7 @@ public:
     static void updatePhysics(float deltaT);
 private:
     static RayCastHit *checkCollision(PhysicsObject*, float);
+    static RayCastHit *checkCollision(PhysicsObject*, glm::vec3, float);
     static void resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj);
     static glm::vec3 getReflectionVector(glm::vec3, glm::vec3);
 };
