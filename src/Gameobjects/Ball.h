@@ -18,7 +18,7 @@
 #include "Primative.h"
 #include "SceneManager.h"
 
-class Ball : PhysicsObject
+class Ball : public PhysicsObject
 {
 public:
    Ball(glm::vec3, glm::vec3, glm::vec3, float color = 0.02f);

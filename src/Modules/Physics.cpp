@@ -17,6 +17,7 @@ void Physics::addToUpdateList(PhysicsObject *obj){
 void Physics::updatePhysics(float deltaT){
     for(PhysicsObject *obj : physicsObjects){
         obj->_velocity += obj->_acceleration*(deltaT/1000);
+        obj->resetAcceleration();
         RayCastHit *hit = checkCollision(obj, deltaT);
         if(hit == nullptr){
             obj->updatePhysics(deltaT);
@@ -103,7 +104,8 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     //obj->_position = R*(distanceAfterCollision + obj->_radius)+hit->getImpactPoint();
     
     obj->_position = hit->getImpactPoint();
-    RayCastHit *hit2 = checkCollision(obj,glm::normalize(R*glm::length(obj->_velocity)*.98f),deltaT);
+    //RayCastHit *hit2 = checkCollision(obj,glm::normalize(R*glm::length(obj->_velocity)*.98f),deltaT);
+    RayCastHit *hit2 = nullptr;
     if(hit2 != nullptr) {
         float distanceUntilCollision2 = hit2->getImpactDistance();//-obj->_radius;
         float secondsUntilCollision2 = distanceUntilCollision2/glm::length(obj->_velocity);

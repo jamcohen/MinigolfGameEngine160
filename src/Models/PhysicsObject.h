@@ -23,6 +23,7 @@ public:
    PhysicsObject(glm::vec3, glm::vec3, glm::vec3, float radius=0.05, float mass=1.0f);
    void applyForce(glm::vec3 force);
    void updatePhysics(float deltaT);
+   void resetAcceleration();
 private:
    glm::vec3 _acceleration;
    glm::vec3 _velocity;
