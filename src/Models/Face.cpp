@@ -24,13 +24,28 @@ void Face::print()
 }
 
 void Face::print(GameObject* obj){
-   std::cout << "Normal: " << _normal.x << "," << _normal.y << "," << _normal.z << std::endl;
+   glm::vec3 normal(getWorldNormal(obj));
+   std::cout << "Normal: " << normal.x << "," << normal.y << "," << normal.z << std::endl;
    std::cout << "Verticies: ";
    for(int i=0 ; i < 3; i++)
    {
       glm::vec3 verts(getWorldVertices(obj)[i]);
       std::cout << "v" << i << ": " << verts.x << "," << verts.y << "," << verts.z << std::endl;
    }
+}
+
+glm::vec3 Face::getWorldNormal(GameObject* obj){
+   if(glm::length(_worldNormal) != 0) return _worldNormal;
+   
+   glm::vec3 rotate(obj->getRotation());
+   glm::mat4 R = glm::rotate(glm::mat4(), rotate.z, glm::vec3(0,0,1));//glm::orientate4(rotate);
+   R = glm::rotate(R, rotate.y, glm::vec3(0,1,0));
+   R = glm::rotate(R, rotate.x, glm::vec3(1,0,0));
+   glm::mat4 modelMatrix = R;
+   glm::vec4 temp(_normal.x, _normal.y, _normal.z, 1);
+   temp = modelMatrix*temp;
+   _worldNormal = glm::vec3(temp.x, temp.y, temp.z);
+   return _worldNormal;
 }
 
 std::vector<glm::vec3> Face::getWorldVertices(GameObject* obj){

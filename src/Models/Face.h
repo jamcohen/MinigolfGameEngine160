@@ -23,6 +23,7 @@ class Face
 public:
     Face(glm::vec3,std::vector<glm::vec3>,glm::vec3*,Model*);
     inline glm::vec3 getNormal() { return _normal; }
+    glm::vec3 getWorldNormal(GameObject* obj);
     inline std::vector<glm::vec3> getVerticies() { return _verticies; }
     std::vector<glm::vec3> getWorldVertices(GameObject* obj);
     inline glm::vec3* getColors() { return _colors; }
@@ -33,6 +34,7 @@ public:
    
 private:
     glm::vec3 _normal;
+    glm::vec3 _worldNormal;
     std::vector<glm::vec3> _verticies;
     std::vector<glm::vec3> _worldVerticies;
     glm::vec3 *_colors;

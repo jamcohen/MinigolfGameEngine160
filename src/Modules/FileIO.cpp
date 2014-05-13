@@ -255,7 +255,7 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             if(angleX > 90) angleX -= 180;
             if(angleX < -90) angleX += 180;
 
-            Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.8, distance, glm::vec3(0.7, 0.43, 0));
+            Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.3, distance, glm::vec3(0.7, 0.43, 0));
         }
     }
 }

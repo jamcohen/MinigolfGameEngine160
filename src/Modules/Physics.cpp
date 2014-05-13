@@ -94,7 +94,7 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     std::cout << "distanceUntilCollision: " << distanceUntilCollision << std::endl;
    
     //reflection vector
-    glm::vec3 normal(hit->getFace()->getNormal());
+    glm::vec3 normal(hit->getFace()->getWorldNormal(obj));
     glm::vec3 R = getReflectionVector(obj->_velocity, normal);
     //std::cout << "Normal:" << normal.x << "," << normal.y << "," << normal.z << std::endl;
     hit->getFace()->print(hit->getGameObject());
@@ -103,9 +103,10 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     std::cout << "impact:" << impact.x << "," << impact.y << "," << impact.z << std::endl;
     //obj->_position = R*(distanceAfterCollision + obj->_radius)+hit->getImpactPoint();
     
+    float dampening = 0.96f;
     obj->_position = hit->getImpactPoint();
-    //RayCastHit *hit2 = checkCollision(obj,glm::normalize(R*glm::length(obj->_velocity)*.98f),deltaT);
-    RayCastHit *hit2 = nullptr;
+    RayCastHit *hit2 = checkCollision(obj,glm::normalize(R*glm::length(obj->_velocity)*dampening),deltaT);
+    //RayCastHit *hit2 = nullptr;
     if(hit2 != nullptr) {
         float distanceUntilCollision2 = hit2->getImpactDistance();//-obj->_radius;
         float secondsUntilCollision2 = distanceUntilCollision2/glm::length(obj->_velocity);
@@ -113,22 +114,24 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
         if(timeUntilCollision - timeUntilCollision2 < deltaT)
         {
             std::cout << " GOING TO HIT AGAIN SOON!\n";
-            obj->_velocity = R*glm::length(obj->_velocity)*.96f;
+            obj->_velocity = R*glm::length(obj->_velocity)*dampening;
             resolveCollision(hit2, deltaT, obj);
         }
         else
         {
             obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
             std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
-            obj->_velocity = R*glm::length(obj->_velocity)*.96f;
+            obj->_velocity = R*glm::length(obj->_velocity)*dampening;
             std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
         }
         
     }else{
+        std::cout << "prePos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
         obj->_position = R*(distanceAfterCollision)+hit->getImpactPoint();
-        std::cout << "Pos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
-        obj->_velocity = R*glm::length(obj->_velocity)*.96f;
-        std::cout << "Vel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
+        std::cout << "postPos: " << obj->_position.x << "," << obj->_position.y << "," << obj->_position.z << std::endl;
+        std::cout << "preVel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
+        obj->_velocity = R*glm::length(obj->_velocity)*dampening;
+        std::cout << "postVel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
     }
 }
 

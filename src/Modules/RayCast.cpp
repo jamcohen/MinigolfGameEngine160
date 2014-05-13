@@ -35,6 +35,8 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
             float det, inv_det;
             float t,u,v;
            
+            //Caches the tiles coords for normals
+            face->getWorldNormal(tempG);
             //find vectors for two edges sharing vert
             edge1 = face->getWorldVertices(tempG)[1] - face->getWorldVertices(tempG)[0];
             edge2 = face->getWorldVertices(tempG)[2] - face->getWorldVertices(tempG)[0];
@@ -84,20 +86,20 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d)
               continue;
             }
             
-            if(t < nearestDistance)
-            {
-                nearestDistance = t;
-            }
-            else
-            {
-                continue;
-            }
-            
             inv_det = 1.0/det;
             t *= inv_det;
             u *= inv_det;
             v *= inv_det;
-            
+           
+            if(t < nearestDistance)
+            {
+              nearestDistance = t;
+            }
+            else
+            {
+              continue;
+            }
+           
             //std::cout << "SUCCESS!: " << t;
             glm::vec3 targetPoint = g->getPosition() + d*t;
             //std::cout << targetPoint.x << "," << targetPoint.y << "," << targetPoint.z << std::endl;
