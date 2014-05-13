@@ -38,6 +38,7 @@ int main(int argc, char * arg[])
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
     Camera *c = new Camera();
+    c->setPosition(0, 2, 0);
     c->lockPitch(70);
         
     // create a window

@@ -15,7 +15,6 @@ glm::vec3 Camera::FORWARD_VECTOR(0,0,1);
 Camera::Camera() : _position(0, 0, 0), _target(0,0,1), _up(0,1,0), _lockedAngles(-1,-1), _currentPitchAngle(0), _currentYawAngle(0)
 {
     SceneManager::instance().addCamera(this);
-    setTarget(0,0,1);
 }
 
 Camera::Camera(glm::vec3 position) : _position(position)
@@ -29,6 +28,7 @@ void Camera::setPosition(float x, float y, float z)
     glm::vec3 tempPos(x,y,z);
     _position = tempPos;
     _currentYawAngle = _currentPitchAngle = 0;
+    setTarget(_position.x + 0, _position.y + 0, _position.z + 1);
 }
 
 void Camera::setTarget(float x,float y,float z)
