@@ -7,6 +7,7 @@
 //
 
 #include "Model.h"
+#include "ShaderHelper.h"
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 Model::Model(std::vector<glm::vec3> vertices, std::vector<glm::vec3> normals,
@@ -52,7 +53,7 @@ Model::~Model()
 
 void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotate)
 {
-    glUseProgram( material->shaderProgram );
+    glUseProgram(ShaderHelper::shaders[1] );///material->shaderProgram );
     glBindVertexArray( _vao );
     glm::mat4 T = glm::translate(glm::mat4(), pos);
     glm::mat4 R = glm::rotate(glm::mat4(), rotate.z, glm::vec3(0,0,1));//glm::orientate4(rotate);
@@ -64,6 +65,12 @@ void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotate)
     glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glDrawElements(GL_TRIANGLES, (int)(_indices.size()), GL_UNSIGNED_INT, NULL);
     glBindVertexArray(0);
+}
+
+void Model::drawSimple(){
+   glBindVertexArray( _vao );
+   glDrawElements(GL_TRIANGLES, (int)(_indices.size()), GL_UNSIGNED_INT, NULL);
+   glBindVertexArray(0);
 }
 
 void Model::initializeBuffers()

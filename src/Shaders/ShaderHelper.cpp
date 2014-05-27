@@ -10,23 +10,27 @@
 std::vector<GLuint> ShaderHelper::shaders;
 
 void ShaderHelper::compileShaders(){
-    char buffer[1000];
-    std::cout << "Current directory is: " << getcwd(buffer, 1000) << "\n";
-    const GLchar *vertexShaderCode = readShader("vShader.glsl");
-    GLuint program = 0;
-    if(vertexShaderCode != nullptr){
-        program = glCreateProgram();
-        initShader(program, vertexShaderCode, GL_VERTEX_SHADER);
-    }else{
-        std::cout << "Vertex shader cannot be read" << std::endl;
-    }
-    const GLchar *fragmentShaderCode = readShader("fShader21.glsl");
-    if(fragmentShaderCode != nullptr){
-        initShader(program, fragmentShaderCode, GL_FRAGMENT_SHADER);
-    }else{
-        std::cout << "Fragment shader cannot be read" << std::endl;
-    }
-    shaders.push_back(program);
+    compileShader( 0, "vShader.glsl", "fShader21.glsl");
+    compileShader( 1, "vpassthrough.glsl", "fportalShader.glsl");
+}
+
+void ShaderHelper::compileShader(GLuint program, char* vertexShader, char* fragmentShader){
+   char buffer[1000];
+   std::cout << "Current directory is: " << getcwd(buffer, 1000) << "\n";
+   GLchar *vertexShaderCode = readShader(const_cast<char*>(vertexShader));
+   if(vertexShaderCode != nullptr){
+      program = glCreateProgram();
+      initShader(program, vertexShaderCode, GL_VERTEX_SHADER);
+   }else{
+      std::cout << "Vertex shader cannot be read" << std::endl;
+   }
+   GLchar *fragmentShaderCode = readShader(const_cast<char*>(fragmentShader));
+   if(fragmentShaderCode != nullptr){
+      initShader(program, fragmentShaderCode, GL_FRAGMENT_SHADER);
+   }else{
+      std::cout << "Fragment shader cannot be read" << std::endl;
+   }
+   shaders.push_back(program);
 }
 
 char* ShaderHelper::readShader(char* filename){

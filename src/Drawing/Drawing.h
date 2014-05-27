@@ -21,6 +21,8 @@
 class Drawing
 {
 public:
+    const int PORTAL_STENCIL_ID = 1;
+    const int DEFAULT_STENCIL_ID = 0;
     Drawing();
     void update();
     bool initOpenGL();

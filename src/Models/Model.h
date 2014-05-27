@@ -26,6 +26,7 @@ public:
     Model();
     Model(std::vector<glm::vec3>,std::vector<glm::vec3>,std::vector<glm::vec3>,std::vector<unsigned int>);
     ~Model();
+    void drawSimple();
     GenericMaterial *material;
     GLuint shaderProgram;
     void initializeBuffers();

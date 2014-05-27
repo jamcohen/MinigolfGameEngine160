@@ -22,6 +22,7 @@
 #include "Cup.h"
 #include "Wall.h"
 #include "Ball.h"
+#include "Portal.h"
 
 class FileIO
 {
@@ -31,7 +32,7 @@ public:
     bool parseTileMap(const std::string);
     bool is_number(const std::string&);
     bool checkForCarriageReturn(std::string*);
-    bool parseTile(std::string*, bool&);
+    bool parseTileOrPortal(std::string*, bool&, bool isTile);
     bool parseTeeOrCup(std::string*, bool&, bool);
     glm::vec3 getTilePosition(std::vector<glm::vec3>);
     std::vector<unsigned int> getTriangles(std::vector<glm::vec3>);

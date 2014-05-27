@@ -46,11 +46,19 @@ bool FileIO::parseTileMap(const std::string filename)
         if(s == "tile")
         {
             encounteredCarriageReturn = false;
-            if(!parseTile(&s, encounteredCarriageReturn))
+            if(!parseTileOrPortal(&s, encounteredCarriageReturn, true))
             {
                 return false;
             }
             //std::cout << count << " Tile Put In\n";
+            count++;
+        }else if(s == "portal"){
+            encounteredCarriageReturn = false;
+            if(!parseTileOrPortal(&s, encounteredCarriageReturn, false))
+            {
+                return false;
+            }
+            //std::cout << count << " Portal Put In\n";
             count++;
         }
         else if (s == "tee")
@@ -81,7 +89,7 @@ bool FileIO::parseTileMap(const std::string filename)
 /*
  * Parses for tile
  */
-bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
+bool FileIO::parseTileOrPortal(std::string *s, bool &encounteredCarriageReturn, bool isTile)
 {
     int index;
     int numOfVerticies;
@@ -152,7 +160,11 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     std::vector<glm::vec3> normals = getNormals(indices,localVertices);
     std::vector<glm::vec3> colors = getColors(vertices);
     Model *model = new Model(localVertices,normals,colors,indices);
-    new Tile(index,position,model,neighbors);
+    if(isTile){
+        new Tile(index,position,model,neighbors);
+    }else{
+        new Portal(index,position,model,neighbors);
+    }
     spawnWalls(&localVertices, &neighbors, position); //Spawn the wall
     return true;
 }

@@ -19,6 +19,7 @@ class ShaderHelper{
         static std::vector<GLuint> shaders;
         static void compileShaders();
     private:
+        static void compileShader(GLuint program, char* vertexShader, char* fragmentShader);
         static char* readShader(char* filename);
         static GLuint initShader(GLuint program, const GLchar *source, GLenum type);
     

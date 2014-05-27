@@ -139,6 +139,7 @@
 		F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466F1903A8A6005AFD96 /* Tee.cpp */; };
 		F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E46711903A8A6005AFD96 /* Tile.cpp */; };
 		F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E46761903A8D8005AFD96 /* SceneManager.cpp */; };
+		F3981EB3192FF62E00F0898E /* Portal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3981EB1192FF62E00F0898E /* Portal.cpp */; };
 		F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F39E7AA319034A28006932C0 /* ShaderHelper.cpp */; };
 		F39E7AA719035E73006932C0 /* test.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F39E7AA619035E73006932C0 /* test.glsl */; };
 		F3E03623191A09CF0030066E /* RayCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03621191A09CF0030066E /* RayCast.cpp */; };
@@ -180,8 +181,8 @@
 		4BE65DFF1901AE02005093F8 /* MiniGolfXCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniGolfXCodeTests.m; sourceTree = "<group>"; };
 		4BE65F7F1901AE79005093F8 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		4BE65F811901AE7E005093F8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		4BE65F851901AED7005093F8 /* Drawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawing.cpp; sourceTree = "<group>"; };
-		4BE65F861901AED7005093F8 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		4BE65F851901AED7005093F8 /* Drawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawing.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE65F861901AED7005093F8 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; tabWidth = 4; };
 		4BE65F881901AED7005093F8 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		4BE65F891901AED7005093F8 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		4BE65F8B1901AED7005093F8 /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -439,7 +440,7 @@
 		4BE6608B1901AED8005093F8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		4BE660FA1901B99F005093F8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
 		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
-		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
+		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
 		4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCastHit.cpp; sourceTree = "<group>"; };
 		4BFD9D2E191A0CC20000E077 /* RayCastHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastHit.h; sourceTree = "<group>"; };
@@ -464,6 +465,8 @@
 		F37E46721903A8A6005AFD96 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		F37E46761903A8D8005AFD96 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
 		F37E46771903A8D8005AFD96 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		F3981EB1192FF62E00F0898E /* Portal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Portal.cpp; sourceTree = "<group>"; };
+		F3981EB2192FF62E00F0898E /* Portal.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Portal.h; sourceTree = "<group>"; tabWidth = 4; };
 		F39E7AA319034A28006932C0 /* ShaderHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderHelper.cpp; path = ../Shaders/ShaderHelper.cpp; sourceTree = "<group>"; };
 		F39E7AA419034A28006932C0 /* ShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderHelper.h; path = ../Shaders/ShaderHelper.h; sourceTree = "<group>"; };
 		F39E7AA619035E73006932C0 /* test.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.glsl; sourceTree = "<group>"; };
@@ -978,6 +981,8 @@
 		F37E466C1903A8A6005AFD96 /* Level */ = {
 			isa = PBXGroup;
 			children = (
+				F3981EB1192FF62E00F0898E /* Portal.cpp */,
+				F3981EB2192FF62E00F0898E /* Portal.h */,
 				F3638FA8190A04300039DC1E /* Wall.cpp */,
 				F3638FA9190A04300039DC1E /* Wall.h */,
 				F37E466D1903A8A6005AFD96 /* Cup.cpp */,
@@ -1212,6 +1217,7 @@
 				F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */,
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
+				F3981EB3192FF62E00F0898E /* Portal.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
 				F37E46731903A8A6005AFD96 /* Cup.cpp in Sources */,
 				F3638FAA190A04300039DC1E /* Wall.cpp in Sources */,

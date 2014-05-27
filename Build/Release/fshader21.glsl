@@ -2,7 +2,7 @@
 
 in vec3 N;
 in vec4 color;
-out vec4 fColor;
+out vec3 fColor;
 
 uniform vec4 AmbientProduct, DiffuseProduct, SpecularProduct;
 uniform vec3 light;
@@ -30,6 +30,6 @@ void main()
 		diffuse = vec4(0.0, 0.0, 0.0, 1.0);
 		finalColor = vec4(0.0, 0.0, 0.0, 1.0);
     }
-	fColor = finalColor;
+	fColor = finalColor.xyz;
 }
 
