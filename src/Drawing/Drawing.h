@@ -22,6 +22,9 @@
 class Drawing
 {
 public:
+    static const int SCREEN_WIDTH;
+    static const int SCREEN_HEIGHT;
+    
     Drawing();
     void update();
     bool initOpenGL();

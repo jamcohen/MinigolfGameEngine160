@@ -12,6 +12,12 @@
 		4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7E3190A180800440155 /* ModelUtil.cpp */; };
 		4B831088193BE21D0054851A /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831086193BE21D0054851A /* HUD.cpp */; };
 		4B83108A193C38480054851A /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B831089193C38480054851A /* SDL2_ttf.framework */; };
+		4B83108D193C5D0B0054851A /* HUDElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83108B193C5D0B0054851A /* HUDElement.cpp */; };
+		4B831090193C5D450054851A /* TextElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83108E193C5D450054851A /* TextElement.cpp */; };
+		4B831093193C7CAE0054851A /* GameTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831091193C7CAE0054851A /* GameTimer.cpp */; };
+		4B831096193C874B0054851A /* LevelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831094193C874B0054851A /* LevelManager.cpp */; };
+		4B831099193C87550054851A /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831097193C87550054851A /* Level.cpp */; };
+		4B83109C193C94710054851A /* GameTimerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83109A193C94710054851A /* GameTimerManager.cpp */; };
 		4BE65DE01901AE01005093F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE65DDE1901AE01005093F8 /* InfoPlist.strings */; };
 		4BE65DF51901AE01005093F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DF41901AE01005093F8 /* XCTest.framework */; };
 		4BE65DF61901AE01005093F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DD51901AE01005093F8 /* Cocoa.framework */; };
@@ -170,6 +176,18 @@
 		4B831086193BE21D0054851A /* HUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HUD.cpp; path = HUD/HUD.cpp; sourceTree = "<group>"; };
 		4B831087193BE21D0054851A /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUD.h; path = HUD/HUD.h; sourceTree = "<group>"; };
 		4B831089193C38480054851A /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		4B83108B193C5D0B0054851A /* HUDElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HUDElement.cpp; path = HUD/HUDElement.cpp; sourceTree = "<group>"; };
+		4B83108C193C5D0B0054851A /* HUDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUDElement.h; path = HUD/HUDElement.h; sourceTree = "<group>"; };
+		4B83108E193C5D450054851A /* TextElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextElement.cpp; sourceTree = "<group>"; };
+		4B83108F193C5D450054851A /* TextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextElement.h; sourceTree = "<group>"; };
+		4B831091193C7CAE0054851A /* GameTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimer.cpp; sourceTree = "<group>"; };
+		4B831092193C7CAE0054851A /* GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer.h; sourceTree = "<group>"; };
+		4B831094193C874B0054851A /* LevelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelManager.cpp; sourceTree = "<group>"; };
+		4B831095193C874B0054851A /* LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelManager.h; sourceTree = "<group>"; };
+		4B831097193C87550054851A /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
+		4B831098193C87550054851A /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		4B83109A193C94710054851A /* GameTimerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimerManager.cpp; sourceTree = "<group>"; };
+		4B83109B193C94710054851A /* GameTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimerManager.h; sourceTree = "<group>"; };
 		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		4BE65DD21901AE01005093F8 /* MiniGolfXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE65DD51901AE01005093F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -511,6 +529,10 @@
 			children = (
 				4B831086193BE21D0054851A /* HUD.cpp */,
 				4B831087193BE21D0054851A /* HUD.h */,
+				4B83108B193C5D0B0054851A /* HUDElement.cpp */,
+				4B83108C193C5D0B0054851A /* HUDElement.h */,
+				4B83108E193C5D450054851A /* TextElement.cpp */,
+				4B83108F193C5D450054851A /* TextElement.h */,
 			);
 			name = HUD;
 			sourceTree = "<group>";
@@ -1003,6 +1025,14 @@
 				F37E46701903A8A6005AFD96 /* Tee.h */,
 				F37E46711903A8A6005AFD96 /* Tile.cpp */,
 				F37E46721903A8A6005AFD96 /* Tile.h */,
+				4B831091193C7CAE0054851A /* GameTimer.cpp */,
+				4B831092193C7CAE0054851A /* GameTimer.h */,
+				4B831094193C874B0054851A /* LevelManager.cpp */,
+				4B831095193C874B0054851A /* LevelManager.h */,
+				4B831097193C87550054851A /* Level.cpp */,
+				4B831098193C87550054851A /* Level.h */,
+				4B83109A193C94710054851A /* GameTimerManager.cpp */,
+				4B83109B193C94710054851A /* GameTimerManager.h */,
 			);
 			path = Level;
 			sourceTree = "<group>";
@@ -1220,14 +1250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B83108D193C5D0B0054851A /* HUDElement.cpp in Sources */,
 				F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */,
 				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
 				4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */,
 				4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */,
+				4B831099193C87550054851A /* Level.cpp in Sources */,
 				F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */,
 				F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */,
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
+				4B831096193C874B0054851A /* LevelManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
 				4B831088193BE21D0054851A /* HUD.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
@@ -1236,11 +1269,14 @@
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
 				F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */,
+				4B83109C193C94710054851A /* GameTimerManager.cpp in Sources */,
 				4BFD9D32191A29650000E077 /* Physics.cpp in Sources */,
 				F318183A19195838006014D5 /* Primative.cpp in Sources */,
+				4B831093193C7CAE0054851A /* GameTimer.cpp in Sources */,
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
+				4B831090193C5D450054851A /* TextElement.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 				F3E03623191A09CF0030066E /* RayCast.cpp in Sources */,

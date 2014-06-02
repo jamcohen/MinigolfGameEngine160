@@ -9,6 +9,7 @@ out vec4 color;
 // Values that stay constant for the whole mesh.
 uniform sampler2D myTextureSampler;
 uniform vec3 textColor;
+
 void main(){
     
 	color = texture( myTextureSampler, vec2(uv.x,-uv.y) );
@@ -16,6 +17,4 @@ void main(){
         discard;
     }
     color = vec4(textColor.xyz,1);
-	
-	
 }
