@@ -9,6 +9,7 @@
 #include "RayCast.h"
 #include "Camera.h"
 #include "Cylinder.h"
+#include <SDL2_ttf/SDL_ttf.h>
 
 #ifndef TIME_STEP
 #define TIME_STEP 1000 / 60
@@ -40,7 +41,8 @@ int main(int argc, char * arg[])
     Camera *c = new Camera();
     c->setPosition(0, 2, 0);
     c->lockPitch(70);
-        
+    TTF_Init();
+    
     // create a window
     SDL_Window *window = SDL_CreateWindow(
                                           "SDL 2 window",             // window title
@@ -123,6 +125,7 @@ int main(int argc, char * arg[])
     }
     SDL_GL_DeleteContext(gl);
     
+    TTF_Quit();
     SceneManager::instance().closeScene();
     //Clean up
     SDL_DestroyWindow(window);

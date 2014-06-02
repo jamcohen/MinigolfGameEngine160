@@ -43,7 +43,8 @@ void Drawing::update(){
             (*objs)[i]->draw();
         }
     }
-        
+    glClear(GL_DEPTH_BUFFER_BIT );
+    HUD::instance().draw();
     glFlush();
     //Update screen
     //SDL_GL_SwapBuffers();
