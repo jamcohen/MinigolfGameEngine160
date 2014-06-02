@@ -13,11 +13,11 @@
 		4B831088193BE21D0054851A /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831086193BE21D0054851A /* HUD.cpp */; };
 		4B83108A193C38480054851A /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B831089193C38480054851A /* SDL2_ttf.framework */; };
 		4B83108D193C5D0B0054851A /* HUDElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83108B193C5D0B0054851A /* HUDElement.cpp */; };
-		4B831090193C5D450054851A /* TextElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83108E193C5D450054851A /* TextElement.cpp */; };
 		4B831093193C7CAE0054851A /* GameTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831091193C7CAE0054851A /* GameTimer.cpp */; };
 		4B831096193C874B0054851A /* LevelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831094193C874B0054851A /* LevelManager.cpp */; };
 		4B831099193C87550054851A /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831097193C87550054851A /* Level.cpp */; };
 		4B83109C193C94710054851A /* GameTimerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83109A193C94710054851A /* GameTimerManager.cpp */; };
+		4B83109F193CAA9A0054851A /* TextElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B83109D193CAA9A0054851A /* TextElement.cpp */; };
 		4BE65DE01901AE01005093F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE65DDE1901AE01005093F8 /* InfoPlist.strings */; };
 		4BE65DF51901AE01005093F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DF41901AE01005093F8 /* XCTest.framework */; };
 		4BE65DF61901AE01005093F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DD51901AE01005093F8 /* Cocoa.framework */; };
@@ -178,8 +178,6 @@
 		4B831089193C38480054851A /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		4B83108B193C5D0B0054851A /* HUDElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HUDElement.cpp; path = HUD/HUDElement.cpp; sourceTree = "<group>"; };
 		4B83108C193C5D0B0054851A /* HUDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUDElement.h; path = HUD/HUDElement.h; sourceTree = "<group>"; };
-		4B83108E193C5D450054851A /* TextElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextElement.cpp; sourceTree = "<group>"; };
-		4B83108F193C5D450054851A /* TextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextElement.h; sourceTree = "<group>"; };
 		4B831091193C7CAE0054851A /* GameTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimer.cpp; sourceTree = "<group>"; };
 		4B831092193C7CAE0054851A /* GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer.h; sourceTree = "<group>"; };
 		4B831094193C874B0054851A /* LevelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelManager.cpp; sourceTree = "<group>"; };
@@ -188,6 +186,8 @@
 		4B831098193C87550054851A /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		4B83109A193C94710054851A /* GameTimerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimerManager.cpp; sourceTree = "<group>"; };
 		4B83109B193C94710054851A /* GameTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimerManager.h; sourceTree = "<group>"; };
+		4B83109D193CAA9A0054851A /* TextElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextElement.cpp; path = HUD/TextElement.cpp; sourceTree = "<group>"; };
+		4B83109E193CAA9A0054851A /* TextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextElement.h; path = HUD/TextElement.h; sourceTree = "<group>"; };
 		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		4BE65DD21901AE01005093F8 /* MiniGolfXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE65DD51901AE01005093F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -527,12 +527,12 @@
 		4B831085193BE1F90054851A /* HUD */ = {
 			isa = PBXGroup;
 			children = (
+				4B83109D193CAA9A0054851A /* TextElement.cpp */,
+				4B83109E193CAA9A0054851A /* TextElement.h */,
 				4B831086193BE21D0054851A /* HUD.cpp */,
 				4B831087193BE21D0054851A /* HUD.h */,
 				4B83108B193C5D0B0054851A /* HUDElement.cpp */,
 				4B83108C193C5D0B0054851A /* HUDElement.h */,
-				4B83108E193C5D450054851A /* TextElement.cpp */,
-				4B83108F193C5D450054851A /* TextElement.h */,
 			);
 			name = HUD;
 			sourceTree = "<group>";
@@ -1250,6 +1250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B83109F193CAA9A0054851A /* TextElement.cpp in Sources */,
 				4B83108D193C5D0B0054851A /* HUDElement.cpp in Sources */,
 				F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */,
 				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
@@ -1276,7 +1277,6 @@
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
-				4B831090193C5D450054851A /* TextElement.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 				F3E03623191A09CF0030066E /* RayCast.cpp in Sources */,
