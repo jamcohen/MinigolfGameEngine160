@@ -10,7 +10,6 @@
 		4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7DC19048A9B00440155 /* Camera.cpp */; };
 		4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7DF190A090500440155 /* Cylinder.cpp */; };
 		4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FC7E3190A180800440155 /* ModelUtil.cpp */; };
-		4B831088193BE21D0054851A /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B831086193BE21D0054851A /* HUD.cpp */; };
 		4BE65DE01901AE01005093F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BE65DDE1901AE01005093F8 /* InfoPlist.strings */; };
 		4BE65DF51901AE01005093F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DF41901AE01005093F8 /* XCTest.framework */; };
 		4BE65DF61901AE01005093F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE65DD51901AE01005093F8 /* Cocoa.framework */; };
@@ -145,6 +144,13 @@
 		F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F39E7AA319034A28006932C0 /* ShaderHelper.cpp */; };
 		F39E7AA719035E73006932C0 /* test.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F39E7AA619035E73006932C0 /* test.glsl */; };
 		F3D07C9A193CA8DE00C3A74C /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D07C99193CA8DE00C3A74C /* SDL2_ttf.framework */; };
+		F3D07CAA193CAA4700C3A74C /* GameTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA2193CAA4700C3A74C /* GameTimer.cpp */; };
+		F3D07CAB193CAA4700C3A74C /* GameTimerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */; };
+		F3D07CAC193CAA4700C3A74C /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA6193CAA4700C3A74C /* Level.cpp */; };
+		F3D07CAD193CAA4700C3A74C /* LevelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */; };
+		F3D07CB5193CAA8300C3A74C /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CAF193CAA8300C3A74C /* HUD.cpp */; };
+		F3D07CB6193CAA8300C3A74C /* HUDElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CB1193CAA8300C3A74C /* HUDElement.cpp */; };
+		F3D07CB7193CAA8300C3A74C /* TextElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CB3193CAA8300C3A74C /* TextElement.cpp */; };
 		F3E03623191A09CF0030066E /* RayCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03621191A09CF0030066E /* RayCast.cpp */; };
 		F3E03626191A09E20030066E /* Face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03624191A09E20030066E /* Face.cpp */; };
 		F3EFA82619032EAF001FE6B6 /* vshader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3EFA82519032EAF001FE6B6 /* vshader.glsl */; };
@@ -169,8 +175,6 @@
 		4B2FC7E0190A090500440155 /* Cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cylinder.h; sourceTree = "<group>"; };
 		4B2FC7E3190A180800440155 /* ModelUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelUtil.cpp; sourceTree = "<group>"; };
 		4B2FC7E4190A180800440155 /* ModelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelUtil.h; sourceTree = "<group>"; };
-		4B831086193BE21D0054851A /* HUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HUD.cpp; path = HUD/HUD.cpp; sourceTree = "<group>"; };
-		4B831087193BE21D0054851A /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUD.h; path = HUD/HUD.h; sourceTree = "<group>"; };
 		4B8AECB81903451500E5EF3C /* MGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOpenGL.h; sourceTree = "<group>"; };
 		4BE65DD21901AE01005093F8 /* MiniGolfXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolfXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE65DD51901AE01005093F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -478,6 +482,20 @@
 		F39E7AA419034A28006932C0 /* ShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderHelper.h; path = ../Shaders/ShaderHelper.h; sourceTree = "<group>"; };
 		F39E7AA619035E73006932C0 /* test.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.glsl; sourceTree = "<group>"; };
 		F3D07C99193CA8DE00C3A74C /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		F3D07CA2193CAA4700C3A74C /* GameTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimer.cpp; sourceTree = "<group>"; };
+		F3D07CA3193CAA4700C3A74C /* GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer.h; sourceTree = "<group>"; };
+		F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimerManager.cpp; sourceTree = "<group>"; };
+		F3D07CA5193CAA4700C3A74C /* GameTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimerManager.h; sourceTree = "<group>"; };
+		F3D07CA6193CAA4700C3A74C /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
+		F3D07CA7193CAA4700C3A74C /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelManager.cpp; sourceTree = "<group>"; };
+		F3D07CA9193CAA4700C3A74C /* LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelManager.h; sourceTree = "<group>"; };
+		F3D07CAF193CAA8300C3A74C /* HUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUD.cpp; sourceTree = "<group>"; };
+		F3D07CB0193CAA8300C3A74C /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		F3D07CB1193CAA8300C3A74C /* HUDElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUDElement.cpp; sourceTree = "<group>"; };
+		F3D07CB2193CAA8300C3A74C /* HUDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDElement.h; sourceTree = "<group>"; };
+		F3D07CB3193CAA8300C3A74C /* TextElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextElement.cpp; sourceTree = "<group>"; };
+		F3D07CB4193CAA8300C3A74C /* TextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextElement.h; sourceTree = "<group>"; };
 		F3E03621191A09CF0030066E /* RayCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCast.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		F3E03622191A09CF0030066E /* RayCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCast.h; sourceTree = "<group>"; };
 		F3E03624191A09E20030066E /* Face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face.cpp; sourceTree = "<group>"; };
@@ -512,15 +530,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B831085193BE1F90054851A /* HUD */ = {
-			isa = PBXGroup;
-			children = (
-				4B831086193BE21D0054851A /* HUD.cpp */,
-				4B831087193BE21D0054851A /* HUD.h */,
-			);
-			name = HUD;
-			sourceTree = "<group>";
-		};
 		4B8AECB71903451500E5EF3C /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,7 +619,7 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				4B831085193BE1F90054851A /* HUD */,
+				F3D07CAE193CAA8300C3A74C /* HUD */,
 				F31818371919581D006014D5 /* Util */,
 				F31F9B381912D2BC001A4EC2 /* Gameobjects */,
 				F37E466C1903A8A6005AFD96 /* Level */,
@@ -1005,6 +1014,14 @@
 		F37E466C1903A8A6005AFD96 /* Level */ = {
 			isa = PBXGroup;
 			children = (
+				F3D07CA2193CAA4700C3A74C /* GameTimer.cpp */,
+				F3D07CA3193CAA4700C3A74C /* GameTimer.h */,
+				F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */,
+				F3D07CA5193CAA4700C3A74C /* GameTimerManager.h */,
+				F3D07CA6193CAA4700C3A74C /* Level.cpp */,
+				F3D07CA7193CAA4700C3A74C /* Level.h */,
+				F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */,
+				F3D07CA9193CAA4700C3A74C /* LevelManager.h */,
 				F3638FA8190A04300039DC1E /* Wall.cpp */,
 				F3638FA9190A04300039DC1E /* Wall.h */,
 				F37E466D1903A8A6005AFD96 /* Cup.cpp */,
@@ -1015,6 +1032,19 @@
 				F37E46721903A8A6005AFD96 /* Tile.h */,
 			);
 			path = Level;
+			sourceTree = "<group>";
+		};
+		F3D07CAE193CAA8300C3A74C /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F3D07CAF193CAA8300C3A74C /* HUD.cpp */,
+				F3D07CB0193CAA8300C3A74C /* HUD.h */,
+				F3D07CB1193CAA8300C3A74C /* HUDElement.cpp */,
+				F3D07CB2193CAA8300C3A74C /* HUDElement.h */,
+				F3D07CB3193CAA8300C3A74C /* TextElement.cpp */,
+				F3D07CB4193CAA8300C3A74C /* TextElement.h */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		F3EFA82419032EAF001FE6B6 /* Shaders */ = {
@@ -1235,24 +1265,30 @@
 				F34403C4193C716200EC9203 /* Gizmo.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
 				4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */,
+				F3D07CAD193CAA4700C3A74C /* LevelManager.cpp in Sources */,
+				F3D07CAA193CAA4700C3A74C /* GameTimer.cpp in Sources */,
 				4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */,
 				F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */,
 				F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */,
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
-				4B831088193BE21D0054851A /* HUD.cpp in Sources */,
+				F3D07CB5193CAA8300C3A74C /* HUD.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
 				F37E46731903A8A6005AFD96 /* Cup.cpp in Sources */,
 				F3638FAA190A04300039DC1E /* Wall.cpp in Sources */,
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
 				F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */,
+				F3D07CAC193CAA4700C3A74C /* Level.cpp in Sources */,
+				F3D07CAB193CAA4700C3A74C /* GameTimerManager.cpp in Sources */,
 				4BFD9D32191A29650000E077 /* Physics.cpp in Sources */,
+				F3D07CB6193CAA8300C3A74C /* HUDElement.cpp in Sources */,
 				F318183A19195838006014D5 /* Primative.cpp in Sources */,
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
 				F34B7C0C193AA78A004FC73C /* BallCamera.cpp in Sources */,
+				F3D07CB7193CAA8300C3A74C /* TextElement.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 				F3E03623191A09CF0030066E /* RayCast.cpp in Sources */,

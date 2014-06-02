@@ -7,7 +7,8 @@
 //
 
 #include "Drawing.h"
-
+const int Drawing::SCREEN_WIDTH = 640;
+const int Drawing::SCREEN_HEIGHT = 480;
 
 Drawing::Drawing(){
     initOpenGL();

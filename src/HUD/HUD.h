@@ -10,14 +10,8 @@
 #define __MiniGolfXCode__HUD__
 
 #include <iostream>
-#include "GameObject.h"
-#include "MGOpenGL.h"
-#include "ShaderHelper.h"
-#include "SceneManager.h"
-#include "Camera.h"
-#include "matrix_transform.hpp"
-#include <vector>
-#include <SDL2_ttf/SDL_ttf.h>
+#include <list>
+#include "HUDElement.h"
 
 class HUD
 {
@@ -29,13 +23,11 @@ public:
     }
     HUD();
     void draw();
+    void addHUDElement(HUDElement*);
+    void removeHUDElement(HUDElement*);
     
 private:
-    glm::mat4 orthoMat;
-    std::vector<glm::vec3> _vertices;
-    std::vector<unsigned int> _indices;
-    GLuint _vao;
-    SDL_Surface *Message;
+    std::list<HUDElement*> _hudElements;
 
 };
 

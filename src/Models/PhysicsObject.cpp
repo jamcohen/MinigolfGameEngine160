@@ -23,7 +23,7 @@ void PhysicsObject::updatePhysics(float deltaT){
 }
 
 void PhysicsObject::resetAcceleration(){
-     _acceleration = glm::vec3(0, -5.8f, 0);
+     _acceleration = glm::vec3(0, -10.8f, 0);
 }
 
 void PhysicsObject::applyForce(glm::vec3 force){
