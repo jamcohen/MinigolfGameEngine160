@@ -27,6 +27,23 @@ void ShaderHelper::compileShaders(){
         std::cout << "Fragment shader cannot be read" << std::endl;
     }
     shaders.push_back(program);
+    
+    std::cout << "Current directory is: " << getcwd(buffer, 1000) << "\n";
+    vertexShaderCode = readShader("vGUIShader.glsl");
+    program = 0;
+    if(vertexShaderCode != nullptr){
+        program = glCreateProgram();
+        initShader(program, vertexShaderCode, GL_VERTEX_SHADER);
+    }else{
+        std::cout << "Vertex shader cannot be read" << std::endl;
+    }
+    fragmentShaderCode = readShader("fGUIShader.glsl");
+    if(fragmentShaderCode != nullptr){
+        initShader(program, fragmentShaderCode, GL_FRAGMENT_SHADER);
+    }else{
+        std::cout << "Fragment shader cannot be read" << std::endl;
+    }
+    shaders.push_back(program);
 }
 
 char* ShaderHelper::readShader(char* filename){
