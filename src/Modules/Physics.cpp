@@ -33,7 +33,7 @@ RayCastHit *Physics::checkCollision(PhysicsObject* obj, float deltaT)
    //If the object isn't moving, there is no collision;
    if(glm::length(obj->_velocity) == 0) return nullptr;
    
-   RayCastHit* hit = RayCast::rayCast(obj, glm::normalize(obj->_velocity));
+   RayCastHit* hit = RayCast::rayCast(obj, glm::normalize(obj->_velocity), obj->getRadius());
    //glm::vec3 pos = obj->getPosition();
    //hit = new RayCastHit(obj->getModel()->getFaces()[0], glm::vec3(pos.x,0,pos.z), pos.y);
    //std::cout << obj->_velocity.y << std::endl;
@@ -59,7 +59,7 @@ RayCastHit *Physics::checkCollision(PhysicsObject* obj, glm::vec3 dir, float del
     //If the object isn't moving, there is no collision;
     if(glm::length(obj->_velocity) == 0) return nullptr;
     
-    RayCastHit* hit = RayCast::rayCast(obj, dir);
+    RayCastHit* hit = RayCast::rayCast(obj, dir, obj->getRadius());
     //glm::vec3 pos = obj->getPosition();
     //hit = new RayCastHit(obj->getModel()->getFaces()[0], glm::vec3(pos.x,0,pos.z), pos.y);
     //std::cout << obj->_velocity.y << std::endl;

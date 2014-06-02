@@ -22,9 +22,9 @@ void Drawing::update(){
     glUseProgram( program );
     
     GLuint modelCam = glGetUniformLocation( program, "camera" );
-	GLuint projectionLoc = glGetUniformLocation( program, "projection" );
-	GLuint lightLoc = glGetUniformLocation( program, "light" );
-	GLuint eyeLoc = glGetUniformLocation( program, "eye" );
+	 GLuint projectionLoc = glGetUniformLocation( program, "projection" );
+	 GLuint lightLoc = glGetUniformLocation( program, "light" );
+	 GLuint eyeLoc = glGetUniformLocation( program, "eye" );
     
     Camera *camera = SceneManager::instance().getCurrentCamera();
     glm::vec3 eyePos = camera->getPosition();
@@ -43,7 +43,8 @@ void Drawing::update(){
             (*objs)[i]->draw();
         }
     }
-        
+   
+    Gizmo::instance().draw();
     glFlush();
     //Update screen
     //SDL_GL_SwapBuffers();

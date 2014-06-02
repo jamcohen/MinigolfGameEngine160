@@ -29,7 +29,7 @@ public:
     GenericMaterial *material;
     GLuint shaderProgram;
     void initializeBuffers();
-    void draw(glm::vec3, glm::vec3, glm::vec3);
+    void draw(glm::vec3, glm::vec3, glm::quat);
     std::vector<glm::vec3> getVerticies() { return _vertices; }
     std::vector<glm::vec3> getColors() { return _colors; }
     std::vector<glm::vec3> getNormals() { return _normals; }

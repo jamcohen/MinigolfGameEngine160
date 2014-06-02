@@ -16,6 +16,7 @@
 #include "SceneManager.h"
 #include "Camera.h"
 #include "matrix_transform.hpp"
+#include "Gizmo.h"
 #include <vector>
 
 class Drawing

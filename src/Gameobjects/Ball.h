@@ -17,11 +17,14 @@
 #include "Wall.h"
 #include "Primative.h"
 #include "SceneManager.h"
+#include "Gizmo.h"
 
 class Ball : public PhysicsObject
 {
 public:
-   Ball(glm::vec3, glm::vec3, glm::vec3, float color = 0.02f);
+   Ball(glm::vec3, glm::quat, glm::vec3, float color = 0.02f);
+   virtual void onKeyPress(SDL_Keycode);
+   virtual void update();
 private:
    float _mass = 1.0f;
 };

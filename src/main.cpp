@@ -7,7 +7,7 @@
 #include <thread>
 #include "InputManager.h"
 #include "RayCast.h"
-#include "Camera.h"
+#include "BallCamera.h"
 #include "Cylinder.h"
 
 #ifndef TIME_STEP
@@ -37,7 +37,7 @@ int main(int argc, char * arg[])
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
-    Camera *c = new Camera();
+    Camera *c = new BallCamera();
     c->setPosition(0, 2, 0);
     c->lockPitch(70);
         
@@ -102,6 +102,7 @@ int main(int argc, char * arg[])
             }
         }
         graphics->update();
+        SceneManager::instance().update();
         SDL_GL_SwapWindow(window);
         
         //Time update

@@ -28,6 +28,7 @@ public:
     SceneManager();
     SceneManager(SceneManager const&);
     void operator=(SceneManager const&);
+    void update();
     void addGameObject(GameObject *);
     void closeScene();
     inline std::vector<GameObject *>* getObjects() { return &_objects; }
@@ -35,7 +36,7 @@ public:
     inline void setCurrentCamera(Camera *c) { _currentCamera = c; }
     inline Camera* getCurrentCamera() { return _currentCamera; }
     inline void setBall(Ball *b) { _ball = b; }
-    inline Ball* getBall() { return _ball; }
+    inline Ball* getBall() { return _ball; }                                 
     
 private:
     std::vector<GameObject *> _objects;

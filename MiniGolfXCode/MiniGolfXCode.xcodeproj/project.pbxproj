@@ -132,6 +132,8 @@
 		F318183A19195838006014D5 /* Primative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F318183819195838006014D5 /* Primative.cpp */; };
 		F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B391912D2BC001A4EC2 /* Ball.cpp */; };
 		F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */; };
+		F34403C4193C716200EC9203 /* Gizmo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34403C2193C716200EC9203 /* Gizmo.cpp */; };
+		F34B7C0C193AA78A004FC73C /* BallCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34B7C0A193AA78A004FC73C /* BallCamera.cpp */; };
 		F3638FAA190A04300039DC1E /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3638FA8190A04300039DC1E /* Wall.cpp */; };
 		F37E466719039617005AFD96 /* fshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F37E466619039617005AFD96 /* fshader21.glsl */; };
 		F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */; };
@@ -159,8 +161,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B2FC7DC19048A9B00440155 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
-		4B2FC7DD19048A9B00440155 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		4B2FC7DC19048A9B00440155 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4B2FC7DD19048A9B00440155 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; tabWidth = 4; };
 		4B2FC7DF190A090500440155 /* Cylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cylinder.cpp; sourceTree = "<group>"; };
 		4B2FC7E0190A090500440155 /* Cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cylinder.h; sourceTree = "<group>"; };
 		4B2FC7E3190A180800440155 /* ModelUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelUtil.cpp; sourceTree = "<group>"; };
@@ -434,13 +436,13 @@
 		4BE660841901AED8005093F8 /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		4BE660851901AED8005093F8 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
 		4BE660871901AED8005093F8 /* xstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xstream.hpp; sourceTree = "<group>"; };
-		4BE660881901AED8005093F8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4BE6608A1901AED8005093F8 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
-		4BE6608B1901AED8005093F8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
-		4BE660FA1901B99F005093F8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
-		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
-		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
-		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		4BE660881901AED8005093F8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE6608A1901AED8005093F8 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE6608B1901AED8005093F8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; tabWidth = 4; };
+		4BE660FA1901B99F005093F8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; tabWidth = 4; };
+		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; tabWidth = 4; };
 		4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCastHit.cpp; sourceTree = "<group>"; };
 		4BFD9D2E191A0CC20000E077 /* RayCastHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastHit.h; sourceTree = "<group>"; };
 		4BFD9D30191A29650000E077 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; tabWidth = 4; };
@@ -451,6 +453,10 @@
 		F31F9B3A1912D2BC001A4EC2 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsObject.cpp; sourceTree = "<group>"; };
 		F31F9B3D1912D2C9001A4EC2 /* PhysicsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsObject.h; sourceTree = "<group>"; };
+		F34403C2193C716200EC9203 /* Gizmo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gizmo.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		F34403C3193C716200EC9203 /* Gizmo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gizmo.h; sourceTree = "<group>"; };
+		F34B7C0A193AA78A004FC73C /* BallCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BallCamera.cpp; sourceTree = "<group>"; };
+		F34B7C0B193AA78A004FC73C /* BallCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = BallCamera.h; sourceTree = "<group>"; tabWidth = 4; };
 		F3638FA8190A04300039DC1E /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
 		F3638FA9190A04300039DC1E /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
 		F37E466619039617005AFD96 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fshader21.glsl; sourceTree = "<group>"; };
@@ -462,12 +468,12 @@
 		F37E46701903A8A6005AFD96 /* Tee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tee.h; sourceTree = "<group>"; };
 		F37E46711903A8A6005AFD96 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
 		F37E46721903A8A6005AFD96 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
-		F37E46761903A8D8005AFD96 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
-		F37E46771903A8D8005AFD96 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		F37E46761903A8D8005AFD96 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		F37E46771903A8D8005AFD96 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; tabWidth = 4; };
 		F39E7AA319034A28006932C0 /* ShaderHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderHelper.cpp; path = ../Shaders/ShaderHelper.cpp; sourceTree = "<group>"; };
 		F39E7AA419034A28006932C0 /* ShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderHelper.h; path = ../Shaders/ShaderHelper.h; sourceTree = "<group>"; };
 		F39E7AA619035E73006932C0 /* test.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.glsl; sourceTree = "<group>"; };
-		F3E03621191A09CF0030066E /* RayCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCast.cpp; sourceTree = "<group>"; };
+		F3E03621191A09CF0030066E /* RayCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCast.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		F3E03622191A09CF0030066E /* RayCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCast.h; sourceTree = "<group>"; };
 		F3E03624191A09E20030066E /* Face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face.cpp; sourceTree = "<group>"; };
 		F3E03625191A09E20030066E /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
@@ -928,6 +934,8 @@
 		4BE660F91901B991005093F8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F34B7C0A193AA78A004FC73C /* BallCamera.cpp */,
+				F34B7C0B193AA78A004FC73C /* BallCamera.h */,
 				4BFD9D30191A29650000E077 /* Physics.cpp */,
 				4BFD9D31191A29650000E077 /* Physics.h */,
 				4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */,
@@ -944,6 +952,8 @@
 				4BE660FE1901B9D8005093F8 /* FileIO.h */,
 				4B2FC7DC19048A9B00440155 /* Camera.cpp */,
 				4B2FC7DD19048A9B00440155 /* Camera.h */,
+				F34403C2193C716200EC9203 /* Gizmo.cpp */,
+				F34403C3193C716200EC9203 /* Gizmo.h */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1205,6 +1215,7 @@
 			files = (
 				F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */,
 				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
+				F34403C4193C716200EC9203 /* Gizmo.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
 				4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */,
 				4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */,
@@ -1223,6 +1234,7 @@
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
+				F34B7C0C193AA78A004FC73C /* BallCamera.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 				F3E03623191A09CF0030066E /* RayCast.cpp in Sources */,

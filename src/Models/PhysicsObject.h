@@ -20,11 +20,12 @@ class PhysicsObject : public GameObject
 {
 friend class Physics;
 public:
-   PhysicsObject(glm::vec3, glm::vec3, glm::vec3, float radius=0.05, float mass=1.0f);
+   PhysicsObject(glm::vec3, glm::vec3, glm::quat, float radius=0.05, float mass=1.0f);
    void applyForce(glm::vec3 force);
    void updatePhysics(float deltaT);
    void resetAcceleration();
-private:
+   inline float getRadius(){return _radius;};
+protected:
    glm::vec3 _acceleration;
    glm::vec3 _velocity;
    float _radius;

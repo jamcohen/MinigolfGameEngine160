@@ -21,6 +21,8 @@ public:
     Camera();
     Camera(glm::vec3);
     ~Camera();
+    virtual void update(){};
+    virtual void onKeyPress(SDL_Keycode){};
     //Position
     void setPosition(float,float,float);
     inline void setPosition(glm::vec3 position) { _position = position; }
@@ -60,9 +62,8 @@ public:
     //Forward direction vector
     glm::vec3 getForwardDirectionVector();
     
-private:
+protected:
     static glm::vec3 FORWARD_VECTOR;
-    
     glm::vec3 _position;
     glm::vec3 _target;
     glm::vec3 _up;
