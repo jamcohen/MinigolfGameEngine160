@@ -11,20 +11,28 @@ const float InputManager::MOVEMENT_SPEED = 0.1f;
 const float InputManager::MOUSE_DAMPENING = 15.0f;
 
 
-InputManager::InputManager() : _firstTimeGettingMouse(true), _previousMouseCords(0,0)
+InputManager::InputManager() : _firstTimeGettingMouse(true), _previousMouseCords(0,0), _listeners{}
 { }
 
 bool InputManager::handleKey(SDL_Keycode key)
 {
-    Ball *b = SceneManager::instance().getBall();
+    
+    for(GameObject *obj:_listeners){
+        obj->onKeyPress(key);
+    }
+    SceneManager::instance().getCurrentCamera()->onKeyPress(key);
+    
     switch(key)
     {
         case SDLK_ESCAPE:
             std::cout << "Quitting program.../n";
             return false;
             break;
-            
-        case SDLK_w:
+         
+        case SDLK_z:
+            Gizmo::instance().enabled = !Gizmo::instance().enabled;
+            break;
+        /*case SDLK_w:
             moveForward();
             break;
             
@@ -42,28 +50,32 @@ bool InputManager::handleKey(SDL_Keycode key)
             
         case SDLK_UP:
             //rotatePitch(5.0f);
-            b->applyForce(glm::vec3(0,0,4));
+            //b->applyForce(glm::vec3(0,0,7));
             break;
             
         case SDLK_DOWN:
             //rotatePitch(-5.0f);
-            b->applyForce(glm::vec3(0,0,-4));
+            //b->applyForce(glm::vec3(0,0,-7));
             break;
             
         case SDLK_RIGHT:
             //rotateYaw(5.0f);
-            b->applyForce(glm::vec3(4,0,0));
+            //b->applyForce(glm::vec3(-7,0,0));
             break;
             
         case SDLK_LEFT:
             //rotateYaw(-5.0f);
-            b->applyForce(glm::vec3(-4,0,0));
-            break;
+            //b->applyForce(glm::vec3(7,0,0));
+            break;*/
             
         default:
             break;
     }
     return true;
+}
+
+void InputManager::addListener(GameObject *obj){
+    _listeners.push_back(obj);
 }
 
 /*

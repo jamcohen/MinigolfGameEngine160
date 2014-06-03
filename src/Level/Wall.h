@@ -19,7 +19,7 @@
 class Wall : GameObject
 {
 public:
-    Wall(const glm::vec3, const glm::vec3, float, float, float, glm::vec3);
+    Wall(const glm::vec3, const glm::quat, float, float, float, glm::vec3);
     ~Wall();
    Model* getModel(float, float);
     

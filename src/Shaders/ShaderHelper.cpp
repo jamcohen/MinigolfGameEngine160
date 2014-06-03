@@ -11,6 +11,7 @@ std::vector<GLuint> ShaderHelper::shaders;
 
 void ShaderHelper::compileShaders(){
     compileShader( 0, "vShader.glsl", "fShader21.glsl");
+    compileShader( 1, "vGUIshader.glsl", "fGUIshader.glsl");
     compileShader( 1, "vpassthrough.glsl", "fportalShader.glsl");
 }
 

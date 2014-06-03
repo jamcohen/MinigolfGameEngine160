@@ -220,9 +220,9 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     }
     else
     {
-       new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
+       new Wall(position, glm::quat(), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
        //new Ball(position+glm::vec3(0,3,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
-       new Ball(position+glm::vec3(0.1,.3,0.51), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
+       new Ball(position+glm::vec3(0.0,.3,0.0), glm::quat(), glm::vec3(0, 0.2, 0.7), 0.05f);
        //new Cup(index,position);
     }
     return true;
@@ -266,8 +266,24 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             angleX = (angleX != angleX) ? 0 : angleX*180/M_PI;
             if(angleX > 90) angleX -= 180;
             if(angleX < -90) angleX += 180;
-
-            Wall *w = new Wall(pos, glm::vec3(angleX, angleY, 0), 0.05, 0.3, distance, glm::vec3(0.7, 0.43, 0));
+            float height = 0.4;
+            
+            float cos_theta = glm::dot(glm::vec3(0,0,1), dir);
+            float angle = acos(cos_theta);
+            glm::vec3 axis = glm::normalize(glm::cross(glm::vec3(0,0,1), dir));
+            std::cout << "AXIS: " << axis.x << ", " << axis.y << ", " << axis.z << std::endl;
+            std::cout << "ANGLE: " << angle << std::endl;
+            //glm::quat rotationZ =  glm::normalize(glm::angleAxis((float)(angle*180.0f/M_PI), axis));
+            glm::quat rotationZ{};
+            if(!isnan(axis.x)){
+              rotationZ =  glm::angleAxis(angle*float(180/M_PI), axis);
+            }
+            //glm::quat rotationZ{};
+            /*cos_theta = glm::dot(glm::vec3(1,0,0), dir);
+            angle = acos(cos_theta);
+            axis = glm::normalize(glm::cross(glm::vec3(0,0,1), dir));
+            glm::quat rotationX =  glm::angleAxis(angle, dir);*/
+            Wall *w = new Wall(pos, rotationZ, 0.05, height, distance, glm::vec3(0.7, 0.43, 0));
         }
     }
 }

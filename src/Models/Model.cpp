@@ -51,14 +51,15 @@ Model::Model() : _vertices(), _normals(),_colors(),_indices(), _faces()
 Model::~Model()
 { }
 
-void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotate)
+void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::quat rotate)
 {
     glUseProgram(ShaderHelper::shaders[1] );///material->shaderProgram );
     glBindVertexArray( _vao );
     glm::mat4 T = glm::translate(glm::mat4(), pos);
-    glm::mat4 R = glm::rotate(glm::mat4(), rotate.z, glm::vec3(0,0,1));//glm::orientate4(rotate);
-              R = glm::rotate(R, rotate.y, glm::vec3(0,1,0));
-              R = glm::rotate(R, rotate.x, glm::vec3(1,0,0));
+    glm::mat4 R = glm::mat4_cast(rotate);
+    //glm::mat4 R = glm::rotate(glm::mat4(), rotate.z, glm::vec3(0,0,1));//glm::orientate4(rotate);
+    //          R = glm::rotate(R, rotate.y, glm::vec3(0,1,0));
+    //          R = glm::rotate(R, rotate.x, glm::vec3(1,0,0));
     glm::mat4 S = glm::scale(glm::mat4(), scale);
     
     glm::mat4 model = T*R*S;

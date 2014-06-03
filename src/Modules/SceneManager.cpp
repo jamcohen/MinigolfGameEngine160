@@ -1,3 +1,4 @@
+
 //
 //  SceneManager.cpp
 //  MiniGolfXCode
@@ -7,6 +8,8 @@
 //
 
 #include "SceneManager.h"
+#include "GameObject.h"
+#include "Camera.h"
 
 SceneManager::SceneManager()
 {}
@@ -25,7 +28,16 @@ void SceneManager::closeScene()
     std::cout << "Cleaning up all cameras...\n";
     for ( Camera *c : _cameraList )
     {
-       delete c;
+       //delete c;
+    }
+}
+
+void SceneManager::update(){
+    for(GameObject *obj : _objects){
+        obj->update();
+    }
+    for(Camera *cam : _cameraList){
+        cam->update();
     }
 }
 

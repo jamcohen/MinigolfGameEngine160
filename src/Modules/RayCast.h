@@ -20,7 +20,9 @@
 class RayCast
 {
 public:
-    static RayCastHit* rayCast(GameObject*, glm::vec3);
+    static RayCastHit* rayCast(GameObject*, glm::vec3, float radius = 0);
+private:
+   static std::vector<glm::vec3> getCollisionCoords(Face& face, GameObject &g, GameObject &tempG, float radius = 0);
 };
 
 #endif /* defined(__MiniGolfXCode__RayCast__) */

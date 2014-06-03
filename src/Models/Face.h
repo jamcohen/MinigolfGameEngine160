@@ -14,6 +14,7 @@
 #include "glm.hpp"
 #include "Model.h"
 #include "GameObject.h"
+#include "Gizmo.h"
 
 class Model;
 class GameObject;

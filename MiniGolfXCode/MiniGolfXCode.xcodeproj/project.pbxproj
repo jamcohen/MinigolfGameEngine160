@@ -132,6 +132,8 @@
 		F318183A19195838006014D5 /* Primative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F318183819195838006014D5 /* Primative.cpp */; };
 		F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B391912D2BC001A4EC2 /* Ball.cpp */; };
 		F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */; };
+		F34403C4193C716200EC9203 /* Gizmo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34403C2193C716200EC9203 /* Gizmo.cpp */; };
+		F34B7C0C193AA78A004FC73C /* BallCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34B7C0A193AA78A004FC73C /* BallCamera.cpp */; };
 		F3638FAA190A04300039DC1E /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3638FA8190A04300039DC1E /* Wall.cpp */; };
 		F37E466719039617005AFD96 /* fshader21.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F37E466619039617005AFD96 /* fshader21.glsl */; };
 		F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */; };
@@ -139,9 +141,17 @@
 		F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E466F1903A8A6005AFD96 /* Tee.cpp */; };
 		F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E46711903A8A6005AFD96 /* Tile.cpp */; };
 		F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37E46761903A8D8005AFD96 /* SceneManager.cpp */; };
-		F3981EB3192FF62E00F0898E /* Portal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3981EB1192FF62E00F0898E /* Portal.cpp */; };
 		F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F39E7AA319034A28006932C0 /* ShaderHelper.cpp */; };
 		F39E7AA719035E73006932C0 /* test.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F39E7AA619035E73006932C0 /* test.glsl */; };
+		F3D07C9A193CA8DE00C3A74C /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D07C99193CA8DE00C3A74C /* SDL2_ttf.framework */; };
+		F3D07CAA193CAA4700C3A74C /* GameTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA2193CAA4700C3A74C /* GameTimer.cpp */; };
+		F3D07CAB193CAA4700C3A74C /* GameTimerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */; };
+		F3D07CAC193CAA4700C3A74C /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA6193CAA4700C3A74C /* Level.cpp */; };
+		F3D07CAD193CAA4700C3A74C /* LevelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */; };
+		F3D07CB5193CAA8300C3A74C /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CAF193CAA8300C3A74C /* HUD.cpp */; };
+		F3D07CB6193CAA8300C3A74C /* HUDElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CB1193CAA8300C3A74C /* HUDElement.cpp */; };
+		F3D07CB7193CAA8300C3A74C /* TextElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CB3193CAA8300C3A74C /* TextElement.cpp */; };
+		F3D07CBA193D0FC600C3A74C /* Portal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D07CB8193D0FC600C3A74C /* Portal.cpp */; };
 		F3E03623191A09CF0030066E /* RayCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03621191A09CF0030066E /* RayCast.cpp */; };
 		F3E03626191A09E20030066E /* Face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3E03624191A09E20030066E /* Face.cpp */; };
 		F3EFA82619032EAF001FE6B6 /* vshader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3EFA82519032EAF001FE6B6 /* vshader.glsl */; };
@@ -160,8 +170,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B2FC7DC19048A9B00440155 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
-		4B2FC7DD19048A9B00440155 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		4B2FC7DC19048A9B00440155 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4B2FC7DD19048A9B00440155 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; tabWidth = 4; };
 		4B2FC7DF190A090500440155 /* Cylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cylinder.cpp; sourceTree = "<group>"; };
 		4B2FC7E0190A090500440155 /* Cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cylinder.h; sourceTree = "<group>"; };
 		4B2FC7E3190A180800440155 /* ModelUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelUtil.cpp; sourceTree = "<group>"; };
@@ -181,8 +191,8 @@
 		4BE65DFF1901AE02005093F8 /* MiniGolfXCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniGolfXCodeTests.m; sourceTree = "<group>"; };
 		4BE65F7F1901AE79005093F8 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		4BE65F811901AE7E005093F8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		4BE65F851901AED7005093F8 /* Drawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawing.cpp; sourceTree = "<group>"; tabWidth = 4; };
-		4BE65F861901AED7005093F8 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; tabWidth = 4; };
+		4BE65F851901AED7005093F8 /* Drawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawing.cpp; sourceTree = "<group>"; };
+		4BE65F861901AED7005093F8 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
 		4BE65F881901AED7005093F8 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		4BE65F891901AED7005093F8 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		4BE65F8B1901AED7005093F8 /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -435,13 +445,13 @@
 		4BE660841901AED8005093F8 /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		4BE660851901AED8005093F8 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
 		4BE660871901AED8005093F8 /* xstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xstream.hpp; sourceTree = "<group>"; };
-		4BE660881901AED8005093F8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4BE6608A1901AED8005093F8 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
-		4BE6608B1901AED8005093F8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
-		4BE660FA1901B99F005093F8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
-		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		4BE660881901AED8005093F8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE6608A1901AED8005093F8 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE6608B1901AED8005093F8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; tabWidth = 4; };
+		4BE660FA1901B99F005093F8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		4BE660FB1901B99F005093F8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; tabWidth = 4; };
 		4BE660FD1901B9D8005093F8 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; tabWidth = 4; };
-		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		4BE660FE1901B9D8005093F8 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; tabWidth = 4; };
 		4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCastHit.cpp; sourceTree = "<group>"; };
 		4BFD9D2E191A0CC20000E077 /* RayCastHit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastHit.h; sourceTree = "<group>"; };
 		4BFD9D30191A29650000E077 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Physics.cpp; sourceTree = "<group>"; tabWidth = 4; };
@@ -452,6 +462,10 @@
 		F31F9B3A1912D2BC001A4EC2 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		F31F9B3C1912D2C9001A4EC2 /* PhysicsObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsObject.cpp; sourceTree = "<group>"; };
 		F31F9B3D1912D2C9001A4EC2 /* PhysicsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsObject.h; sourceTree = "<group>"; };
+		F34403C2193C716200EC9203 /* Gizmo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gizmo.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		F34403C3193C716200EC9203 /* Gizmo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gizmo.h; sourceTree = "<group>"; };
+		F34B7C0A193AA78A004FC73C /* BallCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BallCamera.cpp; sourceTree = "<group>"; };
+		F34B7C0B193AA78A004FC73C /* BallCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = BallCamera.h; sourceTree = "<group>"; tabWidth = 4; };
 		F3638FA8190A04300039DC1E /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
 		F3638FA9190A04300039DC1E /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
 		F37E466619039617005AFD96 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fshader21.glsl; sourceTree = "<group>"; };
@@ -463,14 +477,29 @@
 		F37E46701903A8A6005AFD96 /* Tee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tee.h; sourceTree = "<group>"; };
 		F37E46711903A8A6005AFD96 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
 		F37E46721903A8A6005AFD96 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
-		F37E46761903A8D8005AFD96 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
-		F37E46771903A8D8005AFD96 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
-		F3981EB1192FF62E00F0898E /* Portal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Portal.cpp; sourceTree = "<group>"; };
-		F3981EB2192FF62E00F0898E /* Portal.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Portal.h; sourceTree = "<group>"; tabWidth = 4; };
+		F37E46761903A8D8005AFD96 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; tabWidth = 4; };
+		F37E46771903A8D8005AFD96 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; tabWidth = 4; };
 		F39E7AA319034A28006932C0 /* ShaderHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderHelper.cpp; path = ../Shaders/ShaderHelper.cpp; sourceTree = "<group>"; };
 		F39E7AA419034A28006932C0 /* ShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderHelper.h; path = ../Shaders/ShaderHelper.h; sourceTree = "<group>"; };
 		F39E7AA619035E73006932C0 /* test.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.glsl; sourceTree = "<group>"; };
-		F3E03621191A09CF0030066E /* RayCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCast.cpp; sourceTree = "<group>"; };
+		F3D07C99193CA8DE00C3A74C /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		F3D07CA2193CAA4700C3A74C /* GameTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimer.cpp; sourceTree = "<group>"; };
+		F3D07CA3193CAA4700C3A74C /* GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer.h; sourceTree = "<group>"; };
+		F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimerManager.cpp; sourceTree = "<group>"; };
+		F3D07CA5193CAA4700C3A74C /* GameTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimerManager.h; sourceTree = "<group>"; };
+		F3D07CA6193CAA4700C3A74C /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
+		F3D07CA7193CAA4700C3A74C /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelManager.cpp; sourceTree = "<group>"; };
+		F3D07CA9193CAA4700C3A74C /* LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelManager.h; sourceTree = "<group>"; };
+		F3D07CAF193CAA8300C3A74C /* HUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUD.cpp; sourceTree = "<group>"; };
+		F3D07CB0193CAA8300C3A74C /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		F3D07CB1193CAA8300C3A74C /* HUDElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUDElement.cpp; sourceTree = "<group>"; };
+		F3D07CB2193CAA8300C3A74C /* HUDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDElement.h; sourceTree = "<group>"; };
+		F3D07CB3193CAA8300C3A74C /* TextElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextElement.cpp; sourceTree = "<group>"; };
+		F3D07CB4193CAA8300C3A74C /* TextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextElement.h; sourceTree = "<group>"; };
+		F3D07CB8193D0FC600C3A74C /* Portal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Portal.cpp; sourceTree = "<group>"; };
+		F3D07CB9193D0FC600C3A74C /* Portal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Portal.h; sourceTree = "<group>"; };
+		F3E03621191A09CF0030066E /* RayCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayCast.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		F3E03622191A09CF0030066E /* RayCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCast.h; sourceTree = "<group>"; };
 		F3E03624191A09E20030066E /* Face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face.cpp; sourceTree = "<group>"; };
 		F3E03625191A09E20030066E /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
@@ -486,6 +515,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D07C9A193CA8DE00C3A74C /* SDL2_ttf.framework in Frameworks */,
 				4BE65F821901AE7E005093F8 /* OpenGL.framework in Frameworks */,
 				4BE65F801901AE79005093F8 /* SDL2.framework in Frameworks */,
 			);
@@ -534,6 +564,7 @@
 		4BE65DD41901AE01005093F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3D07C99193CA8DE00C3A74C /* SDL2_ttf.framework */,
 				4BE65F811901AE7E005093F8 /* OpenGL.framework */,
 				4BE65F7F1901AE79005093F8 /* SDL2.framework */,
 				4BE65DD51901AE01005093F8 /* Cocoa.framework */,
@@ -591,6 +622,7 @@
 		4BE65F831901AED7005093F8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F3D07CAE193CAA8300C3A74C /* HUD */,
 				F31818371919581D006014D5 /* Util */,
 				F31F9B381912D2BC001A4EC2 /* Gameobjects */,
 				F37E466C1903A8A6005AFD96 /* Level */,
@@ -931,6 +963,8 @@
 		4BE660F91901B991005093F8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F34B7C0A193AA78A004FC73C /* BallCamera.cpp */,
+				F34B7C0B193AA78A004FC73C /* BallCamera.h */,
 				4BFD9D30191A29650000E077 /* Physics.cpp */,
 				4BFD9D31191A29650000E077 /* Physics.h */,
 				4BFD9D2D191A0CC20000E077 /* RayCastHit.cpp */,
@@ -947,6 +981,8 @@
 				4BE660FE1901B9D8005093F8 /* FileIO.h */,
 				4B2FC7DC19048A9B00440155 /* Camera.cpp */,
 				4B2FC7DD19048A9B00440155 /* Camera.h */,
+				F34403C2193C716200EC9203 /* Gizmo.cpp */,
+				F34403C3193C716200EC9203 /* Gizmo.h */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -981,8 +1017,16 @@
 		F37E466C1903A8A6005AFD96 /* Level */ = {
 			isa = PBXGroup;
 			children = (
-				F3981EB1192FF62E00F0898E /* Portal.cpp */,
-				F3981EB2192FF62E00F0898E /* Portal.h */,
+				F3D07CB8193D0FC600C3A74C /* Portal.cpp */,
+				F3D07CB9193D0FC600C3A74C /* Portal.h */,
+				F3D07CA2193CAA4700C3A74C /* GameTimer.cpp */,
+				F3D07CA3193CAA4700C3A74C /* GameTimer.h */,
+				F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */,
+				F3D07CA5193CAA4700C3A74C /* GameTimerManager.h */,
+				F3D07CA6193CAA4700C3A74C /* Level.cpp */,
+				F3D07CA7193CAA4700C3A74C /* Level.h */,
+				F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */,
+				F3D07CA9193CAA4700C3A74C /* LevelManager.h */,
 				F3638FA8190A04300039DC1E /* Wall.cpp */,
 				F3638FA9190A04300039DC1E /* Wall.h */,
 				F37E466D1903A8A6005AFD96 /* Cup.cpp */,
@@ -993,6 +1037,19 @@
 				F37E46721903A8A6005AFD96 /* Tile.h */,
 			);
 			path = Level;
+			sourceTree = "<group>";
+		};
+		F3D07CAE193CAA8300C3A74C /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F3D07CAF193CAA8300C3A74C /* HUD.cpp */,
+				F3D07CB0193CAA8300C3A74C /* HUD.h */,
+				F3D07CB1193CAA8300C3A74C /* HUDElement.cpp */,
+				F3D07CB2193CAA8300C3A74C /* HUDElement.h */,
+				F3D07CB3193CAA8300C3A74C /* TextElement.cpp */,
+				F3D07CB4193CAA8300C3A74C /* TextElement.h */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		F3EFA82419032EAF001FE6B6 /* Shaders */ = {
@@ -1210,25 +1267,34 @@
 			files = (
 				F31F9B3B1912D2BC001A4EC2 /* Ball.cpp in Sources */,
 				F39E7AA519034A28006932C0 /* ShaderHelper.cpp in Sources */,
+				F34403C4193C716200EC9203 /* Gizmo.cpp in Sources */,
 				4BE660FF1901B9D8005093F8 /* FileIO.cpp in Sources */,
 				4B2FC7E1190A090500440155 /* Cylinder.cpp in Sources */,
+				F3D07CAD193CAA4700C3A74C /* LevelManager.cpp in Sources */,
+				F3D07CAA193CAA4700C3A74C /* GameTimer.cpp in Sources */,
 				4B2FC7DE19048A9B00440155 /* Camera.cpp in Sources */,
 				F3EFA82D190339F0001FE6B6 /* GenericMaterial.cpp in Sources */,
 				F37E46751903A8A6005AFD96 /* Tile.cpp in Sources */,
 				4BE660FC1901B99F005093F8 /* InputManager.cpp in Sources */,
 				4BE660F81901AED8005093F8 /* GameObject.cpp in Sources */,
-				F3981EB3192FF62E00F0898E /* Portal.cpp in Sources */,
+				F3D07CB5193CAA8300C3A74C /* HUD.cpp in Sources */,
 				F3EFA829190330D3001FE6B6 /* Model.cpp in Sources */,
 				F37E46731903A8A6005AFD96 /* Cup.cpp in Sources */,
+				F3D07CBA193D0FC600C3A74C /* Portal.cpp in Sources */,
 				F3638FAA190A04300039DC1E /* Wall.cpp in Sources */,
 				F37E466B19039B8E005AFD96 /* DiffuseSpecularMaterial.cpp in Sources */,
 				F37E46741903A8A6005AFD96 /* Tee.cpp in Sources */,
 				F31F9B3E1912D2C9001A4EC2 /* PhysicsObject.cpp in Sources */,
+				F3D07CAC193CAA4700C3A74C /* Level.cpp in Sources */,
+				F3D07CAB193CAA4700C3A74C /* GameTimerManager.cpp in Sources */,
 				4BFD9D32191A29650000E077 /* Physics.cpp in Sources */,
+				F3D07CB6193CAA8300C3A74C /* HUDElement.cpp in Sources */,
 				F318183A19195838006014D5 /* Primative.cpp in Sources */,
 				F3E03626191A09E20030066E /* Face.cpp in Sources */,
 				4BE6608C1901AED8005093F8 /* Drawing.cpp in Sources */,
 				4B2FC7E5190A180800440155 /* ModelUtil.cpp in Sources */,
+				F34B7C0C193AA78A004FC73C /* BallCamera.cpp in Sources */,
+				F3D07CB7193CAA8300C3A74C /* TextElement.cpp in Sources */,
 				F37E46781903A8D8005AFD96 /* SceneManager.cpp in Sources */,
 				4BE660F71901AED8005093F8 /* main.cpp in Sources */,
 				F3E03623191A09CF0030066E /* RayCast.cpp in Sources */,
@@ -1352,7 +1418,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_TEMP_DIR = "~/Library/git/miniGolf/Build";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/Users/jakecohen/git/MiniGolfGameEngine/Frameworks,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "MiniGolfXCode/MiniGolfXCode-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -1368,7 +1439,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_TEMP_DIR = "~/Library/git/miniGolf/Build";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					/Users/jakecohen/git/MiniGolfGameEngine/Frameworks,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "MiniGolfXCode/MiniGolfXCode-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;

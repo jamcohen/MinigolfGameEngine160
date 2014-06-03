@@ -8,19 +8,22 @@
 
 #include "GameObject.h"
 
-GameObject::GameObject(glm::vec3 pos) : _position(pos), _rotation(0, 0, 0), _scale(1,1,1)
+GameObject::GameObject(glm::vec3 pos) : _position(pos), _rotation(), _scale(1,1,1)
 {
     SceneManager::instance().addGameObject(this);
+    InputManager::instance().addListener(this);
 }
 
-GameObject::GameObject(glm::vec3 pos, glm::vec3 scale, glm::vec3 rotation) : _position(pos), _rotation(rotation), _scale(scale)
+GameObject::GameObject(glm::vec3 pos, glm::vec3 scale, glm::quat rotation) : _position(pos), _rotation(rotation), _scale(scale)
 {
    SceneManager::instance().addGameObject(this);
+   InputManager::instance().addListener(this);
 }
 
-GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model), _rotation(0, 0, 0), _scale(1,1,1)
+GameObject::GameObject(glm::vec3 pos, Model *model) : _position(pos), _model(model), _rotation(), _scale(1,1,1)
 {
     SceneManager::instance().addGameObject(this);
+    InputManager::instance().addListener(this);
     model->setGameObject(this);
 }
 

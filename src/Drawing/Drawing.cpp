@@ -7,6 +7,8 @@
 //
 
 #include "Drawing.h"
+const int Drawing::SCREEN_WIDTH = 640;
+const int Drawing::SCREEN_HEIGHT = 480;
 
 Drawing::Drawing(){
     initOpenGL();
@@ -22,9 +24,9 @@ void Drawing::update(){
     glUseProgram( program );
     
     GLuint modelCam = glGetUniformLocation( program, "camera" );
-	GLuint projectionLoc = glGetUniformLocation( program, "projection" );
-	GLuint lightLoc = glGetUniformLocation( program, "light" );
-	GLuint eyeLoc = glGetUniformLocation( program, "eye" );
+	 GLuint projectionLoc = glGetUniformLocation( program, "projection" );
+	 GLuint lightLoc = glGetUniformLocation( program, "light" );
+	 GLuint eyeLoc = glGetUniformLocation( program, "eye" );
     
     Camera *camera = SceneManager::instance().getCurrentCamera();
     glm::vec3 eyePos = camera->getPosition();
@@ -38,7 +40,7 @@ void Drawing::update(){
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projectionMat));
    
     // The framebuffer, which regroups 0, 1, or more textures, and 0 or 1 depth buffer.
-    GLuint FramebufferName = 0;
+    /*GLuint FramebufferName = 0;
     glGenFramebuffers(1, &FramebufferName);
     glBindFramebuffer(GL_FRAMEBUFFER, FramebufferName);
    
@@ -68,7 +70,7 @@ void Drawing::update(){
     
     // Set the list of draw buffers.
     GLenum DrawBuffers[1] = {GL_COLOR_ATTACHMENT0};
-    glDrawBuffers(1, DrawBuffers); // "1" is the size of DrawBuffers
+    glDrawBuffers(1, DrawBuffers); // "1" is the size of DrawBuffers*/
     
     //Actually draw our game objects
     std::vector<GameObject*>* objs = SceneManager::instance().getObjects();
@@ -83,7 +85,7 @@ void Drawing::update(){
         }
     }
     
-    glUseProgram( ShaderHelper::shaders[1]);
+    /*glUseProgram( ShaderHelper::shaders[1]);
     // The fullscreen quad's FBO
     GLuint quad_VertexArrayID;
     glGenVertexArrays(1, &quad_VertexArrayID);
@@ -119,9 +121,14 @@ void Drawing::update(){
         if(obj->getModel() != NULL){
             obj->draw();
         }
-    }
+    }*/
 
     
+
+    Gizmo::instance().draw();
+    glClear(GL_DEPTH_BUFFER_BIT);
+    HUD::instance().draw();
+
     glFlush();
     //Update screen
     //SDL_GL_SwapBuffers();

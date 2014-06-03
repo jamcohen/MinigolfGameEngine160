@@ -7,8 +7,12 @@
 #include <thread>
 #include "InputManager.h"
 #include "RayCast.h"
-#include "Camera.h"
+#include "BallCamera.h"
 #include "Cylinder.h"
+#include <SDL2_ttf/SDL_ttf.h>
+#include "TextElement.h"
+#include "GameTimerManager.h"
+#include "LevelManager.h"
 
 #ifndef TIME_STEP
 #define TIME_STEP 1000 / 60
@@ -37,17 +41,18 @@ int main(int argc, char * arg[])
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
-    Camera *c = new Camera();
+    Camera *c = new BallCamera();
     c->setPosition(0, 2, 0);
     c->lockPitch(70);
-        
+    TTF_Init();
+    
     // create a window
     SDL_Window *window = SDL_CreateWindow(
                                           "SDL 2 window",             // window title
                                           SDL_WINDOWPOS_CENTERED,     // x position, centered
                                           SDL_WINDOWPOS_CENTERED,     // y position, centered
-                                          640,                        // width, in pixels
-                                          480,                        // height, in pixels
+                                          Drawing::SCREEN_WIDTH,                        // width, in pixels
+                                          Drawing::SCREEN_HEIGHT,                        // height, in pixels
                                           SDL_WINDOW_OPENGL           // flags
                                           );
 
@@ -77,8 +82,9 @@ int main(int argc, char * arg[])
     GameObject *g = new GameObject(c->getPosition());
     
     //For time
-    typedef std::chrono::duration<int,std::nano> nanosecs_t ;
+    typedef std::chrono::duration<int,std::nano> nanosecs_t;
     
+    LevelManager::instance().init();
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
@@ -102,6 +108,7 @@ int main(int argc, char * arg[])
             }
         }
         graphics->update();
+        SceneManager::instance().update();
         SDL_GL_SwapWindow(window);
         
         //Time update
@@ -114,6 +121,7 @@ int main(int argc, char * arg[])
             std::this_thread::sleep_for(std::chrono::nanoseconds((int)timeDifference));
             //Physics::updatePhysics(duration.count()/1000000.0f);
             Physics::updatePhysics(TIME_STEP);
+            GameTimerManager::instance().update(TIME_STEP);
         }
         else
         {
@@ -123,6 +131,7 @@ int main(int argc, char * arg[])
     }
     SDL_GL_DeleteContext(gl);
     
+    TTF_Quit();
     SceneManager::instance().closeScene();
     //Clean up
     SDL_DestroyWindow(window);

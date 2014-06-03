@@ -13,7 +13,7 @@
 #include <SDL2/SDL.h>
 #include "SceneManager.h"
 #include "Camera.h"
-#include "Ball.h"
+//#include "Ball.h"
 
 class InputManager
 {
@@ -31,6 +31,7 @@ public:
     InputManager();
     void handleMouse(SDL_Event *);
     bool handleKey(SDL_Keycode);
+    void addListener(GameObject *obj);
     void moveForward();
     void moveBackward();
     void moveRight();
@@ -39,6 +40,7 @@ public:
     void rotateYaw(float);
     
 private:
+    std::vector<GameObject*> _listeners;
     float _currentUpAngle;
     bool _firstTimeGettingMouse;
     glm::vec2 _previousMouseCords;
