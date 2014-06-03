@@ -16,6 +16,7 @@
 #include <cMath>
 #include "SceneManager.h"
 #include "glm.hpp"
+#include "LevelManager.h"
 #include "Tile.h"
 #include "Tee.h"
 #include "Model.h"
@@ -28,7 +29,8 @@ class FileIO
 public:
     FileIO();
     ~FileIO();
-    bool parseTileMap(const std::string);
+    bool parseMapFile(const std::string filename);
+    bool parseTileMap();
     bool is_number(const std::string&);
     bool checkForCarriageReturn(std::string*);
     bool parseTile(std::string*, bool&);
@@ -43,6 +45,8 @@ public:
     
 private:
     std::ifstream _fin;
+    int _numLevels = 0;
+    Level _currentLevel{};
 };
 
 #endif /* defined(__MiniGolfXCode__FileIO__) */

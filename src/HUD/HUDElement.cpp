@@ -7,10 +7,11 @@
 //
 
 #include "HUDElement.h"
+#include "HUD.h"
 
 HUDElement::HUDElement(glm::vec2 position) : _position(position), _enabled(true)
 {
-    
+   
 }
 
 HUDElement::~HUDElement()

@@ -30,6 +30,7 @@ public:
     void operator=(SceneManager const&);
     void update();
     void addGameObject(GameObject *);
+    inline void clearScene(){_objects.clear();};
     void closeScene();
     inline std::vector<GameObject *>* getObjects() { return &_objects; }
     void addCamera(Camera *);

@@ -17,7 +17,8 @@ InputManager::InputManager() : _firstTimeGettingMouse(true), _previousMouseCords
 bool InputManager::handleKey(SDL_Keycode key)
 {
     
-    for(GameObject *obj:_listeners){
+    std::vector<GameObject *> *objs = SceneManager::instance().getObjects();
+    for(GameObject *obj : *objs){
         obj->onKeyPress(key);
     }
     SceneManager::instance().getCurrentCamera()->onKeyPress(key);

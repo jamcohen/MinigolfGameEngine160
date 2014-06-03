@@ -103,7 +103,7 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     std::cout << "impact:" << impact.x << "," << impact.y << "," << impact.z << std::endl;
     //obj->_position = R*(distanceAfterCollision + obj->_radius)+hit->getImpactPoint();
     
-    float dampening = 0.96f;
+    float dampening = 0.9f;
     obj->_position = hit->getImpactPoint();
     RayCastHit *hit2 = checkCollision(obj,glm::normalize(R*glm::length(obj->_velocity)*dampening),deltaT);
     //RayCastHit *hit2 = nullptr;
@@ -133,6 +133,8 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
         obj->_velocity = R*glm::length(obj->_velocity)*dampening;
         std::cout << "postVel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
     }
+    
+    obj->onCollision(hit->getGameObject());
 }
 
 glm::vec3 Physics::getReflectionVector(glm::vec3 dir, glm::vec3 norm)

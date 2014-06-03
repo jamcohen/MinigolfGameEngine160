@@ -22,6 +22,11 @@ void PhysicsObject::updatePhysics(float deltaT){
     //std::cout << " Physics position: " << _position.x << "," << _position.y << "," << _position.z << std::endl;
 }
 
+void PhysicsObject::stop(){
+   _velocity = glm::vec3(0,0,0);
+   _acceleration = glm::vec3(0,0,0);
+}
+
 void PhysicsObject::resetAcceleration(){
      _acceleration = glm::vec3(0, -10.8f, 0);
 }

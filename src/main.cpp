@@ -75,7 +75,7 @@ int main(int argc, char * arg[])
     
     FileIO fileIO;
     std::string s(arg[1]);
-    fileIO.parseTileMap(s);
+    fileIO.parseMapFile(s);
     
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     

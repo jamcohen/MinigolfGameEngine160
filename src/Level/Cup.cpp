@@ -8,11 +8,12 @@
 
 #include "Cup.h"
 
-Cup::Cup(int index, glm::vec3 pos) : _index(index), GameObject(pos)
+Cup::Cup(int index, glm::vec3 pos) : _index(index),  GameObject(pos, glm::vec3(0.1, 0.01, 0.1), glm::quat())
 {
-    setModel(new Cylinder(6));    
-    std::cout << "Cup Position: " << pos.x << " " << pos.y << " " << pos.z << std::endl;
-
-    DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
-    getModel()->material = d;
+   DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
+   _color = glm::vec3(0.6,0.15,0);
+   Model* m = Primative::getSphere(_color, 1);//getModel(width, height);
+   _model = m;
+   _model->material = d;
+   _model->initializeBuffers();
 }

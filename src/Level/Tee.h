@@ -13,14 +13,17 @@
 #include "glm.hpp"
 #include "GameObject.h"
 #include "Model.h"
+#include "DiffuseSpecularMaterial.h"
+#include "Primative.h"
 
-class Tee : GameObject
+class Tee : public GameObject
 {
 public:
-    Tee(int,glm::vec3,Model*);
+    Tee(int,glm::vec3);
     
 private:
     int _index;
+    glm::vec3 _color;
 };
 
 #endif /* defined(__MiniGolfXCode__Tee__) */

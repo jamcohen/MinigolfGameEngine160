@@ -7,10 +7,11 @@
 //
 
 #include "LevelManager.h"
+#include "SceneManager.h"
 
 LevelManager::LevelManager() : _currentLevel(0)
 {
-
+ 
 }
 
 void LevelManager::init()
@@ -20,7 +21,7 @@ void LevelManager::init()
     _transitionTimer->setEnabled(false);
     GameTimerManager::instance().addGameTimer(_transitionTimer);
     
-    _levelTimer = new GameTimer(5.0f, 40, glm::vec3(0.25,0.7,0.6));
+    _levelTimer = new GameTimer(_levels[_currentLevel]->getLevelTime(), 40, glm::vec3(0.25,0.7,0.6));
     _levelTimer->setCompletedCallback(std::bind(&LevelManager::levelFailed,this,std::placeholders::_1));
     GameTimerManager::instance().addGameTimer(_levelTimer);
     
@@ -69,6 +70,8 @@ void LevelManager::goToNextLevel(bool s)
     _levelTimer->setMaxTime(_levels[_currentLevel]->getLevelTime());
     _levelTimer->setEnabled(true);
     _levelTimer->start();
+    Level* level = _levels[_currentLevel];
+    level->load();
 }
 
 void LevelManager::levelFailed(bool s)
@@ -93,6 +96,8 @@ void LevelManager::restartLevel(bool s)
     _levelTimer->resetTimer();
     _levelTimer->start();
     _levelTimer->setEnabled(true);
+    Level* level = _levels[_currentLevel];
+    level->load();
 }
 
 void LevelManager::levelCompleted()

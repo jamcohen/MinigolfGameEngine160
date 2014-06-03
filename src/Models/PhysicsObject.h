@@ -24,6 +24,8 @@ public:
    void applyForce(glm::vec3 force);
    void updatePhysics(float deltaT);
    void resetAcceleration();
+   void stop();
+   virtual void onCollision(GameObject *){};
    inline float getRadius(){return _radius;};
 protected:
    glm::vec3 _acceleration;

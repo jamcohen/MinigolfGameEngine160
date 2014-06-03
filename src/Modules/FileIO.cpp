@@ -20,11 +20,7 @@ FileIO::~FileIO()
     
 }
 
-/*
- * Parses a specified tile map
- */
-bool FileIO::parseTileMap(const std::string filename)
-{
+bool FileIO::parseMapFile(const std::string filename){
     std::cout << filename << std::endl << std::endl;
     _fin.open(filename);
     if(!_fin.good())
@@ -32,7 +28,40 @@ bool FileIO::parseTileMap(const std::string filename)
         std::cout << "Invalid filename!";
         return false;
     }
-    
+    std::string s;
+    std::getline(_fin, s,' ');
+    std::cout << "line2: " << s << std::endl;
+    std::getline(_fin, s,' ');
+    std::cout << "line2: " << s << std::endl;
+    std::getline(_fin, s,'\n');
+    std::cout << "line2: " << s << std::endl;
+    _numLevels = stoi(s);
+    for(int i=0; i<_numLevels;++i){
+        while(!_fin.eof()){
+            std::getline(_fin, s,'\n');
+            std::cout << "line: " << s;// << std::endl;
+            if(s == "begin_hole"){
+                std::getline(_fin, s,'\n');
+                //_currentLevel = Level(s);
+                std::cout << "level name: " << s << std::endl;
+                break;
+            }
+        }
+        parseTileMap();
+        LevelManager::instance().addLevel(&_currentLevel);
+    }
+    //_currentLevel.load();
+    //REMEMBER YOU NEED TO LOAD THE LEVEL.
+    //HALF DONE, DOESN"T EVEN WORK NOW.
+    return true;
+}
+
+
+/*
+ * Parses a specified tile map
+ */
+bool FileIO::parseTileMap()
+{
     int count = 0;
     bool encounteredCarriageReturn = false;
     std::string s;
@@ -152,7 +181,7 @@ bool FileIO::parseTile(std::string *s, bool &encounteredCarriageReturn)
     std::vector<glm::vec3> normals = getNormals(indices,localVertices);
     std::vector<glm::vec3> colors = getColors(vertices);
     Model *model = new Model(localVertices,normals,colors,indices);
-    new Tile(index,position,model,neighbors);
+    _currentLevel.addTile(new Tile(index,position,model,neighbors));
     spawnWalls(&localVertices, &neighbors, position); //Spawn the wall
     return true;
 }
@@ -204,14 +233,14 @@ bool FileIO::parseTeeOrCup(std::string *s, bool &encounteredCarriageReturn, bool
     if(isTee)
     {
         //new Wall(position, glm::vec3(0,0,0), 0.1, 0.1, 0.1, glm::vec3(0.7, 0, 0));
-        //new Tee(index,position);
+        _currentLevel.setTee(new Tee(index,position));
+        _currentLevel.setBall(new Ball(position+glm::vec3(0.0,.3,0.0), glm::quat(), glm::vec3(0, 0.5, 0.5), 0.05f));
     }
     else
     {
-       new Wall(position, glm::quat(), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
+       //new Wall(position, glm::quat(), 0.1, 0.1, 0.1, glm::vec3(0, 0.2, 0.7));
        //new Ball(position+glm::vec3(0,3,0), glm::vec3(0,0,0), glm::vec3(0, 0.2, 0.7), 0.05f);
-       new Ball(position+glm::vec3(0.0,.3,0.0), glm::quat(), glm::vec3(0, 0.2, 0.7), 0.05f);
-       //new Cup(index,position);
+       _currentLevel.setCup(new Cup(index,position));
     }
     return true;
 }
@@ -243,7 +272,7 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             float distance = sqrt(glm::dot(dir, dir));
             dir = glm::normalize(dir);
            
-            float angleY = atan2f(dir.x, dir.z);
+            /*float angleY = atan2f(dir.x, dir.z);
             angleY = (angleY != angleY) ? 0 : angleY*180/M_PI;
             //Reduce the angle range from 180,-180 to 90,-90
             //so that the walls are always facing the same way
@@ -253,7 +282,7 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             float angleX = atan2f(-dir.y, dir.z);
             angleX = (angleX != angleX) ? 0 : angleX*180/M_PI;
             if(angleX > 90) angleX -= 180;
-            if(angleX < -90) angleX += 180;
+            if(angleX < -90) angleX += 180;*/
             float height = 0.4;
             
             float cos_theta = glm::dot(glm::vec3(0,0,1), dir);
@@ -272,6 +301,7 @@ void FileIO::spawnWalls(std::vector<glm::vec3> *vertices, std::vector<int> *neig
             axis = glm::normalize(glm::cross(glm::vec3(0,0,1), dir));
             glm::quat rotationX =  glm::angleAxis(angle, dir);*/
             Wall *w = new Wall(pos, rotationZ, 0.05, height, distance, glm::vec3(0.7, 0.43, 0));
+            _currentLevel.addWall(w);
         }
     }
 }

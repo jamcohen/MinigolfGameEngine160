@@ -7,6 +7,7 @@
 //
 
 #include "Ball.h"
+#include "LevelManager.h"
 
 Ball::Ball(glm::vec3 origin, glm::quat rotation, glm::vec3 color, float radius):
 PhysicsObject(origin, glm::vec3(radius, radius, radius), rotation, radius)
@@ -21,6 +22,17 @@ PhysicsObject(origin, glm::vec3(radius, radius, radius), rotation, radius)
 
 void Ball::update(){
    Gizmo::instance().addDebugRay(getPosition(), getPosition()+_velocity);
+   if(this->getPosition().y < -30.0f){
+      LevelManager::instance().restartLevel(true);
+      //std::cout << "whatthrcfuc";
+   }
+}
+
+void Ball::onCollision(GameObject *that){
+   Cup *cup = LevelManager::instance().getCurrentLevel()->getCup();
+   if(that == cup){
+      LevelManager::instance().levelCompleted();
+   }
 }
 
 void Ball::onKeyPress(SDL_Keycode key)
@@ -28,7 +40,7 @@ void Ball::onKeyPress(SDL_Keycode key)
    float impulseAmount = 40.0f;
    Camera *c = SceneManager::instance().getCurrentCamera();
    glm::vec3 force = c->getForwardDirectionVector();
-   float jumpForce = 200.0f;
+   float jumpForce = 100.0f;
    force.y = 0;
    force = glm::normalize(force);
    force *= impulseAmount;

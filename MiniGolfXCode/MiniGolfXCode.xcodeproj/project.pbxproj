@@ -465,7 +465,7 @@
 		F34403C3193C716200EC9203 /* Gizmo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gizmo.h; sourceTree = "<group>"; };
 		F34B7C0A193AA78A004FC73C /* BallCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BallCamera.cpp; sourceTree = "<group>"; };
 		F34B7C0B193AA78A004FC73C /* BallCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = BallCamera.h; sourceTree = "<group>"; tabWidth = 4; };
-		F3638FA8190A04300039DC1E /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
+		F3638FA8190A04300039DC1E /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		F3638FA9190A04300039DC1E /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
 		F37E466619039617005AFD96 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fshader21.glsl; sourceTree = "<group>"; };
 		F37E466919039B8E005AFD96 /* DiffuseSpecularMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiffuseSpecularMaterial.cpp; sourceTree = "<group>"; };
@@ -487,8 +487,8 @@
 		F3D07CA4193CAA4700C3A74C /* GameTimerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimerManager.cpp; sourceTree = "<group>"; };
 		F3D07CA5193CAA4700C3A74C /* GameTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimerManager.h; sourceTree = "<group>"; };
 		F3D07CA6193CAA4700C3A74C /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
-		F3D07CA7193CAA4700C3A74C /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
-		F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelManager.cpp; sourceTree = "<group>"; };
+		F3D07CA7193CAA4700C3A74C /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; tabWidth = 4; };
+		F3D07CA8193CAA4700C3A74C /* LevelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelManager.cpp; sourceTree = "<group>"; tabWidth = 4; };
 		F3D07CA9193CAA4700C3A74C /* LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelManager.h; sourceTree = "<group>"; };
 		F3D07CAF193CAA8300C3A74C /* HUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUD.cpp; sourceTree = "<group>"; };
 		F3D07CB0193CAA8300C3A74C /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };

@@ -13,16 +13,17 @@
 #include "glm.hpp"
 #include "GameObject.h"
 #include "Model.h"
-#include "Cylinder.h"
 #include "DiffuseSpecularMaterial.h"
+#include "Primative.h"
 
 class Cup : public GameObject
 {
 public:
-    Cup(int,glm::vec3);
-    
+   Cup(int,glm::vec3);
+   
 private:
-    int _index;
+   int _index;
+   glm::vec3 _color;
 };
 
 #endif /* defined(__MiniGolfXCode__Cup__) */

@@ -8,5 +8,12 @@
 
 #include "Tee.h"
 
-Tee::Tee(int index, glm::vec3 pos, Model *model) : _index(index),  GameObject(pos,model)
-{}
+Tee::Tee(int index, glm::vec3 pos) : _index(index),  GameObject(pos, glm::vec3(0.2, 0.2, 0.2), glm::quat())
+{
+   DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
+   _color = glm::vec3(0,0,0.5);
+   Model* m = Primative::getCube(_color);//getModel(width, height);
+   _model = m;
+   _model->material = d;
+   _model->initializeBuffers();
+}
