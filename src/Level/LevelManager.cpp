@@ -62,7 +62,13 @@ void LevelManager::addLevel(Level *l)
 
 void LevelManager::goToNextLevel(bool s)
 {
-    
+    _transitionTimer->resetTimer();
+    _transitionTimer->pause();
+    _transitionTimer->setEnabled(false);
+    _currentLevel++;
+    _levelTimer->setMaxTime(_levels[_currentLevel]->getLevelTime());
+    _levelTimer->setEnabled(true);
+    _levelTimer->start();
 }
 
 void LevelManager::levelFailed(bool s)
@@ -93,4 +99,7 @@ void LevelManager::levelCompleted()
 {
     _levelTimer->pause();
     _successText->setEnabled(true);
+    _transitionTimer->setCompletedCallback(std::bind(&LevelManager::goToNextLevel,this,std::placeholders::_1));
+    _transitionTimer->start();
+    _transitionTimer->setEnabled(true);
 }
