@@ -13,7 +13,7 @@ Model::Model(std::vector<glm::vec3> vertices, std::vector<glm::vec3> normals,
              std::vector<glm::vec3> colors, std::vector<unsigned int> indices) :
 _vertices(vertices), _normals(normals),_colors(colors),_indices(indices), _faces()
 {
-    std::cout << "length: " << colors.size();
+    //std::cout << "length: " << colors.size();
     
     /*for(glm::vec3 v : _vertices)
     {

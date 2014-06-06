@@ -30,23 +30,22 @@ public:
     FileIO();
     ~FileIO();
     bool parseMapFile(const std::string filename);
-    bool parseTileMap();
+    bool parseTileMap(Level*);
     bool is_number(const std::string&);
     bool checkForCarriageReturn(std::string*);
-    bool parseTile(std::string*, bool&);
-    bool parseTeeOrCup(std::string*, bool&, bool);
+    bool parseTile(std::string*, bool&, Level*);
+    bool parseTeeOrCup(std::string*, bool&, bool, Level*);
     glm::vec3 getTilePosition(std::vector<glm::vec3>);
     std::vector<unsigned int> getTriangles(std::vector<glm::vec3>);
     std::vector<glm::vec3> getNormals(std::vector<unsigned int>,std::vector<glm::vec3>);
     std::vector<glm::vec3> getLocalVertices(glm::vec3,std::vector<glm::vec3>);
     std::vector<glm::vec3> getColors(std::vector<glm::vec3>);
-    void spawnWalls(std::vector<glm::vec3> *, std::vector<int> *, glm::vec3);
+    void spawnWalls(std::vector<glm::vec3> *, std::vector<int> *, glm::vec3, Level*);
     std::vector<unsigned int>  getBordersTriangles(std::vector<int> *);
     
 private:
     std::ifstream _fin;
     int _numLevels = 0;
-    Level _currentLevel{};
 };
 
 #endif /* defined(__MiniGolfXCode__FileIO__) */

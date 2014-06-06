@@ -20,6 +20,7 @@ class Tee : public GameObject
 {
 public:
     Tee(int,glm::vec3);
+    ~Tee();
     
 private:
     int _index;

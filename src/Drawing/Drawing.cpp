@@ -16,6 +16,8 @@ Drawing::Drawing(){
 
 void Drawing::update(){
     //Clear color buffer
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
     glClearColor( 0.0, 0.6, 0.5, 1.0 );
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     

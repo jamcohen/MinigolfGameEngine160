@@ -18,7 +18,7 @@ void Gizmo::draw(){
     if(!enabled){
         return;
     }
-    int num_verts = _rayList.size();
+    int num_verts = (int)_rayList.size();
     glUseProgram(ShaderHelper::shaders[0]);
     glBindVertexArray( _vao ); // setup for the layout of LineSegment_t
    

@@ -63,6 +63,99 @@ Model* Primative::getCube(glm::vec3 color){
    return m;
 }
 
+Model* Primative::getBox(glm::vec3 p1, glm::vec3 p2, float width, float height){
+    std::vector<unsigned int> indices;
+    std::vector<glm::vec3> verts;
+    std::vector<glm::vec3> normals;
+    std::vector<glm::vec3> colors;
+    //generate 8 points
+    std::vector<glm::vec3> basePoints{};
+    std::vector<glm::vec3> baseNormals{};
+    basePoints.push_back(glm::vec3(p1));
+    basePoints.push_back(glm::vec3(p2));
+    //extrude up
+    basePoints.push_back(glm::vec3(p2+glm::vec3(0,height,0)));
+    basePoints.push_back(glm::vec3(p1+glm::vec3(0,height,0)));
+    glm::vec3 dir = p1-p2;
+    glm::vec3 perp = glm::cross(glm::vec3(0,1,0), dir);
+    perp = glm::normalize(perp);
+    //extrude out
+    for(int i=0;i<4;++i){
+        glm::vec3 vert = basePoints[i];
+        basePoints.push_back(vert+perp*width);
+    }
+    glm::vec3 normal;
+    
+    //bottom face
+    verts.push_back(basePoints[0]);
+    verts.push_back(basePoints[1]);
+    verts.push_back(basePoints[5]);
+    verts.push_back(basePoints[4]);
+    normal = getNormal(basePoints[0], basePoints[1], basePoints[5]);
+    baseNormals.push_back(normal);
+    
+    //front face
+    verts.push_back(basePoints[3]);
+    verts.push_back(basePoints[2]);
+    verts.push_back(basePoints[1]);
+    verts.push_back(basePoints[0]);
+    normal = getNormal(basePoints[3], basePoints[2], basePoints[1]);
+    baseNormals.push_back(normal);
+    
+    //top face
+    verts.push_back(basePoints[7]);
+    verts.push_back(basePoints[6]);
+    verts.push_back(basePoints[2]);
+    verts.push_back(basePoints[3]);
+    normal = getNormal(basePoints[7], basePoints[6], basePoints[2]);
+    baseNormals.push_back(normal);
+    
+    //back face
+    verts.push_back(basePoints[4]);
+    verts.push_back(basePoints[5]);
+    verts.push_back(basePoints[6]);
+    verts.push_back(basePoints[7]);
+    normal = getNormal(basePoints[4], basePoints[5], basePoints[6]);
+    baseNormals.push_back(normal);
+    
+    //right face
+    verts.push_back(basePoints[2]);
+    verts.push_back(basePoints[6]);
+    verts.push_back(basePoints[5]);
+    verts.push_back(basePoints[1]);
+    normal = getNormal(basePoints[2], basePoints[6], basePoints[5]);
+    baseNormals.push_back(normal);
+    
+    //left face
+    verts.push_back(basePoints[7]);
+    verts.push_back(basePoints[3]);
+    verts.push_back(basePoints[0]);
+    verts.push_back(basePoints[4]);
+    normal = getNormal(basePoints[7], basePoints[3], basePoints[0]);
+    baseNormals.push_back(normal);
+    
+    
+    for(int i=0;i<6;i++){
+        int offset = i*4;
+        indices.push_back(2+offset);
+        indices.push_back(3+offset);
+        indices.push_back(0+offset);
+        
+        indices.push_back(2+offset);
+        indices.push_back(0+offset);
+        indices.push_back(1+offset);
+        for(int j=0;j<4;++j){
+            normals.push_back(baseNormals[i]);
+            std::cout << "IDENTIFYING CLUSTER: " << baseNormals[i].x << " " << baseNormals[i].y << " " << baseNormals[i].z << std::endl;
+            colors.push_back(glm::vec3(0.5,0.5,0.1));
+        }
+    }
+    
+    Model* m = new Model(verts, normals, colors, indices);
+    return m;
+    
+}
+
 Model* Primative::getSphere(glm::vec3 color, float recursionLevel){
    std::vector<glm::vec3> vertices;
    std::vector<unsigned int> indices;
@@ -240,4 +333,18 @@ void Primative::addVertex(std::vector<glm::vec3> &verts, glm::vec3 vertex){
    verts.push_back(glm::vec3(vertex.x/length, vertex.y/length, vertex.z/length));
 }
 
+glm::vec3 Primative::getNormal(glm::vec3 p1, glm::vec3 p2, glm::vec3 p3){
+    glm::vec3 edge1 = p2-p1;
+    glm::vec3 edge2 = p3-p1;
+    
+    //edge1 = glm::vec3(1,0,0);
+    //edge2 = glm::vec3(0,0,1);
+    
+    //edge2, edge1
+    glm::vec3 normal = glm::cross(edge1,edge2);
+    normal = glm::normalize(normal);
+    std::cout << "WHAT IS THIS: " << normal.x << " " << normal.y << " " << normal.z << std::endl;
+
+    return glm::normalize(normal);
+}
 

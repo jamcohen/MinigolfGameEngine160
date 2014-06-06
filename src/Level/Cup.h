@@ -20,6 +20,7 @@ class Cup : public GameObject
 {
 public:
    Cup(int,glm::vec3);
+    ~Cup();
    
 private:
    int _index;

@@ -37,6 +37,7 @@ void Face::print(GameObject* obj){
 glm::vec3 Face::getWorldNormal(GameObject* obj){
    if(glm::length(_worldNormal) != 0) return _worldNormal;
    
+    std::cout << "THIS RANDY!!" << std::endl;
    glm::quat rotate(obj->getRotation());
    glm::mat4 R = glm::mat4_cast(rotate);
    //glm::mat4 R = glm::rotate(glm::mat4(), rotate.z, glm::vec3(0,0,1));//glm::orientate4(rotate);
@@ -46,7 +47,7 @@ glm::vec3 Face::getWorldNormal(GameObject* obj){
    glm::vec4 temp(_normal.x, _normal.y, _normal.z, 1);
    temp = modelMatrix*temp;
    _worldNormal = glm::vec3(temp.x, temp.y, temp.z);
-   Gizmo::instance().addDebugRay(obj->getPosition(), obj->getPosition()+_worldNormal*0.2f);
+   //Gizmo::instance().addDebugRay(obj->getPosition(), obj->getPosition()+_worldNormal*0.2f);
    return _worldNormal;
 }
 

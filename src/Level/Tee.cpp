@@ -17,3 +17,8 @@ Tee::Tee(int index, glm::vec3 pos) : _index(index),  GameObject(pos, glm::vec3(0
    _model->material = d;
    _model->initializeBuffers();
 }
+
+Tee::~Tee()
+{
+    
+}

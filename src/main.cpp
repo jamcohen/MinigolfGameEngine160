@@ -78,13 +78,11 @@ int main(int argc, char * arg[])
     fileIO.parseMapFile(s);
     
     std::cout << "version: " << glGetString(GL_VERSION) << ", shader: "<< glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
-    
-    GameObject *g = new GameObject(c->getPosition());
-    
+        
     //For time
     typedef std::chrono::duration<int,std::nano> nanosecs_t;
     
-    LevelManager::instance().init();
+    //LevelManager::instance().init();
     //TO-DO: We are going to have to work on setting the update based on the drawing FPS
     while(running)
     {
@@ -133,6 +131,7 @@ int main(int argc, char * arg[])
     
     TTF_Quit();
     SceneManager::instance().closeScene();
+    LevelManager::instance().closeAllLevels();
     //Clean up
     SDL_DestroyWindow(window);
     SDL_Quit();

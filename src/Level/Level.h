@@ -20,11 +20,9 @@
 class Level
 {
 public:
-    static const int TIME_ADDED_PER_TILE;
-    std::string name;
+    static const int TIME_ADDED_PER_PAR;
     
-    Level();
-    Level(std::string name);
+    Level(std::string n = "Default Name", int par = 1);
     virtual ~Level();
     
     void load();
@@ -37,12 +35,18 @@ public:
     inline Cup* getCup() { return _cup; }
     inline void setBall(Ball* ball) { _ball = ball; }
     inline Ball* getBall() { return _ball; }
+    inline void setName(std::string name) { _name = name; }
+    inline std::string getName() { return _name; }
+    void setPar(int);
+    inline int getPar() { return _par; }
     
 private:
     Tee *_tee;
     Cup *_cup;
     Ball *_ball;
     int _levelTime;
+    int _par;
+    std::string _name;
     
     std::vector<Tile*> _tiles;
     std::vector<Wall*> _walls;

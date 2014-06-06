@@ -12,12 +12,16 @@
 Ball::Ball(glm::vec3 origin, glm::quat rotation, glm::vec3 color, float radius):
 PhysicsObject(origin, glm::vec3(radius, radius, radius), rotation, radius)
 {
-   SceneManager::instance().setBall(this);
    DiffuseSpecularMaterial *d = new DiffuseSpecularMaterial(100);
    Model* m = Primative::getSphere(color);
    _model = m;
    _model->material = d;
    _model->initializeBuffers();
+}
+
+Ball::~Ball()
+{
+    
 }
 
 void Ball::update(){

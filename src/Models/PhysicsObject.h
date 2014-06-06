@@ -21,6 +21,7 @@ class PhysicsObject : public GameObject
 friend class Physics;
 public:
    PhysicsObject(glm::vec3, glm::vec3, glm::quat, float radius=0.05, float mass=1.0f);
+    ~PhysicsObject();
    void applyForce(glm::vec3 force);
    void updatePhysics(float deltaT);
    void resetAcceleration();

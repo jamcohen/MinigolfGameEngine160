@@ -8,21 +8,23 @@
 
 #include "Level.h"
 
-const int Level::TIME_ADDED_PER_TILE = 10;
+const int Level::TIME_ADDED_PER_PAR = 10;
 
-Level::Level() : _levelTime(0), name("Default Name")
-{
-    
-}
 
-Level::Level(std::string name) : _levelTime(0), name(name)
+Level::Level(std::string name, int par) : _levelTime(0), _name(name), _par(par)
 {
-   
+    _levelTime = _par * TIME_ADDED_PER_PAR;
 }
 
 Level::~Level()
 {
-
+    for(Tile* t : _tiles)
+    {
+        delete t;
+    }
+    delete _cup;
+    delete _tee;
+    delete _ball;
 }
 
 void Level::load(){
@@ -51,5 +53,10 @@ void Level::load(){
 void Level::addTile(Tile *t)
 {
     _tiles.push_back(t);
-    _levelTime += TIME_ADDED_PER_TILE;
+}
+
+void Level::setPar(int par)
+{
+    _par = par;
+    _levelTime = _par * TIME_ADDED_PER_PAR;
 }

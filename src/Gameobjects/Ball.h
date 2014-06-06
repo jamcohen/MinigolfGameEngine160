@@ -24,6 +24,7 @@ class Ball : public PhysicsObject
 {
 public:
    Ball(glm::vec3, glm::quat, glm::vec3, float color = 0.02f);
+    ~Ball();
    virtual void onKeyPress(SDL_Keycode);
    virtual void update();
    virtual void onCollision(GameObject *);

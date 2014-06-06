@@ -14,6 +14,11 @@ PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::quat rotation,
     resetAcceleration();
 }
 
+PhysicsObject::~PhysicsObject()
+{
+    
+}
+
 void PhysicsObject::updatePhysics(float deltaT){
     float deltaTInSeconds = deltaT/1000;
     //_velocity += _acceleration*deltaTInSeconds;

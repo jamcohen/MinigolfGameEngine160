@@ -15,21 +15,12 @@ SceneManager::SceneManager()
 {}
 
 void SceneManager::closeScene()
-{
-    int count = 0;
-    std::cout << "Cleaning up all game objects...\n";
-    for ( GameObject *g : _objects )
-    {
-        std::cout << count << std::endl;
-        count++;
-        delete g;
-    }
-    
-    std::cout << "Cleaning up all cameras...\n";
+{    
+    /*std::cout << "Cleaning up all cameras...\n";
     for ( Camera *c : _cameraList )
     {
-       //delete c;
-    }
+        //delete c;
+    }*/
 }
 
 void SceneManager::update(){

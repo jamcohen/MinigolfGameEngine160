@@ -7,6 +7,7 @@
 //
 
 #include "Physics.h"
+#include "LevelManager.h"
 
 std::vector<PhysicsObject *> Physics::physicsObjects;
 
@@ -15,7 +16,8 @@ void Physics::addToUpdateList(PhysicsObject *obj){
 }
 
 void Physics::updatePhysics(float deltaT){
-    for(PhysicsObject *obj : physicsObjects){
+    PhysicsObject* obj = LevelManager::instance().getCurrentLevel()->getBall();
+    //for(PhysicsObject *obj : physicsObjects){
         obj->_velocity += obj->_acceleration*(deltaT/1000);
         obj->resetAcceleration();
         RayCastHit *hit = checkCollision(obj, deltaT);
@@ -25,7 +27,7 @@ void Physics::updatePhysics(float deltaT){
            std::cout << "Resolving" << std::endl;
            resolveCollision(hit, deltaT, obj);
         }
-    }
+    //}
 }
 
 RayCastHit *Physics::checkCollision(PhysicsObject* obj, float deltaT)
@@ -39,16 +41,16 @@ RayCastHit *Physics::checkCollision(PhysicsObject* obj, float deltaT)
    //std::cout << obj->_velocity.y << std::endl;
    if(hit != nullptr){
        float distanceUntilCollision = hit->getImpactDistance();//-obj->_radius;
-      float secondsUntilCollision = distanceUntilCollision/glm::length(obj->_velocity);
-      float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
+       float secondsUntilCollision = distanceUntilCollision/glm::length(obj->_velocity);
+       float timeUntilCollision = secondsUntilCollision*1000; //MILLISECONDS!!!
       
-      //std::cout << "Raycast hit: " << timeUntilCollision << std::endl;
+       //std::cout << "Raycast hit: " << timeUntilCollision << std::endl;
       
-      //std::cout << "HIT: " << std::endl;
-      //If the ball won't collide this step ignore collision
-      if(timeUntilCollision > deltaT){
-         return nullptr;
-      }
+       //std::cout << "HIT: " << std::endl;
+       //If the ball won't collide this step ignore collision
+       if(timeUntilCollision > deltaT){
+           return nullptr;
+       }
    }
    
    return hit;
@@ -98,6 +100,9 @@ void Physics::resolveCollision(RayCastHit* hit, float deltaT, PhysicsObject* obj
     glm::vec3 R = getReflectionVector(obj->_velocity, normal);
     //std::cout << "Normal:" << normal.x << "," << normal.y << "," << normal.z << std::endl;
     hit->getFace()->print(hit->getGameObject());
+    float angle = acos(glm::dot(glm::normalize(normal), glm::normalize(obj->_velocity)));
+    std::cout << "angle: " << angle*(180.0f/M_PI) << std::endl;
+    std::cout << "preVel: " << obj->_velocity.x << "," << obj->_velocity.y << "," << obj->_velocity.z << std::endl;
     std::cout << "R:" << R.x << "," << R.y << "," << R.z << std::endl;
     glm::vec3 impact(hit->getImpactPoint());
     std::cout << "impact:" << impact.x << "," << impact.y << "," << impact.z << std::endl;
