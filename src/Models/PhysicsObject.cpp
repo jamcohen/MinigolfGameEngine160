@@ -14,12 +14,22 @@ PhysicsObject::PhysicsObject(glm::vec3 pos, glm::vec3 scale, glm::quat rotation,
     resetAcceleration();
 }
 
+PhysicsObject::~PhysicsObject()
+{
+    
+}
+
 void PhysicsObject::updatePhysics(float deltaT){
     float deltaTInSeconds = deltaT/1000;
     //_velocity += _acceleration*deltaTInSeconds;
     _position += _velocity*deltaTInSeconds;
     
     //std::cout << " Physics position: " << _position.x << "," << _position.y << "," << _position.z << std::endl;
+}
+
+void PhysicsObject::stop(){
+   _velocity = glm::vec3(0,0,0);
+   _acceleration = glm::vec3(0,0,0);
 }
 
 void PhysicsObject::resetAcceleration(){

@@ -16,6 +16,7 @@
 #include <cMath>
 #include "SceneManager.h"
 #include "glm.hpp"
+#include "LevelManager.h"
 #include "Tile.h"
 #include "Tee.h"
 #include "Model.h"
@@ -29,21 +30,23 @@ class FileIO
 public:
     FileIO();
     ~FileIO();
-    bool parseTileMap(const std::string);
+    bool parseMapFile(const std::string filename);
+    bool parseTileMap(Level*);
     bool is_number(const std::string&);
     bool checkForCarriageReturn(std::string*);
-    bool parseTileOrPortal(std::string*, bool&, bool isTile);
-    bool parseTeeOrCup(std::string*, bool&, bool);
+    bool parseTileOrPortal(std::string*, bool&, Level*, bool);
+    bool parseTeeOrCup(std::string*, bool&, bool, Level*);
     glm::vec3 getTilePosition(std::vector<glm::vec3>);
     std::vector<unsigned int> getTriangles(std::vector<glm::vec3>);
     std::vector<glm::vec3> getNormals(std::vector<unsigned int>,std::vector<glm::vec3>);
     std::vector<glm::vec3> getLocalVertices(glm::vec3,std::vector<glm::vec3>);
-    std::vector<glm::vec3> getColors(std::vector<glm::vec3>);
-    void spawnWalls(std::vector<glm::vec3> *, std::vector<int> *, glm::vec3);
+    std::vector<glm::vec3> getColors(std::vector<glm::vec3>, glm::vec3);
+    void spawnWalls(std::vector<glm::vec3> *, std::vector<int> *, glm::vec3, Level*);
     std::vector<unsigned int>  getBordersTriangles(std::vector<int> *);
     
 private:
     std::ifstream _fin;
+    int _numLevels = 0;
 };
 
 #endif /* defined(__MiniGolfXCode__FileIO__) */

@@ -37,11 +37,6 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d, float radius)
                 float det, inv_det;
                 float t,u,v;
                 
-                
-                
-                //Caches the tiles coords for normals
-                glm::vec3 norm = face->getWorldNormal(tempG);
-                
                 std::vector<glm::vec3> vecs = getCollisionCoords(*face, *g, *tempG, i*radius);
                 v1 = vecs[0];
                 v2 = vecs[1];
@@ -128,18 +123,21 @@ RayCastHit* RayCast::rayCast(GameObject *g, glm::vec3 d, float radius)
 
 std::vector<glm::vec3> RayCast::getCollisionCoords(Face& face, GameObject &g, GameObject &tempG, float radius){
     //Caches the tiles coords for normals
-    glm::vec3 norm = face.getWorldNormal(&g);
+    glm::vec3 norm = face.getWorldNormal(&tempG);
     std::vector<glm::vec3> vecs{};
     for(int i=0;i<3;++i){
         vecs.push_back(face.getWorldVertices(&tempG)[i]);
         glm::vec3 normal = glm::normalize(norm);
         vecs[i] += -1.0f*normal*radius;
     }
+    glm::vec3 center = (vecs[0]+vecs[1]+vecs[2])/3.0f;
     /*v1 += glm::normalize((v1-center))*radius;
      v2 += glm::normalize((v2-center))*radius;
      v3 += glm::normalize((v3-center))*radius;*/
     Gizmo::instance().addDebugRay(vecs[0], vecs[1]);
     Gizmo::instance().addDebugRay(vecs[1], vecs[2]);
     Gizmo::instance().addDebugRay(vecs[2], vecs[0]);
+    
+    Gizmo::instance().addDebugRay(center, center+norm*0.2f);
     return vecs;
 }

@@ -7,6 +7,8 @@
 //
 
 #include "Drawing.h"
+#include "Portal.h"
+
 const int Drawing::SCREEN_WIDTH = 640;
 const int Drawing::SCREEN_HEIGHT = 480;
 
@@ -16,6 +18,8 @@ Drawing::Drawing(){
 
 void Drawing::update(){
     //Clear color buffer
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
     glClearColor( 0.0, 0.6, 0.5, 1.0 );
     glClearStencil(DEFAULT_STENCIL_ID);
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
@@ -77,7 +81,7 @@ void Drawing::update(){
     for(size_t i=0;i<objs->size();++i){
         GameObject *obj = (*objs)[i];
         if(obj->getModel() != NULL){
-           if(typeid(*obj) == typeid(GameObject)){
+           if(typeid(*obj) == typeid(Portal)){
               glStencilFunc(GL_ALWAYS, PORTAL_STENCIL_ID, -1);
            }
            obj->draw();

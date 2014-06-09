@@ -8,6 +8,7 @@
 
 #include "BallCamera.h"
 #include "Ball.h"
+#include "LevelManager.h"
 
 #define _USE_MATH_DEFINES
 
@@ -23,12 +24,12 @@ BallCamera::~BallCamera()
 { }
 
 void BallCamera::update(){
-   float height = 1.0f;
-   float dist = 1.0f;
-   Ball *b = SceneManager::instance().getBall();
-   glm::vec3 ballPos = b->getPosition();
-   _position = glm::vec3(cos(_angle)*dist+ballPos.x, height+ballPos.y,sin(_angle)*dist+ballPos.z);
-   _target = ballPos;
+    float height = 1.0f;
+    float dist = 1.0f;
+    Ball *b = LevelManager::instance().getCurrentLevel()->getBall();
+    glm::vec3 ballPos = b->getPosition();
+    _position = glm::vec3(cos(_angle)*dist+ballPos.x, height+ballPos.y,sin(_angle)*dist+ballPos.z);
+    _target = ballPos;
    
 }
 

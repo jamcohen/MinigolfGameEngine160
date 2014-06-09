@@ -25,7 +25,7 @@ public:
     GameObject(glm::vec3);
     GameObject(glm::vec3, glm::vec3, glm::quat);
     GameObject(glm::vec3, Model*);
-    ~GameObject();
+    virtual ~GameObject();
     void setX(float);
     void setY(float);
     void setZ(float);
@@ -35,6 +35,7 @@ public:
     inline glm::vec3 getScale() { return _scale; }
     inline glm::quat getRotation() { return _rotation; }
     void draw();
+    virtual void onLoad(){};
     virtual void update(){};
     inline Model* getModel() { return _model; }
     inline void setModel(Model *m) { _model = m; }

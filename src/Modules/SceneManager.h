@@ -30,19 +30,17 @@ public:
     void operator=(SceneManager const&);
     void update();
     void addGameObject(GameObject *);
+    inline void clearScene(){_objects.clear();};
     void closeScene();
     inline std::vector<GameObject *>* getObjects() { return &_objects; }
     void addCamera(Camera *);
     inline void setCurrentCamera(Camera *c) { _currentCamera = c; }
     inline Camera* getCurrentCamera() { return _currentCamera; }
-    inline void setBall(Ball *b) { _ball = b; }
-    inline Ball* getBall() { return _ball; }                                 
     
 private:
     std::vector<GameObject *> _objects;
     Camera *_currentCamera;
     std::vector<Camera *> _cameraList;
-    Ball *_ball;
 };
 
 #endif /* defined(__MiniGolfXCode__SceneManager__) */

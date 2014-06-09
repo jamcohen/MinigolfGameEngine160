@@ -7,6 +7,8 @@
 //
 
 #include "InputManager.h"
+#include "LevelManager.h"
+
 const float InputManager::MOVEMENT_SPEED = 0.1f;
 const float InputManager::MOUSE_DAMPENING = 15.0f;
 
@@ -17,7 +19,8 @@ InputManager::InputManager() : _firstTimeGettingMouse(true), _previousMouseCords
 bool InputManager::handleKey(SDL_Keycode key)
 {
     
-    for(GameObject *obj:_listeners){
+    std::vector<GameObject *> *objs = SceneManager::instance().getObjects();
+    for(GameObject *obj : *objs){
         obj->onKeyPress(key);
     }
     SceneManager::instance().getCurrentCamera()->onKeyPress(key);
@@ -32,6 +35,15 @@ bool InputManager::handleKey(SDL_Keycode key)
         case SDLK_z:
             Gizmo::instance().enabled = !Gizmo::instance().enabled;
             break;
+        
+        case SDLK_n:
+           LevelManager::instance().goToNextLevel(true);
+           break;
+        
+        case SDLK_r:
+           LevelManager::instance().restartLevel(true);
+           break;
+        
         /*case SDLK_w:
             moveForward();
             break;

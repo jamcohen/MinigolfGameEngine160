@@ -24,8 +24,10 @@ public:
     void setConnectedPortal(Portal* associate) {_connectedPortal = associate;}
     Portal* getConnectedPortal() {return  _connectedPortal;}
     void setIndex(int index) { _index = index; }
-    
 private:
+    static Portal* _lastPortalAdded;
+    static int _numPortals;
+    static void addPortal(Portal* portal);
     int _index;
     Portal* _connectedPortal;
     std::vector<int> _neighbors;

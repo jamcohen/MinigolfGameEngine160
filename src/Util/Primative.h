@@ -19,8 +19,10 @@ class Primative
 {
 public:
    static Model* getCube(glm::vec3);
+   static Model* getBox(glm::vec3, glm::vec3, float, float);
    static Model* getSphere(glm::vec3, float recursionLevel=3);
 private:
+   static glm::vec3 getNormal(glm::vec3, glm::vec3, glm::vec3);
    static std::map<unsigned int, unsigned int> middlePointIndexCache;
    static unsigned int getMiddlePoint(std::vector<glm::vec3>&, int, int);
    static void addVertex(std::vector<glm::vec3>&, glm::vec3);

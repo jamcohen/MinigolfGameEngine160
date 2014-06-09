@@ -18,10 +18,10 @@ void Gizmo::draw(){
     if(!enabled){
         return;
     }
-    int num_verts = _rayList.size();
+    int num_verts = (int)_rayList.size();
     glUseProgram(ShaderHelper::shaders[0]);
     glBindVertexArray( _vao ); // setup for the layout of LineSegment_t
-   
+    
     glm::mat4 model{};
     glUniformMatrix4fv(glGetUniformLocation(ShaderHelper::shaders[0], "model"), 1, GL_FALSE, glm::value_ptr(model));
     glDrawArrays(GL_LINES, 0, num_verts );

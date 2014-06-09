@@ -14,3 +14,8 @@ Tile::Tile(const int index, const glm::vec3 origin, Model *model,const std::vect
     model->material = d;
     model->initializeBuffers();
 }
+
+Tile::~Tile()
+{
+    
+}

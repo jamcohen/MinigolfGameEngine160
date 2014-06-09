@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 #include "GameTimer.h"
 #include "GameTimerManager.h"
 #include "Level.h"
@@ -29,11 +30,14 @@ public:
     virtual ~LevelManager();
     inline Level* getCurrentLevel() { return _levels[_currentLevel]; }
     void addLevel(Level*);
+    void closeAllLevels();
     void init();
     void restartLevel(bool);
     void levelCompleted();
     void levelFailed(bool);
     void goToNextLevel(bool);
+    void setCourseName(std::string name) { _courseName = name; }
+    std::string getCourseName() { return _courseName; }
     
 private:
     std::vector<Level *> _levels;
@@ -44,6 +48,7 @@ private:
     TextElement *_failText2;
     TextElement *_successText;
     TextElement *_successText2;
+    std::string _courseName;
     
 };
 

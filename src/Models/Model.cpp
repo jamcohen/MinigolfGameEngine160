@@ -14,7 +14,7 @@ Model::Model(std::vector<glm::vec3> vertices, std::vector<glm::vec3> normals,
              std::vector<glm::vec3> colors, std::vector<unsigned int> indices) :
 _vertices(vertices), _normals(normals),_colors(colors),_indices(indices), _faces()
 {
-    std::cout << "length: " << colors.size();
+    //std::cout << "length: " << colors.size();
     
     /*for(glm::vec3 v : _vertices)
     {
@@ -53,7 +53,7 @@ Model::~Model()
 
 void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::quat rotate)
 {
-    glUseProgram(ShaderHelper::shaders[1] );///material->shaderProgram );
+    glUseProgram(ShaderHelper::shaders[0] );///material->shaderProgram );
     glBindVertexArray( _vao );
     glm::mat4 T = glm::translate(glm::mat4(), pos);
     glm::mat4 R = glm::mat4_cast(rotate);
@@ -61,7 +61,7 @@ void Model::draw(glm::vec3 pos, glm::vec3 scale, glm::quat rotate)
     //          R = glm::rotate(R, rotate.y, glm::vec3(0,1,0));
     //          R = glm::rotate(R, rotate.x, glm::vec3(1,0,0));
     glm::mat4 S = glm::scale(glm::mat4(), scale);
-    
+   
     glm::mat4 model = T*R*S;
     glUniformMatrix4fv(glGetUniformLocation(material->shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glDrawElements(GL_TRIANGLES, (int)(_indices.size()), GL_UNSIGNED_INT, NULL);

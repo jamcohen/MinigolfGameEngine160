@@ -10,17 +10,26 @@
 
 LevelManager::LevelManager() : _currentLevel(0)
 {
+ 
+}
 
+void LevelManager::closeAllLevels()
+{
+    for (Level* l : _levels)
+    {
+        delete l;
+    }
 }
 
 void LevelManager::init()
 {
+    _levels[_currentLevel]->load();
     _transitionTimer = new GameTimer(5, 40, glm::vec3(0.3,0.4,0.5));
     _transitionTimer->pause();
     _transitionTimer->setEnabled(false);
     GameTimerManager::instance().addGameTimer(_transitionTimer);
     
-    _levelTimer = new GameTimer(5.0f, 40, glm::vec3(0.25,0.7,0.6));
+    _levelTimer = new GameTimer(_levels[_currentLevel]->getLevelTime(), 40, glm::vec3(0.25,0.7,0.6));
     _levelTimer->setCompletedCallback(std::bind(&LevelManager::levelFailed,this,std::placeholders::_1));
     GameTimerManager::instance().addGameTimer(_levelTimer);
     
@@ -49,10 +58,10 @@ void LevelManager::init()
 
 LevelManager::~LevelManager()
 {
-    for(Level* l : _levels)
+    /*for(Level* l : _levels)
     {
-        delete l;
-    }
+        //delete l;
+    }*/
 }
 
 void LevelManager::addLevel(Level *l)
@@ -62,7 +71,22 @@ void LevelManager::addLevel(Level *l)
 
 void LevelManager::goToNextLevel(bool s)
 {
-    
+    _transitionTimer->resetTimer();
+    _transitionTimer->pause();
+    _transitionTimer->setEnabled(false);
+    _successText->setEnabled(false);
+    _successText2->setEnabled(false);
+    _currentLevel++;
+    if(_currentLevel >= _levels.size())
+    {
+        _currentLevel = 0;
+    }
+    _levelTimer->resetTimer();
+    _levelTimer->setMaxTime(_levels[_currentLevel]->getLevelTime());
+    _levelTimer->setEnabled(true);
+    _levelTimer->start();
+    Level* level = _levels[_currentLevel];
+    level->load();
 }
 
 void LevelManager::levelFailed(bool s)
@@ -87,10 +111,16 @@ void LevelManager::restartLevel(bool s)
     _levelTimer->resetTimer();
     _levelTimer->start();
     _levelTimer->setEnabled(true);
+    Level* level = _levels[_currentLevel];
+    level->load();
 }
 
 void LevelManager::levelCompleted()
 {
     _levelTimer->pause();
     _successText->setEnabled(true);
+    _successText2->setEnabled(true);
+    _transitionTimer->setCompletedCallback(std::bind(&LevelManager::goToNextLevel,this,std::placeholders::_1));
+    _transitionTimer->start();
+    _transitionTimer->setEnabled(true);
 }
