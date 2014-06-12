@@ -29,6 +29,7 @@ public:
     void load();
     void addTile(Tile*);
     inline void addPortal(Portal* portal) { _portals.push_back(portal); };
+    inline std::vector<Portal*> getPortals() { return _portals; };
     inline void addWall(Wall* wall) { _walls.push_back(wall); };
     inline int getLevelTime() { return _levelTime; }
     inline void setTee(Tee* tee) { _tee = tee; }

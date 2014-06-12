@@ -37,6 +37,43 @@ void Ball::onCollision(GameObject *that){
    if(that == cup){
       LevelManager::instance().levelCompleted();
    }
+    for(Portal *p : LevelManager::instance().getCurrentLevel()->getPortals())
+    {
+        if(that == p)
+        {
+            std::cout << "Lets do this ";
+            onPortalEnter(p);
+        }
+    }
+}
+
+void Ball::onPortalEnter(Portal* p)
+{
+    glm::vec3 dir = p->getConnectedPortal()->getPosition()-p->getPosition();
+    glm::vec3 n1(p->getModel()->getNormals()[0]);
+    glm::vec3 n2(p->getConnectedPortal()->getModel()->getNormals()[0]);
+    float cos_theta = glm::dot(glm::normalize(n1),glm::normalize(n2));
+    float angle = acos(cos_theta);
+    
+    glm::vec3 axis = glm::normalize(glm::cross(p->getModel()->getNormals()[0],p->getConnectedPortal()->getModel()->getNormals()[0]));
+    std::cout << "AXIS: " << axis.x << ", " << axis.y << ", " << axis.z << std::endl;
+    std::cout << "Normal1: " << n1.x << ", " << n1.y << ", " << n1.z << std::endl;
+    std::cout << "Normal2: " << n2.x << ", " << n2.y << ", " << n2.z << std::endl;
+    std::cout << "ANGLE: " << angle << std::endl;
+    //glm::quat rotationZ =  glm::normalize(glm::angleAxis((float)(angle*180.0f/M_PI), axis));
+    glm::quat rotationZ{};
+    if(!isnan(axis.x)){
+        rotationZ =  glm::angleAxis(angle*float(180/M_PI), axis);
+    }
+    glm::mat4 T = glm::translate(glm::mat4(), dir);
+    glm::mat4 R = glm::mat4_cast(rotationZ);
+    glm::mat4 model = T*R;
+    glm::vec4 newPos = model*glm::vec4(_position.x, _position.y, _position.z, 1);
+    glm::vec4 newVel = R*glm::vec4(_velocity.x, _velocity.y, _velocity.z, 1);
+    _position = glm::vec3(newPos);
+    _velocity = glm::vec3(newVel);
+    //_position = glm::vec3(0,0,0);
+    angle *= 180.0f/M_PI;
 }
 
 void Ball::onKeyPress(SDL_Keycode key)
