@@ -952,8 +952,8 @@
 				F3EFA828190330D3001FE6B6 /* Model.h */,
 				F3EFA82B190339F0001FE6B6 /* GenericMaterial.cpp */,
 				F3EFA82C190339F0001FE6B6 /* GenericMaterial.h */,
-				4B2FC7DF190A090500440155 /* Cylinder.cpp */,
 				4B2FC7E0190A090500440155 /* Cylinder.h */,
+				4B2FC7DF190A090500440155 /* Cylinder.cpp */,
 				4B2FC7E3190A180800440155 /* ModelUtil.cpp */,
 				4B2FC7E4190A180800440155 /* ModelUtil.h */,
 			);
